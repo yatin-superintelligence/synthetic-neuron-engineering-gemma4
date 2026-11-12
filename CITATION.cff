@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: If you use this work, please cite the paper.
-title: Synthetic Neuron Engineering of a Gemma 4 Coding Agent and the Decision Gap
+title: "Synthetic Neuron Engineering of a Gemma 4 Coding Agent: Predictive Neurons, Causal Neurons, and the Decision Gap"
 authors:
   - family-names: Taneja
     given-names: Yatin

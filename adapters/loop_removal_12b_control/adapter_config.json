@@ -1,0 +1,28 @@
+{
+  "peft_type": "LORA",
+  "task_type": "CAUSAL_LM",
+  "base_model_name_or_path": "google/gemma-4-12B-it",
+  "r": 1,
+  "lora_alpha": 1,
+  "rank_pattern": {
+    "model.language_model.layers.23.mlp.down_proj": 1,
+    "model.language_model.layers.24.mlp.down_proj": 1,
+    "model.language_model.layers.25.mlp.down_proj": 1,
+    "model.language_model.layers.26.mlp.down_proj": 1
+  },
+  "alpha_pattern": {
+    "model.language_model.layers.23.mlp.down_proj": 1,
+    "model.language_model.layers.24.mlp.down_proj": 1,
+    "model.language_model.layers.25.mlp.down_proj": 1,
+    "model.language_model.layers.26.mlp.down_proj": 1
+  },
+  "target_modules": [
+    "down_proj"
+  ],
+  "lora_dropout": 0.0,
+  "bias": "none",
+  "fan_in_fan_out": false,
+  "init_lora_weights": true,
+  "inference_mode": true,
+  "use_rslora": false
+}

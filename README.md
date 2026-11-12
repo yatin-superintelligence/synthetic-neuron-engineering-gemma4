@@ -1,4 +1,4 @@
-# Synthetic Neuron Engineering of a Gemma 4 Coding Agent and the Decision Gap
+# Synthetic Neuron Engineering of a Gemma 4 Coding Agent: Predictive Neurons, Causal Neurons, and the Decision Gap
 
 Code, experiment records and artifacts for the paper of the same name by Yatin Taneja (November 2026), submitted to the
 Google Gemma 4 Developer Agent Paper Track on Kaggle. The paper is in [`paper/`](paper/).
@@ -37,7 +37,7 @@ script, its configuration, its results and, for agent runs, its official verific
 | `results/neurons/` | The neuron lists for the largest model (see below). |
 | `results/dose_test_summary.json` | The dose test of the paper's Table 2 and Figure 3. |
 | `results/figures/` | The paper's three figures. |
-| `adapters/` | Four adapters in PEFT LoRA format (see below). |
+| `adapters/` | The adapters behind the paper's interventions, with their controls, in PEFT LoRA format (see below). |
 | `docs/NEURON_SCAN.md` | Method note for the predictive scan and the causal search. |
 
 ## Where the Evidence for Each Claim Is
@@ -77,12 +77,19 @@ Layers are numbered from 0; 31B has 60 layers.
 
 ## The Adapters
 
+Each intervention is followed by its control where one was built.
+
 | Folder | Model | What it is |
 |---|---|---|
-| `adapters/causal_64_first_search/` | Gemma 4 31B | The first search's 64 causal neurons, 32 doubled and 32 silenced. Run in the agent: 9 of 15 tasks solved. |
-| `adapters/causal_256_second_search/` | Gemma 4 31B | The second search's 256 causal neurons, 128 doubled and 128 silenced. Run in the agent: 10 of 15. |
-| `adapters/transplant_e2b/` | Gemma 4 E2B | The transplant of 896 neurons from E4B (7 layers, 128 neurons each), as built by `code/experiments/exp102_neuron_transplant.py`. |
-| `adapters/transplant_e2b_random_control/` | Gemma 4 E2B | Its control: random E4B neurons transplanted the same way. |
+| `adapters/causal_64_first_search/` | 31B | The first search's 64 causal neurons, 32 doubled and 32 silenced. Run in the agent: 9 of 15 tasks solved. |
+| `adapters/causal_256_second_search/` | 31B | The second search's 256 causal neurons, 128 doubled and 128 silenced. Run in the agent: 10 of 15. |
+| `adapters/predictive_neurons_31b/`, `..._control/` | 31B | The 64 predictive neurons, amplified or damped (EXP-155; the first of the variants run in the agent), and the control with the signs shuffled. |
+| `adapters/tool_call_repair_31b/`, `..._control/` | 31B | The gated neuron that repairs the faulty string ending in tool calls (EXP-144), and the same unit with a random read-out. Run in the agent as EXP-144a and EXP-144b. |
+| `adapters/loop_removal_e2b_f16/`, `..._q4_0/`, `adapters/loop_removal_e2b_random_control_f16/`, `..._q4_0/` | E2B | The loop direction removed at layers 14, 15, 19 and 23 (EXP-053), built for the two checkpoints of the loop replays, and the same with random directions. |
+| `adapters/loop_removal_12b/`, `..._control/` | 12B | The loop direction removed at layers 23 to 26 (EXP-132b), and its control. Run in the agent as EXP-133a. |
+| `adapters/imitating_neurons_e2b/`, `..._control/` | E2B | The four neurons that push E2B toward 31B's tool choice (EXP-080, `teacher_all`), and their control. Run in the agent as EXP-080a. |
+| `adapters/imitating_neurons_e4b/`, `..._control/` | E4B | The same kind of neurons for E4B (EXP-084, `teacher_all`), and their control. Run in the agent as EXP-084a. |
+| `adapters/transplant_e2b/`, `..._random_control/` | E2B | The transplant of 896 neurons from E4B (7 layers, 128 neurons each), as built by `code/experiments/exp102_neuron_transplant.py`, and random E4B neurons transplanted the same way. |
 
 Scaling neuron i of layer l by (1 + s) changes only column i of that layer's `down_proj` weight:
 W_down[:, i] <- (1 + s) * W_down[:, i]. As a LoRA, lora_A holds the one-hot row e_i and lora_B the column s * W_down[:, i];
@@ -101,7 +108,9 @@ official one and is kept only for comparison. Counts in the paper are the offici
 - The competition's data: task statements, repositories, tests and the official notebook and prompt. Recorded agent runs are
   left out for the same reason: they contain task content. The code therefore cannot be run from this repository alone; it is
   shared so that every step can be read and checked.
-- Adapters for the other interventions and intermediate activations (several gigabytes). Available on request.
+- The remaining adapters (the other predictive variants, the instruction written into the weights, the weight changes of
+  Figure 2, the combined intervention and the two trained adapters) and intermediate activations (several gigabytes).
+  Available on request.
 - The project's internal decision log. Experiment records refer to its entries as `D-` numbers and to `RESEARCH_LOG.md`; the
   aim, the hypothesis stated before the run and the outcome are in each experiment's own `README.md`.
 
@@ -110,7 +119,7 @@ remaining files the local project path is written `<repo>`.
 
 ## Citation
 
-Yatin Taneja. *Synthetic Neuron Engineering of a Gemma 4 Coding Agent and the Decision Gap.* Google Gemma 4 Developer Agent
-Paper Track, Kaggle, November 2026.
+Yatin Taneja. *Synthetic Neuron Engineering of a Gemma 4 Coding Agent: Predictive Neurons, Causal Neurons, and the Decision
+Gap.* Google Gemma 4 Developer Agent Paper Track, Kaggle, November 2026.
 
 The adapters contain columns of Gemma 4's own weights and are shared under that model's terms of use.

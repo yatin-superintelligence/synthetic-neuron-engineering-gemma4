@@ -20,9 +20,10 @@ plt.rcParams.update({"font.family": "DejaVu Sans"})
 fig = plt.figure(figsize=(5.6, 2.8), facecolor=SURF)
 fig.text(0.05, 0.86, "Synthetic Neuron Engineering" + NL + "of a Gemma 4 Coding Agent", ha="left", va="top", fontsize=12.6,
          fontweight="bold", color=INK, linespacing=1.3)
-fig.text(0.05, 0.50, "Training-free weight changes steer" + NL + "a local coding agent. We find the" + NL
-         + "neurons that cause a correct fix" + NL + "and measure the decision gap.", ha="left", va="top", fontsize=8.6, color=INK2,
-         linespacing=1.45)
+fig.text(0.05, 0.575, "Predictive Neurons, Causal Neurons," + NL + "and the Decision Gap", ha="left", va="top", fontsize=9.4,
+         fontweight="bold", color=INK, linespacing=1.35)
+fig.text(0.05, 0.33, "Training-free weight changes steer" + NL + "a local coding agent.", ha="left", va="top", fontsize=8.4,
+         color=INK2, linespacing=1.45)
 ax = fig.add_axes([0.635, 0.20, 0.32, 0.50], facecolor=SURF)
 vals = [44, 57, 71]
 names = ["64", "256", "256," + NL + "4x stronger"]

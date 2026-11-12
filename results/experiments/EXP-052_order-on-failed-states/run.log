@@ -1,0 +1,5 @@
+=== EXP-052 order-on-failed-states started 2026-11-08T15:21:33.906918Z commit=6d3e5dd35f
+[15:21:50] states 21 tasks 9 kinds {'mostly_real_altered': 7, 'identical': 1, 'invented': 8, 'lines_real_block_not': 1, 'over_escaped': 4}
+[15:50:36] q4_0 {'pairs': 42, 'tasks': 9, 'rate_old_first': 0.1429, 'rate_new_first': 0.0476, 'seed0_only_old_first': 3, 'seed0_only_new_first': 1, 'mcnemar_p_seed0': 0.625, 'mean_gain': 0.0952, 'task_bootstrap_ci': [0.0, 0.3077], 'outcomes_old_first': {'not_found': 34, 'applied': 6, 'multiple': 2}, 'outcomes_new_first': {'not_found': 35, 'identical': 5, 'applied': 2}}
+[16:24:54] f16 {'pairs': 42, 'tasks': 9, 'rate_old_first': 0.119, 'rate_new_first': 0.0, 'seed0_only_old_first': 2, 'seed0_only_new_first': 0, 'mcnemar_p_seed0': 0.5, 'mean_gain': 0.119, 'task_bootstrap_ci': [0.0, 0.3235], 'outcomes_old_first': {'not_found': 34, 'applied': 5, 'multiple': 2, 'identical': 1}, 'outcomes_new_first': {'not_found': 32, 'identical': 7, 'file_missing': 2, 'empty': 1}}
+=== EXP-052 finished status=OK wall=3800.5s

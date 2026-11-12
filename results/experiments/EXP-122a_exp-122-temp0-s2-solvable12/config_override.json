@@ -1,0 +1,7 @@
+{
+ "sampling": {
+  "seed": 2,
+  "temperature": 0.0
+ },
+ "hard_stop_s": 1800
+}

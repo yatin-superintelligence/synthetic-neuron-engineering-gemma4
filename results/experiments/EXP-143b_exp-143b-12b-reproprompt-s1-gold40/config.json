@@ -1,0 +1,9 @@
+{
+ "id": "EXP-143b",
+ "slug": "exp-143b-12b-reproprompt-s1-gold40",
+ "category": "improvement",
+ "started": "2026-11-11T12:34:39Z",
+ "wall_seconds": 6790.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

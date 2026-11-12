@@ -1,0 +1,123 @@
+{
+ "states": 1745,
+ "teacher_majority_agrees_with_e2b": 596,
+ "disagrees": 1149,
+ "confident_disagreements_e2b_to_teacher": {
+  "read_file -> run_command": 194,
+  "search_similar_code -> run_command": 123,
+  "edit_file -> read_file": 83,
+  "edit_file -> run_command": 67,
+  "search_similar_code -> read_file": 44,
+  "submit_patch -> run_command": 27,
+  "read_file -> edit_file": 25,
+  "code_analyzer_agent -> run_command": 23,
+  "STOP -> submit_patch": 20,
+  "run_command -> read_file": 19,
+  "run_command -> edit_file": 18,
+  "run_command -> write_file": 14,
+  "write_file -> edit_file": 13,
+  "submit_patch -> write_file": 12,
+  "write_file -> read_file": 9,
+  "code_analyzer_agent -> read_file": 9,
+  "read_file -> search_similar_code": 8,
+  "search_similar_code -> edit_file": 8,
+  "write_file -> run_command": 8,
+  "search_similar_code -> write_file": 7
+ },
+ "teacher_actions": [
+  [
+   "run_command",
+   2526
+  ],
+  [
+   "read_file",
+   1915
+  ],
+  [
+   "edit_file",
+   651
+  ],
+  [
+   "STOP",
+   572
+  ],
+  [
+   "submit_patch",
+   367
+  ],
+  [
+   "search_similar_code",
+   345
+  ],
+  [
+   "write_file",
+   326
+  ],
+  [
+   "UNDECIDED",
+   216
+  ],
+  [
+   "get_code_neighbors",
+   28
+  ],
+  [
+   "get_code_",
+   13
+  ],
+  [
+   "code_analyzer_agent",
+   8
+  ],
+  [
+   "write_",
+   6
+  ],
+  [
+   "get_status",
+   6
+  ],
+  [
+   "get_code_subgraph",
+   1
+  ]
+ ],
+ "e2b_actions": [
+  [
+   "read_file",
+   564
+  ],
+  [
+   "edit_file",
+   328
+  ],
+  [
+   "search_similar_code",
+   288
+  ],
+  [
+   "run_command",
+   173
+  ],
+  [
+   "STOP",
+   148
+  ],
+  [
+   "submit_patch",
+   128
+  ],
+  [
+   "write_file",
+   61
+  ],
+  [
+   "code_analyzer_agent",
+   43
+  ],
+  [
+   "get_code_neighbors",
+   12
+  ]
+ ]
+}

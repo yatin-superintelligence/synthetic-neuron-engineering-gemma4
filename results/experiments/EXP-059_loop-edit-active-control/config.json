@@ -1,0 +1,60 @@
+{
+  "id": "EXP-059",
+  "slug": "loop-edit-active-control",
+  "category": "improvement",
+  "motivation": "EXP-053's control was far weaker than the edit, so its null result does not show that the edit is specific.",
+  "hypothesis": "The loop edit lowers the loop rate at new seeds, and a matched-strength control does not.",
+  "config": {
+    "layers": [
+      14,
+      15,
+      19,
+      23
+    ],
+    "lam": -1.0,
+    "seeds": [
+      1,
+      2
+    ],
+    "early_exit": true,
+    "split": "dev",
+    "control": "singular directions of matched gain, orthogonal to the loop direction, seed 59"
+  },
+  "depends_on": [
+    "EXP-053"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "0a1cc14b34356743f0782e65638e507cd0ea7581",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp059_loop_edit_active_control.py",
+  "started": "2026-11-06T14:10:36.443695Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1913,
+    "cpu_core_w": 2.2,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 4,
+    "battery_pct": 100,
+    "cpu_pct": 0.2,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 78.9,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 8.5,
+    "ram_free_gb": 20.52,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.21,
+    "t": 1793974247.6271355
+  },
+  "finished": "2026-11-06T17:18:24.058143Z",
+  "wall_seconds": 11267.6,
+  "status": "OK"
+}

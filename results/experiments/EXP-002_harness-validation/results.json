@@ -1,0 +1,40 @@
+{
+  "results": {
+    "mbpp_dev": {
+      "n": 189,
+      "canonical_pass": 189,
+      "failures": []
+    },
+    "mbpp_test": {
+      "n": 188,
+      "canonical_pass": 188,
+      "failures": []
+    },
+    "humaneval": {
+      "n": 163,
+      "canonical_pass": 163,
+      "failures": []
+    },
+    "humanevalfix": {
+      "n": 164,
+      "canonical_pass": 164,
+      "failures": []
+    },
+    "humanevalfix_buggy_hidden": {
+      "n": 164,
+      "buggy_unexpectedly_pass": []
+    },
+    "humanevalfix_canonical_visible": {
+      "fail": []
+    },
+    "humanevalfix_buggy_visible_pass": 20,
+    "extraction_unit_tests": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "headline": "mbpp_dev: 189/189 | mbpp_test: 188/188 | humaneval: 163/163 | humanevalfix: 164/164"
+  },
+  "wall_seconds": 116.11115527153015
+}

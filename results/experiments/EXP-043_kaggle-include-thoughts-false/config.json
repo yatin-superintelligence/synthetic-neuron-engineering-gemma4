@@ -1,0 +1,9 @@
+{
+ "id": "EXP-043",
+ "slug": "kaggle-include-thoughts-false",
+ "category": "baseline",
+ "started": "2026-11-06T07:00:35Z",
+ "wall_seconds": 1929.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

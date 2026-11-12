@@ -1,0 +1,45 @@
+{
+  "id": "EXP-132b",
+  "slug": "12b-loop-direction",
+  "category": "improvement",
+  "motivation": "26 of 12B's 40 runs on the reference-resolvable tasks end in a context overflow that follows a thinking loop; where it does not overflow 12B solves 10 of 14. The loop direction found and removed in E2B is rebuilt for 12B.",
+  "hypothesis": "A few 12B layers separate loop tokens on held-out tasks (d' well above random directions); the agent test (EXP-133) measures loops, context overflows and tasks solved.",
+  "config": {
+    "model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "ctx_tokens": 3000,
+    "resp_tokens": 1500,
+    "tokens_per_class": 200,
+    "layers_edited": 4,
+    "fit_half_seed": 132,
+    "traces": "EXP-014d",
+    "fixed_layers": [
+      23,
+      24,
+      25,
+      26
+    ]
+  },
+  "depends_on": [
+    "EXP-014d",
+    "EXP-040",
+    "EXP-053"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "/content/repo/experiments/scripts/exp132_12b_loop_direction.py",
+  "started": "2026-11-10T22:25:19.969752Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794349519.9727852
+  },
+  "finished": "2026-11-10T22:25:58.530476Z",
+  "wall_seconds": 38.6,
+  "status": "OK"
+}

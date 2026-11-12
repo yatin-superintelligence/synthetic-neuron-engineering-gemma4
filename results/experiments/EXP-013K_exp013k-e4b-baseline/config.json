@@ -1,0 +1,9 @@
+{
+ "id": "EXP-013K",
+ "slug": "exp013k-e4b-baseline",
+ "category": "kaggle",
+ "started": "2026-11-07T03:33:33Z",
+ "wall_seconds": 2046.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

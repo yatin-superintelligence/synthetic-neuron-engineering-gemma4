@@ -1,0 +1,54 @@
+{
+  "id": "EXP-041",
+  "slug": "edit-failure-replay",
+  "category": "localization",
+  "motivation": "50% of edit_file calls failed in EXP-036, 11 of 58 tasks never applied an edit, and none of those resolved. Reading the traces suggests two structural causes that a weight edit could address.",
+  "hypothesis": "Forcing old_string first raises the apply rate over the new_string-first branch.",
+  "config": {
+    "traces": [
+      "exp036",
+      "exp037"
+    ],
+    "split": "dev",
+    "order_seeds": [
+      0,
+      1
+    ],
+    "max_prompt_tokens": 9000,
+    "slots": 6,
+    "per_run_task": 4
+  },
+  "depends_on": [
+    "EXP-036"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "3b00bcea401caa340bd4f0061b88af71a9603676",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp041_edit_failure_replay.py",
+  "started": "2026-11-06T07:13:13.173016Z",
+  "sys_at_start": {
+    "cpu_perf_limit_pct": 100,
+    "thermal_c": 27.9,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 4.3,
+    "cpu_pct": 8.9,
+    "on_ac": true,
+    "cpu_freq_mhz": 1759,
+    "battery_discharge_mw": 0,
+    "battery_pct": 100,
+    "ram_free_gb": 19.25,
+    "cpu_perf_pct": 107.1,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.3,
+    "t": 1793949202.2228389
+  },
+  "finished": "2026-11-06T08:24:25.793801Z",
+  "wall_seconds": 4272.6,
+  "status": "OK"
+}

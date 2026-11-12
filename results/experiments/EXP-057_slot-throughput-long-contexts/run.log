@@ -1,0 +1,10 @@
+=== EXP-057 slot-throughput-long-contexts started 2026-11-06T09:49:10.691555Z commit=02a3ed3117
+[09:54:11] {'precision': 'q4_0', 'slots': 1, 'unified': False, 'wall_s': 281.5, 'prompt_tokens': 83266, 'gen_tokens': 1300, 's_per_state': 46.9, 'status': 'ok'}
+[10:03:08] {'precision': 'q4_0', 'slots': 2, 'unified': False, 'wall_s': 533.8, 'prompt_tokens': 83266, 'gen_tokens': 1312, 's_per_state': 89.0, 'status': 'ok'}
+[10:11:43] {'precision': 'q4_0', 'slots': 3, 'unified': False, 'wall_s': 511.0, 'prompt_tokens': 83266, 'gen_tokens': 1432, 's_per_state': 85.2, 'status': 'ok'}
+[10:20:10] {'precision': 'q4_0', 'slots': 4, 'unified': False, 'wall_s': 502.4, 'prompt_tokens': 83266, 'gen_tokens': 1226, 's_per_state': 83.7, 'status': 'ok'}
+[10:28:40] {'precision': 'q4_0', 'slots': 6, 'unified': False, 'wall_s': 506.7, 'prompt_tokens': 83266, 'gen_tokens': 1323, 's_per_state': 84.5, 'status': 'ok'}
+[10:37:27] {'precision': 'q4_0', 'slots': 3, 'unified': True, 'wall_s': 522.6, 'prompt_tokens': 83266, 'gen_tokens': 1307, 's_per_state': 87.1, 'status': 'ok'}
+[10:46:46] {'precision': 'q4_0', 'slots': 6, 'unified': True, 'wall_s': 555.3, 'prompt_tokens': 83266, 'gen_tokens': 1265, 's_per_state': 92.6, 'status': 'ok'}
+[10:52:58] {'precision': 'f16', 'slots': 1, 'unified': False, 'wall_s': 363.7, 'prompt_tokens': 83266, 'gen_tokens': 1330, 's_per_state': 60.6, 'status': 'ok'}
+[11:04:06] {'precision': 'f16', 'slots': 2, 'unified': False, 'wall_s': 661.8, 'prompt_tokens': 83266, 'gen_tokens': 1273, 's_per_state': 110.3, 'status': 'ok'}

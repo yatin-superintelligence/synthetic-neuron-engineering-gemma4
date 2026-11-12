@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 1
+ },
+ "hard_stop_s": 3900,
+ "adapter": "rndvalue",
+ "adapter_local": "artifacts_local/EXP-099/rnd972_a2"
+}

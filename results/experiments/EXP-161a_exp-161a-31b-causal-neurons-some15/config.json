@@ -1,0 +1,9 @@
+{
+ "id": "EXP-161a",
+ "slug": "exp-161a-31b-causal-neurons-some15",
+ "category": "improvement",
+ "started": "2026-11-12T13:06:54Z",
+ "wall_seconds": 3831.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

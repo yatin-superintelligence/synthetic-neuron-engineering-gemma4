@@ -1,0 +1,12 @@
+=== EXP-102 neuron-transplant-e4b started 2026-11-09T11:19:33.799054Z commit=
+[11:34:05] fit stage exit 0 in 872 s
+[12:06:18] lab exit 0 in 1933 s
+[12:06:18] base {'applies': 32, 'correct': 5, 'esc': 9, 'selfcopy': 10}
+[12:06:18] st_a1 {'applies': 32, 'correct': 9, 'esc': 4, 'selfcopy': 12, 'applies_gain_loss_p': (18, 18, 1.0), 'correct_gain_loss_p': (8, 4, 0.388)}
+[12:06:18] st_a4 {'applies': 11, 'correct': 3, 'esc': 0, 'selfcopy': 5, 'applies_gain_loss_p': (4, 25, 0.0), 'correct_gain_loss_p': (1, 3, 0.625)}
+[12:06:18] lg_a1 {'applies': 37, 'correct': 5, 'esc': 3, 'selfcopy': 6, 'applies_gain_loss_p': (19, 14, 0.487), 'correct_gain_loss_p': (5, 5, 1.0)}
+[12:06:18] lg_a4 {'applies': 8, 'correct': 0, 'esc': 4, 'selfcopy': 5, 'applies_gain_loss_p': (3, 27, 0.0), 'correct_gain_loss_p': (0, 5, 0.062)}
+[12:06:18] st_rnd_a4 {'applies': 33, 'correct': 4, 'esc': 7, 'selfcopy': 11, 'applies_gain_loss_p': (16, 15, 1.0), 'correct_gain_loss_p': (2, 3, 1.0)}
+[12:06:18] lg_rnd_a4 {'applies': 37, 'correct': 6, 'esc': 5, 'selfcopy': 6, 'applies_gain_loss_p': (19, 14, 0.487), 'correct_gain_loss_p': (5, 4, 1.0)}
+[12:06:18] abl {'applies': 31, 'correct': 5, 'esc': 6, 'selfcopy': 9, 'applies_gain_loss_p': (17, 18, 1.0), 'correct_gain_loss_p': (3, 3, 1.0)}
+=== EXP-102 finished status=OK wall=2804.6s

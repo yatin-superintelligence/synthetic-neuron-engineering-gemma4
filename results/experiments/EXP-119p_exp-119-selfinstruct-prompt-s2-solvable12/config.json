@@ -1,0 +1,9 @@
+{
+ "id": "EXP-119p",
+ "slug": "exp-119-selfinstruct-prompt-s2-solvable12",
+ "category": "improvement",
+ "started": "2026-11-10T03:54:51Z",
+ "wall_seconds": 762.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

@@ -1,0 +1,153 @@
+=== EXP-087 weight-extrapolation started 2026-11-08T14:53:07.192368Z commit=
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:02<00:00,  3.91it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:20<00:02,  2.50s/it]
+Fetching 9 files: 100%|##########| 9/9 [00:30<00:00,  3.38s/it]
+Fetching 9 files: 100%|##########| 9/9 [00:30<00:00,  3.38s/it]
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:01<00:00,  5.43it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:19<00:02,  2.41s/it]
+Fetching 9 files: 100%|##########| 9/9 [00:27<00:00,  3.04s/it]
+Fetching 9 files: 100%|##########| 9/9 [00:27<00:00,  3.04s/it]
+
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]
+Fetching 8 files:  12%|#2        | 1/8 [00:00<00:02,  3.46it/s]
+Fetching 8 files:  50%|#####     | 4/8 [00:00<00:00,  7.47it/s]
+Fetching 8 files:  88%|########7 | 7/8 [00:01<00:00,  4.30it/s]
+Fetching 8 files:  88%|########7 | 7/8 [00:11<00:01,  1.67s/it]
+Fetching 8 files: 100%|##########| 8/8 [00:27<00:00,  3.38s/it]
+Fetching 8 files: 100%|##########| 8/8 [00:27<00:00,  3.38s/it]
+[14:54:34] downloaded {'qat': '/content/hf_qat', 'it': '/content/hf_it', 'base': '/content/hf_base'} 86 s
+=== EXP-087 finished status=FAILED: RuntimeError: vLLM exited while loading: 100, in build_async_engine_client
+(APIServer pid=10929)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=10929)                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10929)   File "/root/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=10929)     return await anext(self.gen)
+(APIServer pid=10929)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 136, in build_async_engine_client_from_engine_args
+(APIServer pid=10929)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=10929)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 225, in from_vllm_config
+(APIServer pid=10929)     return cls(
+(APIServer pid=10929)            ^^^^
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 154, in __init__
+(APIServer pid=10929)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=10929)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=10929)     return func(*args, **kwargs)
+(APIServer pid=10929)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 130, in make_async_mp_client
+(APIServer pid=10929)     return AsyncMPClient(*client_args)
+(APIServer pid=10929)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=10929)     return func(*args, **kwargs)
+(APIServer pid=10929)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 887, in __init__
+(APIServer pid=10929)     super().__init__(
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 535, in __init__
+(APIServer pid=10929)     with launch_core_engines(
+(APIServer pid=10929)          ^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=10929)   File "/root/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=10929)     next(self.gen)
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 998, in launch_core_engines
+(APIServer pid=10929)     wait_for_engine_startup(
+(APIServer pid=10929)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1057, in wait_for_engine_startup
+(APIServer pid=10929)     raise RuntimeError(
+(APIServer pid=10929) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+ wall=232.0s
+=== EXP-087 weight-extrapolation started 2026-11-08T15:00:19.424718Z commit=
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 709.99it/s]
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 777.96it/s]
+
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]
+Fetching 8 files: 100%|##########| 8/8 [00:00<00:00, 756.50it/s]
+[15:00:21] downloaded {'qat': '/content/hf_qat', 'it': '/content/hf_it', 'base': '/content/hf_base'} 1 s
+[15:02:11] alpha0 built {'moved': 540, 'kept': 1411, 'missing': [], 'k_norm_added_from_official': 0, 'rel_change_median': 0.0, 'rel_change_max': 0.0}
+=== EXP-087 finished status=FAILED: RuntimeError: vLLM exited while loading: 100, in build_async_engine_client
+(APIServer pid=12963)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=12963)                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=12963)   File "/root/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=12963)     return await anext(self.gen)
+(APIServer pid=12963)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 136, in build_async_engine_client_from_engine_args
+(APIServer pid=12963)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=12963)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 225, in from_vllm_config
+(APIServer pid=12963)     return cls(
+(APIServer pid=12963)            ^^^^
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 154, in __init__
+(APIServer pid=12963)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=12963)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=12963)     return func(*args, **kwargs)
+(APIServer pid=12963)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 130, in make_async_mp_client
+(APIServer pid=12963)     return AsyncMPClient(*client_args)
+(APIServer pid=12963)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=12963)     return func(*args, **kwargs)
+(APIServer pid=12963)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 887, in __init__
+(APIServer pid=12963)     super().__init__(
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 535, in __init__
+(APIServer pid=12963)     with launch_core_engines(
+(APIServer pid=12963)          ^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=12963)   File "/root/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=12963)     next(self.gen)
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 998, in launch_core_engines
+(APIServer pid=12963)     wait_for_engine_startup(
+(APIServer pid=12963)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1057, in wait_for_engine_startup
+(APIServer pid=12963)     raise RuntimeError(
+(APIServer pid=12963) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+ wall=212.0s
+=== EXP-087 weight-extrapolation started 2026-11-08T15:16:15.174495Z commit=
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 680.10it/s]
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 743.01it/s]
+
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]
+Fetching 8 files: 100%|##########| 8/8 [00:00<00:00, 685.15it/s]
+[15:16:17] downloaded {'qat': '/content/hf_qat', 'it': '/content/hf_it', 'base': '/content/hf_base'} 1 s
+=== EXP-087 finished status=FAILED: RuntimeError: 
+            Some tensors share memory, this will lead to duplicate memory on disk and potential differences when loading them again: [{'model.language_model.layers.31.self_attn.k_norm.weight', 'model.language_model.layers.18.self_attn.k_norm.weight', 'model.language_model.layers.15.self_attn.k_norm.weight', 'model.language_model.layers.16.self_attn.k_norm.weight', 'model.language_model.layers.20.self_attn.k_norm.weight', 'model.language_model.layers.17.self_attn.k_norm.weight', 'model.language_model.layers.22.self_attn.k_norm.weight', 'model.language_model.layers.26.self_attn.k_norm.weight', 'model.language_model.layers.30.self_attn.k_norm.weight', 'model.language_model.layers.33.self_attn.k_norm.weight', 'model.language_model.layers.32.self_attn.k_norm.weight', 'model.language_model.layers.27.self_attn.k_norm.weight', 'model.language_model.layers.23.self_attn.k_norm.weight', 'model.language_model.layers.25.self_attn.k_norm.weight', 'model.language_model.layers.28.self_attn.k_norm.weight', 'model.language_model.layers.21.self_attn.k_norm.weight'}, {'model.language_model.layers.29.self_attn.k_norm.weight', 'model.language_model.layers.34.self_attn.k_norm.weight', 'model.language_model.layers.19.self_attn.k_norm.weight', 'model.language_model.layers.24.self_attn.k_norm.weight'}].
+            A potential way to correctly save your model is to use `save_model`.
+            More information at https://huggingface.co/docs/safetensors/torch_shared_tensors
+             wall=86.7s
+=== EXP-087 weight-extrapolation started 2026-11-08T15:22:16.093620Z commit=
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 651.00it/s]
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 770.43it/s]
+
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]
+Fetching 8 files: 100%|##########| 8/8 [00:00<00:00, 735.58it/s]
+[15:22:18] downloaded {'qat': '/content/hf_qat', 'it': '/content/hf_it', 'base': '/content/hf_base'} 1 s
+[15:23:20] alpha0 built {'moved': 540, 'kept': 1411, 'missing': [], 'k_norm_placeholders_added': 20, 'rel_change_median': 0.0, 'rel_change_max': 0.0}
+[15:29:03] [dup] alpha0_dev: 121/189 passed | categories {'pass': 121, 'wrong_answer': 43, 'wrong_or_missing_entry_point': 12, 'runtime_error': 11, 'other_fail': 1, 'timeout': 1} | mean new tokens 431.6 | load 155.1 s, total 180.5 s
+[15:30:36] alpha0.1 built 94 s {'moved': 540, 'kept': 1411, 'missing': [], 'k_norm_placeholders_added': 20, 'rel_change_median': 0.03495, 'rel_change_max': 3.56746}
+[15:36:52] [dup] alpha0.1_dev: 85/189 passed | categories {'pass': 85, 'wrong_or_missing_entry_point': 42, 'syntax_error': 6, 'wrong_answer': 37, 'name_or_import_error': 4, 'runtime_error': 13, 'other_fail': 1, 'truncated': 1} | mean new tokens 993.4 | load 145.1 s, total 221.5 s
+[15:38:46] alpha0.2 built 114 s {'moved': 540, 'kept': 1411, 'missing': [], 'k_norm_placeholders_added': 20, 'rel_change_median': 0.06989, 'rel_change_max': 7.13492}
+[15:45:04] [dup] alpha0.2_dev: 16/189 passed | categories {'wrong_or_missing_entry_point': 75, 'syntax_error': 21, 'loop': 31, 'wrong_answer': 20, 'truncated': 7, 'pass': 16, 'name_or_import_error': 9, 'runtime_error': 7, 'timeout': 3} | mean new tokens 2178.4 | load 120.1 s, total 250.6 s
+[15:47:00] alpha0.3 built 116 s {'moved': 540, 'kept': 1411, 'missing': [], 'k_norm_placeholders_added': 20, 'rel_change_median': 0.10484, 'rel_change_max': 10.70238}
+[15:52:56] [dup] alpha0.3_dev: 0/189 passed | categories {'wrong_or_missing_entry_point': 72, 'loop': 90, 'truncated': 9, 'syntax_error': 12, 'name_or_import_error': 3, 'wrong_answer': 2, 'runtime_error': 1} | mean new tokens 2622.2 | load 120.0 s, total 229.8 s
+[15:55:07] alpha0.5 built 131 s {'moved': 540, 'kept': 1411, 'missing': [], 'k_norm_placeholders_added': 20, 'rel_change_median': 0.17473, 'rel_change_max': 17.8373}
+[16:00:33] [dup] alpha0.5_dev: 0/189 passed | categories {'no_code_block': 152, 'wrong_or_missing_entry_point': 34, 'syntax_error': 2, 'loop': 1} | mean new tokens 210.5 | load 120.1 s, total 200.0 s
+[16:00:33] selected alpha0.1 85 dev; alpha0 121
+[16:09:56] [dup] alpha0_test: 112/189 passed | categories {'pass': 112, 'wrong_answer': 52, 'syntax_error': 1, 'wrong_or_missing_entry_point': 12, 'runtime_error': 7, 'loop': 2, 'truncated': 1, 'name_or_import_error': 2} | mean new tokens 662.8 | load 140.1 s, total 415.9 s
+[16:21:10] [dup] alpha0.1_test: 101/189 passed | categories {'pass': 101, 'wrong_answer': 35, 'wrong_or_missing_entry_point': 37, 'runtime_error': 8, 'name_or_import_error': 4, 'loop': 1, 'syntax_error': 2, 'truncated': 1} | mean new tokens 893.7 | load 120.1 s, total 409.8 s
+[16:35:06] [dup] control_test: 0/189 passed | categories {'truncated': 96, 'wrong_or_missing_entry_point': 79, 'syntax_error': 3, 'name_or_import_error': 1, 'no_code_block': 8, 'loop': 2} | mean new tokens 4329.4 | load 115.0 s, total 529.5 s
+[16:35:06] test half bf16 {'alpha0': 112, 'alpha0.1': 101, 'control': 0} {'best_only': 21, 'alpha0_only': 32, 'p': 0.169, 'best_vs_control': {'best_only': 101, 'control_only': 0, 'p': 0.0}}
+[16:45:17] [dup] alpha0_fp8_test: 116/189 passed | categories {'pass': 116, 'wrong_answer': 49, 'syntax_error': 1, 'wrong_or_missing_entry_point': 13, 'name_or_import_error': 1, 'truncated': 1, 'runtime_error': 7, 'loop': 1} | mean new tokens 521.0 | load 145.0 s, total 460.3 s
+[16:55:43] [dup] alpha0.1_fp8_test: 88/189 passed | categories {'pass': 88, 'wrong_answer': 34, 'wrong_or_missing_entry_point': 40, 'runtime_error': 10, 'syntax_error': 7, 'name_or_import_error': 5, 'truncated': 2, 'timeout': 1, 'loop': 1, 'other_fail': 1} | mean new tokens 1094.3 | load 135.0 s, total 484.8 s
+=== EXP-087 finished status=OK wall=5607.9s

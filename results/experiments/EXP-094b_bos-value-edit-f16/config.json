@@ -1,0 +1,66 @@
+{
+  "id": "EXP-094b",
+  "slug": "bos-value-edit-f16",
+  "category": "improvement",
+  "motivation": "bf16 counterpart of EXP-094 (W4A16 on Colab): the same exact rank-1 BOS value edit and control at F16 on llama.cpp.",
+  "hypothesis": "As D-066: the BOS value edit raises MBPP+ passes against the unedited model and the control (exact McNemar p < 0.05).",
+  "config": {
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "suites": [
+      "mbpp_dev",
+      "mbpp_test"
+    ],
+    "precision": "f16",
+    "control": "random unit direction, seed 94"
+  },
+  "depends_on": [
+    "EXP-094"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "beb95f155842a5540e7777e021b1aac5206eb270",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp094b_bos_value_f16.py",
+  "started": "2026-11-08T20:11:13.945023Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1918,
+    "cpu_core_w": 11.4,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 4,
+    "battery_pct": 100,
+    "cpu_pct": 29.9,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 90.4,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 16.9,
+    "ram_free_gb": 19.71,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.16,
+    "t": 1794168685.1604497
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "EXP-162",
+  "slug": "31b-causal-dose",
+  "category": "improvement",
+  "motivation": "EXP-160's causal neurons moved 31B a quarter of the way to the passing fix on 7 pairs and did not raise tasks solved; the open questions are whether the effect holds on all pairs and whether a stronger edit closes the gap.",
+  "hypothesis": "On all pairs, the K=32 x2 edit chosen on the other fold raises the held-out preference in at least 65% of pairs and more than random neurons. Prediction for the dose: no configuration with damage of 0.10 nats per token or less flips the preference in a quarter more of the held-out pairs than are already flipped unedited.",
+  "config": {
+    "model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "bench": "artifacts_local/EXP-147/success_bench.jsonl.gz",
+    "max_call_tokens": 64,
+    "pairs_per_fail": 1,
+    "own_window": 128,
+    "prefill_chunk": 1024,
+    "truncate_to": [
+      1024,
+      7168
+    ],
+    "configs": [
+      [
+        "chosen",
+        32,
+        1.0
+      ],
+      [
+        "chosen",
+        32,
+        3.0
+      ],
+      [
+        "chosen",
+        128,
+        1.0
+      ],
+      [
+        "chosen",
+        128,
+        3.0
+      ],
+      [
+        "random",
+        32,
+        1.0
+      ],
+      [
+        "random",
+        128,
+        3.0
+      ]
+    ]
+  },
+  "depends_on": [
+    "EXP-160",
+    "EXP-161a"
+  ],
+  "env": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.14.1+cu130",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp162_31b_causal_dose.py",
+  "started": "2026-11-12T15:03:13.301491Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794495793.3166347
+  },
+  "finished": "2026-11-12T15:13:03.796149Z",
+  "wall_seconds": 590.5,
+  "status": "OK"
+}

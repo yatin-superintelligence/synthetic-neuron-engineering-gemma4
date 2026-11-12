@@ -1,0 +1,9 @@
+{
+ "id": "EXP-153a",
+ "slug": "exp-153a-12b-out6144-s1-gold40",
+ "category": "diagnosis",
+ "started": "2026-11-11T22:09:21Z",
+ "wall_seconds": 6301.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

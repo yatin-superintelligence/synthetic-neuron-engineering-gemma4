@@ -1,0 +1,53 @@
+{
+  "results": {
+    "e2b": {
+      "majority_class_rate": 0.36,
+      "n_test": 791,
+      "mlp": {
+        "start": 0.55,
+        "q25": 0.422,
+        "q50": 0.42,
+        "q75": 0.503,
+        "call": 0.973
+      },
+      "res": {
+        "start": 0.595,
+        "q25": 0.571,
+        "q50": 0.552,
+        "q75": 0.613,
+        "call": 0.953
+      },
+      "logit_lens_top_tool_matches": {
+        "start": 0.234,
+        "q25": 0.259,
+        "q50": 0.286,
+        "q75": 0.315,
+        "call": 0.984
+      }
+    },
+    "t_major": {
+      "majority_class_rate": 0.442,
+      "n_test": 771,
+      "mlp": {
+        "start": 0.427,
+        "q25": 0.385,
+        "q50": 0.374,
+        "q75": 0.357,
+        "call": 0.388
+      },
+      "res": {
+        "start": 0.409,
+        "q25": 0.418,
+        "q50": 0.397,
+        "q75": 0.405,
+        "call": 0.388
+      }
+    },
+    "think_tokens_median": 244,
+    "headline": "E2B's own action from layer-34 MLP activations: start 0.55, q25 0.422, q50 0.42, q75 0.503, call 0.973 (majority class 0.36); 31B's action: start 0.427, q25 0.385, q50 0.374, q75 0.357, call 0.388",
+    "system_monitor": {
+      "samples": 35
+    }
+  },
+  "wall_seconds": 2058.5731790065765
+}

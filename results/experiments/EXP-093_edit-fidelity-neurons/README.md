@@ -1,0 +1,175 @@
+# EXP-093: edit-fidelity-neurons
+
+- **Status:** OK
+- **Category:** improvement
+- **Started / finished (UTC):** 2026-11-09T01:52:02.230559Z / 2026-11-09T04:13:15.797311Z
+- **Wall time:** 141.2 min
+- **Commit:** `` (dirty=False)
+- **Depends on:** EXP-092
+- **Command:** `experiments/scripts/exp093_apply_neurons.py`
+
+## Why this experiment
+Half of E2B's edits fail to apply, mostly because its old_string is not in the file; a neuron from its own applying-minus-non-applying answers targets that step without training.
+
+## Hypothesis (stated before running)
+An edit-fidelity neuron raises the share of E2B's bench answers that apply against the unedited model (exact McNemar p < 0.05) and against a control neuron, without fewer correct answers.
+
+## Configuration
+```json
+{
+  "label": "applies",
+  "reuses": "EXP-092 bench, splits, fit samples, neuron construction",
+  "alphas": [
+    1,
+    3,
+    9
+  ],
+  "layers": [
+    9,
+    12,
+    15,
+    18,
+    21,
+    24,
+    27
+  ]
+}
+```
+
+## Results
+```json
+{
+  "states": 514,
+  "directions": {
+    "samples": 968,
+    "mixed_states": 146,
+    "held_mixed": 48,
+    "layers": {
+      "9": {
+        "pairwise_acc": 0.8542,
+        "dmu": 5.7889
+      },
+      "12": {
+        "pairwise_acc": 0.9375,
+        "dmu": 4.3743,
+        "readout_check": {
+          "pos_mean": 0.915,
+          "pos_min": 0.271,
+          "neg_median": 0.0465,
+          "neg_p99": 0.6812,
+          "neg_p999": 0.8955,
+          "neg_max": 0.9044,
+          "n_pos": 1114,
+          "n_neg": 1280
+        },
+        "rms_y": 0.0934,
+        "first_order_shift": 2.9657,
+        "target": 4.3743,
+        "control_first_order": -0.1354
+      },
+      "15": {
+        "pairwise_acc": 0.8958,
+        "dmu": 9.6298,
+        "readout_check": {
+          "pos_mean": 0.949,
+          "pos_min": 0.34,
+          "neg_median": 0.0091,
+          "neg_p99": 0.4825,
+          "neg_p999": 0.6057,
+          "neg_max": 0.7903,
+          "n_pos": 1114,
+          "n_neg": 1280
+        },
+        "rms_y": 0.1701,
+        "first_order_shift": 8.2475,
+        "target": 9.6298,
+        "control_first_order": 6.9127
+      },
+      "18": {
+        "pairwise_acc": 0.875,
+        "dmu": 8.2453
+      },
+      "21": {
+        "pairwise_acc": 0.8125,
+        "dmu": 6.4
+      },
+      "24": {
+        "pairwise_acc": 0.7917,
+        "dmu": 5.7223
+      },
+      "27": {
+        "pairwise_acc": 0.8333,
+        "dmu": 4.8014
+      }
+    },
+    "selected_layers": [
+      12,
+      15
+    ]
+  },
+  "dev_scan": {
+    "f_L12_a1": {
+      "applies": 55,
+      "correct": 13
+    },
+    "f_L12_a3": {
+      "applies": 50,
+      "correct": 11
+    },
+    "f_L12_a9": {
+      "applies": 8,
+      "correct": 0
+    },
+    "f_L15_a1": {
+      "applies": 55,
+      "correct": 11
+    },
+    "f_L15_a3": {
+      "applies": 54,
+      "correct": 13
+    },
+    "f_L15_a9": {
+      "applies": 0,
+      "correct": 0
+    },
+    "base": {
+      "applies": 45,
+      "correct": 6
+    },
+    "base_stored": {
+      "applies": 45,
+      "correct": 8
+    }
+  },
+  "selected": "f_L12_a1",
+  "test": {
+    "n": 129,
+    "applies": {
+      "base": 48,
+      "selected": 51,
+      "control": 0,
+      "selected_only": 20,
+      "base_only": 17,
+      "p": 0.7428
+    },
+    "correct": {
+      "base": 14,
+      "selected": 15,
+      "control": 0
+    }
+  },
+  "gate_passed": false,
+  "headline": "edit fidelity: test applies unedited 48/129, f_L12_a1 51 (control 0), McNemar p = 0.7428; correct 14 -> 15; gate not passed",
+  "system_monitor": {
+    "samples": 142
+  }
+}
+```
+
+## Files
+- `script_snapshot.py` exact script that produced this folder (+ `uncommitted.diff` if any)
+- `run.log` full console log
+- `config.json` config + environment provenance
+- `results.json` metrics
+- `sysmon.jsonl` RAM/GPU/battery/thermal samples every 60 s
+- other `*.json` raw outputs (generations, per-problem outcomes)

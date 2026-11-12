@@ -1,0 +1,63 @@
+=== EXP-062 neuron-atlas-real-coding started 2026-11-06T17:25:13.526997Z commit=b9f3b10144
+[17:25:28] cases 101 tasks 27
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:   6%|6         | 123/1951 [00:00<00:01, 927.33it/s]
+Loading weights:  11%|#1        | 216/1951 [00:00<00:04, 350.73it/s]
+Loading weights:  14%|#3        | 268/1951 [00:01<00:11, 152.88it/s]
+Loading weights:  15%|#5        | 299/1951 [00:01<00:11, 149.37it/s]
+Loading weights:  17%|#6        | 324/1951 [00:01<00:12, 132.69it/s]
+Loading weights:  18%|#7        | 343/1951 [00:01<00:11, 139.24it/s]
+Loading weights:  19%|#8        | 362/1951 [00:02<00:14, 107.11it/s]
+Loading weights:  72%|#######2  | 1413/1951 [00:02<00:00, 1510.69it/s]
+Loading weights:  90%|########9 | 1751/1951 [00:02<00:00, 1726.90it/s]
+Loading weights: 100%|##########| 1951/1951 [00:02<00:00, 737.74it/s] 
+[load] Gemma4ForConditionalGeneration on xpu in 15.6s; params=2.280B
+[17:26:03] 0 20s
+[17:30:38] 10 294s
+[17:34:40] 20 536s
+[17:38:33] 30 769s
+[17:42:40] 40 1016s
+[17:47:01] 50 1277s
+[17:49:47] 60 1443s
+[17:51:23] 70 1539s
+[17:55:14] 80 1770s
+[17:59:24] 90 2020s
+[18:01:21] 100 2137s
+[18:01:21] tokens per class {'system': 43232, 'issue': 48684, 'thought': 134261, 'call_syntax': 6634, 'arg_old': 13973, 'arg_new': 23904, 'arg_command': 31, 'arg_path': 4595, 'tool_response': 191161, 'model_text': 16310, 'keyword': 14532, 'identifier': 110408, 'punctuation': 68069, 'whitespace': 18592, 'number': 15687, 'other': 1750}
+[18:01:21] system tokens 43232 rho 0.975 replicated 530
+[18:01:21] issue tokens 48684 rho 0.964 replicated 143
+[18:01:22] thought tokens 134261 rho 0.92 replicated 32
+[18:01:22] call_syntax tokens 6634 rho 0.983 replicated 2349
+[18:01:22] arg_old tokens 13973 rho 0.849 replicated 942
+[18:01:22] arg_new tokens 23904 rho 0.758 replicated 26
+<repo>\experiments\scripts\exp062_neuron_atlas.py:81: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  rows.append(dict(cls=c, tokens=int(all_acc.n[i]), spearman_between_halves=round(float(spearmanr(da, db).correlation), 3), n_replicated=int(rep.sum()),
+[18:01:22] arg_command tokens 31 rho nan replicated 0
+[18:01:22] arg_path tokens 4595 rho 0.607 replicated 0
+[18:01:22] tool_response tokens 191161 rho 0.917 replicated 20
+[18:01:22] model_text tokens 16310 rho 0.611 replicated 2
+[18:01:22] keyword tokens 14532 rho 0.909 replicated 19
+[18:01:23] identifier tokens 110408 rho 0.946 replicated 1
+[18:01:23] punctuation tokens 68069 rho 0.947 replicated 5
+[18:01:23] whitespace tokens 18592 rho 0.905 replicated 263
+[18:01:23] number tokens 15687 rho 0.799 replicated 12
+[18:01:23] other tokens 1750 rho 0.755 replicated 184
+[18:01:23] neurons with a replicated response 8598 of 337920
+[18:01:24] group 0 size 1451 {'call_syntax': -1.2, 'system': -0.22, 'keyword': 0.13, 'other': -0.1} [' автоматлары', ' ولوبیږئ', ' راجسټ', ' وړاندوین', ' فونب']
+[18:01:25] group 1 size 492 {'call_syntax': 1.19, 'thought': -0.29, 'arg_path': 0.23, 'model_text': -0.21} ['Co', ' Co', 'co', ' coer', ' co']
+[18:01:25] group 2 size 370 {'system': 1.03, 'issue': 0.44, 'thought': -0.25, 'arg_new': -0.24} ['-', 'ish', '\u200d', ' (?)', '*']
+[18:01:26] group 3 size 862 {'call_syntax': 1.21, 'system': 0.39, 'arg_old': -0.23, 'arg_new': -0.19} ['ാരോഗ്യകേന്ദ്രം', ' وړاندوین', ' автоматлары', 'اونلوډ', ' ولوبیږئ']
+[18:01:26] group 4 size 372 {'call_syntax': 1.08, 'system': 0.9, 'tool_response': -0.49, 'identifier': -0.41} []
+[18:01:27] group 5 size 570 {'arg_old': -1.17, 'arg_new': -0.32, 'issue': 0.19, 'arg_path': -0.17} [' হাসপাত', '𒐪', '🔯', ' সরাস', ' গবে']
+[18:01:27] group 6 size 434 {'arg_old': -1.19, 'system': 0.56, 'arg_new': -0.51, 'issue': 0.34} [' হাসপাত', '🔯', '𒐪', ' গবে', ' सॉरी']
+[18:01:28] group 7 size 541 {'call_syntax': -1.07, 'system': -0.84, 'tool_response': 0.38, 'identifier': 0.34} [' فونب', ' автоматлары', ' وړاندوین', ' راجسټ', ' ولوبیږئ']
+[18:01:29] group 8 size 200 {'other': 1.11, 'call_syntax': 0.15, 'keyword': -0.13, 'whitespace': 0.12} ['band', 'a', 'b', 'prior', 'appro']
+[18:01:29] group 9 size 434 {'arg_old': 1.17, 'arg_new': 0.42, 'call_syntax': 0.39, 'arg_path': 0.28} [' автоматлары', ' ولوبیږئ', 'ാരോഗ്യകേന്ദ്രം', ' وړاندوین', '感謝石頭']
+[18:01:30] group 10 size 292 {'whitespace': -1.09, 'other': -0.19, 'tool_response': -0.15, 'thought': 0.14} [' جوسینو', ' ಆನಿಂ', ' 똑', '𒁬', '倔']
+[18:01:30] group 11 size 367 {'whitespace': 0.85, 'other': -0.43, 'tool_response': 0.11, 'issue': -0.11} ['i', 'ي', '\\"', '폐', ' ശക്തി']
+[18:01:31] group 12 size 754 {'call_syntax': 1.18, 'issue': -0.3, 'thought': 0.15, 'arg_path': 0.14} [' men', ' pick', 'Pick', ' Men', ' Pick']
+[18:01:32] group 13 size 522 {'arg_old': 1.2, 'arg_new': 0.36, 'system': -0.35, 'call_syntax': -0.31} [' автоматлары', ' ولوبیږئ', ' راجسټ', ' فونب', ' وړاندوین']
+[18:01:32] group 14 size 574 {'call_syntax': -1.18, 'arg_old': -0.4, 'issue': 0.28, 'arg_path': -0.28} ['𒐪', ' হাসপাত', ' এটির', '𒉰', ' যুক্তরাষ্ট্রের']
+[18:01:33] group 15 size 363 {'system': -1.06, 'issue': -0.43, 'thought': 0.27, 'arg_old': 0.23} [' चाय', ' NSUTF', 'StockDel', 'వంత', ' আর্মির']
+=== EXP-062 finished status=OK wall=2181.2s

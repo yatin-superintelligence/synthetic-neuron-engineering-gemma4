@@ -1,0 +1,9 @@
+{
+ "id": "EXP-140e",
+ "slug": "exp-140e-31b-zerolora-s1-gold40",
+ "category": "improvement",
+ "started": "2026-11-11T12:39:17Z",
+ "wall_seconds": 5836.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

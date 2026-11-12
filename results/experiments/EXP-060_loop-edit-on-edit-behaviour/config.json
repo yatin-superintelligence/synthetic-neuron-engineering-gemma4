@@ -1,0 +1,53 @@
+{
+  "id": "EXP-060",
+  "slug": "loop-edit-on-edit-behaviour",
+  "category": "improvement",
+  "motivation": "Perseveration and looping may share a cause. Exact copying is also what such an edit could damage.",
+  "hypothesis": "The edit lowers same-text retries and leaves the apply rate on normal edit states unchanged.",
+  "config": {
+    "n_retry": 24,
+    "n_edit": 16,
+    "max_prompt": 16000,
+    "seeds": [
+      0
+    ],
+    "split": "dev"
+  },
+  "depends_on": [
+    "EXP-059"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "39c7d7540bb06767b2d4974a401fa7b2706d4593",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp060_loop_edit_on_edits.py",
+  "started": "2026-11-08T06:24:29.269160Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1876,
+    "cpu_core_w": 8.6,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 1,
+    "battery_pct": 100,
+    "cpu_pct": 0,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 99.4,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 14.9,
+    "ram_free_gb": 19.41,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.14,
+    "t": 1794119080.738226
+  },
+  "finished": "2026-11-08T10:07:38.671604Z",
+  "wall_seconds": 13389.4,
+  "status": "OK"
+}

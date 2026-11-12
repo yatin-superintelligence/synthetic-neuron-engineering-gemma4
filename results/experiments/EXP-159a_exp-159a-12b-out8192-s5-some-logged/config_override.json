@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 5,
+  "max_output_tokens": 8192
+ },
+ "hard_stop_s": 4200,
+ "log_requests": true
+}

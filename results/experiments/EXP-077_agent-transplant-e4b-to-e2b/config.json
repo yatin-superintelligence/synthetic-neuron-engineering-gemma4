@@ -1,0 +1,48 @@
+{
+  "id": "EXP-077",
+  "slug": "agent-transplant-e4b-to-e2b",
+  "category": "transplant",
+  "motivation": "E4B handles the agent states that trap E2B. Transplant E4B neurons tuned to the tool-call segment into E2B's least-used slots, mapped on real agent tokens.",
+  "hypothesis": "Ridge maps reach held-out R^2 above 0.5 at matched depths; selected donor neurons read with median fidelity above 0.5, far above shuffled tokens. Real-task effects are measured in the follow-up runs.",
+  "config": {
+    "rec_layers": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "top_n": 64,
+    "fidelity_min": 0.3,
+    "ctx": 1500,
+    "max_tokens": 160,
+    "runs": [
+      "exp029",
+      "exp037",
+      "exp-044a"
+    ]
+  },
+  "depends_on": [
+    "EXP-063",
+    "EXP-071"
+  ],
+  "env": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.14.1+cu130",
+    "transformers": "5.13.1",
+    "device": "NVIDIA A100-SXM4-40GB"
+  },
+  "command": "experiments/scripts/exp077_agent_transplant_e4b.py",
+  "started": "2026-11-07T21:59:53.996206Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794088794.0307956
+  },
+  "finished": "2026-11-07T22:07:57.979922Z",
+  "wall_seconds": 484.0,
+  "status": "OK"
+}

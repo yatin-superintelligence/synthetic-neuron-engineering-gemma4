@@ -1,0 +1,32 @@
+=== EXP-132b 12b-loop-direction started 2026-11-10T22:25:19.969752Z commit=
+[22:25:20] dev cases 49 | loop 22 | tasks 24 | fit tasks 12
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 1265.84it/s]
+
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]
+Loading weights:   0%|          | 3/677 [00:00<00:33, 20.25it/s]
+Loading weights:   7%|7         | 48/677 [00:00<00:02, 214.66it/s]
+Loading weights:  13%|#3        | 90/677 [00:00<00:01, 295.60it/s]
+Loading weights:  20%|#9        | 133/677 [00:00<00:01, 334.41it/s]
+Loading weights:  26%|##5       | 174/677 [00:00<00:01, 358.89it/s]
+Loading weights:  33%|###3      | 224/677 [00:00<00:01, 401.89it/s]
+Loading weights:  40%|###9      | 268/677 [00:00<00:01, 404.77it/s]
+Loading weights:  46%|####6     | 312/677 [00:00<00:00, 410.54it/s]
+Loading weights:  52%|#####2    | 354/677 [00:00<00:00, 408.10it/s]
+Loading weights:  60%|#####9    | 405/677 [00:01<00:00, 437.97it/s]
+Loading weights:  66%|######6   | 450/677 [00:01<00:00, 425.18it/s]
+Loading weights:  73%|#######2  | 493/677 [00:01<00:00, 418.69it/s]
+Loading weights:  79%|#######9  | 538/677 [00:01<00:00, 424.99it/s]
+Loading weights:  86%|########6 | 584/677 [00:01<00:00, 431.49it/s]
+Loading weights:  93%|#########2| 629/677 [00:01<00:00, 430.24it/s]
+Loading weights: 100%|##########| 677/677 [00:01<00:00, 393.69it/s]
+[22:25:25] model google/gemma-4-12B-it-qat-q4_0-unquantized | layers 48 | hidden size 3840 | MLP width 15360
+[22:25:26] case 0 1 s
+[22:25:33] case 10 8 s
+[22:25:40] case 20 16 s
+[22:25:44] case 30 19 s
+[22:25:49] case 40 24 s
+[22:25:52] cases used 47
+[22:25:57] layers chosen (highest held-out d') [(23, 1.054, 0.481, 0.897), (24, 1.041, 0.331, 0.907), (25, 1.053, 0.402, 0.866), (26, 1.069, 0.648, 0.928)]
+=== EXP-132b finished status=OK wall=38.6s

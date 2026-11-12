@@ -1,0 +1,68 @@
+=== EXP-152 31b-submit-readout started 2026-11-11T21:27:20.244014Z commit=
+[21:27:20] bench rows 122 | solved 85 | tasks 15
+
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files:  73%|#######2  | 8/11 [00:00<00:00, 16.31it/s]
+Fetching 11 files:  82%|########1 | 9/11 [00:19<00:04,  2.22s/it]
+Fetching 11 files:  91%|######### | 10/11 [01:19<00:07,  7.90s/it]
+Fetching 11 files: 100%|##########| 11/11 [02:56<00:00, 16.01s/it]
+Fetching 11 files: 100%|##########| 11/11 [02:56<00:00, 16.01s/it]
+
+Loading weights:   0%|          | 0/1188 [00:00<?, ?it/s]
+Loading weights:   0%|          | 2/1188 [00:00<01:26, 13.75it/s]
+Loading weights:   2%|1         | 21/1188 [00:00<00:12, 93.81it/s]
+Loading weights:   4%|3         | 47/1188 [00:00<00:07, 155.65it/s]
+Loading weights:   5%|5         | 64/1188 [00:00<00:07, 158.11it/s]
+Loading weights:   7%|7         | 88/1188 [00:00<00:06, 178.66it/s]
+Loading weights:   9%|9         | 107/1188 [00:00<00:05, 180.54it/s]
+Loading weights:  11%|#         | 129/1188 [00:00<00:05, 189.25it/s]
+Loading weights:  13%|#2        | 151/1188 [00:00<00:05, 197.21it/s]
+Loading weights:  14%|#4        | 171/1188 [00:01<00:05, 193.31it/s]
+Loading weights:  16%|#6        | 191/1188 [00:01<00:05, 194.68it/s]
+Loading weights:  18%|#7        | 213/1188 [00:01<00:04, 200.70it/s]
+Loading weights:  20%|#9        | 234/1188 [00:01<00:04, 200.68it/s]
+Loading weights:  21%|##1       | 255/1188 [00:01<00:04, 189.16it/s]
+Loading weights:  23%|##3       | 279/1188 [00:01<00:04, 202.11it/s]
+Loading weights:  25%|##5       | 300/1188 [00:01<00:04, 192.33it/s]
+Loading weights:  27%|##7       | 324/1188 [00:01<00:04, 203.25it/s]
+Loading weights:  29%|##9       | 345/1188 [00:01<00:04, 194.97it/s]
+Loading weights:  31%|###       | 366/1188 [00:02<00:04, 185.05it/s]
+Loading weights:  33%|###3      | 393/1188 [00:02<00:03, 205.72it/s]
+Loading weights:  35%|###4      | 414/1188 [00:02<00:03, 205.99it/s]
+Loading weights:  37%|###6      | 435/1188 [00:02<00:03, 192.50it/s]
+Loading weights:  39%|###8      | 458/1188 [00:02<00:03, 201.44it/s]
+Loading weights:  40%|####      | 479/1188 [00:02<00:03, 191.96it/s]
+Loading weights:  42%|####2     | 503/1188 [00:02<00:03, 190.44it/s]
+Loading weights:  44%|####4     | 527/1188 [00:02<00:03, 201.84it/s]
+Loading weights:  46%|####6     | 548/1188 [00:02<00:03, 192.01it/s]
+Loading weights:  48%|####8     | 573/1188 [00:03<00:02, 206.39it/s]
+Loading weights:  50%|#####     | 594/1188 [00:03<00:03, 193.17it/s]
+Loading weights:  52%|#####1    | 615/1188 [00:03<00:02, 192.54it/s]
+Loading weights:  54%|#####3    | 636/1188 [00:03<00:02, 196.93it/s]
+Loading weights:  55%|#####5    | 657/1188 [00:03<00:02, 195.93it/s]
+Loading weights:  57%|#####6    | 677/1188 [00:03<00:02, 194.42it/s]
+Loading weights:  59%|#####8    | 698/1188 [00:03<00:02, 183.84it/s]
+Loading weights:  61%|######1   | 725/1188 [00:03<00:02, 203.28it/s]
+Loading weights:  63%|######2   | 746/1188 [00:03<00:02, 195.76it/s]
+Loading weights:  65%|######4   | 767/1188 [00:04<00:02, 191.49it/s]
+Loading weights:  66%|######6   | 790/1188 [00:04<00:01, 200.93it/s]
+Loading weights:  68%|######8   | 811/1188 [00:04<00:01, 191.48it/s]
+Loading weights:  72%|#######1  | 850/1188 [00:04<00:01, 245.59it/s]
+Loading weights: 100%|##########| 1188/1188 [00:04<00:00, 266.95it/s]
+[21:30:23] model loaded in 6 s | layers 60 | read at [14, 23, 29, 35, 41, 47, 53, 59]
+[21:30:33] row 1 of 122, 15217 tokens, 10 s so far
+[21:31:16] row 11 of 122, 3279 tokens, 54 s so far
+[21:31:56] row 21 of 122, 4997 tokens, 94 s so far
+[21:32:43] row 31 of 122, 13571 tokens, 140 s so far
+[21:33:43] row 41 of 122, 4002 tokens, 201 s so far
+[21:34:41] row 51 of 122, 12435 tokens, 258 s so far
+[21:35:51] row 61 of 122, 14213 tokens, 328 s so far
+[21:36:41] row 71 of 122, 9551 tokens, 378 s so far
+[21:37:39] row 81 of 122, 5864 tokens, 436 s so far
+[21:39:03] row 91 of 122, 11716 tokens, 520 s so far
+[21:39:45] row 101 of 122, 7693 tokens, 562 s so far
+[21:40:27] row 111 of 122, 3423 tokens, 605 s so far
+[21:41:15] row 121 of 122, 13766 tokens, 653 s so far
+[21:41:37] AUC by depth and position: {'L14 last': 0.385, 'L14 outmean': 0.466, 'L23 last': 0.404, 'L23 outmean': 0.484, 'L29 last': 0.429, 'L29 outmean': 0.528, 'L35 last': 0.447, 'L35 outmean': 0.46, 'L41 last': 0.522, 'L41 outmean': 0.422, 'L47 last': 0.491, 'L47 outmean': 0.453, 'L53 last': 0.497, 'L53 outmean': 0.466, 'L59 last': 0.509, 'L59 outmean': 0.416}
+[21:41:37] best {'layer': 29, 'position': 'outmean', 'auc': 0.528} | permutation {'n': 300, 'null_max_auc_median': 0.615, 'null_max_auc_95': 0.69, 'p': 0.9336} | gate False
+=== EXP-152 finished status=OK wall=857.2s

@@ -1,0 +1,45 @@
+{
+  "id": "EXP-087",
+  "slug": "weight-extrapolation",
+  "category": "improvement",
+  "motivation": "Training-free ways to add capability found by the 2026-11-08 literature survey; ExPO needs only the public base and instruct checkpoints, and its result is one weight delta.",
+  "hypothesis": "Some alpha in 0.1 to 0.5 raises E2B's MBPP+ test-half pass count against alpha = 0 (exact McNemar p < 0.05) and against a control edit of matched strength, and holds at FP8.",
+  "config": {
+    "alphas": [
+      0.1,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "repos": {
+      "qat": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+      "it": "google/gemma-4-E2B-it",
+      "base": "google/gemma-4-E2B"
+    },
+    "scan": "MBPP+ dev 189, cap 4,096",
+    "confirm": "MBPP+ test 189, 8,192, bf16 and FP8",
+    "control": "random direction per tensor, same Frobenius norm as alpha * delta, seed 87",
+    "gate": "McNemar p < 0.05 on test at bf16, above control, not lower at FP8"
+  },
+  "depends_on": [
+    "EXP-086"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp087_weight_extrapolation.py",
+  "started": "2026-11-08T15:22:16.093620Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794151336.1006937
+  },
+  "finished": "2026-11-08T16:55:43.986640Z",
+  "wall_seconds": 5607.9,
+  "status": "OK"
+}

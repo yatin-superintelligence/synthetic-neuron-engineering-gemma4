@@ -1,0 +1,7 @@
+{
+ "sampling": {
+  "seed": 1
+ },
+ "hard_stop_s": 3900,
+ "system_suffix": "\n\nThe bug is one small mistake on one line. Once you have read the code that contains it, fix it right away with edit_file. Copy old_string character for character from the file content you read, without adding escape characters, and in new_string change only the wrong token or operator. Do not rewrite or restructure code."
+}

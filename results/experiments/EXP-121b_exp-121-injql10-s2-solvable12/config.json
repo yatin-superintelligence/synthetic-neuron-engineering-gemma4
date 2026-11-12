@@ -1,0 +1,9 @@
+{
+ "id": "EXP-121b",
+ "slug": "exp-121-injql10-s2-solvable12",
+ "category": "improvement",
+ "started": "2026-11-10T06:11:16Z",
+ "wall_seconds": 863.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "EXP-003",
+  "slug": "engine-fidelity-hf-vs-llamacpp",
+  "category": "infrastructure",
+  "motivation": "The fast engine must compute the same function as the reference implementation, otherwise edits derived in PyTorch would not transfer.",
+  "hypothesis": "HF agrees with llama.cpp F16 on over 98% of teacher-forced next tokens, and slightly less with Q4_0 continuations.",
+  "config": {
+    "n_prompts": 40,
+    "new_tokens": 128,
+    "source": "mbpp_full_train first 40 by file order",
+    "method": "teacher-forced argmax agreement, HF bf16 batch size 1"
+  },
+  "depends_on": [
+    "EXP-001"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "2f759a29587e5651bfb498c76d02d4dc118b53e8",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp003_engine_fidelity.py",
+  "started": "2026-11-05T22:04:24.388879Z",
+  "sys_at_start": {
+    "battery_discharge_mw": 0,
+    "battery_charge_mw": 0,
+    "battery_pct": 100,
+    "thermal_c": 27.9,
+    "ram_total_gb": 31.43,
+    "ram_free_gb": 22.51,
+    "cpu_perf_limit_pct": 100,
+    "gpu_util_pct": 7.4,
+    "cpu_perf_pct": 133.9,
+    "gpu_shared_gb": 1.35,
+    "cpu_freq_mhz": 1797,
+    "on_ac": true,
+    "t": 1793916273.5805914
+  },
+  "finished": "2026-11-05T22:09:19.000199Z",
+  "wall_seconds": 287.9,
+  "status": "OK"
+}

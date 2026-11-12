@@ -1,0 +1,9 @@
+{
+ "id": "EXP-122b",
+ "slug": "exp-122-maxout8192-s2-solvable12",
+ "category": "baseline",
+ "started": "2026-11-10T10:37:13Z",
+ "wall_seconds": 1399.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

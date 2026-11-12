@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 1
+ },
+ "hard_stop_s": 5400,
+ "adapter": "tx_rand64_k1.0",
+ "adapter_local": "artifacts_local/EXP-077/tx_rand64_k1.0"
+}

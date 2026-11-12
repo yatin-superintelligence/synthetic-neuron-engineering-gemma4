@@ -1,0 +1,55 @@
+{
+  "id": "EXP-124",
+  "slug": "local-transplant-correctness",
+  "category": "improvement",
+  "motivation": "E2B fails mainly at writing the correct fix; the E4B transplant is the one edit with a replicated capability gain, and its effect on correct first edits at real states was never measured.",
+  "hypothesis": "On FEB states whose file the reference touches, the transplant raises first edits that leave the reference change above unedited (exact McNemar).",
+  "config": {
+    "adapter": "EXP-102/st_a1",
+    "precision": "f16",
+    "max_prompt": 12000,
+    "sampling": {
+      "temperature": 0.2,
+      "top_p": 0.95
+    }
+  },
+  "depends_on": [
+    "EXP-102",
+    "EXP-112",
+    "EXP-116"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "138d946ac116b6d43177c91460c1b062d6f5e26b",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp124_local_transplant_correctness.py",
+  "started": "2026-11-11T06:34:42.908500Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1806,
+    "cpu_core_w": 1.9,
+    "throttle_reasons": 0,
+    "igpu_w": 0.1,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 5,
+    "battery_pct": 100,
+    "cpu_pct": 6.5,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 73.7,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 8,
+    "ram_free_gb": 20.54,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.01,
+    "t": 1794378893.6193988
+  },
+  "finished": "2026-11-11T10:30:48.573827Z",
+  "wall_seconds": 14165.7,
+  "status": "OK"
+}

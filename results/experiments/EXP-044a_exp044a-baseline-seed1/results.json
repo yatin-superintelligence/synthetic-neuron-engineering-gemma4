@@ -1,0 +1,5 @@
+{
+ "results": {
+  "headline": "5/58 resolved of 58 finished; {'patch failed tests': 36, 'error: Sandbox execution error: litellm.Context': 13, 'resolved': 5, 'no patch': 4}; 59/110 edits applied"
+ }
+}

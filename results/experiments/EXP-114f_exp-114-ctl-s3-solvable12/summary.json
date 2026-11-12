@@ -1,0 +1,36 @@
+{
+ "tasks": 12,
+ "resolved": 2,
+ "resolved_ids": [
+  "rich_2943",
+  "rich_3454"
+ ],
+ "outcomes": {
+  "patch failed tests": 9,
+  "resolved": 2,
+  "no patch": 1
+ },
+ "minutes_mean": 2.35,
+ "tool_calls_mean": 6.5,
+ "llm_calls_mean": 8.7,
+ "tasks_never_applying_an_edit": 2,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 0,
+ "loops": 0,
+ "of_those_resolved_loop": 0,
+ "completion_tokens": 48635,
+ "tokens_in_loop_responses": 0,
+ "loop_token_share": 0.0,
+ "edits": {
+  "edits": 22,
+  "applied": 13,
+  "failed": 9,
+  "kinds": {
+   "applied": 13,
+   "invented": 5,
+   "over_escaped": 4
+  },
+  "failed_repeating_identical_call": 4,
+  "failed_with_backslash": 6
+ }
+}

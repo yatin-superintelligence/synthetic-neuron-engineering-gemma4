@@ -1,0 +1,69 @@
+{
+  "id": "EXP-062",
+  "slug": "neuron-atlas-real-coding",
+  "category": "localization",
+  "motivation": "The field needs measured maps, not guesses. No one has mapped which Gemma neurons respond to which part of agentic coding, and every neuron edit should start from such a map.",
+  "hypothesis": "No directional claim: this is a measurement. Reported as found, including if nothing replicates.",
+  "config": {
+    "ctx_tokens": 3000,
+    "d_min": 1.0,
+    "clusters": 16,
+    "classes": [
+      "system",
+      "issue",
+      "thought",
+      "call_syntax",
+      "arg_old",
+      "arg_new",
+      "arg_command",
+      "arg_path",
+      "tool_response",
+      "model_text",
+      "keyword",
+      "identifier",
+      "punctuation",
+      "whitespace",
+      "number",
+      "other"
+    ],
+    "split": "dev",
+    "half_seed": 62
+  },
+  "depends_on": [
+    "EXP-041"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "b9f3b10144c0b4b7611aad4c5af0a4c67c7e372d",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp062_neuron_atlas.py",
+  "started": "2026-11-06T17:25:13.526997Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1684,
+    "cpu_core_w": 2.8,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 2,
+    "battery_pct": 100,
+    "cpu_pct": 0.8,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 73.3,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 8.4,
+    "ram_free_gb": 20.46,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.27,
+    "t": 1793985924.479644
+  },
+  "finished": "2026-11-06T18:01:34.720811Z",
+  "wall_seconds": 2181.2,
+  "status": "OK"
+}

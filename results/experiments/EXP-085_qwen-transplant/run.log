@@ -1,0 +1,33 @@
+=== EXP-085 qwen-transplant started 2026-11-08T06:52:42.343327Z commit=
+[06:52:42] chunks 360 fit 120 test
+[06:52:58] aligned positions 8640 fit 2880 test
+
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Fetching 2 files:  50%|#####     | 1/2 [00:27<00:27, 27.59s/it]
+Fetching 2 files: 100%|##########| 2/2 [00:27<00:00, 13.79s/it]
+
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]
+Loading weights:  72%|#######1  | 520/723 [00:00<00:00, 5192.01it/s]
+Loading weights: 100%|##########| 723/723 [00:00<00:00, 5254.25it/s]
+[06:56:25] donor captured {0: (8640, 2560)}
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:   4%|3         | 75/1951 [00:00<00:02, 691.82it/s]
+Loading weights:   8%|8         | 164/1951 [00:00<00:02, 801.14it/s]
+Loading weights:  15%|#4        | 287/1951 [00:00<00:01, 981.26it/s]
+Loading weights:  21%|##1       | 412/1951 [00:00<00:01, 1065.37it/s]
+Loading weights:  27%|##6       | 519/1951 [00:00<00:01, 939.26it/s] 
+Loading weights:  32%|###2      | 629/1951 [00:00<00:01, 988.29it/s]
+Loading weights:  38%|###7      | 740/1951 [00:00<00:01, 1002.56it/s]
+Loading weights:  49%|####8     | 951/1951 [00:00<00:00, 1332.82it/s]
+Loading weights:  63%|######2   | 1220/1951 [00:00<00:00, 1737.46it/s]
+Loading weights: 100%|##########| 1951/1951 [00:01<00:00, 1897.92it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 8.5s; params=2.280B
+[06:57:31] recipient captured (8640, 1536) targets (8640, 1536)
+[06:57:32] cka best per recipient layer {8: (6, np.float64(0.682)), 9: (6, np.float64(0.647)), 10: (6, np.float64(0.644)), 11: (6, np.float64(0.621)), 12: (6, np.float64(0.614)), 13: (6, np.float64(0.615)), 14: (18, np.float64(0.643)), 15: (18, np.float64(0.699)), 16: (19, np.float64(0.674)), 17: (19, np.float64(0.631)), 18: (19, np.float64(0.664)), 19: (19, np.float64(0.709)), 20: (18, np.float64(0.718)), 21: (21, np.float64(0.717)), 22: (18, np.float64(0.718)), 23: (18, np.float64(0.718)), 24: (30, np.float64(0.731)), 25: (30, np.float64(0.741)), 26: (30, np.float64(0.717)), 27: (30, np.float64(0.728)), 28: (31, np.float64(0.738))} chosen [(25, 30), (28, 31)]
+[06:57:38] layer 25 {'donor_layer': 30, 'cka': 0.741, 'read_map_ridge': 1.0, 'read_map_r2_fit': 0.486, 'read_map_r2_cv_requests': 0.196, 'read_map_r2_heldout': 0.219, 'transplant': {'read_fidelity_median': 0.448, 'read_fidelity_p25': 0.32, 'write_fit_r2': 0.0173, 'write_ridge': 0.1, 'write_r2_cv': -0.0004, 'neurons': [2720, 623, 2381, 281, 1886, 444, 3645, 4602, 575, 3910, 815, 3566, 156, 1356, 2560, 2638]}, 'control_random': {'read_fidelity_median': 0.387, 'read_fidelity_p25': 0.315, 'write_fit_r2': 0.0228, 'write_ridge': 0.01, 'write_r2_cv': -0.0003, 'neurons': [7654, 8168, 3485, 7299, 3731, 8022, 7206, 3753, 2234, 1308, 2977, 2278, 4660, 5810, 1630, 424]}}
+[06:57:42] layer 28 {'donor_layer': 31, 'cka': 0.738, 'read_map_ridge': 1.0, 'read_map_r2_fit': 0.503, 'read_map_r2_cv_requests': 0.205, 'read_map_r2_heldout': 0.22, 'transplant': {'read_fidelity_median': 0.492, 'read_fidelity_p25': 0.375, 'write_fit_r2': 0.0022, 'write_ridge': 10.0, 'write_r2_cv': -0.0009, 'neurons': [564, 273, 1852, 2527, 6912, 109, 4553, 2051, 143, 7097, 485, 192, 540, 2532, 105, 674]}, 'control_random': {'read_fidelity_median': 0.404, 'read_fidelity_p25': 0.346, 'write_fit_r2': 0.0205, 'write_ridge': 0.01, 'write_r2_cv': 0.0026, 'neurons': [4961, 245, 4048, 6627, 1588, 5059, 7961, 77, 7092, 7207, 6521, 8012, 8460, 675, 3617, 3680]}}
+[06:58:45] nll transplant {'scale': 1.0, 'fit_by_scale': {'0.25': 1.07513, '0.5': 1.07533, '1.0': 1.07496, '2.0': 1.07515}, 'test': 1.38456, 'test_minus_unedited': 0.0003, 'ci95': [1e-05, 0.0006]}
+[06:59:26] nll control_random {'scale': 0.5, 'fit_by_scale': {'0.25': 1.07523, '0.5': 1.07474, '1.0': 1.07506, '2.0': 1.07518}, 'test': 1.38429, 'test_minus_unedited': 3e-05, 'ci95': [-0.00028, 0.00035]}
+[06:59:48] nll control_clear {'scale': 1.0, 'fit_by_scale': {'1.0': 1.07517}, 'test': 1.38447, 'test_minus_unedited': 0.00021, 'ci95': [-0.00014, 0.00054]}
+=== EXP-085 finished status=OK wall=427.1s

@@ -1,0 +1,51 @@
+{
+  "id": "EXP-017",
+  "slug": "thinking-mode-and-livecodebench",
+  "category": "baseline",
+  "motivation": "External calibration against Google's number, and a free behaviour switch that every reasoning-related edit must beat.",
+  "hypothesis": "Thinking on raises LiveCodeBench into the low 40s and lowers MBPP+ truncation; thinking off stays well below 44%.",
+  "config": {
+    "suites": [
+      "lcb"
+    ],
+    "parallel": 8,
+    "ctx_per_slot": 16384,
+    "max_tokens": 8192,
+    "lcb_batch": "test6 (175)",
+    "lcb_max_private_tests": 25
+  },
+  "depends_on": [
+    "EXP-010"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "bba35009512a453ad3e0b9fd6529b51bba800c63",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp017_thinking_mode.py",
+  "started": "2026-11-08T21:16:47.573621Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1918,
+    "cpu_core_w": 2,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 4,
+    "battery_pct": 100,
+    "cpu_pct": 17.8,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 77.2,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 7.4,
+    "ram_free_gb": 19.78,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.13,
+    "t": 1794172618.6173263
+  }
+}

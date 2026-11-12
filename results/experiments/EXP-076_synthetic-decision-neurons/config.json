@@ -1,0 +1,41 @@
+{
+  "id": "EXP-076",
+  "slug": "synthetic-decision-neurons",
+  "category": "improvement",
+  "motivation": "Add new neurons, not only edit existing ones: two read-out neurons built from official traces that act at one agent decision each.",
+  "hypothesis": "Each read-out separates its decision on held-out tasks (test split) far above its control. Real-task effects are measured in the follow-up runs.",
+  "config": {
+    "layer": 34,
+    "logit_shift": 3.0,
+    "ridge": 1.0,
+    "ctx": 3000,
+    "runs": [
+      "exp029",
+      "exp037",
+      "exp-044a"
+    ],
+    "fit_split": "dev",
+    "check_split": "test"
+  },
+  "depends_on": [
+    "EXP-044a"
+  ],
+  "env": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.14.1+cu130",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp076_synthetic_decision_neurons.py",
+  "started": "2026-11-07T23:26:55.715761Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794094015.7311954
+  },
+  "finished": "2026-11-07T23:28:59.521867Z",
+  "wall_seconds": 123.8,
+  "status": "OK"
+}

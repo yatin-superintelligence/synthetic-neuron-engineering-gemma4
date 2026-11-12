@@ -1,0 +1,9 @@
+{
+ "id": "EXP-077c",
+ "slug": "exp-077c-recycle-only64-seed1",
+ "category": "transplant",
+ "started": "2026-11-08T01:11:14Z",
+ "wall_seconds": 1536.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

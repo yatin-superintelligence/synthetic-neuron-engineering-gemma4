@@ -1,0 +1,9 @@
+{
+ "sampling": {
+  "seed": 2,
+  "temperature": 1.0,
+  "top_k": 64,
+  "max_output_tokens": 8192
+ },
+ "hard_stop_s": 9000
+}

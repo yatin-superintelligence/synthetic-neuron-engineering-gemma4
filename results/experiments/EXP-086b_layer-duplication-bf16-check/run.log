@@ -1,0 +1,10 @@
+=== EXP-086b layer-duplication-bf16-check started 2026-11-08T17:18:38.451618Z commit=
+[17:18:38] selected block from EXP-086: dup_s31_k2
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 634.60it/s]
+[17:20:08] official_bf16 built, k_norm tensors added: 20
+[17:29:31] [dup] official_bf16_test: 113/189 passed | categories {'pass': 113, 'wrong_answer': 55, 'syntax_error': 1, 'wrong_or_missing_entry_point': 10, 'runtime_error': 8, 'loop': 1, 'name_or_import_error': 1} | mean new tokens 595.6 | load 140.1 s, total 416.9 s
+[17:31:11] dup_s31_k2_bf16 built, k_norm tensors added: 22
+[17:40:59] [dup] dup_s31_k2_bf16_test: 103/189 passed | categories {'pass': 103, 'wrong_answer': 60, 'wrong_or_missing_entry_point': 11, 'syntax_error': 5, 'truncated': 2, 'runtime_error': 6, 'loop': 1, 'name_or_import_error': 1} | mean new tokens 622.7 | load 145.1 s, total 434.5 s
+=== EXP-086b finished status=OK wall=1341.5s

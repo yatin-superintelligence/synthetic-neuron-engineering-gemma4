@@ -1,0 +1,9 @@
+{
+ "id": "EXP-126a",
+ "slug": "exp-126-e4b-s2-solvable12",
+ "category": "baseline",
+ "started": "2026-11-10T15:07:31Z",
+ "wall_seconds": 643.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

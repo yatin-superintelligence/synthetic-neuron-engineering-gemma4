@@ -1,0 +1,58 @@
+{
+ "id": "EXP-010",
+ "slug": "baseline-e2b-qat-f16-and-q4",
+ "category": "baseline",
+ "motivation": "Reference performance for every later comparison, and a failure taxonomy: training-free edits are most likely to help where failures are mechanical (format, truncation, loops) rather than missing knowledge (Takehi et al. 2026).",
+ "hypothesis": "Q4_0 scores within a few points of F16. Most failures are wrong answers (logic), with a minority of mechanical failures.",
+ "config": {
+  "suites": [
+   "mbpp_dev",
+   "mbpp_test",
+   "humaneval",
+   "humanevalfix",
+   "repopatch",
+   "mmlu500",
+   "behavior"
+  ],
+  "decoding": "greedy",
+  "parallel": 8,
+  "system_prompt": null,
+  "max_tokens": 8192,
+  "ctx_per_slot": 16384,
+  "note": "rerun without truncation; truncated first attempt archived"
+ },
+ "depends_on": [
+  "EXP-001",
+  "EXP-002",
+  "EXP-020"
+ ],
+ "env": {
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git_commit": "ee5d30f3d70b25764e324bf0aa7242d6b9ea5c3d",
+  "git_dirty": true,
+  "torch": "2.15.0+xpu",
+  "transformers": "5.22.1",
+  "device": "Intel(R) Arc(TM) Graphics"
+ },
+ "command": "experiments/scripts/exp010_baseline_e2b.py",
+ "started": "2026-11-06T04:42:59.696481Z",
+ "sys_at_start": {
+  "cpu_perf_limit_pct": 100,
+  "thermal_c": 27.9,
+  "battery_charge_mw": 74772,
+  "gpu_util_pct": 0.2,
+  "cpu_pct": 0.8,
+  "on_ac": true,
+  "cpu_freq_mhz": 1801,
+  "battery_discharge_mw": 0,
+  "battery_pct": 15,
+  "ram_free_gb": 18.69,
+  "cpu_perf_pct": 92,
+  "ram_total_gb": 31.43,
+  "gpu_shared_gb": 1.32,
+  "t": 1793940700.5350912
+ },
+ "status": "OK",
+ "note": "Stopped deliberately after the F16 suites and three Q4_0 suites; remaining Q4_0 suites were dropped by D-026."
+}

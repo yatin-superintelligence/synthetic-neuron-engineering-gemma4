@@ -1,0 +1,79 @@
+{
+ "id": "EXP-057",
+ "slug": "slot-throughput-long-contexts",
+ "category": "infrastructure",
+ "motivation": "Slot count was set on short prompts and carried over untested to long contexts, where every replay now spends its time.",
+ "hypothesis": "Fewer slots finish a batch of long contexts sooner, because attention cost grows with total cached tokens.",
+ "config": {
+  "arms": [
+   [
+    1,
+    false
+   ],
+   [
+    2,
+    false
+   ],
+   [
+    3,
+    false
+   ],
+   [
+    4,
+    false
+   ],
+   [
+    6,
+    false
+   ],
+   [
+    3,
+    true
+   ],
+   [
+    6,
+    true
+   ]
+  ],
+  "states": 6,
+  "gen_tokens": 256,
+  "ubatch": 512
+ },
+ "depends_on": [
+  "EXP-055"
+ ],
+ "env": {
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git_commit": "02a3ed3117ea246e2080317aa4f9d9ba50118c30",
+  "git_dirty": true,
+  "torch": "2.15.0+xpu",
+  "transformers": "5.22.1",
+  "device": "Intel(R) Arc(TM) Graphics"
+ },
+ "command": "experiments/scripts/exp057_slot_throughput.py",
+ "started": "2026-11-06T09:49:10.691555Z",
+ "sys_at_start": {
+  "cpu_freq_mhz": 1755,
+  "cpu_core_w": 4.1,
+  "throttle_reasons": 0,
+  "igpu_w": 0,
+  "battery_charge_mw": 0,
+  "gpu_util_pct": 0,
+  "battery_pct": 100,
+  "cpu_pct": 5.4,
+  "passive_limit_pct": 100,
+  "on_ac": true,
+  "cpu_perf_pct": 69.4,
+  "battery_discharge_mw": 0,
+  "cpu_package_w": 10.4,
+  "ram_free_gb": 20.78,
+  "cpu_perf_limit_pct": 100,
+  "ram_total_gb": 31.43,
+  "gpu_shared_gb": 1.24,
+  "t": 1793958561.635673
+ },
+ "status": "OK",
+ "note": "Stopped by decision after the F16 2-slot run: the remaining F16 arms would have taken over an hour and could not change the choice.",
+ "wall_seconds": 4990.0
+}

@@ -1,0 +1,9 @@
+{
+ "sampling": {
+  "seed": 1,
+  "thinking_config": {
+   "include_thoughts": false
+  }
+ },
+ "hard_stop_s": 2700
+}

@@ -1,0 +1,31 @@
+=== EXP-142 e2b-write-reach-old-vs-minnorm started 2026-11-11T10:51:23.047213Z commit=2612ff3715
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  10%|#         | 199/1951 [00:06<00:53, 32.46it/s]
+Loading weights:  11%|#         | 210/1951 [00:06<00:50, 34.22it/s]
+Loading weights:  11%|#1        | 221/1951 [00:06<00:47, 36.22it/s]
+Loading weights:  12%|#1        | 229/1951 [00:06<00:47, 36.26it/s]
+Loading weights:  12%|#2        | 236/1951 [00:06<00:45, 37.51it/s]
+Loading weights:  14%|#3        | 269/1951 [00:06<00:29, 57.62it/s]
+Loading weights:  18%|#7        | 348/1951 [00:06<00:13, 123.31it/s]
+Loading weights:  19%|#9        | 380/1951 [00:07<00:11, 135.52it/s]
+Loading weights:  21%|##        | 408/1951 [00:07<00:11, 138.70it/s]
+Loading weights:  22%|##2       | 432/1951 [00:07<00:10, 151.43it/s]
+Loading weights:  23%|##3       | 456/1951 [00:07<00:10, 140.54it/s]
+Loading weights:  24%|##4       | 476/1951 [00:07<00:11, 129.12it/s]
+Loading weights:  25%|##5       | 493/1951 [00:07<00:10, 135.69it/s]
+Loading weights:  27%|##7       | 531/1951 [00:08<00:07, 183.69it/s]
+Loading weights:  28%|##8       | 555/1951 [00:08<00:13, 102.16it/s]
+Loading weights:  29%|##9       | 573/1951 [00:08<00:15, 90.37it/s] 
+Loading weights:  30%|###       | 588/1951 [00:08<00:13, 98.50it/s]
+Loading weights:  31%|###       | 603/1951 [00:09<00:14, 94.39it/s]
+Loading weights:  32%|###1      | 624/1951 [00:09<00:11, 113.56it/s]
+Loading weights:  34%|###4      | 667/1951 [00:09<00:07, 171.10it/s]
+Loading weights:  48%|####8     | 939/1951 [00:09<00:01, 712.95it/s]
+Loading weights:  53%|#####2    | 1034/1951 [00:09<00:01, 767.42it/s]
+Loading weights: 100%|##########| 1951/1951 [00:09<00:00, 203.64it/s]
+[load] Gemma4ForConditionalGeneration on xpu in 14.8s; params=2.280B
+[10:54:36] unedited: top tokens [(818, 'The'), (236777, 'I'), (95889, 'Neither')] | Before's gap to the top: median 11.06 | states 24 | 165 s
+[11:21:20] old {'states_where_Before_becomes_top': 0, 'best_margin_median': -2.75, 'best_margin_min': -6.0, 'margin_median_by_scale': {'0.25': -2.75, '1': -6.38, '2': -5.44, '4': -5.19, '8': -5.25, '16': -5.19, '32': -5.25, '64': -5.25, '256': -5.22, '1000': -5.25}} | 1769 s
+[11:48:07] minimum_norm {'states_where_Before_becomes_top': 24, 'best_margin_median': 1.94, 'best_margin_min': 0.88, 'margin_median_by_scale': {'0.25': 1.94, '1': 0.12, '2': 0.0, '4': 0.0, '8': 0.0, '16': 0.0, '32': 0.0, '64': 0.0, '256': 0.0, '1000': 0.0}} | 3376 s
+=== EXP-142 finished status=OK wall=3404.9s

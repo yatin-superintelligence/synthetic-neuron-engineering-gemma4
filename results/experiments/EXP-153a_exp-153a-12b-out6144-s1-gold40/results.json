@@ -1,0 +1,5 @@
+{
+ "results": {
+  "headline": "Colab tests (not official) 12/40 resolved of 40 finished; {'patch failed tests': 18, 'resolved': 12, 'error: Agent exceeded tool call budget (100 cal': 6, 'error: Agent exceeded session timeout (60.0 min': 2, 'error: Sandbox execution error: litellm.Context': 2}; 98/297 edits applied"
+ }
+}

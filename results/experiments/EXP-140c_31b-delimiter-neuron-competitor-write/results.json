@@ -1,0 +1,193 @@
+{
+  "results": {
+    "fit": {
+      "chosen": {
+        "lam": 0.01,
+        "pos_mean": 0.768,
+        "hard_p99": 0.0983
+      },
+      "exactness": {
+        "max_abs_logit_difference_recomputed_vs_model": 0.1921
+      },
+      "unedited": {
+        "ERR": 62,
+        "ERR_top_is_backtick_comma": 56,
+        "ERR_top_is_close": 3
+      },
+      "direction": {
+        "norm_ratio_old_to_min_for_equal_first_order_effect": 74.1
+      },
+      "old_write_recomputed": [
+        {
+          "c": 9.0,
+          "close_is_top": 8,
+          "margin_median": -3.02,
+          "margin_p10": -11.85
+        },
+        {
+          "c": 12.0,
+          "close_is_top": 11,
+          "margin_median": -2.56,
+          "margin_p10": -10.66
+        }
+      ],
+      "write": {
+        "rounds": [
+          {
+            "round": 1,
+            "competitors": [
+              8347,
+              236929
+            ],
+            "alpha": 1.8432,
+            "close_is_top": 43,
+            "n": 62,
+            "margin_median": 0.32,
+            "margin_p10": -2.47,
+            "new_top_tokens": [
+              [
+                148,
+                "            "
+              ],
+              [
+                228276,
+                "nilvadipine"
+              ]
+            ]
+          },
+          {
+            "round": 2,
+            "competitors": [
+              8347,
+              236929,
+              148,
+              228276
+            ],
+            "alpha": 4.0806,
+            "close_is_top": 62,
+            "n": 62,
+            "margin_median": 2.42,
+            "margin_p10": 1.56,
+            "new_top_tokens": []
+          }
+        ],
+        "competitors": [
+          8347,
+          236929,
+          148,
+          228276
+        ],
+        "alpha": 4.0806,
+        "u_norm": 4.0806,
+        "old_u_norm_at_c12": 66.2056,
+        "in_sample": {
+          "close_is_top": 62,
+          "n": 62,
+          "margin_median": 2.42,
+          "margin_p10": 1.56
+        }
+      },
+      "held_out_edit": {
+        "by_class": {
+          "CONT": {
+            "n": 1686,
+            "top_changed": 2,
+            "top_is_close_before": 0,
+            "top_is_close_after": 2,
+            "control_top_changed": 0
+          },
+          "CONT_BT": {
+            "n": 19,
+            "top_changed": 0,
+            "top_is_close_before": 0,
+            "top_is_close_after": 0,
+            "control_top_changed": 0
+          },
+          "CONT_H": {
+            "n": 1416,
+            "top_changed": 5,
+            "top_is_close_before": 1,
+            "top_is_close_after": 6,
+            "control_top_changed": 1
+          },
+          "ERR": {
+            "n": 62,
+            "top_changed": 54,
+            "top_is_close_before": 3,
+            "top_is_close_after": 57,
+            "control_top_changed": 2
+          },
+          "ERR2": {
+            "n": 10,
+            "top_changed": 0,
+            "top_is_close_before": 0,
+            "top_is_close_after": 0,
+            "control_top_changed": 0
+          },
+          "OKC": {
+            "n": 255,
+            "top_changed": 6,
+            "top_is_close_before": 248,
+            "top_is_close_after": 254,
+            "control_top_changed": 0
+          },
+          "OPEN": {
+            "n": 255,
+            "top_changed": 0,
+            "top_is_close_before": 255,
+            "top_is_close_after": 255,
+            "control_top_changed": 0
+          },
+          "OTHER": {
+            "n": 870,
+            "top_changed": 1,
+            "top_is_close_before": 0,
+            "top_is_close_after": 0,
+            "control_top_changed": 6
+          },
+          "TXT_BT": {
+            "n": 3944,
+            "top_changed": 3,
+            "top_is_close_before": 0,
+            "top_is_close_after": 0,
+            "control_top_changed": 11
+          },
+          "TXT_BTC": {
+            "n": 141,
+            "top_changed": 0,
+            "top_is_close_before": 0,
+            "top_is_close_after": 0,
+            "control_top_changed": 0
+          }
+        },
+        "ERR_flipped_to_close": 57,
+        "ERR_n": 62,
+        "negatives_changed": 11,
+        "negatives_n": 8076,
+        "control_ERR_flipped": 3,
+        "control_negatives_changed": 18,
+        "readout_held": {
+          "ERR_mean": 0.768,
+          "neg_p99": 0.1028
+        }
+      },
+      "gates": {
+        "ERR_flipped_at_least_70_percent": true,
+        "negatives_changed_at_most_1_in_1000": false
+      }
+    },
+    "generation": {
+      "states": 16,
+      "unedited_repeats_the_served_token": 12,
+      "unedited_well_formed": 2,
+      "edited_first_token_is_close": 14,
+      "edited_well_formed": 13
+    },
+    "adapters": [],
+    "headline": "31B delimiter neuron with the competitor write (gates not passed, not saved): held-out, the closing token is the most probable at 57 of 62 faulty states (control 3); 11 of 8076 other states change (control 18); greedy continuations well formed 13 of 16 edited against 2 unedited; write norm 4.0806 against 66.2056",
+    "system_monitor": {
+      "samples": 25
+    }
+  },
+  "wall_seconds": 1462.1306643486023
+}

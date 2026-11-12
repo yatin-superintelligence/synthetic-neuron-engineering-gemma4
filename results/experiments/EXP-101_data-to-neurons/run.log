@@ -1,0 +1,29 @@
+=== EXP-101 data-to-neurons started 2026-11-09T09:29:42.192810Z commit=
+[09:29:51] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[09:29:56] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 745.21it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  36%|###6      | 703/1951 [00:00<00:00, 7019.56it/s]
+Loading weights:  72%|#######2  | 1405/1951 [00:00<00:00, 6174.68it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 6705.28it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 7.0s; params=4.629B
+[d2n] state 0/257 positions 38 wrong 0
+[d2n] state 40/257 positions 1323 wrong 116
+[d2n] state 80/257 positions 2350 wrong 219
+[d2n] state 120/257 positions 3377 wrong 322
+[d2n] state 160/257 positions 4353 wrong 420
+[d2n] state 200/257 positions 5523 wrong 529
+[d2n] state 240/257 positions 6489 wrong 641
+/content/repo/experiments/scripts/exp101_data_to_neurons.py:160: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  relative_to_W=round(float(dW.norm() * c / Wd[L].norm()), 5))
+[09:37:39] mem_L12_c2 {'rank_energy_share': 0.9997, 'delta_norm': 8.174, 'relative_to_W': 0.21466}
+[09:37:39] mem_L12_c4 {'rank_energy_share': 0.9997, 'delta_norm': 16.348, 'relative_to_W': 0.42933}
+[09:37:42] shuf_L12_c4 {'rank_energy_share': 0.9997, 'delta_norm': 17.252, 'relative_to_W': 0.45309}
+[09:37:48] mem_L15_c2 {'rank_energy_share': 1.0, 'delta_norm': 1.613, 'relative_to_W': 0.04169}
+[09:37:48] mem_L15_c4 {'rank_energy_share': 1.0, 'delta_norm': 3.226, 'relative_to_W': 0.08339}
+[09:37:53] shuf_L15_c4 {'rank_energy_share': 1.0, 'delta_norm': 3.299, 'relative_to_W': 0.08529}
+=== EXP-101 finished status=OK wall=491.6s

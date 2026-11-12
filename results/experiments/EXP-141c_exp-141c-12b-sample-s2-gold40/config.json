@@ -1,0 +1,9 @@
+{
+ "id": "EXP-141c",
+ "slug": "exp-141c-12b-sample-s2-gold40",
+ "category": "diagnosis",
+ "started": "2026-11-11T07:02:36Z",
+ "wall_seconds": 2361.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

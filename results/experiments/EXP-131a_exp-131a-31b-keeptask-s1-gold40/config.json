@@ -1,0 +1,9 @@
+{
+ "id": "EXP-131a",
+ "slug": "exp-131a-31b-keeptask-s1-gold40",
+ "category": "diagnosis",
+ "started": "2026-11-10T20:57:41Z",
+ "wall_seconds": 4614.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

@@ -1,0 +1,33 @@
+=== EXP-093 edit-fidelity-neurons started 2026-11-09T01:52:02.230559Z commit=
+[01:52:11] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[01:52:17] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+[01:52:21] states 514 | fit samples 1028 applying 307 | unedited applies on dev/test {'dev': 45, 'test': 39}
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 757.37it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  31%|###       | 603/1951 [00:00<00:00, 6025.93it/s]
+Loading weights:  62%|######1   | 1206/1951 [00:00<00:00, 5622.87it/s]
+Loading weights:  91%|######### | 1771/1951 [00:00<00:00, 5489.48it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 5537.10it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 7.0s; params=4.629B
+[patch] activations 0/1028
+[patch] activations 100/1028
+[patch] activations 200/1028
+[patch] activations 300/1028
+[patch] activations 400/1028
+[patch] activations 500/1028
+[patch] activations 700/1028
+[patch] activations 800/1028
+[patch] layer 9 {'pairwise_acc': 0.8542, 'dmu': 5.7889}
+[patch] layer 12 {'pairwise_acc': 0.9375, 'dmu': 4.3743}
+[patch] layer 15 {'pairwise_acc': 0.8958, 'dmu': 9.6298}
+[patch] layer 18 {'pairwise_acc': 0.875, 'dmu': 8.2453}
+[patch] layer 21 {'pairwise_acc': 0.8125, 'dmu': 6.4}
+[patch] layer 24 {'pairwise_acc': 0.7917, 'dmu': 5.7223}
+[patch] layer 27 {'pairwise_acc': 0.8333, 'dmu': 4.8014}
+[patch] layer 12 neuron {'pairwise_acc': 0.9375, 'dmu': 4.3743, 'readout_check': {'pos_mean': 0.915, 'pos_min': 0.271, 'neg_median': 0.0465, 'neg_p99': 0.6812, 'neg_p999': 0.8955, 'neg_max': 0.9044, 'n_pos': 1114, 'n_neg': 1280}, 'rms_y': 0.0934, 'first_order_shift': 2.9657, 'target': 4.3743, 'control_first_order': -0.1354}
+[patch] layer 15 neuron {'pairwise_acc': 0.8958, 'dmu': 9.6298, 'readout_check': {'pos_mean': 0.949, 'pos_min': 0.34, 'neg_median': 0.0091, 'neg_p99': 0.4825, 'neg_p999': 0.6057, 'neg_max': 0.7903, 'n_pos': 1114, 'n_neg': 1280}, 'rms_y': 0.1701, 'first_order_shift': 8.2475, 'target': 9.6298, 'control_first_order': 6.9127}
+[03:41:21] dev scan (of 128 ): {'f_L12_a1': {'applies': 55, 'correct': 13}, 'f_L12_a3': {'applies': 50, 'correct': 11}, 'f_L12_a9': {'applies': 8, 'correct': 0}, 'f_L15_a1': {'applies': 55, 'correct': 11}, 'f_L15_a3': {'applies': 54, 'correct': 13}, 'f_L15_a9': {'applies': 0, 'correct': 0}, 'base': {'applies': 45, 'correct': 6}, 'base_stored': {'applies': 45, 'correct': 8}}
+=== EXP-093 finished status=OK wall=8473.6s

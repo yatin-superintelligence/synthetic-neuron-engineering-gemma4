@@ -1,0 +1,56 @@
+=== EXP-109e transplant-e4b-total-effect started 2026-11-09T18:57:15.491782Z commit=
+[19:11:44] fit stage exit 1 in 867 s; log tail: etching 9 files:  89%|████████▉ | 8/9 [00:20<00:02,  2.50s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:28<00:00,  3.22s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:28<00:00,  3.22s/it]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  29%|██▉       | 574/1951 [00:00<00:00, 5731.68it/s]
+Loading weights:  59%|█████▉    | 1148/1951 [00:00<00:00, 4379.75it/s]
+Loading weights:  95%|█████████▌| 1857/1951 [00:00<00:00, 5437.89it/s]
+Loading weights: 100%|██████████| 1951/1951 [00:00<00:00, 5340.66it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 7.3s; params=4.629B
+[tp] capture 0/160
+[tp] capture 40/160
+[tp] capture 80/160
+[tp] capture 120/160
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  89%|████████▉ | 8/9 [00:01<00:00,  4.67it/s]
+Fetching 9 files:  89%|████████▉ | 8/9 [00:16<00:02,  2.12s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:42<00:00,  4.72s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:42<00:00,  4.72s/it]
+
+Loading weights:   0%|          | 0/2076 [00:00<?, ?it/s]
+Loading weights:  28%|██▊       | 591/2076 [00:00<00:00, 5909.33it/s]
+Loading weights:  57%|█████▋    | 1182/2076 [00:00<00:00, 5550.52it/s]
+Loading weights:  89%|████████▉ | 1856/2076 [00:00<00:00, 6074.96it/s]
+Loading weights: 100%|██████████| 2076/2076 [00:00<00:00, 6051.55it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 6.5s; params=4.644B
+[tp] capture 0/160
+[tp] capture 40/160
+[tp] capture 80/160
+[tp] capture 120/160
+[19:11:19] teacher-forced accuracy on reference-edit tokens: {'e2b': 0.9018, 'donor': 0.9243, 'e2b_wrong_donor_right': 190, 'e2b_right_donor_wrong': 88, 'positions': 4533, 'same_tokenizer': True}
+/content/repo/experiments/scripts/exp102_neuron_transplant.py:296: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  Mlog = torch.linalg.solve(KK + 1e-3 * float(torch.diagonal(KK).mean()) * torch.eye(KK.shape[0], device=DEV, dtype=KK.dtype),
+[19:11:25] layer 8 <- donor 10 {'donor_layer': 10, 'P_r2_heldout': 0.6708, 'R_r2_heldout': 0.663, 'donor_neurons': 10240, 'corr2_median': 0.5569, 'corr2_ge_025': 10161, 'rms_y_e2b': 0.1311, 'rms_y_donor': 0.1703, 'replaced_e2b_contrib_share': 0.01009, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.0, 'st_rnd_predicted_margin_gain_a1': -0.0, 'st_selected_corr2_median': 0.6855, 'st_write_norm_ratio_selected': 1.0511}
+[19:11:30] layer 12 <- donor 14 {'donor_layer': 14, 'P_r2_heldout': 0.5661, 'R_r2_heldout': 0.6167, 'donor_neurons': 10240, 'corr2_median': 0.4254, 'corr2_ge_025': 9905, 'rms_y_e2b': 0.0912, 'rms_y_donor': 0.109, 'replaced_e2b_contrib_share': 0.00777, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.0, 'st_rnd_predicted_margin_gain_a1': -0.0, 'st_selected_corr2_median': 0.5416, 'st_write_norm_ratio_selected': 0.9606}
+[19:11:34] layer 16 <- donor 19 {'donor_layer': 19, 'P_r2_heldout': 0.471, 'R_r2_heldout': 0.6695, 'donor_neurons': 10240, 'corr2_median': 0.3511, 'corr2_ge_025': 7989, 'rms_y_e2b': 0.091, 'rms_y_donor': 0.0704, 'replaced_e2b_contrib_share': 0.00442, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.0013, 'st_rnd_predicted_margin_gain_a1': -0.0, 'st_selected_corr2_median': 0.5172, 'st_write_norm_ratio_selected': 1.2608}
+Traceback (most recent call last):
+  File "/content/repo/experiments/scripts/exp109_transplant_total_effect.py", line 164, in <module>
+    fit_stage()
+  File "/content/repo/experiments/scripts/exp109_transplant_total_effect.py", line 139, in fit_stage
+    G["fit_stage"]()
+  File "/content/repo/experiments/scripts/exp102_neuron_transplant.py", line 379, in fit_stage
+    rep, fits = analyse(C, data_ids, log)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/repo/experiments/scripts/exp102_neuron_transplant.py", line 306, in analyse
+    fits[L] = fit_layer(L, LD[L], C["rec2"][L]["x"].float(), C["rec2"][L]["h"].float(), C["recd"][LD[L]]["x"].float(), C["recd"][LD[L]]["h"].float(),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/repo/experiments/scripts/exp102_neuron_transplant.py", line 150, in fit_layer
+    contrib = a2.abs().mean(0).cpu() * (w2["D"] * w2["wp"][:, None]).norm(dim=0)
+              ^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.30 GiB. GPU 0 has a total capacity of 22.03 GiB of which 623.12 MiB is free. Including non-PyTorch memory, this process has 21.42 GiB memory in use. Of the allocated memory 20.45 GiB is allocated by PyTorch, and 718.75 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+=== EXP-109e finished status=FAILED: FileNotFoundError: [Errno 2] No such file or directory: '/content/EXP-109e_fit.json' wall=869.0s

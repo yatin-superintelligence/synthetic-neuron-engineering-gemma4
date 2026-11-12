@@ -1,0 +1,23 @@
+=== EXP-063 atlas-causal-ablation started 2026-11-07T14:05:07.578053Z commit=943eec51ef
+[14:07:45] states 32 tasks 19
+[15:06:37] q4_0 base {'n': 32, 'edit_calls': 27, 'applied': 20, 'apply_rate': 0.7407, 'not_found': 5, 'identical': 2, 'multiple': 0, 'backslash_edits': 3, 'other_tool': 4, 'no_tool': 1, 'loops': 3} 1612.3
+[15:50:43] q4_0 old_string_on {'n': 32, 'edit_calls': 26, 'applied': 17, 'apply_rate': 0.6538, 'not_found': 5, 'identical': 2, 'multiple': 1, 'backslash_edits': 5, 'other_tool': 6, 'no_tool': 0, 'loops': 1} 1212.8
+[16:46:45] q4_0 rand_old_string_on {'n': 32, 'edit_calls': 28, 'applied': 19, 'apply_rate': 0.6786, 'not_found': 6, 'identical': 1, 'multiple': 1, 'backslash_edits': 8, 'other_tool': 4, 'no_tool': 0, 'loops': 4} 1571.0
+[17:29:38] q4_0 old_string_off {'n': 32, 'edit_calls': 27, 'applied': 18, 'apply_rate': 0.6667, 'not_found': 7, 'identical': 0, 'multiple': 1, 'backslash_edits': 2, 'other_tool': 5, 'no_tool': 0, 'loops': 3} 1153.9
+[18:26:42] q4_0 syntax_on {'n': 32, 'edit_calls': 30, 'applied': 11, 'apply_rate': 0.3667, 'not_found': 14, 'identical': 2, 'multiple': 2, 'backslash_edits': 9, 'other_tool': 2, 'no_tool': 0, 'loops': 3} 1448.8
+[19:12:40] q4_0 rand_syntax_on {'n': 32, 'edit_calls': 26, 'applied': 16, 'apply_rate': 0.6154, 'not_found': 8, 'identical': 0, 'multiple': 1, 'backslash_edits': 5, 'other_tool': 6, 'no_tool': 0, 'loops': 5} 1243.6
+=== EXP-063 atlas-causal-ablation started 2026-11-07T19:52:19.479846Z commit=c238d7a710
+[19:57:58] states 32 tasks 19
+[19:58:07] q4_0 base kept from the interrupted run
+[19:58:07] q4_0 old_string_on kept from the interrupted run
+[19:58:07] q4_0 rand_old_string_on kept from the interrupted run
+[19:58:07] q4_0 old_string_off kept from the interrupted run
+[19:58:07] q4_0 syntax_on kept from the interrupted run
+[19:58:07] q4_0 rand_syntax_on kept from the interrupted run
+[20:33:17] q4_0 syntax_off {'n': 32, 'edit_calls': 21, 'applied': 14, 'apply_rate': 0.6667, 'not_found': 3, 'identical': 0, 'multiple': 0, 'backslash_edits': 3, 'other_tool': 11, 'no_tool': 0, 'loops': 0} 918.3
+[21:15:07] q4_0 whitespace_on {'n': 32, 'edit_calls': 29, 'applied': 19, 'apply_rate': 0.6552, 'not_found': 8, 'identical': 0, 'multiple': 1, 'backslash_edits': 5, 'other_tool': 3, 'no_tool': 0, 'loops': 3} 1193.8
+[21:59:01] q4_0 system_on {'n': 32, 'edit_calls': 30, 'applied': 22, 'apply_rate': 0.7333, 'not_found': 5, 'identical': 1, 'multiple': 1, 'backslash_edits': 6, 'other_tool': 2, 'no_tool': 0, 'loops': 2} 1256.2
+[23:08:48] f16 base {'n': 32, 'edit_calls': 28, 'applied': 24, 'apply_rate': 0.8571, 'not_found': 3, 'identical': 0, 'multiple': 1, 'backslash_edits': 6, 'other_tool': 4, 'no_tool': 0, 'loops': 1} 1219.8
+[00:16:19] f16 old_string_on {'n': 32, 'edit_calls': 29, 'applied': 22, 'apply_rate': 0.7586, 'not_found': 3, 'identical': 2, 'multiple': 1, 'backslash_edits': 1, 'other_tool': 3, 'no_tool': 0, 'loops': 1} 1140.5
+[01:26:50] f16 rand_old_string_on {'n': 32, 'edit_calls': 28, 'applied': 20, 'apply_rate': 0.7143, 'not_found': 5, 'identical': 1, 'multiple': 1, 'backslash_edits': 6, 'other_tool': 4, 'no_tool': 0, 'loops': 2} 1187.3
+=== EXP-063 finished status=OK wall=20071.6s

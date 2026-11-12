@@ -1,0 +1,68 @@
+=== EXP-068 e4b-contrast-direction started 2026-11-08T05:53:03.739424Z commit=315e01d918
+[05:53:18] dev loop states with E4B continuations 15 teacher texts 60 fit tasks 9
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  14%|#3        | 264/1951 [00:00<00:00, 2532.91it/s]
+Loading weights:  27%|##6       | 518/1951 [00:00<00:00, 1917.13it/s]
+Loading weights:  37%|###6      | 719/1951 [00:09<00:00, 1647.44it/s]
+Loading weights:  46%|####5     | 890/1951 [00:10<00:20, 51.54it/s]  
+Loading weights:  51%|#####     | 986/1951 [00:10<00:15, 63.84it/s]
+Loading weights:  57%|#####7    | 1120/1951 [00:11<00:10, 77.94it/s]
+Loading weights:  62%|######2   | 1212/1951 [00:12<00:09, 75.35it/s]
+Loading weights:  65%|######5   | 1275/1951 [00:12<00:07, 88.13it/s]
+Loading weights:  80%|########  | 1565/1951 [00:12<00:02, 184.44it/s]
+Loading weights:  90%|######### | 1764/1951 [00:13<00:00, 268.41it/s]
+Loading weights:  98%|#########7| 1907/1951 [00:13<00:00, 340.81it/s]
+Loading weights: 100%|##########| 1951/1951 [00:13<00:00, 148.13it/s]
+[load] Gemma4ForConditionalGeneration on xpu in 18.1s; params=2.280B
+[05:54:47] 0 exp036/rich_3470/8 hold 71s
+[05:55:55] 1 exp036/rich_3472/9 fit 139s
+[05:57:07] 2 exp037/requests_7205/7 hold 211s
+[05:58:15] 3 exp037/requests_7315/5 fit 279s
+[05:59:31] 4 exp037/requests_7315/19 fit 355s
+[06:00:39] 5 exp037/requests_7328/7 fit 422s
+[06:01:53] 6 exp037/requests_7328/8 fit 496s
+[06:03:05] 7 exp037/requests_7427/16 hold 569s
+[06:04:18] 8 exp037/requests_7502/4 fit 642s
+[06:05:35] 9 exp037/rich_2943/8 hold 719s
+[06:06:45] 10 exp037/rich_2943/9 hold 789s
+[06:08:01] 11 exp037/rich_2943/11 hold 864s
+[06:09:12] 12 exp037/rich_2943/12 hold 936s
+[06:10:24] 13 exp037/rich_3469/15 hold 1008s
+[06:11:39] 14 exp037/rich_3518/5 hold 1083s
+[06:11:40] {'layer': 0, 'd_loop_vs_teacher_heldout': 0.331, 'random_abs_d_max': 0.259, 'old_direction_d_loop_vs_teacher': 0.323, 'new_direction_d_loop_vs_pre': 0.173, 'cosine_with_exp040': 0.97, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 1, 'd_loop_vs_teacher_heldout': 1.366, 'random_abs_d_max': 0.465, 'old_direction_d_loop_vs_teacher': 1.354, 'new_direction_d_loop_vs_pre': 1.139, 'cosine_with_exp040': 0.983, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 2, 'd_loop_vs_teacher_heldout': 0.978, 'random_abs_d_max': 0.603, 'old_direction_d_loop_vs_teacher': 0.925, 'new_direction_d_loop_vs_pre': 0.892, 'cosine_with_exp040': 0.988, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 3, 'd_loop_vs_teacher_heldout': 1.705, 'random_abs_d_max': 1.377, 'old_direction_d_loop_vs_teacher': 1.653, 'new_direction_d_loop_vs_pre': 1.666, 'cosine_with_exp040': 0.996, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 4, 'd_loop_vs_teacher_heldout': 0.729, 'random_abs_d_max': 0.589, 'old_direction_d_loop_vs_teacher': 0.715, 'new_direction_d_loop_vs_pre': 0.671, 'cosine_with_exp040': 0.993, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 5, 'd_loop_vs_teacher_heldout': 0.63, 'random_abs_d_max': 0.833, 'old_direction_d_loop_vs_teacher': 0.616, 'new_direction_d_loop_vs_pre': 0.67, 'cosine_with_exp040': 0.996, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 6, 'd_loop_vs_teacher_heldout': 0.822, 'random_abs_d_max': 0.958, 'old_direction_d_loop_vs_teacher': 0.814, 'new_direction_d_loop_vs_pre': 0.846, 'cosine_with_exp040': 0.997, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 7, 'd_loop_vs_teacher_heldout': 1.314, 'random_abs_d_max': 1.048, 'old_direction_d_loop_vs_teacher': 1.388, 'new_direction_d_loop_vs_pre': 1.282, 'cosine_with_exp040': 0.988, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 8, 'd_loop_vs_teacher_heldout': 2.523, 'random_abs_d_max': 1.155, 'old_direction_d_loop_vs_teacher': 2.483, 'new_direction_d_loop_vs_pre': 2.464, 'cosine_with_exp040': 0.991, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 9, 'd_loop_vs_teacher_heldout': 2.215, 'random_abs_d_max': 1.149, 'old_direction_d_loop_vs_teacher': 2.199, 'new_direction_d_loop_vs_pre': 2.153, 'cosine_with_exp040': 0.987, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:40] {'layer': 10, 'd_loop_vs_teacher_heldout': 1.908, 'random_abs_d_max': 1.353, 'old_direction_d_loop_vs_teacher': 1.897, 'new_direction_d_loop_vs_pre': 1.884, 'cosine_with_exp040': 0.993, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 11, 'd_loop_vs_teacher_heldout': 1.971, 'random_abs_d_max': 1.354, 'old_direction_d_loop_vs_teacher': 1.991, 'new_direction_d_loop_vs_pre': 1.977, 'cosine_with_exp040': 0.992, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 12, 'd_loop_vs_teacher_heldout': 2.196, 'random_abs_d_max': 1.122, 'old_direction_d_loop_vs_teacher': 2.147, 'new_direction_d_loop_vs_pre': 2.11, 'cosine_with_exp040': 0.991, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 13, 'd_loop_vs_teacher_heldout': 3.291, 'random_abs_d_max': 1.426, 'old_direction_d_loop_vs_teacher': 3.306, 'new_direction_d_loop_vs_pre': 2.973, 'cosine_with_exp040': 0.987, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 14, 'd_loop_vs_teacher_heldout': 6.419, 'random_abs_d_max': 2.763, 'old_direction_d_loop_vs_teacher': 6.311, 'new_direction_d_loop_vs_pre': 4.582, 'cosine_with_exp040': 0.988, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 15, 'd_loop_vs_teacher_heldout': 4.733, 'random_abs_d_max': 1.581, 'old_direction_d_loop_vs_teacher': 4.645, 'new_direction_d_loop_vs_pre': 3.684, 'cosine_with_exp040': 0.989, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 16, 'd_loop_vs_teacher_heldout': 3.567, 'random_abs_d_max': 2.355, 'old_direction_d_loop_vs_teacher': 3.548, 'new_direction_d_loop_vs_pre': 2.837, 'cosine_with_exp040': 0.99, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 17, 'd_loop_vs_teacher_heldout': 2.962, 'random_abs_d_max': 2.142, 'old_direction_d_loop_vs_teacher': 2.965, 'new_direction_d_loop_vs_pre': 2.535, 'cosine_with_exp040': 0.991, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 18, 'd_loop_vs_teacher_heldout': 3.453, 'random_abs_d_max': 2.266, 'old_direction_d_loop_vs_teacher': 3.435, 'new_direction_d_loop_vs_pre': 2.963, 'cosine_with_exp040': 0.991, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 19, 'd_loop_vs_teacher_heldout': 4.043, 'random_abs_d_max': 1.968, 'old_direction_d_loop_vs_teacher': 3.958, 'new_direction_d_loop_vs_pre': 3.594, 'cosine_with_exp040': 0.988, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 20, 'd_loop_vs_teacher_heldout': 3.398, 'random_abs_d_max': 1.934, 'old_direction_d_loop_vs_teacher': 3.376, 'new_direction_d_loop_vs_pre': 3.132, 'cosine_with_exp040': 0.994, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 21, 'd_loop_vs_teacher_heldout': 3.004, 'random_abs_d_max': 1.931, 'old_direction_d_loop_vs_teacher': 3.0, 'new_direction_d_loop_vs_pre': 2.768, 'cosine_with_exp040': 0.995, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 22, 'd_loop_vs_teacher_heldout': 3.53, 'random_abs_d_max': 1.719, 'old_direction_d_loop_vs_teacher': 3.501, 'new_direction_d_loop_vs_pre': 2.984, 'cosine_with_exp040': 0.994, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 23, 'd_loop_vs_teacher_heldout': 3.95, 'random_abs_d_max': 2.12, 'old_direction_d_loop_vs_teacher': 3.899, 'new_direction_d_loop_vs_pre': 3.324, 'cosine_with_exp040': 0.994, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 24, 'd_loop_vs_teacher_heldout': 3.105, 'random_abs_d_max': 1.638, 'old_direction_d_loop_vs_teacher': 3.002, 'new_direction_d_loop_vs_pre': 3.027, 'cosine_with_exp040': 0.99, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 25, 'd_loop_vs_teacher_heldout': 2.785, 'random_abs_d_max': 1.615, 'old_direction_d_loop_vs_teacher': 2.753, 'new_direction_d_loop_vs_pre': 2.606, 'cosine_with_exp040': 0.994, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 26, 'd_loop_vs_teacher_heldout': 2.36, 'random_abs_d_max': 1.566, 'old_direction_d_loop_vs_teacher': 2.344, 'new_direction_d_loop_vs_pre': 2.403, 'cosine_with_exp040': 0.997, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 27, 'd_loop_vs_teacher_heldout': 2.351, 'random_abs_d_max': 1.779, 'old_direction_d_loop_vs_teacher': 2.332, 'new_direction_d_loop_vs_pre': 2.341, 'cosine_with_exp040': 0.997, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 28, 'd_loop_vs_teacher_heldout': 2.851, 'random_abs_d_max': 1.815, 'old_direction_d_loop_vs_teacher': 2.84, 'new_direction_d_loop_vs_pre': 2.681, 'cosine_with_exp040': 0.998, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 29, 'd_loop_vs_teacher_heldout': 1.715, 'random_abs_d_max': 1.316, 'old_direction_d_loop_vs_teacher': 1.698, 'new_direction_d_loop_vs_pre': 2.009, 'cosine_with_exp040': 0.995, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 30, 'd_loop_vs_teacher_heldout': 1.653, 'random_abs_d_max': 1.171, 'old_direction_d_loop_vs_teacher': 1.632, 'new_direction_d_loop_vs_pre': 1.897, 'cosine_with_exp040': 0.995, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 31, 'd_loop_vs_teacher_heldout': 1.409, 'random_abs_d_max': 1.225, 'old_direction_d_loop_vs_teacher': 1.391, 'new_direction_d_loop_vs_pre': 1.548, 'cosine_with_exp040': 0.995, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 32, 'd_loop_vs_teacher_heldout': 1.562, 'random_abs_d_max': 1.091, 'old_direction_d_loop_vs_teacher': 1.538, 'new_direction_d_loop_vs_pre': 1.836, 'cosine_with_exp040': 0.995, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 33, 'd_loop_vs_teacher_heldout': 2.056, 'random_abs_d_max': 1.481, 'old_direction_d_loop_vs_teacher': 2.011, 'new_direction_d_loop_vs_pre': 2.239, 'cosine_with_exp040': 0.995, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+[06:11:41] {'layer': 34, 'd_loop_vs_teacher_heldout': 2.289, 'random_abs_d_max': 1.572, 'old_direction_d_loop_vs_teacher': 2.286, 'new_direction_d_loop_vs_pre': 2.275, 'cosine_with_exp040': 0.997, 'n_tokens': {'fit_loop': 1200, 'fit_teacher': 3984, 'hold_loop': 1800, 'hold_teacher': 4710, 'hold_pre': 1766}}
+=== EXP-068 finished status=OK wall=1118.3s

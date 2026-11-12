@@ -1,0 +1,386 @@
+[
+ {
+  "layer": 20,
+  "neuron": 7574,
+  "position": "outmean",
+  "auc": 0.1446
+ },
+ {
+  "layer": 33,
+  "neuron": 6577,
+  "position": "last",
+  "auc": 0.8554
+ },
+ {
+  "layer": 2,
+  "neuron": 298,
+  "position": "outmean",
+  "auc": 0.8494
+ },
+ {
+  "layer": 4,
+  "neuron": 12362,
+  "position": "outmean",
+  "auc": 0.8494
+ },
+ {
+  "layer": 50,
+  "neuron": 17853,
+  "position": "last",
+  "auc": 0.1566
+ },
+ {
+  "layer": 40,
+  "neuron": 2251,
+  "position": "last",
+  "auc": 0.1627
+ },
+ {
+  "layer": 19,
+  "neuron": 2663,
+  "position": "outmean",
+  "auc": 0.1627
+ },
+ {
+  "layer": 37,
+  "neuron": 12490,
+  "position": "outmean",
+  "auc": 0.1627
+ },
+ {
+  "layer": 33,
+  "neuron": 11431,
+  "position": "last",
+  "auc": 0.8373
+ },
+ {
+  "layer": 49,
+  "neuron": 3500,
+  "position": "last",
+  "auc": 0.8373
+ },
+ {
+  "layer": 6,
+  "neuron": 21151,
+  "position": "outmean",
+  "auc": 0.8373
+ },
+ {
+  "layer": 32,
+  "neuron": 11539,
+  "position": "last",
+  "auc": 0.1687
+ },
+ {
+  "layer": 38,
+  "neuron": 18045,
+  "position": "last",
+  "auc": 0.8313
+ },
+ {
+  "layer": 8,
+  "neuron": 13090,
+  "position": "outmean",
+  "auc": 0.8313
+ },
+ {
+  "layer": 9,
+  "neuron": 18790,
+  "position": "outmean",
+  "auc": 0.1687
+ },
+ {
+  "layer": 19,
+  "neuron": 6185,
+  "position": "outmean",
+  "auc": 0.1687
+ },
+ {
+  "layer": 21,
+  "neuron": 7888,
+  "position": "outmean",
+  "auc": 0.1687
+ },
+ {
+  "layer": 32,
+  "neuron": 13504,
+  "position": "outmean",
+  "auc": 0.8313
+ },
+ {
+  "layer": 35,
+  "neuron": 20027,
+  "position": "outmean",
+  "auc": 0.8313
+ },
+ {
+  "layer": 51,
+  "neuron": 4274,
+  "position": "outmean",
+  "auc": 0.8313
+ },
+ {
+  "layer": 41,
+  "neuron": 18873,
+  "position": "outmean",
+  "auc": 0.1717
+ },
+ {
+  "layer": 33,
+  "neuron": 8665,
+  "position": "last",
+  "auc": 0.8283
+ },
+ {
+  "layer": 30,
+  "neuron": 2171,
+  "position": "last",
+  "auc": 0.1747
+ },
+ {
+  "layer": 45,
+  "neuron": 17761,
+  "position": "last",
+  "auc": 0.1747
+ },
+ {
+  "layer": 18,
+  "neuron": 990,
+  "position": "outmean",
+  "auc": 0.1747
+ },
+ {
+  "layer": 34,
+  "neuron": 20303,
+  "position": "outmean",
+  "auc": 0.1747
+ },
+ {
+  "layer": 38,
+  "neuron": 10539,
+  "position": "outmean",
+  "auc": 0.1747
+ },
+ {
+  "layer": 58,
+  "neuron": 10429,
+  "position": "outmean",
+  "auc": 0.1747
+ },
+ {
+  "layer": 53,
+  "neuron": 5080,
+  "position": "last",
+  "auc": 0.8253
+ },
+ {
+  "layer": 14,
+  "neuron": 2086,
+  "position": "outmean",
+  "auc": 0.8253
+ },
+ {
+  "layer": 43,
+  "neuron": 16476,
+  "position": "outmean",
+  "auc": 0.8253
+ },
+ {
+  "layer": 20,
+  "neuron": 18459,
+  "position": "outmean",
+  "auc": 0.1777
+ },
+ {
+  "layer": 47,
+  "neuron": 19216,
+  "position": "outmean",
+  "auc": 0.8223
+ },
+ {
+  "layer": 34,
+  "neuron": 17707,
+  "position": "last",
+  "auc": 0.1807
+ },
+ {
+  "layer": 0,
+  "neuron": 7530,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 4,
+  "neuron": 6239,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 17,
+  "neuron": 3433,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 23,
+  "neuron": 3501,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 27,
+  "neuron": 2413,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 35,
+  "neuron": 6888,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 41,
+  "neuron": 18728,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 49,
+  "neuron": 9407,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 54,
+  "neuron": 11066,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 56,
+  "neuron": 4799,
+  "position": "outmean",
+  "auc": 0.1807
+ },
+ {
+  "layer": 32,
+  "neuron": 3475,
+  "position": "last",
+  "auc": 0.8193
+ },
+ {
+  "layer": 35,
+  "neuron": 7177,
+  "position": "last",
+  "auc": 0.8193
+ },
+ {
+  "layer": 39,
+  "neuron": 20024,
+  "position": "last",
+  "auc": 0.8193
+ },
+ {
+  "layer": 49,
+  "neuron": 7795,
+  "position": "last",
+  "auc": 0.8193
+ },
+ {
+  "layer": 58,
+  "neuron": 11803,
+  "position": "last",
+  "auc": 0.8193
+ },
+ {
+  "layer": 9,
+  "neuron": 2593,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 10,
+  "neuron": 15287,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 14,
+  "neuron": 17669,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 19,
+  "neuron": 11808,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 20,
+  "neuron": 9515,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 24,
+  "neuron": 2395,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 47,
+  "neuron": 9048,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 47,
+  "neuron": 11251,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 57,
+  "neuron": 10614,
+  "position": "outmean",
+  "auc": 0.8193
+ },
+ {
+  "layer": 20,
+  "neuron": 7626,
+  "position": "last",
+  "auc": 0.1867
+ },
+ {
+  "layer": 45,
+  "neuron": 11346,
+  "position": "last",
+  "auc": 0.1867
+ },
+ {
+  "layer": 2,
+  "neuron": 10318,
+  "position": "outmean",
+  "auc": 0.1867
+ },
+ {
+  "layer": 7,
+  "neuron": 12918,
+  "position": "outmean",
+  "auc": 0.1867
+ },
+ {
+  "layer": 9,
+  "neuron": 5409,
+  "position": "outmean",
+  "auc": 0.1867
+ },
+ {
+  "layer": 9,
+  "neuron": 9766,
+  "position": "outmean",
+  "auc": 0.1867
+ }
+]

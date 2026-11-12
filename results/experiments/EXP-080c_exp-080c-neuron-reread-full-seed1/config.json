@@ -1,0 +1,9 @@
+{
+ "id": "EXP-080c",
+ "slug": "exp-080c-neuron-reread-full-seed1",
+ "category": "synthetic-neuron",
+ "started": "2026-11-08T02:24:22Z",
+ "wall_seconds": 671.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

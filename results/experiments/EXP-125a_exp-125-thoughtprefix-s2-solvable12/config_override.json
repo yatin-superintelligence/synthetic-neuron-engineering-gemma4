@@ -1,0 +1,7 @@
+{
+ "sampling": {
+  "seed": 2
+ },
+ "hard_stop_s": 1800,
+ "thought_prefix": "Before editing, I will copy the exact lines I am going to change from the file content above, character for character:\n```python\n"
+}

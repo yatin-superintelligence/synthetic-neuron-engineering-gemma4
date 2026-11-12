@@ -1,0 +1,386 @@
+[
+ {
+  "layer": 36,
+  "neuron": 1446,
+  "action": "double",
+  "attribution": 0.021768
+ },
+ {
+  "layer": 51,
+  "neuron": 17235,
+  "action": "double",
+  "attribution": 0.019089
+ },
+ {
+  "layer": 38,
+  "neuron": 10587,
+  "action": "double",
+  "attribution": 0.018472
+ },
+ {
+  "layer": 41,
+  "neuron": 20150,
+  "action": "double",
+  "attribution": 0.016854
+ },
+ {
+  "layer": 54,
+  "neuron": 16223,
+  "action": "double",
+  "attribution": 0.016551
+ },
+ {
+  "layer": 59,
+  "neuron": 15640,
+  "action": "double",
+  "attribution": 0.015631
+ },
+ {
+  "layer": 48,
+  "neuron": 21465,
+  "action": "double",
+  "attribution": 0.014038
+ },
+ {
+  "layer": 44,
+  "neuron": 10397,
+  "action": "double",
+  "attribution": 0.012291
+ },
+ {
+  "layer": 57,
+  "neuron": 20103,
+  "action": "double",
+  "attribution": 0.012101
+ },
+ {
+  "layer": 56,
+  "neuron": 6457,
+  "action": "double",
+  "attribution": 0.011383
+ },
+ {
+  "layer": 44,
+  "neuron": 10356,
+  "action": "double",
+  "attribution": 0.011228
+ },
+ {
+  "layer": 56,
+  "neuron": 3569,
+  "action": "double",
+  "attribution": 0.009985
+ },
+ {
+  "layer": 37,
+  "neuron": 12451,
+  "action": "double",
+  "attribution": 0.00998
+ },
+ {
+  "layer": 31,
+  "neuron": 18883,
+  "action": "double",
+  "attribution": 0.009958
+ },
+ {
+  "layer": 58,
+  "neuron": 11252,
+  "action": "double",
+  "attribution": 0.009523
+ },
+ {
+  "layer": 56,
+  "neuron": 16655,
+  "action": "double",
+  "attribution": 0.008998
+ },
+ {
+  "layer": 35,
+  "neuron": 12369,
+  "action": "double",
+  "attribution": 0.008608
+ },
+ {
+  "layer": 30,
+  "neuron": 8206,
+  "action": "double",
+  "attribution": 0.008367
+ },
+ {
+  "layer": 43,
+  "neuron": 21108,
+  "action": "double",
+  "attribution": 0.008108
+ },
+ {
+  "layer": 50,
+  "neuron": 5676,
+  "action": "double",
+  "attribution": 0.00808
+ },
+ {
+  "layer": 32,
+  "neuron": 3349,
+  "action": "double",
+  "attribution": 0.007866
+ },
+ {
+  "layer": 44,
+  "neuron": 14802,
+  "action": "double",
+  "attribution": 0.007778
+ },
+ {
+  "layer": 35,
+  "neuron": 4733,
+  "action": "double",
+  "attribution": 0.007767
+ },
+ {
+  "layer": 57,
+  "neuron": 16254,
+  "action": "double",
+  "attribution": 0.007654
+ },
+ {
+  "layer": 55,
+  "neuron": 15369,
+  "action": "double",
+  "attribution": 0.007448
+ },
+ {
+  "layer": 25,
+  "neuron": 11730,
+  "action": "double",
+  "attribution": 0.007446
+ },
+ {
+  "layer": 37,
+  "neuron": 20261,
+  "action": "double",
+  "attribution": 0.00721
+ },
+ {
+  "layer": 49,
+  "neuron": 5132,
+  "action": "double",
+  "attribution": 0.007147
+ },
+ {
+  "layer": 57,
+  "neuron": 12907,
+  "action": "double",
+  "attribution": 0.00706
+ },
+ {
+  "layer": 25,
+  "neuron": 17321,
+  "action": "double",
+  "attribution": 0.007035
+ },
+ {
+  "layer": 31,
+  "neuron": 12834,
+  "action": "double",
+  "attribution": 0.006569
+ },
+ {
+  "layer": 41,
+  "neuron": 9583,
+  "action": "double",
+  "attribution": 0.006549
+ },
+ {
+  "layer": 41,
+  "neuron": 20509,
+  "action": "silence",
+  "attribution": -0.02308
+ },
+ {
+  "layer": 45,
+  "neuron": 14642,
+  "action": "silence",
+  "attribution": -0.017411
+ },
+ {
+  "layer": 37,
+  "neuron": 2712,
+  "action": "silence",
+  "attribution": -0.017408
+ },
+ {
+  "layer": 31,
+  "neuron": 18945,
+  "action": "silence",
+  "attribution": -0.016518
+ },
+ {
+  "layer": 59,
+  "neuron": 281,
+  "action": "silence",
+  "attribution": -0.01393
+ },
+ {
+  "layer": 38,
+  "neuron": 18842,
+  "action": "silence",
+  "attribution": -0.013738
+ },
+ {
+  "layer": 51,
+  "neuron": 16364,
+  "action": "silence",
+  "attribution": -0.013382
+ },
+ {
+  "layer": 51,
+  "neuron": 8165,
+  "action": "silence",
+  "attribution": -0.013376
+ },
+ {
+  "layer": 34,
+  "neuron": 13701,
+  "action": "silence",
+  "attribution": -0.011914
+ },
+ {
+  "layer": 33,
+  "neuron": 15727,
+  "action": "silence",
+  "attribution": -0.011784
+ },
+ {
+  "layer": 36,
+  "neuron": 4332,
+  "action": "silence",
+  "attribution": -0.010635
+ },
+ {
+  "layer": 35,
+  "neuron": 199,
+  "action": "silence",
+  "attribution": -0.010527
+ },
+ {
+  "layer": 30,
+  "neuron": 5163,
+  "action": "silence",
+  "attribution": -0.010521
+ },
+ {
+  "layer": 48,
+  "neuron": 10003,
+  "action": "silence",
+  "attribution": -0.010341
+ },
+ {
+  "layer": 48,
+  "neuron": 21005,
+  "action": "silence",
+  "attribution": -0.009932
+ },
+ {
+  "layer": 56,
+  "neuron": 5072,
+  "action": "silence",
+  "attribution": -0.009638
+ },
+ {
+  "layer": 52,
+  "neuron": 20336,
+  "action": "silence",
+  "attribution": -0.009505
+ },
+ {
+  "layer": 40,
+  "neuron": 19403,
+  "action": "silence",
+  "attribution": -0.009215
+ },
+ {
+  "layer": 42,
+  "neuron": 19971,
+  "action": "silence",
+  "attribution": -0.009203
+ },
+ {
+  "layer": 59,
+  "neuron": 9664,
+  "action": "silence",
+  "attribution": -0.009029
+ },
+ {
+  "layer": 59,
+  "neuron": 371,
+  "action": "silence",
+  "attribution": -0.008878
+ },
+ {
+  "layer": 36,
+  "neuron": 2504,
+  "action": "silence",
+  "attribution": -0.008862
+ },
+ {
+  "layer": 40,
+  "neuron": 8283,
+  "action": "silence",
+  "attribution": -0.008753
+ },
+ {
+  "layer": 30,
+  "neuron": 12911,
+  "action": "silence",
+  "attribution": -0.008597
+ },
+ {
+  "layer": 48,
+  "neuron": 14062,
+  "action": "silence",
+  "attribution": -0.008517
+ },
+ {
+  "layer": 28,
+  "neuron": 3633,
+  "action": "silence",
+  "attribution": -0.008338
+ },
+ {
+  "layer": 25,
+  "neuron": 1681,
+  "action": "silence",
+  "attribution": -0.007846
+ },
+ {
+  "layer": 43,
+  "neuron": 21430,
+  "action": "silence",
+  "attribution": -0.007803
+ },
+ {
+  "layer": 56,
+  "neuron": 13657,
+  "action": "silence",
+  "attribution": -0.007714
+ },
+ {
+  "layer": 38,
+  "neuron": 20215,
+  "action": "silence",
+  "attribution": -0.007389
+ },
+ {
+  "layer": 33,
+  "neuron": 21029,
+  "action": "silence",
+  "attribution": -0.007368
+ },
+ {
+  "layer": 42,
+  "neuron": 20143,
+  "action": "silence",
+  "attribution": -0.007258
+ }
+]

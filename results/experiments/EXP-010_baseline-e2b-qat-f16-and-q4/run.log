@@ -1,0 +1,42 @@
+=== EXP-010 baseline-e2b-qat-f16-and-q4 started 2026-11-05T22:09:29.825831Z commit=fc68afbb95
+[22:09:53] server up for e2b-qat-f16.gguf with 0 adapters in 9.6s
+[22:35:57] base_f16                     mbpp_dev      pass=0.5979 (113/189) cats={'pass': 113, 'wrong_answer': 48, 'wrong_or_missing_entry_point': 10, 'timeout': 2, 'runtime_error': 16} sim= tok/s=50.0
+[23:13:37] base_f16                     mbpp_test     pass=0.6649 (125/188) cats={'pass': 125, 'wrong_answer': 45, 'truncated': 2, 'wrong_or_missing_entry_point': 9, 'runtime_error': 6, 'syntax_error': 1} sim= tok/s=38.6
+[23:34:44] base_f16                     humaneval     pass=0.7730 (126/163) cats={'pass': 126, 'wrong_answer': 36, 'runtime_error': 1} sim= tok/s=51.1
+[00:14:07] base_f16                     humanevalfix  pass=0.8841 (145/164) cats={'pass': 145, 'wrong_answer': 18, 'name_or_import_error': 1} sim= tok/s=49.1
+[00:24:28] base_f16                     repopatch     pass=0.3475 (49/141) cats={'pass': 49, 'tests_fail': 81, 'format_error': 3, 'edit_not_applicable': 8} sim= tok/s=20.3
+[00:31:25] base_f16                     mmlu500       pass=0.5340 (267/500) cats= sim= tok/s=11.9
+=== EXP-010 finished status=FAILED: KeyError: 'task_id' wall=8826.3s
+=== EXP-010 baseline-e2b-qat-f16-and-q4 started 2026-11-06T03:09:09.295724Z commit=16bb1caef5
+[03:09:50] server up for e2b-qat-f16.gguf with 0 adapters in 16.7s
+[03:09:50] base_f16 mbpp_dev: resumed from saved outputs
+[03:09:50] base_f16 mbpp_test: resumed from saved outputs
+[03:09:50] base_f16 humaneval: resumed from saved outputs
+[03:09:50] base_f16 humanevalfix: resumed from saved outputs
+[03:09:50] base_f16 repopatch: resumed from saved outputs
+[03:09:50] base_f16 mmlu500: resumed from saved outputs
+[03:14:33] base_f16                     behavior      pass=1.0000 (22/40) cats= sim= tok/s=50.0
+[03:14:43] server up for gemma-4-E2B_q4_0-it.gguf with 0 adapters in 7.6s
+[03:44:25] base_q4_0                    mbpp_dev      pass=0.6243 (118/189) cats={'pass': 118, 'wrong_answer': 46, 'wrong_or_missing_entry_point': 5, 'runtime_error': 18, 'timeout': 1, 'loop': 1} sim= tok/s=54.3
+[04:12:23] base_q4_0                    mbpp_test     pass=0.6755 (127/188) cats={'wrong_answer': 47, 'pass': 127, 'wrong_or_missing_entry_point': 5, 'runtime_error': 6, 'syntax_error': 1, 'loop': 1, 'timeout': 1} sim= tok/s=53.9
+[04:32:41] base_q4_0                    humaneval     pass=0.7546 (123/163) cats={'pass': 123, 'wrong_answer': 35, 'timeout': 1, 'runtime_error': 4} sim= tok/s=59.3
+[guard] pausing: battery=16 on_ac=False thermal=27.9
+[guard] pausing: battery=16 on_ac=False thermal=27.9
+[guard] pausing: battery=16 on_ac=False thermal=27.9
+[guard] pausing: battery=15 on_ac=False thermal=27.9
+[guard] pausing: battery=15 on_ac=False thermal=27.9
+[guard] pausing: battery=15 on_ac=False thermal=27.9
+[guard] pausing: battery=15 on_ac=False thermal=27.9
+=== EXP-010 baseline-e2b-qat-f16-and-q4 started 2026-11-06T04:42:59.696481Z commit=ee5d30f3d7
+[04:51:53] server up for e2b-qat-f16.gguf with 0 adapters in 8.6s
+[04:51:53] base_f16 mbpp_dev: resumed from saved outputs
+[04:51:53] base_f16 mbpp_test: resumed from saved outputs
+[04:51:53] base_f16 humaneval: resumed from saved outputs
+[04:51:53] base_f16 humanevalfix: resumed from saved outputs
+[04:51:53] base_f16 repopatch: resumed from saved outputs
+[04:51:53] base_f16 mmlu500: resumed from saved outputs
+[04:51:53] base_f16 behavior: resumed from saved outputs
+[04:51:58] server up for gemma-4-E2B_q4_0-it.gguf with 0 adapters in 4.5s
+[04:51:58] base_q4_0 mbpp_dev: resumed from saved outputs
+[04:51:58] base_q4_0 mbpp_test: resumed from saved outputs
+[04:51:58] base_q4_0 humaneval: resumed from saved outputs

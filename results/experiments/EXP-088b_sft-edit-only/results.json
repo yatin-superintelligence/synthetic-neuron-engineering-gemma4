@@ -1,0 +1,80 @@
+{
+  "results": {
+    "tasks": 563,
+    "trajectories": 514,
+    "skipped": {
+      "no single-line edit": 49
+    },
+    "train": 466,
+    "val": 24,
+    "history": {
+      "val_before": 0.967,
+      "train": [
+        [
+          10,
+          0.9126
+        ],
+        [
+          20,
+          0.3288
+        ],
+        [
+          30,
+          0.123
+        ],
+        [
+          40,
+          0.0706
+        ],
+        [
+          50,
+          0.0593
+        ],
+        [
+          60,
+          0.052
+        ],
+        [
+          70,
+          0.0396
+        ],
+        [
+          80,
+          0.0319
+        ],
+        [
+          90,
+          0.0273
+        ],
+        [
+          100,
+          0.0333
+        ],
+        [
+          110,
+          0.0347
+        ]
+      ],
+      "val": [
+        [
+          50,
+          0.0427
+        ],
+        [
+          100,
+          0.0292
+        ]
+      ]
+    },
+    "vllm_check": {
+      "base": "(a, b), (a,",
+      "sft": "\n```\n```\n```\n```"
+    },
+    "adapter": "/content/repo/artifacts_local/EXP-088b/sft_lora",
+    "headline": "SFT (edit turn only) LoRA r16 on 466 examples: validation loss 0.967 -> 0.0292",
+    "system_monitor": {
+      "samples": 158
+    }
+  },
+  "wall_seconds": 9477.19746208191
+}

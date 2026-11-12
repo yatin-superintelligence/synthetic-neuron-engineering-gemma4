@@ -1,0 +1,9 @@
+{
+ "id": "EXP-133a",
+ "slug": "exp-133a-12b-loopedit-s1-gold40",
+ "category": "improvement",
+ "started": "2026-11-10T22:29:08Z",
+ "wall_seconds": 3067.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

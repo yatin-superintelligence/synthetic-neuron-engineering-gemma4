@@ -1,0 +1,50 @@
+{
+  "id": "EXP-092",
+  "slug": "patch-correctness-neurons",
+  "category": "improvement",
+  "motivation": "The agent mostly fails by writing wrong patches; a verified bench of fix states measures that step directly, and a neuron built from E2B's own correct-minus-incorrect edits targets it without training.",
+  "hypothesis": "A patch-correctness neuron raises E2B's correct-edit rate on held-out bench states against the unedited model (exact McNemar p < 0.05) and against a control neuron of matched strength.",
+  "config": {
+    "layers": [
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27
+    ],
+    "alphas": [
+      1,
+      3,
+      9
+    ],
+    "splits": "fit 50 / dev 25 / test 25, seed 92",
+    "samples_per_fit_state": 4,
+    "fit_temperature": 1.0,
+    "answer_tokens": "2,048 then thought closed and 1,024 more",
+    "model": "official E2B W4A16 on vLLM 0.19.1"
+  },
+  "depends_on": [
+    "EXP-089",
+    "EXP-088"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp092_patch_neurons.py",
+  "started": "2026-11-08T19:15:31.168352Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794165331.1743782
+  },
+  "finished": "2026-11-08T21:42:24.423860Z",
+  "wall_seconds": 8813.3,
+  "status": "OK"
+}

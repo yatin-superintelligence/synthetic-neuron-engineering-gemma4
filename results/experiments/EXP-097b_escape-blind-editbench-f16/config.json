@@ -1,0 +1,49 @@
+{
+  "id": "EXP-097b",
+  "slug": "escape-blind-editbench-f16",
+  "category": "improvement",
+  "motivation": "bf16 counterpart of EXP-097 and a transfer test: the escape-blind value edit at F16 on real edit states from the official traces.",
+  "hypothesis": "At F16 on EditBench, the escape-blind edit lowers replayed edits whose old_string carries a backslash against the unedited model and its control (exact McNemar by state), without raising the apply rate.",
+  "config": {
+    "edit": "L13-14_a0.5",
+    "control": "control",
+    "max_prompt": 12000,
+    "per_run_task": 1,
+    "seed": 0,
+    "precision": "f16"
+  },
+  "depends_on": [
+    "EXP-097"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "af949ff6f939365c8e5304363cd650e41b6d0a09",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp097b_escape_blind_editbench.py",
+  "started": "2026-11-09T03:42:35.195998Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1792,
+    "cpu_core_w": 6.4,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 40448,
+    "gpu_util_pct": 3,
+    "battery_pct": 80,
+    "cpu_pct": 4,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 83.8,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 12.1,
+    "ram_free_gb": 19.31,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.26,
+    "t": 1794195767.8350804
+  }
+}

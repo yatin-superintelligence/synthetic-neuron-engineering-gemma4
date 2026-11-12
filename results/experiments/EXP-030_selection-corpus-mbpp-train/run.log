@@ -1,0 +1,11 @@
+=== EXP-030 selection-corpus-mbpp-train started 2026-11-08T11:28:04.939848Z commit=27ee7b4d7c
+[11:28:15] dropped 147 tasks shared with MBPP+; 317 remain
+[11:28:15] residual task_id overlap with MBPP+: [] exact text overlap: 1
+[12:13:22] greedy {'wall_s': 2699.56, 'gen_tokens': 187427, 'tok_per_s': 69.4}
+[13:11:21] sample 1 {'wall_s': 3478.79, 'gen_tokens': 221280, 'tok_per_s': 63.6}
+[14:00:27] sample 2 {'wall_s': 2945.27, 'gen_tokens': 188043, 'tok_per_s': 63.8}
+[14:08:57] prose {'wall_s': 510.4, 'gen_tokens': 48573, 'tok_per_s': 95.2}
+[14:09:00] code_greedy pass rate 0.6025236593059937
+[14:09:03] code_s1 pass rate 0.580441640378549
+[14:09:06] code_s2 pass rate 0.5772870662460567
+=== EXP-030 finished status=OK wall=9661.6s

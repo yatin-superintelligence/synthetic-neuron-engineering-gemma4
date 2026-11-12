@@ -1,0 +1,4 @@
+=== EXP-097b escape-blind-editbench-f16 started 2026-11-09T03:42:35.195998Z commit=af949ff6f9
+[03:43:12] states 62 tasks 41 originally applied 48
+[05:15:55] base {'n': 62, 'edit_calls': 36, 'applied': 33, 'apply_rate': 0.9167, 'not_found': 2, 'identical': 0, 'multiple': 0, 'backslash_edits': 8, 'other_tool': 26, 'no_tool': 0, 'loops': 0} 891.7
+[07:03:07] edit {'n': 62, 'edit_calls': 40, 'applied': 26, 'apply_rate': 0.65, 'not_found': 9, 'identical': 1, 'multiple': 0, 'backslash_edits': 11, 'other_tool': 22, 'no_tool': 0, 'loops': 2} 1060.0

@@ -1,0 +1,23 @@
+=== EXP-106 transplant-token-transfer started 2026-11-09T14:01:56.405032Z commit=
+[14:02:06] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[14:02:12] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+[14:02:20] states 325 | held 248 | reference-edit tokens 8882
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:02<00:00,  3.89it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:20<00:02,  2.50s/it]
+Fetching 9 files: 100%|##########| 9/9 [00:28<00:00,  3.21s/it]
+Fetching 9 files: 100%|##########| 9/9 [00:28<00:00,  3.21s/it]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  29%|##9       | 569/1951 [00:00<00:00, 5682.51it/s]
+Loading weights:  58%|#####8    | 1138/1951 [00:00<00:00, 4515.60it/s]
+Loading weights:  87%|########6 | 1697/1951 [00:00<00:00, 4937.76it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 5171.13it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 7.3s; params=4.629B
+[14:11:49] base {'held': 0.891, 'fit': 0.8991}
+[14:20:45] e4b_st_a1 {'held': 0.9009, 'fit': 0.909}
+[14:29:40] e4b_st_rnd_a1 {'held': 0.8917, 'fit': 0.8963}
+[14:38:36] e4b_abl {'held': 0.8922, 'fit': 0.8991}
+[14:47:31] 31b_lg_a1 {'held': 0.8914, 'fit': 0.8991}
+[14:56:27] 31b_lg_rnd_a4 {'held': 0.8911, 'fit': 0.9}

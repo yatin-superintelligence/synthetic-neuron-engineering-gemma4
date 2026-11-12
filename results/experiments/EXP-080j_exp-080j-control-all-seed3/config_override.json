@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 3
+ },
+ "hard_stop_s": 2400,
+ "adapter": "control_all",
+ "adapter_local": "artifacts_local/EXP-080/control_all"
+}

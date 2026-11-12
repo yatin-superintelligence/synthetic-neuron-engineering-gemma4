@@ -1,0 +1,55 @@
+{
+  "id": "EXP-030",
+  "slug": "selection-corpus-mbpp-train",
+  "category": "localization",
+  "motivation": "Neuron/direction selection must use data disjoint from evaluation. Contrasting the model's own code and its own prose about the *same* tasks isolates 'writing code' from 'thinking about programming'. Pass/fail labels on its own samples give a correctness contrast.",
+  "hypothesis": "After removing the 147 MBPP+ overlaps, the model passes roughly half of the remaining tasks greedily; sampling yields mixed pass/fail pairs on a useful fraction of tasks.",
+  "config": {
+    "splits": [
+      "train",
+      "validation"
+    ],
+    "samples": 2,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "engine": "llama.cpp vulkan q4_0",
+    "parallel": 8
+  },
+  "depends_on": [
+    "EXP-002"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "27ee7b4d7c6a2e2d5e815f6544710b13158587d3",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp030_selection_corpus.py",
+  "started": "2026-11-08T11:28:04.939848Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1838,
+    "cpu_core_w": 1.8,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 0,
+    "battery_pct": 100,
+    "cpu_pct": 19.1,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 103.2,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 6.8,
+    "ram_free_gb": 19.45,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.16,
+    "t": 1794137295.9159944
+  },
+  "finished": "2026-11-08T14:09:15.430265Z",
+  "wall_seconds": 9661.6,
+  "status": "OK"
+}

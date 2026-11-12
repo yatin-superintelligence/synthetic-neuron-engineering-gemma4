@@ -1,0 +1,10 @@
+{
+ "sampling": {
+  "seed": 2,
+  "thinking_config": {
+   "thinking_budget": 0,
+   "include_thoughts": false
+  }
+ },
+ "hard_stop_s": 1800
+}

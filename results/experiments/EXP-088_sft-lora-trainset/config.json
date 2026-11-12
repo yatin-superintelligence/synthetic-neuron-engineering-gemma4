@@ -1,0 +1,39 @@
+{
+  "id": "EXP-088",
+  "slug": "sft-lora-trainset",
+  "category": "training",
+  "motivation": "Training track requested by the author: an SFT LoRA on verified bug-fix tasks, as a trained comparison for the training-free edits.",
+  "hypothesis": "SFT on scripted trajectories over at least 500 verified injected-bug tasks raises E2B's official tasks solved at seeds 1 to 3 against unedited E2B at the same seeds (task-level sign-flip p < 0.05).",
+  "config": {
+    "rank": 16,
+    "alpha": 32,
+    "lr": 0.0001,
+    "epochs": 2,
+    "accumulation": 8,
+    "warmup": 20,
+    "max_len": 12288,
+    "target": ".*language_model\\.layers\\.\\d+\\.(mlp\\.(gate_proj|up_proj|down_proj)|self_attn\\.o_proj)$",
+    "base": "google/gemma-4-E2B-it-qat-q4_0-unquantized"
+  },
+  "depends_on": [
+    "EXP-044a"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp088_sft_lora.py",
+  "started": "2026-11-08T16:39:44.988411Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794155984.9985602
+  },
+  "finished": "2026-11-08T19:28:23.519680Z",
+  "wall_seconds": 10118.5,
+  "status": "OK"
+}

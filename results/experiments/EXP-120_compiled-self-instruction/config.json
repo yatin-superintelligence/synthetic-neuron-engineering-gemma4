@@ -1,0 +1,53 @@
+{
+  "id": "EXP-120",
+  "slug": "compiled-self-instruction",
+  "category": "improvement",
+  "motivation": "The forced self-instruction raises applying first edits by 44%; neurons cannot write it and E2B ignores it as an instruction, so its effect on E2B's states is compiled into a mid layer instead.",
+  "hypothesis": "The compiled prefix raises first edits that apply on FEB above unedited and above the compiled neutral sentence.",
+  "config": {
+    "fits": [
+      [
+        "q",
+        10
+      ],
+      [
+        "q",
+        14
+      ],
+      [
+        "n",
+        10
+      ]
+    ],
+    "rank": 128,
+    "continuation_tokens": 384,
+    "sentences": {
+      "q": "Before editing, I will copy the exact lines I am going to change from the file content above, character for character:\n```python\n",
+      "n": "Before editing, I will restate in my own words what the issue asks for and which behaviour of the code is wrong.\n"
+    }
+  },
+  "depends_on": [
+    "EXP-104",
+    "EXP-116",
+    "EXP-118",
+    "EXP-119"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp120_compiled_self_instruction.py",
+  "started": "2026-11-10T04:43:17.181309Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794285797.1879818
+  },
+  "finished": "2026-11-10T06:50:39.813037Z",
+  "wall_seconds": 7642.6,
+  "status": "OK"
+}

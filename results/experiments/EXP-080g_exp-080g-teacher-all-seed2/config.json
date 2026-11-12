@@ -1,0 +1,9 @@
+{
+ "id": "EXP-080g",
+ "slug": "exp-080g-teacher-all-seed2",
+ "category": "synthetic-neuron",
+ "started": "2026-11-08T02:54:55Z",
+ "wall_seconds": 766.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

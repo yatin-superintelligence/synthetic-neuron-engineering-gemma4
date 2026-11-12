@@ -1,0 +1,7 @@
+{
+ "sampling": {
+  "seed": 2
+ },
+ "hard_stop_s": 5400,
+ "log_requests": true
+}

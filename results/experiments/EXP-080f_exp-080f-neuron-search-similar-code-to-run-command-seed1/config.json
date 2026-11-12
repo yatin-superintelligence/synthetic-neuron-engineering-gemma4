@@ -1,0 +1,9 @@
+{
+ "id": "EXP-080f",
+ "slug": "exp-080f-neuron-search-similar-code-to-run-command-seed1",
+ "category": "synthetic-neuron",
+ "started": "2026-11-08T02:44:47Z",
+ "wall_seconds": 2132.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

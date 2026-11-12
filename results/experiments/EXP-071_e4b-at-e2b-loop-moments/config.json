@@ -1,0 +1,59 @@
+{
+  "id": "EXP-071",
+  "slug": "e4b-at-e2b-loop-moments",
+  "category": "diagnosis",
+  "motivation": "E4B shows no loops on the official stack. Whether it escapes the same states decides if loops are a small-model trait, and sets the simple baseline the loop edit must be compared with.",
+  "hypothesis": "E4B loops far less than E2B from the same saved moments. If its rate matches E2B's, the official difference comes from the path taken and not from the model.",
+  "config": {
+    "splits": [
+      "dev",
+      "test"
+    ],
+    "seeds": [
+      0,
+      1
+    ],
+    "primary": "test split, task-level sign-flip against EXP-066 base rows",
+    "early_exit": true,
+    "neuron_edit": null
+  },
+  "depends_on": [
+    "EXP-013K",
+    "EXP-044a",
+    "EXP-066"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "3551cdbd33bc5fcb95fd64d2ac38621e1792572b",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp071_e4b_at_e2b_loop_moments.py",
+  "started": "2026-11-07T09:21:36.678399Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1880,
+    "cpu_core_w": 1,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 0,
+    "battery_pct": 98,
+    "cpu_pct": 1.1,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 54.9,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 4.6,
+    "ram_free_gb": 19.89,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.06,
+    "t": 1794043307.7647147
+  },
+  "finished": "2026-11-07T13:57:07.843151Z",
+  "wall_seconds": 16531.2,
+  "status": "OK"
+}

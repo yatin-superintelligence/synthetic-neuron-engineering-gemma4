@@ -1,0 +1,126 @@
+{
+  "results": {
+    "top_layers": [
+      {
+        "layer": 14,
+        "d_prime_heldout": 5.319,
+        "d_prime_fit_gap": 1.8586,
+        "random_abs_d_max": 1.662,
+        "random_abs_d_mean": 0.798,
+        "cosine_between_halves": 0.958,
+        "n_loop_tokens": 3000,
+        "n_other_tokens": 5246
+      },
+      {
+        "layer": 15,
+        "d_prime_heldout": 4.051,
+        "d_prime_fit_gap": 3.7285,
+        "random_abs_d_max": 2.786,
+        "random_abs_d_mean": 0.765,
+        "cosine_between_halves": 0.957,
+        "n_loop_tokens": 3000,
+        "n_other_tokens": 5246
+      },
+      {
+        "layer": 19,
+        "d_prime_heldout": 3.775,
+        "d_prime_fit_gap": 1.6513,
+        "random_abs_d_max": 2.076,
+        "random_abs_d_mean": 0.78,
+        "cosine_between_halves": 0.953,
+        "n_loop_tokens": 3000,
+        "n_other_tokens": 5246
+      },
+      {
+        "layer": 23,
+        "d_prime_heldout": 3.653,
+        "d_prime_fit_gap": 3.5575,
+        "random_abs_d_max": 2.043,
+        "random_abs_d_mean": 0.869,
+        "cosine_between_halves": 0.98,
+        "n_loop_tokens": 3000,
+        "n_other_tokens": 5246
+      },
+      {
+        "layer": 20,
+        "d_prime_heldout": 3.384,
+        "d_prime_fit_gap": 2.6375,
+        "random_abs_d_max": 2.728,
+        "random_abs_d_mean": 0.844,
+        "cosine_between_halves": 0.979,
+        "n_loop_tokens": 3000,
+        "n_other_tokens": 5246
+      },
+      {
+        "layer": 22,
+        "d_prime_heldout": 3.309,
+        "d_prime_fit_gap": 1.5894,
+        "random_abs_d_max": 1.916,
+        "random_abs_d_mean": 0.769,
+        "cosine_between_halves": 0.973,
+        "n_loop_tokens": 3000,
+        "n_other_tokens": 5246
+      }
+    ],
+    "headline": "top held-out d': L14 5.319 (cos 0.958), L15 4.051 (cos 0.957), L19 3.775 (cos 0.953), L23 3.653 (cos 0.98); random max 2.79",
+    "system_monitor": {
+      "samples": 11,
+      "ram_free_gb": {
+        "min": 5.56,
+        "max": 19.97,
+        "mean": 7.36
+      },
+      "gpu_shared_gb": {
+        "min": 1.4,
+        "max": 8.56,
+        "mean": 7.63
+      },
+      "gpu_util_pct": {
+        "min": 0.2,
+        "max": 156.1,
+        "mean": 85.9
+      },
+      "thermal_c": {
+        "min": 27.9,
+        "max": 27.9,
+        "mean": 27.9
+      },
+      "battery_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "cpu_pct": {
+        "min": 0,
+        "max": 21.4,
+        "mean": 7.75
+      },
+      "cpu_perf_pct": {
+        "min": 120.4,
+        "max": 164.3,
+        "mean": 143.91
+      },
+      "cpu_perf_limit_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "cpu_freq_mhz": {
+        "min": 1689,
+        "max": 1876,
+        "mean": 1768.45
+      },
+      "battery_discharge_mw": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      },
+      "battery_charge_mw": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      }
+    }
+  },
+  "wall_seconds": 721.4440643787384
+}

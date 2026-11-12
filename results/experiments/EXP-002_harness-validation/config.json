@@ -1,0 +1,31 @@
+{
+  "id": "EXP-002",
+  "slug": "harness-validation",
+  "category": "infrastructure",
+  "motivation": "Every later number depends on prompt assembly, code extraction and test execution being correct. A reviewer should be able to see that the harness passes reference solutions and rejects known-buggy ones before trusting any model score.",
+  "hypothesis": "Canonical solutions pass 100% on all suites; buggy HumanEvalFix solutions fail 100%.",
+  "config": {
+    "suites": [
+      "mbpp_dev",
+      "mbpp_test",
+      "humaneval",
+      "humanevalfix"
+    ],
+    "timeout_s": 30
+  },
+  "depends_on": [],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "1970dc14b424a252a8e4cc5848ebfd2cc451fbc7",
+    "git_dirty": false,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp002_harness_validation.py",
+  "started": "2026-11-05T19:17:14.844834Z",
+  "finished": "2026-11-05T19:19:10.955989Z",
+  "wall_seconds": 116.1,
+  "status": "OK"
+}

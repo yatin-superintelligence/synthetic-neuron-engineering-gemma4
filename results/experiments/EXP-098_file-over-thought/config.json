@@ -1,0 +1,95 @@
+{
+  "id": "EXP-098",
+  "slug": "file-over-thought",
+  "category": "improvement",
+  "motivation": "Half to two thirds of E2B's rewritten old_strings are copied from its own thought rather than the file; a gated query shift in the copy heads' position-free dimensions moves their attention from the thought to the file, as an exact rank-1 q_proj LoRA.",
+  "hypothesis": "File-over-thought steering raises applying bench answers on held-out states against the same-server unedited model (exact McNemar p < 0.05) and a random-direction control, with no fewer correct answers and no significant MBPP+ loss.",
+  "config": {
+    "headsets": {
+      "top4": [
+        [
+          24,
+          1
+        ],
+        [
+          29,
+          4
+        ],
+        [
+          29,
+          5
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "top8": [
+        [
+          24,
+          1
+        ],
+        [
+          29,
+          4
+        ],
+        [
+          29,
+          5
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          29,
+          0
+        ],
+        [
+          24,
+          3
+        ],
+        [
+          34,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ]
+    },
+    "gaps": [
+      1.5,
+      4.0
+    ],
+    "layers": [
+      24,
+      29,
+      34
+    ],
+    "selection": "fit split, most applying",
+    "test": "dev + test (257)",
+    "retention": "MBPP+ 378",
+    "control": "random unit direction in the position-free dimensions, orthogonal to d, same heads and size"
+  },
+  "depends_on": [
+    "EXP-092",
+    "EXP-095"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp098_file_over_thought.py",
+  "started": "2026-11-09T04:17:03.270116Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794197823.275991
+  }
+}

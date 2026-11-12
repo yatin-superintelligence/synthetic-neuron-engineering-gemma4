@@ -1,0 +1,42 @@
+{
+  "id": "EXP-088b",
+  "slug": "sft-edit-only",
+  "category": "training",
+  "motivation": "EXP-088's whole-trajectory SFT taught a bad exploring policy (0 of 56 solved) but unescaped old_strings; training only the edit turn keeps the fix-writing skill without changing how the agent explores.",
+  "hypothesis": "An SFT LoRA trained only on the edit_file turn raises E2B's official tasks solved at seed 1 against unedited E2B at seed 1 on the same hardware, with fewer failed edits.",
+  "config": {
+    "rank": 16,
+    "alpha": 32,
+    "lr": 0.0001,
+    "epochs": 2,
+    "accumulation": 8,
+    "warmup": 20,
+    "max_len": 12288,
+    "target": ".*language_model\\.layers\\.\\d+\\.(mlp\\.(gate_proj|up_proj|down_proj)|self_attn\\.o_proj)$",
+    "base": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "loss": "edit_file turn only",
+    "context": "trajectory up to and including the edit turn"
+  },
+  "depends_on": [
+    "EXP-088",
+    "EXP-088a"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp088b_sft_edit_only.py",
+  "started": "2026-11-08T22:36:05.807576Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794177365.8143363
+  },
+  "finished": "2026-11-09T01:14:03.004827Z",
+  "wall_seconds": 9477.2,
+  "status": "OK"
+}

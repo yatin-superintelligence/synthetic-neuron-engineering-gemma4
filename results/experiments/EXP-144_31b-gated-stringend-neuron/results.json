@@ -1,0 +1,402 @@
+{
+  "results": {
+    "fit": {
+      "positions": {
+        "CONT": 2782,
+        "CONT_BT": 71,
+        "CONT_H": 2376,
+        "ERR": 142,
+        "OKC": 441,
+        "OPEN": 441,
+        "OTHER": 1938,
+        "SEP": 247,
+        "TXT_BT": 11607,
+        "TXT_BTC": 275
+      },
+      "exactness_max_abs_logit_difference": 0.1952,
+      "unedited": {
+        "ERR": 142,
+        "ERR_top_is_close": 8,
+        "OKC_top_is_close": 432,
+        "OKC": 441
+      },
+      "bias_direction": {
+        "mean": 0.9999,
+        "std": 0.0092,
+        "p1": 0.9718,
+        "p99": 1.0271
+      },
+      "chosen": {
+        "lam": 0.1,
+        "z_ERR_mean": 0.827,
+        "gate_ERR_ge_half": 0.803,
+        "gate_OKC_ge_half": 0.857,
+        "gate_neg_p999": -0.0,
+        "gate_content_p999": 0.1168
+      },
+      "replaced_neuron": {
+        "index": 9926,
+        "usage_score": 3466.298584,
+        "median_score": 191281.84375
+      },
+      "write": {
+        "rounds": [
+          {
+            "round": 1,
+            "competitors": [
+              8347,
+              827,
+              236764,
+              236929
+            ],
+            "alpha": 1.8432,
+            "close_is_top": 69,
+            "n": 142,
+            "new_top_tokens": [
+              [
+                148,
+                "            "
+              ],
+              [
+                4694,
+                " uma"
+              ],
+              [
+                53870,
+                "starcore"
+              ],
+              [
+                63099,
+                " convexe"
+              ],
+              [
+                66658,
+                " Antennes"
+              ],
+              [
+                198835,
+                " ih\u016b"
+              ],
+              [
+                228276,
+                "nilvadipine"
+              ],
+              [
+                249349,
+                "\ud808\udc2f"
+              ]
+            ]
+          },
+          {
+            "round": 2,
+            "competitors": [
+              8347,
+              827,
+              236764,
+              236929,
+              148,
+              4694,
+              53870,
+              63099,
+              66658,
+              198835,
+              228276,
+              249349
+            ],
+            "alpha": 1.2388,
+            "close_is_top": 18,
+            "n": 142,
+            "new_top_tokens": [
+              [
+                144,
+                "        "
+              ],
+              [
+                2543,
+                "from"
+              ],
+              [
+                236785,
+                "\\"
+              ]
+            ]
+          },
+          {
+            "round": 3,
+            "competitors": [
+              8347,
+              827,
+              236764,
+              236929,
+              148,
+              4694,
+              53870,
+              63099,
+              66658,
+              198835,
+              228276,
+              249349,
+              144,
+              2543,
+              236785
+            ],
+            "alpha": 4.0806,
+            "close_is_top": 85,
+            "n": 142,
+            "new_top_tokens": [
+              [
+                236778,
+                "2"
+              ],
+              [
+                236800,
+                "3"
+              ],
+              [
+                236819,
+                "9"
+              ],
+              [
+                236825,
+                "6"
+              ],
+              [
+                236828,
+                "8"
+              ],
+              [
+                236832,
+                "7"
+              ]
+            ]
+          },
+          {
+            "round": 4,
+            "competitors": [
+              8347,
+              827,
+              236764,
+              236929,
+              148,
+              4694,
+              53870,
+              63099,
+              66658,
+              198835,
+              228276,
+              249349,
+              144,
+              2543,
+              236785,
+              236778,
+              236800,
+              236819,
+              236825,
+              236828,
+              236832
+            ],
+            "alpha": 4.0806,
+            "close_is_top": 91,
+            "n": 142,
+            "new_top_tokens": [
+              [
+                569,
+                " de"
+              ],
+              [
+                22108,
+                " escal"
+              ]
+            ]
+          },
+          {
+            "round": 5,
+            "competitors": [
+              8347,
+              827,
+              236764,
+              236929,
+              148,
+              4694,
+              53870,
+              63099,
+              66658,
+              198835,
+              228276,
+              249349,
+              144,
+              2543,
+              236785,
+              236778,
+              236800,
+              236819,
+              236825,
+              236828,
+              236832,
+              569,
+              22108
+            ],
+            "alpha": 5.3183,
+            "close_is_top": 122,
+            "n": 142,
+            "new_top_tokens": [
+              [
+                173815,
+                "calleft"
+              ],
+              [
+                183830,
+                "avkhat"
+              ],
+              [
+                252688,
+                "\ud803\udc22"
+              ]
+            ]
+          },
+          {
+            "round": 6,
+            "competitors": [
+              8347,
+              827,
+              236764,
+              236929,
+              148,
+              4694,
+              53870,
+              63099,
+              66658,
+              198835,
+              228276,
+              249349,
+              144,
+              2543,
+              236785,
+              236778,
+              236800,
+              236819,
+              236825,
+              236828,
+              236832,
+              569,
+              22108,
+              173815,
+              183830,
+              252688
+            ],
+            "alpha": 7.9132,
+            "close_is_top": 142,
+            "n": 142,
+            "new_top_tokens": []
+          }
+        ],
+        "alpha": 7.9132,
+        "competitors": [
+          8347,
+          827,
+          236764,
+          236929,
+          148,
+          4694,
+          53870,
+          63099,
+          66658,
+          198835,
+          228276,
+          249349,
+          144,
+          2543,
+          236785,
+          236778,
+          236800,
+          236819,
+          236825,
+          236828,
+          236832,
+          569,
+          22108,
+          173815,
+          183830,
+          252688
+        ]
+      },
+      "held_out": {
+        "neuron": {
+          "ERR_close_top": 104,
+          "ERR_n": 142,
+          "OKC_close_top": 441,
+          "OKC_n": 441,
+          "negatives_changed": 5,
+          "negatives_n": 19737,
+          "content_to_close": 5,
+          "content_n": 5229,
+          "by_fault": {
+            "backtick-comma": [
+              88,
+              103
+            ],
+            "quote-comma": [
+              4,
+              22
+            ],
+            "comma": [
+              12,
+              17
+            ]
+          }
+        },
+        "control": {
+          "ERR_close_top": 8,
+          "ERR_n": 142,
+          "OKC_close_top": 432,
+          "OKC_n": 441,
+          "negatives_changed": 1,
+          "negatives_n": 19737,
+          "content_to_close": 0,
+          "content_n": 5229,
+          "by_fault": {
+            "backtick-comma": [
+              5,
+              103
+            ],
+            "quote-comma": [
+              3,
+              22
+            ],
+            "comma": [
+              0,
+              17
+            ]
+          }
+        }
+      },
+      "gates": {
+        "faults_70_percent": true,
+        "negatives_1_in_1000": true,
+        "content_1_in_1000": true,
+        "generation": true
+      },
+      "adapters": [
+        "neuron",
+        "control"
+      ]
+    },
+    "generation": {
+      "faulty_n": 24,
+      "faulty_unedited": 14,
+      "faulty_edited": 24,
+      "good_n": 40,
+      "good_unedited": 22,
+      "good_edited": 23
+    },
+    "adapters": [
+      "neuron",
+      "control"
+    ],
+    "headline": "31B gated string-end neuron (saved): held-out, the closing token on top at 104 of 142 fault states (control 8); other states changed 5 of 19737; content to closing token 5 of 5229; whole calls regenerated well formed: faulty 24 of 24 edited against 14 unedited, good 23 against 22",
+    "system_monitor": {
+      "samples": 102
+    }
+  },
+  "wall_seconds": 6073.794471740723
+}

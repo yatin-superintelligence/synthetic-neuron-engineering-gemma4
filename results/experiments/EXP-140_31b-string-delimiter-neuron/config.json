@@ -1,0 +1,66 @@
+{
+  "id": "EXP-140",
+  "slug": "31b-string-delimiter-neuron",
+  "category": "improvement",
+  "motivation": "31B ends the new_string of some edit_file calls with the token backtick-comma where the string-closing token belongs; the call is refused and repeated until the run dies. One neuron that reads that state and writes the closing token would repair the call at its first wrong token.",
+  "hypothesis": "The state before the faulty token is linearly readable in the last layer on tasks the fit did not see (held-out mean read-out 0.5 or more with hard-negative 99th percentile under 0.1), and the write makes the closing token the most probable one there without changing other positions.",
+  "config": {
+    "model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "bench": "artifacts_local/EXP-140/delim_bench.jsonl.gz",
+    "lambdas": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "variants": [
+      "A: ERR",
+      "B: ERR and correct closes"
+    ],
+    "folds": {
+      "a": [
+        "fastapi_11194",
+        "fastapi_14794",
+        "fastapi_9753",
+        "rich_3454",
+        "rich_3470"
+      ],
+      "b": [
+        "fastapi_14258",
+        "rich_3067",
+        "rich_3472",
+        "rich_3944"
+      ],
+      "others": "crc32 of the task id, modulo 2"
+    },
+    "selection_rule": "max held-out ERR mean read-out with hard-negative p99 < 0.1 and mean >= 0.5",
+    "gates": "held-out ERR flipped to the closing token >= 70%; held-out negatives with a changed top token <= 0.1%",
+    "tokens": {
+      "close": 52,
+      "backtick_comma": 8347,
+      "backtick": 236929
+    }
+  },
+  "depends_on": [
+    "EXP-074c",
+    "EXP-129a",
+    "EXP-131a",
+    "EXP-051"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp140_31b_delimiter_neuron.py",
+  "started": "2026-11-11T03:48:20.424825Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794368900.4290094
+  }
+}

@@ -1,0 +1,9 @@
+{
+ "id": "EXP-084i",
+ "slug": "exp-084i-teacher-all-seed5",
+ "category": "synthetic-neuron",
+ "started": "2026-11-08T12:12:44Z",
+ "wall_seconds": 2695.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

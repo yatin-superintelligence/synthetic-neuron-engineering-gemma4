@@ -1,0 +1,9 @@
+{
+ "id": "EXP-080h",
+ "slug": "exp-080h-control-all-seed2",
+ "category": "synthetic-neuron",
+ "started": "2026-11-08T03:12:52Z",
+ "wall_seconds": 832.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "EXP-082",
+  "slug": "decision-timing",
+  "category": "interpretability",
+  "motivation": "EXP-080's neurons write at the tool-name token, where E2B's choice is already settled; find where the choice forms.",
+  "hypothesis": "E2B's own action is far more readable at the tool-name position than at the first thinking token (at least 20 points).",
+  "config": {
+    "layer_mlp": 34,
+    "layer_res": 17,
+    "positions": [
+      "start",
+      "q25",
+      "q50",
+      "q75",
+      "call"
+    ],
+    "tools": [
+      "read_file",
+      "edit_file",
+      "search_similar_code",
+      "run_command",
+      "submit_patch",
+      "write_file"
+    ],
+    "ridge": 1.0,
+    "max_prompt": 22000
+  },
+  "depends_on": [
+    "EXP-079",
+    "EXP-080"
+  ],
+  "env": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.14.1+cu130",
+    "transformers": "5.13.1",
+    "device": "NVIDIA A100-SXM4-40GB"
+  },
+  "command": "experiments/scripts/exp082_decision_timing.py",
+  "started": "2026-11-08T01:54:39.532390Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794102879.5674074
+  },
+  "finished": "2026-11-08T02:28:58.105435Z",
+  "wall_seconds": 2058.6,
+  "status": "OK"
+}

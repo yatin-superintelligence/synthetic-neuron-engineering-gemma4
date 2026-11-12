@@ -1,0 +1,47 @@
+{
+ "tasks": 40,
+ "resolved": 14,
+ "resolved_ids": [
+  "fastapi_15589",
+  "rich_2725",
+  "rich_2943",
+  "rich_3006",
+  "rich_3043",
+  "rich_3067",
+  "rich_3278",
+  "rich_3454",
+  "rich_3480",
+  "rich_3518",
+  "rich_3718",
+  "rich_3882",
+  "rich_3894",
+  "rich_3905"
+ ],
+ "outcomes": {
+  "patch failed tests": 24,
+  "resolved": 14,
+  "error: Sandbox execution error: litellm.Context": 2
+ },
+ "minutes_mean": 10.14,
+ "tool_calls_mean": 30.9,
+ "llm_calls_mean": 34.3,
+ "tasks_never_applying_an_edit": 2,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 1,
+ "loops": 1,
+ "of_those_resolved_loop": 0,
+ "completion_tokens": 343704,
+ "tokens_in_loop_responses": 4241,
+ "loop_token_share": 0.012,
+ "edits": {
+  "edits": 113,
+  "applied": 83,
+  "failed": 30,
+  "kinds": {
+   "applied": 83,
+   "failed (kind not classified)": 30
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

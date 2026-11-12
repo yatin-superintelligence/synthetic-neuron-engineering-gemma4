@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 1
+ },
+ "hard_stop_s": 7200,
+ "adapter": "amp12b",
+ "adapter_local": "artifacts_local/EXP-137/loop_amplify"
+}

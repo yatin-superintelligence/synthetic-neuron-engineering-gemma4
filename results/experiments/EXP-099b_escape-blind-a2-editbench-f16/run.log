@@ -1,0 +1,6 @@
+=== EXP-099b escape-blind-a2-editbench-f16 started 2026-11-09T07:20:40.684137Z commit=09bfef8c27
+[07:21:16] states 62 tasks 41 originally applied 48
+[07:21:22] base arm reused from <repo>\experiments\EXP-097b_escape-blind-editbench-f16\rows_base.json
+[10:05:05] edit {'n': 62, 'edit_calls': 41, 'applied': 21, 'apply_rate': 0.5122, 'not_found': 15, 'identical': 1, 'multiple': 0, 'backslash_edits': 7, 'other_tool': 20, 'no_tool': 1, 'loops': 10} 1615.9
+[12:20:20] control {'n': 62, 'edit_calls': 40, 'applied': 27, 'apply_rate': 0.675, 'not_found': 9, 'identical': 1, 'multiple': 0, 'backslash_edits': 10, 'other_tool': 21, 'no_tool': 1, 'loops': 4} 1322.8
+=== EXP-099b finished status=OK wall=17980.4s

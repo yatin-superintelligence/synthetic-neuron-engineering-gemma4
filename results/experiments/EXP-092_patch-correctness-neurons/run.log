@@ -1,0 +1,123 @@
+=== EXP-092 patch-correctness-neurons started 2026-11-08T17:06:52.152118Z commit=
+[17:06:53] verified tasks 563 from ['/content/repo/artifacts_local/trainset/full1a/trainset/tasks.jsonl', '/content/repo/artifacts_local/trainset/full1b/trainset/tasks.jsonl']
+[17:07:02] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[17:07:07] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+[17:07:16] states 514 skipped {'no single-line fix': 49} {'fit': 257, 'dev': 128, 'test': 129} | median prompt tokens 6296
+=== EXP-092 finished status=FAILED: HTTPError: HTTP Error 400: Bad Request wall=601.0s
+=== EXP-092 patch-correctness-neurons started 2026-11-08T17:41:46.370540Z commit=
+[17:41:48] verified tasks 563 from ['/content/repo/artifacts_local/trainset/full1a/trainset/tasks.jsonl', '/content/repo/artifacts_local/trainset/full1b/trainset/tasks.jsonl']
+[17:41:57] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[17:42:02] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+[17:42:11] states 514 skipped {'no single-line fix': 49} {'fit': 257, 'dev': 128, 'test': 129} | median prompt tokens 6296
+[18:21:46] requests rejected by vLLM (scored as no answer): 0 []
+[18:21:46] baseline greedy: correct {'fit': '28/257', 'dev': '8/128', 'test': '11/129'} | applies {'fit': '102/257', 'dev': '45/128', 'test': '39/129'} | next tool {'edit_file': 284, None: 47, 'read_file': 106, 'run_command': 30, 'search_similar_code': 40, 'submit_patch': 7}
+[18:21:46] fit samples 1028 correct 68 applies 307
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 587.34it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  10%|#         | 198/1951 [00:00<00:00, 1969.71it/s]
+Loading weights:  20%|##        | 395/1951 [00:00<00:00, 1759.01it/s]
+Loading weights:  29%|##9       | 573/1951 [00:00<00:00, 1620.79it/s]
+Loading weights:  38%|###7      | 737/1951 [00:00<00:00, 1532.62it/s]
+Loading weights:  46%|####5     | 892/1951 [00:00<00:00, 1300.05it/s]
+Loading weights:  54%|#####3    | 1050/1951 [00:00<00:00, 1379.01it/s]
+Loading weights:  64%|######3   | 1242/1951 [00:00<00:00, 1532.28it/s]
+Loading weights:  94%|#########3| 1825/1951 [00:00<00:00, 2780.16it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 2069.96it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 31.7s; params=4.629B
+[patch] activations 0/1028
+[patch] activations 100/1028
+[patch] activations 200/1028
+[patch] activations 300/1028
+[patch] activations 400/1028
+[patch] activations 500/1028
+[patch] activations 700/1028
+[patch] activations 800/1028
+[patch] layer 9 {'pairwise_acc': 0.6923, 'dmu': 3.7559}
+[patch] layer 12 {'pairwise_acc': 0.6923, 'dmu': 3.2909}
+[patch] layer 15 {'pairwise_acc': 0.8462, 'dmu': 6.2969}
+[patch] layer 18 {'pairwise_acc': 0.7692, 'dmu': 5.3651}
+[patch] layer 21 {'pairwise_acc': 0.7692, 'dmu': 4.1574}
+[patch] layer 24 {'pairwise_acc': 0.7692, 'dmu': 3.9793}
+[patch] layer 27 {'pairwise_acc': 0.8462, 'dmu': 3.1334}
+[patch] layer 15 neuron {'pairwise_acc': 0.8462, 'dmu': 6.2969, 'readout_check': {'pos_mean': 0.928, 'pos_min': 0.049, 'neg_median': 0.0124, 'neg_p99': 0.3782, 'neg_p999': 0.5909, 'neg_max': 0.7071, 'n_pos': 1066, 'n_neg': 1200}, 'rms_y': 0.1698, 'first_order_shift': 5.6569, 'target': 6.2969, 'control_first_order': 5.6073}
+[patch] layer 27 neuron {'pairwise_acc': 0.8462, 'dmu': 3.1334, 'readout_check': {'pos_mean': 0.843, 'pos_min': 0.133, 'neg_median': 0.0806, 'neg_p99': 0.7738, 'neg_p999': 0.8924, 'neg_max': 0.9115, 'n_pos': 1066, 'n_neg': 1200}, 'rms_y': 0.2357, 'first_order_shift': 1.3249, 'target': 3.1334, 'control_first_order': 1.0867}
+=== EXP-092 finished status=FAILED: RuntimeError: vLLM exited: APIServer pid=106213)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=106213)                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=106213)   File "/root/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=106213)     return await anext(self.gen)
+(APIServer pid=106213)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 136, in build_async_engine_client_from_engine_args
+(APIServer pid=106213)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=106213)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 225, in from_vllm_config
+(APIServer pid=106213)     return cls(
+(APIServer pid=106213)            ^^^^
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 154, in __init__
+(APIServer pid=106213)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=106213)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=106213)     return func(*args, **kwargs)
+(APIServer pid=106213)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 130, in make_async_mp_client
+(APIServer pid=106213)     return AsyncMPClient(*client_args)
+(APIServer pid=106213)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=106213)     return func(*args, **kwargs)
+(APIServer pid=106213)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 887, in __init__
+(APIServer pid=106213)     super().__init__(
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 535, in __init__
+(APIServer pid=106213)     with launch_core_engines(
+(APIServer pid=106213)          ^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=106213)   File "/root/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=106213)     next(self.gen)
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 998, in launch_core_engines
+(APIServer pid=106213)     wait_for_engine_startup(
+(APIServer pid=106213)   File "/opt/sne/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1057, in wait_for_engine_startup
+(APIServer pid=106213)     raise RuntimeError(
+(APIServer pid=106213) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+ wall=5431.2s
+=== EXP-092 patch-correctness-neurons started 2026-11-08T19:15:31.168352Z commit=
+[19:15:32] verified tasks 563 from ['/content/repo/artifacts_local/trainset/full1a/trainset/tasks.jsonl', '/content/repo/artifacts_local/trainset/full1b/trainset/tasks.jsonl']
+[19:15:41] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[19:15:46] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+[19:15:55] states 514 skipped {'no single-line fix': 49} {'fit': 257, 'dev': 128, 'test': 129} | median prompt tokens 6296
+[19:15:55] resumed: baseline and fit samples loaded from the earlier run 514 1028
+[19:15:55] baseline greedy: correct {'fit': '28/257', 'dev': '8/128', 'test': '11/129'} | applies {'fit': '102/257', 'dev': '45/128', 'test': '39/129'} | next tool {'edit_file': 284, None: 47, 'read_file': 106, 'run_command': 30, 'search_similar_code': 40, 'submit_patch': 7}
+[19:15:55] fit samples 1028 correct 68 applies 307
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 738.43it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  10%|9         | 194/1951 [00:00<00:00, 1887.28it/s]
+Loading weights:  20%|#9        | 383/1951 [00:00<00:00, 1699.11it/s]
+Loading weights:  28%|##8       | 554/1951 [00:00<00:00, 1653.97it/s]
+Loading weights:  37%|###6      | 720/1951 [00:00<00:00, 1630.13it/s]
+Loading weights:  45%|####5     | 884/1951 [00:00<00:00, 1526.32it/s]
+Loading weights:  56%|#####6    | 1098/1951 [00:00<00:00, 1710.22it/s]
+Loading weights:  86%|########6 | 1682/1951 [00:00<00:00, 2984.89it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 2449.68it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 9.9s; params=4.629B
+[patch] activations 0/1028
+[patch] activations 100/1028
+[patch] activations 200/1028
+[patch] activations 300/1028
+[patch] activations 400/1028
+[patch] activations 500/1028
+[patch] activations 700/1028
+[patch] activations 800/1028
+[patch] layer 9 {'pairwise_acc': 0.6923, 'dmu': 3.7559}
+[patch] layer 12 {'pairwise_acc': 0.6923, 'dmu': 3.2909}
+[patch] layer 15 {'pairwise_acc': 0.8462, 'dmu': 6.2969}
+[patch] layer 18 {'pairwise_acc': 0.7692, 'dmu': 5.3651}
+[patch] layer 21 {'pairwise_acc': 0.7692, 'dmu': 4.1574}
+[patch] layer 24 {'pairwise_acc': 0.7692, 'dmu': 3.9793}
+[patch] layer 27 {'pairwise_acc': 0.8462, 'dmu': 3.1334}
+[patch] layer 15 neuron {'pairwise_acc': 0.8462, 'dmu': 6.2969, 'readout_check': {'pos_mean': 0.928, 'pos_min': 0.049, 'neg_median': 0.0124, 'neg_p99': 0.3782, 'neg_p999': 0.5909, 'neg_max': 0.7071, 'n_pos': 1066, 'n_neg': 1200}, 'rms_y': 0.1698, 'first_order_shift': 5.6569, 'target': 6.2969, 'control_first_order': 5.6073}
+[patch] layer 27 neuron {'pairwise_acc': 0.8462, 'dmu': 3.1334, 'readout_check': {'pos_mean': 0.843, 'pos_min': 0.133, 'neg_median': 0.0806, 'neg_p99': 0.7738, 'neg_p999': 0.8924, 'neg_max': 0.9115, 'n_pos': 1066, 'n_neg': 1200}, 'rms_y': 0.2357, 'first_order_shift': 1.3249, 'target': 3.1334, 'control_first_order': 1.0867}
+[21:16:00] dev scan (correct of 128 ): {'n_L15_a1': 11, 'n_L15_a3': 6, 'n_L15_a9': 8, 'n_L27_a1': 6, 'n_L27_a3': 6, 'n_L27_a9': 7, 'base': 8}
+=== EXP-092 finished status=OK wall=8813.3s

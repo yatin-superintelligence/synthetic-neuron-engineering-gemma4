@@ -1,0 +1,208 @@
+{
+  "results": {
+    "arms": {
+      "base_f16": {
+        "mbpp_dev": {
+          "bench": "mbpp+",
+          "n": 189,
+          "passed": 113,
+          "pass_rate": 0.5979,
+          "categories": {
+            "pass": 113,
+            "wrong_answer": 48,
+            "wrong_or_missing_entry_point": 10,
+            "timeout": 2,
+            "runtime_error": 16
+          },
+          "mean_gen_tokens": 404.7,
+          "gen": {
+            "wall_s": 1528.26,
+            "gen_tokens": 76480,
+            "tok_per_s": 50.0
+          },
+          "exec_s": 35.8,
+          "total_s": 1564.1
+        },
+        "mbpp_test": {
+          "bench": "mbpp+",
+          "n": 188,
+          "passed": 125,
+          "pass_rate": 0.6649,
+          "categories": {
+            "pass": 125,
+            "wrong_answer": 45,
+            "truncated": 2,
+            "wrong_or_missing_entry_point": 9,
+            "runtime_error": 6,
+            "syntax_error": 1
+          },
+          "mean_gen_tokens": 463.0,
+          "gen": {
+            "wall_s": 2255.22,
+            "gen_tokens": 87041,
+            "tok_per_s": 38.6
+          },
+          "exec_s": 5.1,
+          "total_s": 2260.3
+        },
+        "humaneval": {
+          "bench": "humaneval+",
+          "n": 163,
+          "passed": 126,
+          "pass_rate": 0.773,
+          "categories": {
+            "pass": 126,
+            "wrong_answer": 36,
+            "runtime_error": 1
+          },
+          "mean_gen_tokens": 392.8,
+          "gen": {
+            "wall_s": 1253.1,
+            "gen_tokens": 64026,
+            "tok_per_s": 51.1
+          },
+          "exec_s": 13.8,
+          "total_s": 1266.9
+        },
+        "humanevalfix": {
+          "bench": "humanevalfix",
+          "n": 164,
+          "passed": 145,
+          "pass_rate": 0.8841,
+          "categories": {
+            "pass": 145,
+            "wrong_answer": 18,
+            "name_or_import_error": 1
+          },
+          "mean_gen_tokens": 706.3,
+          "gen": {
+            "wall_s": 2360.67,
+            "gen_tokens": 115835,
+            "tok_per_s": 49.1
+          },
+          "exec_s": 1.8,
+          "total_s": 2362.5
+        },
+        "repopatch": {
+          "bench": "repopatch",
+          "n": 141,
+          "passed": 49,
+          "pass_rate": 0.3475,
+          "format_ok_rate": 0.9787,
+          "applied_rate": 0.922,
+          "categories": {
+            "pass": 49,
+            "tests_fail": 81,
+            "format_error": 3,
+            "edit_not_applicable": 8
+          },
+          "mean_gen_tokens": 88.1,
+          "gen": {
+            "wall_s": 612.43,
+            "gen_tokens": 12421,
+            "tok_per_s": 20.3
+          },
+          "total_s": 621.0
+        },
+        "mmlu500": {
+          "bench": "mmlu",
+          "n": 500,
+          "passed": 267,
+          "pass_rate": 0.534,
+          "unparsed": 47,
+          "gen": {
+            "wall_s": 417.63,
+            "gen_tokens": 4968,
+            "tok_per_s": 11.9
+          }
+        },
+        "behavior": {
+          "bench": "behavior",
+          "n": 40,
+          "checks_passed": 22,
+          "checks_total": 22,
+          "check_rate": 1.0,
+          "mean_tokens": 353.9,
+          "hit_limit": 0,
+          "mean_distinct2": 0.879,
+          "refusals_on_safe_prompts": 5,
+          "gen": {
+            "wall_s": 283.0,
+            "gen_tokens": 14157,
+            "tok_per_s": 50.0
+          },
+          "pass_rate": 1.0,
+          "passed": 22
+        }
+      },
+      "base_q4_0": {
+        "mbpp_dev": {
+          "bench": "mbpp+",
+          "n": 189,
+          "passed": 118,
+          "pass_rate": 0.6243,
+          "categories": {
+            "pass": 118,
+            "wrong_answer": 46,
+            "wrong_or_missing_entry_point": 5,
+            "runtime_error": 18,
+            "timeout": 1,
+            "loop": 1
+          },
+          "mean_gen_tokens": 498.6,
+          "gen": {
+            "wall_s": 1736.93,
+            "gen_tokens": 94232,
+            "tok_per_s": 54.3
+          },
+          "exec_s": 44.4,
+          "total_s": 1781.4
+        },
+        "mbpp_test": {
+          "bench": "mbpp+",
+          "n": 188,
+          "passed": 127,
+          "pass_rate": 0.6755,
+          "categories": {
+            "wrong_answer": 47,
+            "pass": 127,
+            "wrong_or_missing_entry_point": 5,
+            "runtime_error": 6,
+            "syntax_error": 1,
+            "loop": 1,
+            "timeout": 1
+          },
+          "mean_gen_tokens": 469.2,
+          "gen": {
+            "wall_s": 1637.36,
+            "gen_tokens": 88202,
+            "tok_per_s": 53.9
+          },
+          "exec_s": 40.5,
+          "total_s": 1677.9
+        },
+        "humaneval": {
+          "bench": "humaneval+",
+          "n": 163,
+          "passed": 123,
+          "pass_rate": 0.7546,
+          "categories": {
+            "pass": 123,
+            "wrong_answer": 35,
+            "timeout": 1,
+            "runtime_error": 4
+          },
+          "mean_gen_tokens": 429.0,
+          "gen": {
+            "wall_s": 1178.44,
+            "gen_tokens": 69925,
+            "tok_per_s": 59.3
+          },
+          "exec_s": 39.6,
+          "total_s": 1218.1
+        }
+      }
+    }
+  },
+  "wall_seconds": 5012.068513393402
+}

@@ -1,0 +1,78 @@
+=== EXP-140c 31b-delimiter-neuron-competitor-write started 2026-11-11T06:37:03.379768Z commit=
+
+Loading weights:   0%|          | 0/1188 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1188 [00:00<02:52,  6.87it/s]
+Loading weights:   2%|1         | 20/1188 [00:00<00:12, 90.09it/s]
+Loading weights:   4%|3         | 47/1188 [00:00<00:07, 157.84it/s]
+Loading weights:   5%|5         | 65/1188 [00:00<00:06, 164.42it/s]
+Loading weights:   7%|7         | 88/1188 [00:00<00:06, 162.73it/s]
+Loading weights:  10%|9         | 116/1188 [00:00<00:05, 193.28it/s]
+Loading weights:  11%|#1        | 136/1188 [00:00<00:05, 190.88it/s]
+Loading weights:  13%|#3        | 158/1188 [00:00<00:05, 199.28it/s]
+Loading weights:  15%|#5        | 179/1188 [00:01<00:05, 192.34it/s]
+Loading weights:  17%|#6        | 200/1188 [00:01<00:05, 183.70it/s]
+Loading weights:  19%|#9        | 227/1188 [00:01<00:04, 205.46it/s]
+Loading weights:  21%|##        | 248/1188 [00:01<00:04, 203.47it/s]
+Loading weights:  23%|##2       | 269/1188 [00:01<00:05, 181.81it/s]
+Loading weights:  25%|##4       | 296/1188 [00:01<00:04, 202.67it/s]
+Loading weights:  27%|##6       | 317/1188 [00:01<00:04, 202.11it/s]
+Loading weights:  28%|##8       | 338/1188 [00:01<00:04, 191.62it/s]
+Loading weights:  30%|###       | 361/1188 [00:01<00:04, 200.99it/s]
+Loading weights:  32%|###2      | 382/1188 [00:02<00:04, 192.14it/s]
+Loading weights:  34%|###4      | 407/1188 [00:02<00:03, 206.74it/s]
+Loading weights:  36%|###6      | 429/1188 [00:02<00:03, 199.83it/s]
+Loading weights:  38%|###7      | 450/1188 [00:02<00:03, 187.34it/s]
+Loading weights:  40%|####      | 476/1188 [00:02<00:03, 204.81it/s]
+Loading weights:  42%|####1     | 497/1188 [00:02<00:03, 196.75it/s]
+Loading weights:  44%|####3     | 518/1188 [00:02<00:03, 192.36it/s]
+Loading weights:  46%|####5     | 541/1188 [00:02<00:03, 199.80it/s]
+Loading weights:  47%|####7     | 562/1188 [00:02<00:03, 193.24it/s]
+Loading weights:  49%|####9     | 586/1188 [00:03<00:03, 199.30it/s]
+Loading weights:  51%|#####1    | 607/1188 [00:03<00:03, 192.07it/s]
+Loading weights:  53%|#####2    | 629/1188 [00:03<00:02, 195.62it/s]
+Loading weights:  55%|#####4    | 651/1188 [00:03<00:02, 200.86it/s]
+Loading weights:  57%|#####6    | 672/1188 [00:03<00:02, 188.00it/s]
+Loading weights:  59%|#####8    | 697/1188 [00:03<00:02, 201.58it/s]
+Loading weights:  60%|######    | 718/1188 [00:03<00:02, 193.34it/s]
+Loading weights:  62%|######2   | 740/1188 [00:03<00:02, 189.60it/s]
+Loading weights:  64%|######4   | 766/1188 [00:04<00:02, 200.61it/s]
+Loading weights:  66%|######6   | 787/1188 [00:04<00:02, 196.18it/s]
+Loading weights:  68%|######8   | 809/1188 [00:04<00:01, 196.16it/s]
+Loading weights:  70%|#######   | 832/1188 [00:04<00:01, 198.83it/s]
+Loading weights: 100%|##########| 1188/1188 [00:04<00:00, 266.66it/s]
+[06:37:11] model loaded in 7 s | layers 60 | device cuda
+[06:37:11] read-out activations from EXP-140's cache: (16684, 21504)
+[06:37:15] held-out read-out grid: [{'lam': 0.001, 'pos_mean': 0.738, 'hard_p99': 0.0938}, {'lam': 0.01, 'pos_mean': 0.768, 'hard_p99': 0.0983}, {'lam': 0.1, 'pos_mean': 0.806, 'hard_p99': 0.1226}, {'lam': 1.0, 'pos_mean': 0.848, 'hard_p99': 0.1937}, {'lam': 10.0, 'pos_mean': 0.873, 'hard_p99': 0.3103}]
+[06:37:29] capture row 1 of 162, 15110 tokens, 10 s so far
+[06:39:55] capture row 26 of 162, 12148 tokens, 156 s so far
+[06:42:31] capture row 51 of 162, 10309 tokens, 312 s so far
+[06:45:16] capture row 76 of 162, 8901 tokens, 477 s so far
+[06:47:51] capture row 101 of 162, 15102 tokens, 632 s so far
+[06:50:33] capture row 126 of 162, 13751 tokens, 794 s so far
+[06:53:15] capture row 151 of 162, 13130 tokens, 956 s so far
+[06:54:24] recomputed against the model's own logits: largest difference 0.1921 logits
+/content/repo/experiments/scripts/exp140c_31b_delimiter_competitors.py:367: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  out["direction"] = dict(norm_ratio_old_to_min_for_equal_first_order_effect=round(float((e / (wpf * wfin)).norm() * g.norm() / e.pow(2).sum()), 1))
+[06:54:24] old write, recomputed exactly (EXP-140 measured close_is_top 8 and 10 at c 9 and 12): [{'c': 9.0, 'close_is_top': 8, 'margin_median': -3.02, 'margin_p10': -11.85}, {'c': 12.0, 'close_is_top': 11, 'margin_median': -2.56, 'margin_p10': -10.66}]
+[06:54:24] write round {'round': 1, 'competitors': [8347, 236929], 'alpha': 1.8432, 'close_is_top': 43, 'n': 62, 'margin_median': 0.32, 'margin_p10': -2.47, 'new_top_tokens': [(148, '            '), (228276, 'nilvadipine')]}
+[06:54:24] write round {'round': 2, 'competitors': [8347, 236929, 148, 228276], 'alpha': 4.0806, 'close_is_top': 62, 'n': 62, 'margin_median': 2.42, 'margin_p10': 1.56, 'new_top_tokens': []}
+[06:54:24] competitor write: {'competitors': [8347, 236929, 148, 228276], 'alpha': 4.0806, 'u_norm': 4.0806, 'old_u_norm_at_c12': 66.2056, 'in_sample': {'close_is_top': 62, 'n': 62, 'margin_median': 2.42, 'margin_p10': 1.56}}
+[06:54:25] held-out edit: {'ERR_flipped_to_close': 57, 'ERR_n': 62, 'negatives_changed': 11, 'negatives_n': 8076, 'control_ERR_flipped': 3, 'control_negatives_changed': 18, 'readout_held': {'ERR_mean': 0.768, 'neg_p99': 0.1028}} | gates {'ERR_flipped_at_least_70_percent': True, 'negatives_changed_at_most_1_in_1000': False}
+[06:54:59] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 52, 'new_tokens': 45, 'ended': True, 'well_formed': True}, 'edited': {'first_token': 52, 'new_tokens': 45, 'ended': True, 'well_formed': True}}
+[06:55:25] generation {'iid': 'fastapi_14794', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 51, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 52, 'ended': True, 'well_formed': True}}
+[06:55:54] generation {'iid': 'rich_3067', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 49, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 51, 'ended': True, 'well_formed': True}}
+[06:56:17] generation {'iid': 'rich_3454', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 50, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 52, 'ended': True, 'well_formed': True}}
+[06:56:53] generation {'iid': 'rich_3470', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 90, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 92, 'ended': True, 'well_formed': True}}
+[06:57:02] generation {'iid': 'rich_3472', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}}
+[06:57:09] generation {'iid': 'rich_3472', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 52, 'new_tokens': 11, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 11, 'ended': True, 'well_formed': False}}
+[06:57:32] generation {'iid': 'rich_3944', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 29, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 30, 'ended': True, 'well_formed': True}}
+[06:57:53] generation {'iid': 'rich_3944', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 52, 'new_tokens': 30, 'ended': True, 'well_formed': True}, 'edited': {'first_token': 52, 'new_tokens': 30, 'ended': True, 'well_formed': True}}
+[06:58:13] generation {'iid': 'rich_3944', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 8, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 30, 'ended': True, 'well_formed': True}}
+[06:58:37] generation {'iid': 'rich_3944', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 19, 'ended': True, 'well_formed': False}}
+[06:59:39] generation {'iid': 'fastapi_11194', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 132, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 134, 'ended': True, 'well_formed': True}}
+[07:00:04] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 37, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 39, 'ended': True, 'well_formed': True}}
+[07:00:32] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 37, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 39, 'ended': True, 'well_formed': True}}
+[07:01:04] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 148, 'new_tokens': 56, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 148, 'new_tokens': 58, 'ended': True, 'well_formed': True}}
+[07:01:25] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 20, 'ended': True, 'well_formed': True}}
+=== EXP-140c finished status=OK wall=1462.1s

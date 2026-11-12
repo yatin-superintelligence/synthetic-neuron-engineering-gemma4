@@ -1,0 +1,57 @@
+{
+  "id": "EXP-140b",
+  "slug": "31b-delimiter-neuron-minnorm-write",
+  "category": "improvement",
+  "motivation": "EXP-140's write saturated at about 4 logits; its direction divides by the norm weights and is 74 times longer than the smallest write with the same effect. The minimum-norm write along e * w * w_f has 74 times the reach.",
+  "hypothesis": "With the same read-out, the minimum-norm write makes the closing token the most probable at 70% or more of held-out faulty states while at most 1 in 1,000 other states change their most probable token.",
+  "config": {
+    "model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "bench": "artifacts_local/EXP-140/delim_bench.jsonl.gz",
+    "lambdas": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "write": "u = alpha g / |g|, g = e * w * w_f",
+    "target_margin_p10": 2.0,
+    "folds": {
+      "a": [
+        "fastapi_11194",
+        "fastapi_14794",
+        "fastapi_9753",
+        "rich_3454",
+        "rich_3470"
+      ],
+      "b": [
+        "fastapi_14258",
+        "rich_3067",
+        "rich_3472",
+        "rich_3944"
+      ]
+    },
+    "gates": "held-out ERR flipped to the closing token >= 70%; held-out negatives with a changed top token <= 0.1%"
+  },
+  "depends_on": [
+    "EXP-140"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp140b_31b_delimiter_minnorm.py",
+  "started": "2026-11-11T05:57:25.094690Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794376645.0989208
+  },
+  "finished": "2026-11-11T06:35:24.905048Z",
+  "wall_seconds": 2279.8,
+  "status": "OK"
+}

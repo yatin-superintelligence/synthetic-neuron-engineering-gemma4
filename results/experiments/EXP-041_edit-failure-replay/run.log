@@ -1,0 +1,8 @@
+=== EXP-041 edit-failure-replay started 2026-11-06T07:13:13.173016Z commit=3b00bcea40
+[07:14:41] exp036 {'edits': 86, 'applied': 43, 'failed': 43, 'kinds': {'applied': 43, 'mostly_real_altered': 11, 'over_escaped': 9, 'identical': 8, 'invented': 5, 'stale_after_own_edit': 4, 'multiple': 4, 'lines_real_block_not': 2}, 'failed_repeating_identical_call': 12, 'failed_with_backslash': 19}
+[07:16:17] exp037 {'edits': 132, 'applied': 58, 'failed': 74, 'kinds': {'applied': 58, 'invented': 29, 'mostly_real_altered': 15, 'multiple': 15, 'stale_after_own_edit': 12, 'identical': 2, 'lines_real_block_not': 1}, 'failed_repeating_identical_call': 33, 'failed_with_backslash': 32}
+[07:19:09] cases 218 dev 106
+[07:19:15] states tested 31 tasks 17 originally failed 5
+[07:45:56] q4_0 argument_order {'pairs': 62, 'tasks': 17, 'rate_old_first': 0.8226, 'rate_new_first': 0.7903, 'seed0_only_old_first': 3, 'seed0_only_new_first': 2, 'mcnemar_p_seed0': 1.0, 'mean_gain': 0.0323, 'task_bootstrap_ci': [-0.0833, 0.1282], 'outcomes_old_first': {'applied': 51, 'multiple': 5, 'not_found': 6}, 'outcomes_new_first': {'applied': 49, 'not_found': 7, 'identical': 2, 'multiple': 2, 'file_missing': 1, 'empty': 1}}
+[08:24:24] f16 argument_order {'pairs': 62, 'tasks': 17, 'rate_old_first': 0.7903, 'rate_new_first': 0.8387, 'seed0_only_old_first': 1, 'seed0_only_new_first': 3, 'mcnemar_p_seed0': 0.625, 'mean_gain': -0.0484, 'task_bootstrap_ci': [-0.1714, 0.0556], 'outcomes_old_first': {'applied': 49, 'multiple': 6, 'file_missing': 1, 'not_found': 6}, 'outcomes_new_first': {'applied': 52, 'not_found': 6, 'identical': 2, 'multiple': 2}}
+=== EXP-041 finished status=OK wall=4272.6s

@@ -1,0 +1,50 @@
+{
+ "tasks": 40,
+ "resolved": 16,
+ "resolved_ids": [
+  "fastapi_11194",
+  "fastapi_15589",
+  "rich_2725",
+  "rich_2943",
+  "rich_3006",
+  "rich_3043",
+  "rich_3067",
+  "rich_3278",
+  "rich_3454",
+  "rich_3480",
+  "rich_3518",
+  "rich_3718",
+  "rich_3882",
+  "rich_3894",
+  "rich_3905",
+  "rich_4077"
+ ],
+ "outcomes": {
+  "patch failed tests": 22,
+  "resolved": 16,
+  "no patch": 1,
+  "error: Agent exceeded session timeout (60.0 min": 1
+ },
+ "minutes_mean": 17.02,
+ "tool_calls_mean": 38.6,
+ "llm_calls_mean": 42.6,
+ "tasks_never_applying_an_edit": 2,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 2,
+ "loops": 12,
+ "of_those_resolved_loop": 0,
+ "completion_tokens": 535404,
+ "tokens_in_loop_responses": 47321,
+ "loop_token_share": 0.088,
+ "edits": {
+  "edits": 140,
+  "applied": 94,
+  "failed": 46,
+  "kinds": {
+   "applied": 94,
+   "failed (kind not classified)": 46
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

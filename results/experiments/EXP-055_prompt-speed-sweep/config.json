@@ -1,0 +1,89 @@
+{
+  "id": "EXP-055",
+  "slug": "prompt-speed-sweep",
+  "category": "infrastructure",
+  "motivation": "I accepted 130 tokens/s on long prompts without testing it, then cut the states I test to fit. If the rate can be raised, local replays need no such cut and the need for paid compute falls.",
+  "hypothesis": "A larger physical batch raises prompt throughput, because the GPU is underused at 512 tokens per step.",
+  "config": {
+    "grid": [
+      {
+        "ub": 512,
+        "b": 2048,
+        "np": 6
+      },
+      {
+        "ub": 1024,
+        "b": 2048,
+        "np": 6
+      },
+      {
+        "ub": 2048,
+        "b": 2048,
+        "np": 6
+      },
+      {
+        "ub": 4096,
+        "b": 4096,
+        "np": 6
+      },
+      {
+        "ub": 8192,
+        "b": 8192,
+        "np": 6
+      },
+      {
+        "ub": 512,
+        "b": 2048,
+        "np": 1
+      },
+      {
+        "ub": 2048,
+        "b": 2048,
+        "np": 1
+      },
+      {
+        "ub": 512,
+        "b": 2048,
+        "np": 6
+      }
+    ],
+    "target_prompt_tokens": 10000
+  },
+  "depends_on": [
+    "EXP-001"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "8a4cdf9b1df2ffc85d55b009cad653e6e3a57994",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp055_prompt_speed_sweep.py",
+  "started": "2026-11-06T09:13:59.831733Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1774,
+    "cpu_core_w": 3.8,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 7,
+    "battery_pct": 100,
+    "cpu_pct": 12.9,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 84.7,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 9.9,
+    "ram_free_gb": 19.87,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.36,
+    "t": 1793956449.438413
+  },
+  "finished": "2026-11-06T09:27:11.414953Z",
+  "wall_seconds": 791.6,
+  "status": "OK"
+}

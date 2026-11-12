@@ -1,0 +1,35 @@
+=== EXP-088b sft-edit-only started 2026-11-08T22:36:05.807576Z commit=
+[22:36:05] training tasks 563 | per repo {'Textualize/rich': 482, 'fastapi/fastapi': 81}
+[22:36:10] system prompt /content/kaggle_input/competitions/gemma-4-developer-agent/sample_submission/prompts/system.md 3882 chars
+[22:36:14] fastapi/fastapi trajectories so far 71 skipped {'no single-line edit': 10}
+[22:36:19] Textualize/rich trajectories so far 514 skipped {'no single-line edit': 49}
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:02<00:00,  3.87it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:20<00:02,  2.50s/it]
+Fetching 9 files: 100%|##########| 9/9 [00:29<00:00,  3.28s/it]
+Fetching 9 files: 100%|##########| 9/9 [00:29<00:00,  3.28s/it]
+[22:37:06] encoded 490 | render mismatch 0 | over 12288 tokens 24 | median tokens 6363 | median target tokens 121
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  31%|###1      | 612/1951 [00:00<00:00, 6090.38it/s]
+Loading weights:  63%|######2   | 1222/1951 [00:00<00:00, 5725.12it/s]
+Loading weights:  92%|#########2| 1796/1951 [00:00<00:00, 5689.91it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 5726.22it/s]
+[22:37:10] LoRA modules 140 trainable parameters 21037056
+[22:37:57] validation loss before training 0.967 | train 466 val 24 | optimizer steps 117
+[22:50:49] [sft] step 10/117 train loss 0.9126 | 12.9 min
+[23:03:41] [sft] step 20/117 train loss 0.3288 | 25.7 min
+[23:17:20] [sft] step 30/117 train loss 0.123 | 39.4 min
+[23:30:20] [sft] step 40/117 train loss 0.0706 | 52.4 min
+[23:43:07] [sft] step 50/117 train loss 0.0593 | 65.2 min
+[23:43:55] [sft] step 50 validation loss 0.0427
+[23:56:42] [sft] step 60/117 train loss 0.052 | 78.8 min
+[00:09:05] [sft] step 70/117 train loss 0.0396 | 91.1 min
+[00:22:22] [sft] step 80/117 train loss 0.0319 | 104.4 min
+[00:35:59] [sft] step 90/117 train loss 0.0273 | 118.0 min
+[00:49:32] [sft] step 100/117 train loss 0.0333 | 131.6 min
+[00:50:21] [sft] step 100 validation loss 0.0292
+[01:02:52] [sft] step 110/117 train loss 0.0347 | 144.9 min
+[01:14:01] vLLM LoRA check {'base': '(a, b), (a,', 'sft': '\n```\n```\n```\n```'}
+=== EXP-088b finished status=OK wall=9477.2s

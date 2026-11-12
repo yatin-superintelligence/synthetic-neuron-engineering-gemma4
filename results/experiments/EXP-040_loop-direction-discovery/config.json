@@ -1,0 +1,52 @@
+{
+  "id": "EXP-040",
+  "slug": "loop-direction-discovery",
+  "category": "localization",
+  "motivation": "If looping is carried by a specific direction written by a few MLP layers, as Takehi et al. found for Qwen, it can be removed by a rank-1 edit that compiles exactly to a LoRA.",
+  "hypothesis": "A few layers show held-out d' above 1 and well above random directions; layer ranking is stable between task halves.",
+  "config": {
+    "ctx_tokens": 3000,
+    "resp_tokens": 1500,
+    "tokens_per_class": 200,
+    "split": "dev",
+    "fit_half_seed": 40,
+    "classes": [
+      "LOOP",
+      "PRE",
+      "NORMAL"
+    ]
+  },
+  "depends_on": [
+    "EXP-038"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "89e98fedcb764dc84b5e176342b0d4b51ec35bc7",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp040_loop_direction.py",
+  "started": "2026-11-06T08:38:10.476226Z",
+  "sys_at_start": {
+    "cpu_perf_limit_pct": 100,
+    "thermal_c": 27.9,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 5.1,
+    "cpu_pct": 7,
+    "on_ac": true,
+    "cpu_freq_mhz": 1801,
+    "battery_discharge_mw": 0,
+    "battery_pct": 100,
+    "ram_free_gb": 19.97,
+    "cpu_perf_pct": 117.2,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.4,
+    "t": 1793954298.636794
+  },
+  "finished": "2026-11-06T08:50:11.918272Z",
+  "wall_seconds": 721.4,
+  "status": "OK"
+}

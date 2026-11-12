@@ -1,0 +1,175 @@
+{
+ "results": {
+  "headline": "1 slot fastest: Q4_0 46.9 s per state against 84 to 93 at 2 to 6 slots; F16 60.6 against 110.3 at 2 slots; unified cache no help; no crashes at batch 512",
+  "rows": [
+   {
+    "precision": "q4_0",
+    "slots": 1,
+    "unified": false,
+    "wall_s": 281.5,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1300,
+    "s_per_state": 46.9,
+    "status": "ok"
+   },
+   {
+    "precision": "q4_0",
+    "slots": 2,
+    "unified": false,
+    "wall_s": 533.8,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1312,
+    "s_per_state": 89.0,
+    "status": "ok"
+   },
+   {
+    "precision": "q4_0",
+    "slots": 3,
+    "unified": false,
+    "wall_s": 511.0,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1432,
+    "s_per_state": 85.2,
+    "status": "ok"
+   },
+   {
+    "precision": "q4_0",
+    "slots": 4,
+    "unified": false,
+    "wall_s": 502.4,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1226,
+    "s_per_state": 83.7,
+    "status": "ok"
+   },
+   {
+    "precision": "q4_0",
+    "slots": 6,
+    "unified": false,
+    "wall_s": 506.7,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1323,
+    "s_per_state": 84.5,
+    "status": "ok"
+   },
+   {
+    "precision": "q4_0",
+    "slots": 3,
+    "unified": true,
+    "wall_s": 522.6,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1307,
+    "s_per_state": 87.1,
+    "status": "ok"
+   },
+   {
+    "precision": "q4_0",
+    "slots": 6,
+    "unified": true,
+    "wall_s": 555.3,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1265,
+    "s_per_state": 92.6,
+    "status": "ok"
+   },
+   {
+    "precision": "f16",
+    "slots": 1,
+    "unified": false,
+    "wall_s": 363.7,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1330,
+    "s_per_state": 60.6,
+    "status": "ok"
+   },
+   {
+    "precision": "f16",
+    "slots": 2,
+    "unified": false,
+    "wall_s": 661.8,
+    "prompt_tokens": 83266,
+    "gen_tokens": 1273,
+    "s_per_state": 110.3,
+    "status": "ok"
+   }
+  ]
+ },
+ "sysmon": {
+  "samples": 70,
+  "ram_free_gb": {
+   "min": 9.93,
+   "max": 20.8,
+   "mean": 14.16
+  },
+  "gpu_shared_gb": {
+   "min": 1.21,
+   "max": 7.23,
+   "mean": 4.86
+  },
+  "gpu_util_pct": {
+   "min": 0,
+   "max": 100,
+   "mean": 91.77
+  },
+  "cpu_package_w": {
+   "min": 15.7,
+   "max": 31.6,
+   "mean": 22.56
+  },
+  "cpu_core_w": {
+   "min": 0.8,
+   "max": 11.4,
+   "mean": 1.93
+  },
+  "igpu_w": {
+   "min": 0,
+   "max": 24.5,
+   "mean": 14.59
+  },
+  "battery_pct": {
+   "min": 100,
+   "max": 100,
+   "mean": 100.0
+  },
+  "cpu_pct": {
+   "min": 0,
+   "max": 36.5,
+   "mean": 7.61
+  },
+  "cpu_perf_pct": {
+   "min": 30.4,
+   "max": 106.6,
+   "mean": 53.33
+  },
+  "cpu_perf_limit_pct": {
+   "min": 100,
+   "max": 100,
+   "mean": 100.0
+  },
+  "passive_limit_pct": {
+   "min": 100,
+   "max": 100,
+   "mean": 100.0
+  },
+  "throttle_reasons": {
+   "min": 0,
+   "max": 0,
+   "mean": 0.0
+  },
+  "cpu_freq_mhz": {
+   "min": 1680,
+   "max": 1918,
+   "mean": 1843.71
+  },
+  "battery_discharge_mw": {
+   "min": 0,
+   "max": 0,
+   "mean": 0.0
+  },
+  "battery_charge_mw": {
+   "min": 0,
+   "max": 0,
+   "mean": 0.0
+  }
+ }
+}

@@ -1,0 +1,45 @@
+=== EXP-158 12b-success-neurons started 2026-11-12T11:45:31.974498Z commit=
+[11:45:32] bench rows 62 | solved 44 | tasks 25
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:01<00:00,  7.00it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:20<00:02,  2.50s/it]
+Fetching 9 files: 100%|##########| 9/9 [01:04<00:00,  7.13s/it]
+Fetching 9 files: 100%|##########| 9/9 [01:04<00:00,  7.13s/it]
+
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/677 [00:00<01:31,  7.40it/s]
+Loading weights:   7%|7         | 49/677 [00:00<00:02, 242.42it/s]
+Loading weights:  13%|#3        | 90/677 [00:00<00:01, 310.84it/s]
+Loading weights:  19%|#9        | 132/677 [00:00<00:01, 344.49it/s]
+Loading weights:  26%|##5       | 173/677 [00:00<00:01, 366.71it/s]
+Loading weights:  32%|###2      | 220/677 [00:00<00:01, 399.94it/s]
+Loading weights:  39%|###9      | 266/677 [00:00<00:00, 418.19it/s]
+Loading weights:  46%|####5     | 311/677 [00:00<00:00, 423.99it/s]
+Loading weights:  52%|#####2    | 354/677 [00:00<00:00, 406.85it/s]
+Loading weights:  60%|#####9    | 404/677 [00:01<00:00, 432.70it/s]
+Loading weights:  66%|######6   | 449/677 [00:01<00:00, 428.94it/s]
+Loading weights:  73%|#######2  | 493/677 [00:01<00:00, 414.54it/s]
+Loading weights:  79%|#######9  | 535/677 [00:01<00:00, 414.62it/s]
+Loading weights:  86%|########5 | 581/677 [00:01<00:00, 426.17it/s]
+Loading weights:  92%|#########2| 624/677 [00:01<00:00, 422.29it/s]
+Loading weights:  99%|#########8| 667/677 [00:01<00:00, 421.46it/s]
+Loading weights: 100%|##########| 677/677 [00:01<00:00, 397.00it/s]
+[11:46:39] model loaded in 3 s | layers 48
+[11:46:42] row 1 of 62, 10955 tokens, 3 s so far
+[11:47:12] row 11 of 62, 9926 tokens, 33 s so far
+[11:47:48] row 21 of 62, 17205 tokens, 68 s so far
+[11:48:13] row 31 of 62, 17862 tokens, 94 s so far
+[11:48:43] row 41 of 62, 9130 tokens, 124 s so far
+[11:49:14] row 51 of 62, 18999 tokens, 155 s so far
+[11:49:46] row 61 of 62, 12518 tokens, 187 s so far
+[11:49:49] features (62, 1474560)
+[11:49:49] tasks with both outcomes 11 | fold A ['fastapi_9753', 'rich_4077', 'rich_2943', 'fastapi_13537', 'fastapi_14301', 'rich_3894'] | fold B ['fastapi_11194', 'fastapi_14794', 'fastapi_14463', 'fastapi_15589', 'rich_2725']
+[11:49:49] held-out AUC: select on A test on B 0.7 (10 pairs) | select on B test on A 0.714 (14 pairs) | pooled 0.708
+[11:49:49] permutation 1 of 200
+[11:49:49] permutation 51 of 200
+[11:49:49] permutation 101 of 200
+[11:49:50] permutation 151 of 200
+[11:49:50] held-out {'a_to_b': 0.7, 'b_to_a': 0.7143, 'pooled': 0.7083, 'pairs': 24} | permutation {'n': 200, 'null_median': 0.5, 'null_95': 0.75, 'p': 0.1343} | gate False
+[11:49:50] top neurons [{'feature': 83166, 'kind': 'last', 'layer': 5, 'neuron': 6366, 'auc': 0.0, 'mean_solved': -0.03122, 'mean_failed': -0.02425}, {'feature': 156886, 'kind': 'last', 'layer': 10, 'neuron': 3286, 'auc': 0.0, 'mean_solved': 0.0241, 'mean_failed': 0.05758}, {'feature': 273679, 'kind': 'last', 'layer': 17, 'neuron': 12559, 'auc': 0.0, 'mean_solved': 0.12124, 'mean_failed': 0.14798}, {'feature': 340437, 'kind': 'last', 'layer': 22, 'neuron': 2517, 'auc': 0.0, 'mean_solved': 0.22997, 'mean_failed': 0.37598}, {'feature': 352421, 'kind': 'last', 'layer': 22, 'neuron': 14501, 'auc': 0.0, 'mean_solved': 0.01029, 'mean_failed': 0.02774}, {'feature': 379465, 'kind': 'last', 'layer': 24, 'neuron': 10825, 'auc': 1.0, 'mean_solved': -0.04666, 'mean_failed': -0.0805}, {'feature': 381514, 'kind': 'last', 'layer': 24, 'neuron': 12874, 'auc': 0.0, 'mean_solved': 0.04035, 'mean_failed': 0.06676}, {'feature': 382043, 'kind': 'last', 'layer': 24, 'neuron': 13403, 'auc': 1.0, 'mean_solved': 0.00613, 'mean_failed': -0.00389}, {'feature': 430510, 'kind': 'last', 'layer': 28, 'neuron': 430, 'auc': 0.0, 'mean_solved': -0.01189, 'mean_failed': 0.00051}, {'feature': 443615, 'kind': 'last', 'layer': 28, 'neuron': 13535, 'auc': 1.0, 'mean_solved': -0.01938, 'mean_failed': -0.03884}]
+=== EXP-158 finished status=OK wall=258.5s

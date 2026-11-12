@@ -1,0 +1,20 @@
+{
+  "results": {
+    "fit": {
+      "positives": 8008,
+      "negatives": 8951,
+      "hard": 1856,
+      "held_positives": 1820,
+      "held_hard": 654,
+      "median_gap": 17.438,
+      "c": 9.0,
+      "layer": 47
+    },
+    "adapters": [],
+    "headline": "no ridge strength passed the selection rule (gap 17.44); no neuron built",
+    "system_monitor": {
+      "samples": 2
+    }
+  },
+  "wall_seconds": 63.60310959815979
+}

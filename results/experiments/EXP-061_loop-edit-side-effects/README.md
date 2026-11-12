@@ -1,0 +1,537 @@
+# EXP-061: loop-edit-side-effects
+
+- **Status:** OK
+- **Category:** improvement
+- **Started / finished (UTC):** 2026-11-08T04:46:42.670038Z / 2026-11-08T05:44:52.374872Z
+- **Wall time:** 58.2 min
+- **Commit:** `340b867164e535511e9414b1c3f3690b079cc2b9` (dirty=True)
+- **Depends on:** EXP-059
+- **Command:** `experiments/scripts/exp061_loop_edit_side_effects.py`
+
+## Why this experiment
+An edit that removes loops may also damage ordinary repetition, lists, code or recall.
+
+## Hypothesis (stated before running)
+Scores stay within the noise floor of EXP-004 and the probes read normally.
+
+## Configuration
+```json
+{
+  "suites": [
+    "behavior",
+    "mbpp_dev",
+    "mmlu500"
+  ],
+  "adapter": "EXP-059 remove_loop_dirs"
+}
+```
+
+## Results
+```json
+{
+  "arms": {
+    "base_f16": {
+      "behavior": {
+        "bench": "behavior",
+        "n": 40,
+        "checks_passed": 22,
+        "checks_total": 22,
+        "check_rate": 1.0,
+        "mean_tokens": 353.4,
+        "hit_limit": 0,
+        "mean_distinct2": 0.879,
+        "refusals_on_safe_prompts": 6,
+        "gen": {
+          "wall_s": 269.81,
+          "gen_tokens": 14137,
+          "tok_per_s": 52.4
+        },
+        "pass_rate": 1.0,
+        "passed": 22
+      },
+      "mbpp_dev": {
+        "bench": "mbpp+",
+        "n": 189,
+        "passed": 114,
+        "pass_rate": 0.6032,
+        "categories": {
+          "pass": 114,
+          "wrong_answer": 47,
+          "wrong_or_missing_entry_point": 10,
+          "runtime_error": 17,
+          "timeout": 1
+        },
+        "mean_gen_tokens": 405.5,
+        "gen": {
+          "wall_s": 1396.53,
+          "gen_tokens": 76644,
+          "tok_per_s": 54.9
+        },
+        "exec_s": 35.4,
+        "total_s": 1432.0
+      },
+      "mmlu500": {
+        "bench": "mmlu",
+        "n": 500,
+        "passed": 266,
+        "pass_rate": 0.532,
+        "unparsed": 47,
+        "gen": {
+          "wall_s": 391.18,
+          "gen_tokens": 4968,
+          "tok_per_s": 12.7
+        }
+      }
+    },
+    "edit_f16": {
+      "behavior": {
+        "bench": "behavior",
+        "n": 40,
+        "checks_passed": 22,
+        "checks_total": 22,
+        "check_rate": 1.0,
+        "mean_tokens": 345.4,
+        "hit_limit": 0,
+        "mean_distinct2": 0.89,
+        "refusals_on_safe_prompts": 6,
+        "identical_to_base": 7,
+        "mean_similarity_to_base": 0.549,
+        "gen": {
+          "wall_s": 303.58,
+          "gen_tokens": 13815,
+          "tok_per_s": 45.5
+        },
+        "pass_rate": 1.0,
+        "passed": 22
+      },
+      "mbpp_dev": {
+        "bench": "mbpp+",
+        "n": 189,
+        "passed": 114,
+        "pass_rate": 0.6032,
+        "categories": {
+          "pass": 114,
+          "wrong_or_missing_entry_point": 19,
+          "wrong_answer": 43,
+          "runtime_error": 11,
+          "name_or_import_error": 1,
+          "timeout": 1
+        },
+        "mean_gen_tokens": 475.5,
+        "gen": {
+          "wall_s": 1588.13,
+          "gen_tokens": 89875,
+          "tok_per_s": 56.6
+        },
+        "exec_s": 36.5,
+        "total_s": 1624.6
+      },
+      "mmlu500": {
+        "bench": "mmlu",
+        "n": 500,
+        "passed": 253,
+        "pass_rate": 0.506,
+        "unparsed": 58,
+        "gen": {
+          "wall_s": 408.83,
+          "gen_tokens": 6022,
+          "tok_per_s": 14.7
+        }
+      }
+    },
+    "base_q4_0": {
+      "behavior": {
+        "bench": "behavior",
+        "n": 40,
+        "checks_passed": 22,
+        "checks_total": 22,
+        "check_rate": 1.0,
+        "mean_tokens": 356.4,
+        "hit_limit": 0,
+        "mean_distinct2": 0.881,
+        "refusals_on_safe_prompts": 6,
+        "gen": {
+          "wall_s": 178.5,
+          "gen_tokens": 14257,
+          "tok_per_s": 79.9
+        },
+        "pass_rate": 1.0,
+        "passed": 22
+      },
+      "mbpp_dev": {
+        "bench": "mbpp+",
+        "n": 189,
+        "passed": 119,
+        "pass_rate": 0.6296,
+        "categories": {
+          "pass": 119,
+          "wrong_answer": 44,
+          "wrong_or_missing_entry_point": 6,
+          "runtime_error": 16,
+          "syntax_error": 1,
+          "other_fail": 1,
+          "timeout": 1,
+          "loop": 1
+        },
+        "mean_gen_tokens": 480.1,
+        "gen": {
+          "wall_s": 1388.47,
+          "gen_tokens": 90735,
+          "tok_per_s": 65.3
+        },
+        "exec_s": 35.2,
+        "total_s": 1423.7
+      },
+      "mmlu500": {
+        "bench": "mmlu",
+        "n": 500,
+        "passed": 262,
+        "pass_rate": 0.524,
+        "unparsed": 51,
+        "gen": {
+          "wall_s": 210.48,
+          "gen_tokens": 5402,
+          "tok_per_s": 25.7
+        }
+      }
+    },
+    "edit_q4_0": {
+      "behavior": {
+        "bench": "behavior",
+        "n": 40,
+        "checks_passed": 22,
+        "checks_total": 22,
+        "check_rate": 1.0,
+        "mean_tokens": 347.7,
+        "hit_limit": 0,
+        "mean_distinct2": 0.89,
+        "refusals_on_safe_prompts": 6,
+        "identical_to_base": 6,
+        "mean_similarity_to_base": 0.492,
+        "gen": {
+          "wall_s": 195.13,
+          "gen_tokens": 13907,
+          "tok_per_s": 71.3
+        },
+        "pass_rate": 1.0,
+        "passed": 22
+      },
+      "mbpp_dev": {
+        "bench": "mbpp+",
+        "n": 189,
+        "passed": 107,
+        "pass_rate": 0.5661,
+        "categories": {
+          "pass": 107,
+          "wrong_or_missing_entry_point": 19,
+          "wrong_answer": 46,
+          "runtime_error": 15,
+          "loop": 1,
+          "other_fail": 1
+        },
+        "mean_gen_tokens": 557.1,
+        "gen": {
+          "wall_s": 1395.74,
+          "gen_tokens": 105295,
+          "tok_per_s": 75.4
+        },
+        "exec_s": 11.4,
+        "total_s": 1407.1
+      },
+      "mmlu500": {
+        "bench": "mmlu",
+        "n": 500,
+        "passed": 260,
+        "pass_rate": 0.52,
+        "unparsed": 54,
+        "gen": {
+          "wall_s": 221.15,
+          "gen_tokens": 6332,
+          "tok_per_s": 28.6
+        }
+      }
+    }
+  },
+  "paired": {
+    "edit_f16 vs base_f16 [behavior]": {
+      "n": 40,
+      "base": 1.0,
+      "treat": 1.0,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "gained": 0,
+      "lost": 0,
+      "mcnemar_p": 1.0
+    },
+    "edit_f16 vs base_f16 [mbpp_dev]": {
+      "n": 189,
+      "base": 0.6031746031746031,
+      "treat": 0.6031746031746031,
+      "delta": 0.0,
+      "ci95": [
+        -0.05291005291005291,
+        0.05291005291005291
+      ],
+      "gained": 13,
+      "lost": 13,
+      "mcnemar_p": 1.0
+    },
+    "edit_f16 vs base_f16 [mmlu500]": {
+      "n": 500,
+      "base": 0.532,
+      "treat": 0.506,
+      "delta": -0.026,
+      "ci95": [
+        -0.044,
+        -0.01
+      ],
+      "gained": 3,
+      "lost": 16,
+      "mcnemar_p": 0.004425048828125
+    },
+    "edit_q4_0 vs base_q4_0 [behavior]": {
+      "n": 40,
+      "base": 1.0,
+      "treat": 1.0,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "gained": 0,
+      "lost": 0,
+      "mcnemar_p": 1.0
+    },
+    "edit_q4_0 vs base_q4_0 [mbpp_dev]": {
+      "n": 189,
+      "base": 0.6296296296296297,
+      "treat": 0.5661375661375662,
+      "delta": -0.06349206349206349,
+      "ci95": [
+        -0.12169312169312169,
+        -0.010582010582010581
+      ],
+      "gained": 9,
+      "lost": 21,
+      "mcnemar_p": 0.042773945257067694
+    },
+    "edit_q4_0 vs base_q4_0 [mmlu500]": {
+      "n": 500,
+      "base": 0.524,
+      "treat": 0.52,
+      "delta": -0.004,
+      "ci95": [
+        -0.024,
+        0.016
+      ],
+      "gained": 11,
+      "lost": 13,
+      "mcnemar_p": 0.8388197422027588
+    }
+  },
+  "table": {
+    "base_f16": {
+      "behavior": 1.0,
+      "mbpp_dev": 0.6032,
+      "mmlu500": 0.532
+    },
+    "edit_f16": {
+      "behavior": 1.0,
+      "mbpp_dev": 0.6032,
+      "mmlu500": 0.506
+    },
+    "base_q4_0": {
+      "behavior": 1.0,
+      "mbpp_dev": 0.6296,
+      "mmlu500": 0.524
+    },
+    "edit_q4_0": {
+      "behavior": 1.0,
+      "mbpp_dev": 0.5661,
+      "mmlu500": 0.52
+    }
+  },
+  "comparisons": {
+    "edit_f16 vs base_f16 [behavior]": {
+      "n": 40,
+      "base": 1.0,
+      "treat": 1.0,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "gained": 0,
+      "lost": 0,
+      "mcnemar_p": 1.0
+    },
+    "edit_f16 vs base_f16 [mbpp_dev]": {
+      "n": 189,
+      "base": 0.6031746031746031,
+      "treat": 0.6031746031746031,
+      "delta": 0.0,
+      "ci95": [
+        -0.05291005291005291,
+        0.05291005291005291
+      ],
+      "gained": 13,
+      "lost": 13,
+      "mcnemar_p": 1.0
+    },
+    "edit_f16 vs base_f16 [mmlu500]": {
+      "n": 500,
+      "base": 0.532,
+      "treat": 0.506,
+      "delta": -0.026,
+      "ci95": [
+        -0.044,
+        -0.01
+      ],
+      "gained": 3,
+      "lost": 16,
+      "mcnemar_p": 0.004425048828125
+    },
+    "edit_q4_0 vs base_q4_0 [behavior]": {
+      "n": 40,
+      "base": 1.0,
+      "treat": 1.0,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "gained": 0,
+      "lost": 0,
+      "mcnemar_p": 1.0
+    },
+    "edit_q4_0 vs base_q4_0 [mbpp_dev]": {
+      "n": 189,
+      "base": 0.6296296296296297,
+      "treat": 0.5661375661375662,
+      "delta": -0.06349206349206349,
+      "ci95": [
+        -0.12169312169312169,
+        -0.010582010582010581
+      ],
+      "gained": 9,
+      "lost": 21,
+      "mcnemar_p": 0.042773945257067694
+    },
+    "edit_q4_0 vs base_q4_0 [mmlu500]": {
+      "n": 500,
+      "base": 0.524,
+      "treat": 0.52,
+      "delta": -0.004,
+      "ci95": [
+        -0.024,
+        0.016
+      ],
+      "gained": 11,
+      "lost": 13,
+      "mcnemar_p": 0.8388197422027588
+    }
+  },
+  "headline": "base_f16 {'behavior': 1.0, 'mbpp_dev': 0.6032, 'mmlu500': 0.532}; edit_f16 {'behavior': 1.0, 'mbpp_dev': 0.6032, 'mmlu500': 0.506}; base_q4_0 {'behavior': 1.0, 'mbpp_dev': 0.6296, 'mmlu500': 0.524}; edit_q4_0 {'behavior': 1.0, 'mbpp_dev': 0.5661, 'mmlu500': 0.52}",
+  "system_monitor": {
+    "samples": 49,
+    "ram_free_gb": {
+      "min": 13.75,
+      "max": 19.03,
+      "mean": 14.05
+    },
+    "gpu_shared_gb": {
+      "min": 1.21,
+      "max": 4.02,
+      "mean": 3.88
+    },
+    "gpu_util_pct": {
+      "min": 0,
+      "max": 96,
+      "mean": 87.1
+    },
+    "cpu_package_w": {
+      "min": 17.2,
+      "max": 35.2,
+      "mean": 25.13
+    },
+    "cpu_core_w": {
+      "min": 1,
+      "max": 14.4,
+      "mean": 3.37
+    },
+    "igpu_w": {
+      "min": 0,
+      "max": 23.4,
+      "mean": 15.18
+    },
+    "battery_pct": {
+      "min": 85,
+      "max": 100,
+      "mean": 94.35
+    },
+    "cpu_pct": {
+      "min": 0,
+      "max": 53.2,
+      "mean": 9.72
+    },
+    "cpu_perf_pct": {
+      "min": 44.9,
+      "max": 164.9,
+      "mean": 74.69
+    },
+    "cpu_perf_limit_pct": {
+      "min": 100,
+      "max": 100,
+      "mean": 100.0
+    },
+    "passive_limit_pct": {
+      "min": 100,
+      "max": 100,
+      "mean": 100.0
+    },
+    "throttle_reasons": {
+      "min": 0,
+      "max": 0,
+      "mean": 0.0
+    },
+    "cpu_freq_mhz": {
+      "min": 1704,
+      "max": 1895,
+      "mean": 1819.59
+    },
+    "battery_discharge_mw": {
+      "min": 0,
+      "max": 0,
+      "mean": 0.0
+    },
+    "battery_charge_mw": {
+      "min": 0,
+      "max": 30066,
+      "mean": 12021.84
+    }
+  }
+}
+```
+
+## Files
+- `script_snapshot.py` exact script that produced this folder (+ `uncommitted.diff` if any)
+- `run.log` full console log
+- `config.json` config + environment provenance
+- `results.json` metrics
+- `sysmon.jsonl` RAM/GPU/battery/thermal samples every 60 s
+- other `*.json` raw outputs (generations, per-problem outcomes)
+
+## Reading (2026-11-08 05:50 UTC)
+
+Paired on the same items (McNemar), the loop edit (EXP-059 remove_loop_dirs) against the unedited model:
+- 40 behaviour probes: 100% at both precisions, unchanged.
+- MBPP+ dev, 189 problems: F16 60.3% to 60.3% (13 gained, 13 lost, p = 1.0); Q4_0 63.0% to 56.6% (9 gained, 21 lost, p = 0.043).
+- MMLU-500: F16 53.2% to 50.6% (3 gained, 16 lost, p = 0.0044); Q4_0 52.4% to 52.0% (11 gained, 13 lost, p = 0.84).
+The hypothesis (scores within noise) fails for one suite at each precision: about 6 points of code at Q4_0 and about 3 points of
+general knowledge at F16. The two costs do not appear at the same precision, so they are small, precision-dependent damage rather
+than one consistent loss; the official model is W4A16, neither of the two. The paper reports the edit as not free.
+Note: this run reused seven arm-suites from a full-size preflight (the preflight had not shortened its suites, fixed since) and
+computed the other five; the 05:10 to 05:44 lines in run.log are the newly computed ones.

@@ -1,0 +1,32 @@
+=== EXP-081 reread-full-context started 2026-11-08T00:16:54.943861Z commit=
+[00:16:55] positives 163 negatives 300
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  30%|###       | 593/1951 [00:00<00:00, 5920.58it/s]
+Loading weights:  61%|######    | 1186/1951 [00:00<00:00, 5046.91it/s]
+Loading weights:  93%|#########3| 1815/1951 [00:00<00:00, 5563.84it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 5627.17it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 5.8s; params=2.280B
+[last3000] 0/463
+[last3000] 50/463
+[last3000] 100/463
+[last3000] 150/463
+[last3000] 200/463
+[last3000] 250/463
+[last3000] 300/463
+[last3000] 350/463
+[last3000] 400/463
+[last3000] 450/463
+[00:18:49] last3000 {'separation': {'pos_mean': 0.724, 'pos_min': 0.158, 'neg_median': 0.1833, 'neg_p99': 0.8263, 'neg_p999': 0.8663, 'neg_max': 0.867, 'n_pos': 163, 'n_neg': 300}, 'tokens_median': 3001, 'gap_read_minus_edit_median': -1.375, 'flip_share_if_shift_is_3_times_readout': 0.503, 'read_preferred_already': 0.436}
+[full] 0/463
+[full] 50/463
+[full] 100/463
+[full] 150/463
+[full] 200/463
+[full] 250/463
+[full] 300/463
+[full] 350/463
+[full] 400/463
+[full] 450/463
+[00:30:03] full {'separation': {'pos_mean': 0.605, 'pos_min': -0.153, 'neg_median': 0.2492, 'neg_p99': 0.7895, 'neg_p999': 0.8349, 'neg_max': 0.8457, 'n_pos': 163, 'n_neg': 300}, 'tokens_median': 14301, 'gap_read_minus_edit_median': 1.312, 'flip_share_if_shift_is_3_times_readout': 0.675, 'read_preferred_already': 0.607}
+=== EXP-081 finished status=OK wall=788.6s

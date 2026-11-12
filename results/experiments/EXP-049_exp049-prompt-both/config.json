@@ -1,0 +1,9 @@
+{
+ "id": "EXP-049",
+ "slug": "exp049-prompt-both",
+ "category": "kaggle",
+ "started": "2026-11-07T02:13:57Z",
+ "wall_seconds": 1562.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

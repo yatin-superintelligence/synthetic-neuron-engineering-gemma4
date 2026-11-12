@@ -1,0 +1,50 @@
+{
+  "id": "EXP-007",
+  "slug": "openvino-engine-comparison",
+  "category": "infrastructure",
+  "motivation": "The author asked for the fastest engine on the Arc GPU; EXP-001 did not test OpenVINO.",
+  "hypothesis": "OpenVINO GenAI is faster single-stream at int4; the llama.cpp OpenVINO backend is at best on par with Vulkan at 8 parallel.",
+  "config": {
+    "ov_model": "OpenVINO/gemma-4-E2B-it-int4-ov",
+    "llama": "b12129",
+    "npp": 256,
+    "ntg": 128,
+    "npl": [
+      1,
+      8
+    ]
+  },
+  "depends_on": [
+    "EXP-001"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "c2355a66ec4b19fa60bc46335082203f506953d4",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp007_openvino_engines.py",
+  "started": "2026-11-05T21:53:21.153157Z",
+  "sys_at_start": {
+    "cpu_perf_limit_pct": 100,
+    "thermal_c": 27.9,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 3.9,
+    "cpu_pct": 0.9,
+    "on_ac": true,
+    "cpu_freq_mhz": 1768,
+    "battery_discharge_mw": 0,
+    "battery_pct": 100,
+    "ram_free_gb": 19.18,
+    "cpu_perf_pct": 88.3,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.36,
+    "t": 1793915610.0811732
+  },
+  "finished": "2026-11-05T22:04:13.431669Z",
+  "wall_seconds": 652.3,
+  "status": "OK"
+}

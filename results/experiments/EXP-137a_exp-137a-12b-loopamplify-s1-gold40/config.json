@@ -1,0 +1,9 @@
+{
+ "id": "EXP-137a",
+ "slug": "exp-137a-12b-loopamplify-s1-gold40",
+ "category": "improvement",
+ "started": "2026-11-10T23:27:44Z",
+ "wall_seconds": 5347.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

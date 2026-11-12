@@ -1,0 +1,9 @@
+{
+ "id": "EXP-099a",
+ "slug": "exp-099a-escape-blind-l0-14-a2-seed1",
+ "category": "improvement",
+ "started": "2026-11-09T07:08:44Z",
+ "wall_seconds": 2313.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

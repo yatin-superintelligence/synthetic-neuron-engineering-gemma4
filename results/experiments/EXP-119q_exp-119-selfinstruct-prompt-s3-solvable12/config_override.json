@@ -1,0 +1,7 @@
+{
+ "sampling": {
+  "seed": 3
+ },
+ "hard_stop_s": 1800,
+ "system_suffix": "\n\nBefore every edit_file call, begin your thinking with this sentence, word for word: \"Before editing, I will copy the exact lines I am going to change from the file content above, character for character:\" Then copy those lines into a python code block, and only then call edit_file, with old_string copied from that block."
+}

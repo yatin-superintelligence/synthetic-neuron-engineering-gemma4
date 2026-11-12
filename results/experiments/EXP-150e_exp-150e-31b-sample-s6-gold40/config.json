@@ -1,0 +1,9 @@
+{
+ "id": "EXP-150e",
+ "slug": "exp-150e-31b-sample-s6-gold40",
+ "category": "diagnosis",
+ "started": "2026-11-12T00:57:11Z",
+ "wall_seconds": 3743.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

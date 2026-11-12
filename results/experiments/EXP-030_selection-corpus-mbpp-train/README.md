@@ -1,0 +1,133 @@
+# EXP-030: selection-corpus-mbpp-train
+
+- **Status:** OK
+- **Category:** localization
+- **Started / finished (UTC):** 2026-11-08T11:28:04.939848Z / 2026-11-08T14:09:15.430265Z
+- **Wall time:** 161.0 min
+- **Commit:** `27ee7b4d7c6a2e2d5e815f6544710b13158587d3` (dirty=True)
+- **Depends on:** EXP-002
+- **Command:** `experiments/scripts/exp030_selection_corpus.py`
+
+## Why this experiment
+Neuron/direction selection must use data disjoint from evaluation. Contrasting the model's own code and its own prose about the *same* tasks isolates 'writing code' from 'thinking about programming'. Pass/fail labels on its own samples give a correctness contrast.
+
+## Hypothesis (stated before running)
+After removing the 147 MBPP+ overlaps, the model passes roughly half of the remaining tasks greedily; sampling yields mixed pass/fail pairs on a useful fraction of tasks.
+
+## Configuration
+```json
+{
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "samples": 2,
+  "temperature": 0.8,
+  "top_p": 0.95,
+  "engine": "llama.cpp vulkan q4_0",
+  "parallel": 8
+}
+```
+
+## Results
+```json
+{
+  "n_tasks": 317,
+  "overlap_task_ids": [],
+  "overlap_exact_text": 1,
+  "pass_rates": {
+    "code_greedy": 0.6025236593059937,
+    "code_s1": 0.580441640378549,
+    "code_s2": 0.5772870662460567
+  },
+  "tasks_with_mixed_outcomes": 88,
+  "prose_contaminated_with_code": 0,
+  "headline": "greedy pass 0.603; mixed-outcome tasks 88; id overlap 0; prose-with-code 0",
+  "system_monitor": {
+    "samples": 136,
+    "ram_free_gb": {
+      "min": 13.58,
+      "max": 19.4,
+      "mean": 14.03
+    },
+    "gpu_shared_gb": {
+      "min": 1.12,
+      "max": 4.09,
+      "mean": 3.93
+    },
+    "gpu_util_pct": {
+      "min": 4,
+      "max": 94,
+      "mean": 77.76
+    },
+    "cpu_package_w": {
+      "min": 15.4,
+      "max": 66.1,
+      "mean": 25.36
+    },
+    "cpu_core_w": {
+      "min": 1.2,
+      "max": 58,
+      "mean": 5.41
+    },
+    "igpu_w": {
+      "min": 0,
+      "max": 18.8,
+      "mean": 13.45
+    },
+    "battery_pct": {
+      "min": 100,
+      "max": 100,
+      "mean": 100.0
+    },
+    "cpu_pct": {
+      "min": 0,
+      "max": 70,
+      "mean": 12.36
+    },
+    "cpu_perf_pct": {
+      "min": 48.5,
+      "max": 150.8,
+      "mean": 89.02
+    },
+    "cpu_perf_limit_pct": {
+      "min": 100,
+      "max": 100,
+      "mean": 100.0
+    },
+    "passive_limit_pct": {
+      "min": 100,
+      "max": 100,
+      "mean": 100.0
+    },
+    "throttle_reasons": {
+      "min": 0,
+      "max": 0,
+      "mean": 0.0
+    },
+    "cpu_freq_mhz": {
+      "min": 1601,
+      "max": 1913,
+      "mean": 1773.55
+    },
+    "battery_discharge_mw": {
+      "min": 0,
+      "max": 0,
+      "mean": 0.0
+    },
+    "battery_charge_mw": {
+      "min": 0,
+      "max": 0,
+      "mean": 0.0
+    }
+  }
+}
+```
+
+## Files
+- `script_snapshot.py` exact script that produced this folder (+ `uncommitted.diff` if any)
+- `run.log` full console log
+- `config.json` config + environment provenance
+- `results.json` metrics
+- `sysmon.jsonl` RAM/GPU/battery/thermal samples every 60 s
+- other `*.json` raw outputs (generations, per-problem outcomes)

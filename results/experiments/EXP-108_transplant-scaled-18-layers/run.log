@@ -1,0 +1,50 @@
+=== EXP-108 transplant-scaled-18-layers started 2026-11-09T16:16:01.812070Z commit=
+[16:31:51] fit stage exit 0 in 948 s; log tail: orr2_median': 0.5078, 'st_write_norm_ratio_selected': 1.2665}
+[16:31:07] layer 18 <- donor 22 {'donor_layer': 22, 'P_r2_heldout': 0.4652, 'R_r2_heldout': 0.6544, 'donor_neurons': 10240, 'corr2_median': 0.3991, 'corr2_ge_025': 8874, 'rms_y_e2b': 0.1253, 'rms_y_donor': 0.0849, 'replaced_e2b_contrib_share': 0.00443, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.0038, 'st_rnd_predicted_margin_gain_a1': 0.0002, 'st_selected_corr2_median': 0.5312, 'st_write_norm_ratio_selected': 1.2815}
+[16:31:11] layer 20 <- donor 24 {'donor_layer': 24, 'P_r2_heldout': 0.6997, 'R_r2_heldout': 0.7602, 'donor_neurons': 10240, 'corr2_median': 0.6382, 'corr2_ge_025': 10237, 'rms_y_e2b': 0.1383, 'rms_y_donor': 0.1036, 'replaced_e2b_contrib_share': 0.00417, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.0189, 'st_rnd_predicted_margin_gain_a1': -0.0004, 'st_selected_corr2_median': 0.7161, 'st_write_norm_ratio_selected': 0.9975}
+[16:31:16] layer 22 <- donor 27 {'donor_layer': 27, 'P_r2_heldout': 0.7016, 'R_r2_heldout': 0.747, 'donor_neurons': 10240, 'corr2_median': 0.6019, 'corr2_ge_025': 10236, 'rms_y_e2b': 0.1065, 'rms_y_donor': 0.1159, 'replaced_e2b_contrib_share': 0.00494, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.0389, 'st_rnd_predicted_margin_gain_a1': -0.0005, 'st_selected_corr2_median': 0.72, 'st_write_norm_ratio_selected': 0.958}
+[16:31:21] layer 24 <- donor 29 {'donor_layer': 29, 'P_r2_heldout': 0.7118, 'R_r2_heldout': 0.8191, 'donor_neurons': 10240, 'corr2_median': 0.6399, 'corr2_ge_025': 10236, 'rms_y_e2b': 0.143, 'rms_y_donor': 0.099, 'replaced_e2b_contrib_share': 0.00379, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.4528, 'st_rnd_predicted_margin_gain_a1': 0.0007, 'st_selected_corr2_median': 0.7825, 'st_write_norm_ratio_selected': 0.9997}
+[16:31:25] layer 26 <- donor 31 {'donor_layer': 31, 'P_r2_heldout': 0.7418, 'R_r2_heldout': 0.8143, 'donor_neurons': 10240, 'corr2_median': 0.6188, 'corr2_ge_025': 10236, 'rms_y_e2b': 0.2672, 'rms_y_donor': 0.12, 'replaced_e2b_contrib_share': 0.00321, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.2837, 'st_rnd_predicted_margin_gain_a1': -0.0039, 'st_selected_corr2_median': 0.6867, 'st_write_norm_ratio_selected': 0.8416}
+[16:31:30] layer 28 <- donor 34 {'donor_layer': 34, 'P_r2_heldout': 0.7355, 'R_r2_heldout': 0.8132, 'donor_neurons': 10240, 'corr2_median': 0.6092, 'corr2_ge_025': 10228, 'rms_y_e2b': 0.1977, 'rms_y_donor': 0.2061, 'replaced_e2b_contrib_share': 0.00532, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.2622, 'st_rnd_predicted_margin_gain_a1': -0.0016, 'st_selected_corr2_median': 0.7082, 'st_write_norm_ratio_selected': 0.8995}
+[16:31:35] layer 30 <- donor 36 {'donor_layer': 36, 'P_r2_heldout': 0.7345, 'R_r2_heldout': 0.7951, 'donor_neurons': 10240, 'corr2_median': 0.6058, 'corr2_ge_025': 10237, 'rms_y_e2b': 0.1224, 'rms_y_donor': 0.0737, 'replaced_e2b_contrib_share': 0.00653, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.4939, 'st_rnd_predicted_margin_gain_a1': -0.0005, 'st_selected_corr2_median': 0.691, 'st_write_norm_ratio_selected': 0.8482}
+[16:31:39] layer 32 <- donor 39 {'donor_layer': 39, 'P_r2_heldout': 0.7114, 'R_r2_heldout': 0.771, 'donor_neurons': 10240, 'corr2_median': 0.5753, 'corr2_ge_025': 10235, 'rms_y_e2b': 0.0681, 'rms_y_donor': 0.0675, 'replaced_e2b_contrib_share': 0.00657, 'st_selected': 128, 'st_predicted_margin_gain_a1': 0.3518, 'st_rnd_predicted_margin_gain_a1': 0.0089, 'st_selected_corr2_median': 0.6465, 'st_write_norm_ratio_selected': 0.8941}
+[16:31:44] layer 34 <- donor 41 {'donor_layer': 41, 'P_r2_heldout': 0.7034, 'R_r2_heldout': 0.8158, 'donor_neurons': 10240, 'corr2_median': 0.58, 'corr2_ge_025': 10152, 'rms_y_e2b': 0.2582, 'rms_y_donor': 0.1767, 'replaced_e2b_contrib_share': 0.00333, 'st_selected': 128, 'st_predicted_margin_gain_a1': 1.2542, 'st_rnd_predicted_margin_gain_a1': -0.0206, 'st_selected_corr2_median': 0.757, 'st_write_norm_ratio_selected': 1.0893}
+[16:31:45] adapters ['st18_a1', 'st18_a2', 'st18_rnd_a1']
+
+[16:31:59] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[16:32:05] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+[16:32:10] eval states 160 | reference-edit tokens 4286
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 702.81it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:   9%|9         | 177/1951 [00:00<00:01, 1756.44it/s]
+Loading weights:  18%|#8        | 353/1951 [00:00<00:00, 1604.76it/s]
+Loading weights:  26%|##6       | 515/1951 [00:00<00:00, 1533.00it/s]
+Loading weights:  34%|###4      | 669/1951 [00:00<00:00, 1526.82it/s]
+Loading weights:  42%|####2     | 822/1951 [00:00<00:00, 1157.84it/s]
+Loading weights:  49%|####8     | 949/1951 [00:00<00:01, 887.73it/s] 
+Loading weights:  54%|#####3    | 1052/1951 [00:01<00:01, 787.24it/s]
+Loading weights:  58%|#####8    | 1141/1951 [00:01<00:01, 742.88it/s]
+Loading weights:  63%|######2   | 1222/1951 [00:01<00:01, 714.59it/s]
+Loading weights:  67%|######6   | 1303/1951 [00:01<00:00, 735.51it/s]
+Loading weights:  74%|#######4  | 1450/1951 [00:01<00:00, 915.80it/s]
+Loading weights:  82%|########2 | 1604/1951 [00:01<00:00, 1072.99it/s]
+Loading weights:  90%|######### | 1765/1951 [00:01<00:00, 1216.40it/s]
+Loading weights:  98%|#########8| 1916/1951 [00:01<00:00, 1297.66it/s]
+Loading weights: 100%|##########| 1951/1951 [00:01<00:00, 1077.88it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 35.5s; params=4.629B
+[16:37:10] base held accuracy 0.8892
+[16:41:36] st18_a1 held accuracy 0.8964
+[16:46:01] st18_a2 held accuracy 0.8591
+[16:50:27] st18_rnd_a1 held accuracy 0.8906
+[16:54:51] st7_a1 held accuracy 0.9004
+[16:59:16] st7_rnd_a1 held accuracy 0.8901
+[16:59:16] base {'tokens': 4286, 'accuracy': 0.8892, 'mean_logprob': -0.399}
+[16:59:16] st18_a1 {'tokens': 4286, 'accuracy': 0.8964, 'mean_logprob': -0.382, 'tokens_gained': 111, 'tokens_lost': 80, 'p_tokens': 0.0297}
+[16:59:16] st18_a2 {'tokens': 4286, 'accuracy': 0.8591, 'mean_logprob': -0.6014, 'tokens_gained': 163, 'tokens_lost': 292, 'p_tokens': 0.0}
+[16:59:16] st18_rnd_a1 {'tokens': 4286, 'accuracy': 0.8906, 'mean_logprob': -0.4028, 'tokens_gained': 29, 'tokens_lost': 23, 'p_tokens': 0.4885}
+[16:59:16] st7_a1 {'tokens': 4286, 'accuracy': 0.9004, 'mean_logprob': -0.3574, 'tokens_gained': 75, 'tokens_lost': 27, 'p_tokens': 0.0}
+[16:59:16] st7_rnd_a1 {'tokens': 4286, 'accuracy': 0.8901, 'mean_logprob': -0.4015, 'tokens_gained': 16, 'tokens_lost': 12, 'p_tokens': 0.5716}
+=== EXP-108 finished status=OK wall=2594.4s

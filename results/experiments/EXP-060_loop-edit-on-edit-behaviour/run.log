@@ -1,0 +1,7 @@
+=== EXP-060 loop-edit-on-edit-behaviour started 2026-11-08T06:24:29.269160Z commit=39c7d7540b
+[06:27:48] retry states 24 edit states 16
+[07:09:00] q4_0 base {'n': 24, 'same_text': 11, 'applied': 0, 'other_tool': 10, 'no_tool': 1, 'loops': 1, 'mean_tokens': 556.7} {'n': 16, 'edit_calls': 15, 'applied': 9, 'apply_rate': 0.6, 'not_found': 4, 'identical': 1, 'multiple': 0, 'backslash_edits': 2, 'other_tool': 1, 'no_tool': 0, 'loops': 1}
+[08:08:02] q4_0 edit {'n': 24, 'same_text': 5, 'applied': 1, 'other_tool': 13, 'no_tool': 0, 'loops': 0, 'mean_tokens': 568.8} {'n': 16, 'edit_calls': 13, 'applied': 7, 'apply_rate': 0.5385, 'not_found': 4, 'identical': 0, 'multiple': 0, 'backslash_edits': 4, 'other_tool': 2, 'no_tool': 1, 'loops': 1}
+[09:02:19] f16 base {'n': 24, 'same_text': 5, 'applied': 1, 'other_tool': 17, 'no_tool': 0, 'loops': 0, 'mean_tokens': 338.5} {'n': 16, 'edit_calls': 15, 'applied': 12, 'apply_rate': 0.8, 'not_found': 3, 'identical': 0, 'multiple': 0, 'backslash_edits': 2, 'other_tool': 1, 'no_tool': 0, 'loops': 0}
+[10:07:37] f16 edit {'n': 24, 'same_text': 5, 'applied': 1, 'other_tool': 17, 'no_tool': 0, 'loops': 0, 'mean_tokens': 711.4} {'n': 16, 'edit_calls': 14, 'applied': 7, 'apply_rate': 0.5, 'not_found': 5, 'identical': 0, 'multiple': 0, 'backslash_edits': 2, 'other_tool': 2, 'no_tool': 0, 'loops': 0}
+=== EXP-060 finished status=OK wall=13389.4s

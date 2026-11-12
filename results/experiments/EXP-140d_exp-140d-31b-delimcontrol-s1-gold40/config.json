@@ -1,0 +1,9 @@
+{
+ "id": "EXP-140d",
+ "slug": "exp-140d-31b-delimcontrol-s1-gold40",
+ "category": "improvement",
+ "started": "2026-11-11T07:32:22Z",
+ "wall_seconds": 5058.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

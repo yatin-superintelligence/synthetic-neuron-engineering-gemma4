@@ -1,0 +1,31 @@
+{
+  "id": "EXP-086b",
+  "slug": "layer-duplication-bf16-check",
+  "category": "improvement",
+  "motivation": "EXP-086's pre-registered bf16 check could not load (missing k_norm in KV-shared layers of the public bf16 checkpoint).",
+  "hypothesis": "As pre-registered in D-056: the selected block is not lower than the unedited model on MBPP+ test at bf16.",
+  "config": {
+    "fix": "k_norm of KV-shared layers copied from the official W4A16 checkpoint"
+  },
+  "depends_on": [
+    "EXP-086"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp086b_bf16_check.py",
+  "started": "2026-11-08T17:18:38.451618Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794158318.4574358
+  },
+  "finished": "2026-11-08T17:41:00.002219Z",
+  "wall_seconds": 1341.5,
+  "status": "OK"
+}

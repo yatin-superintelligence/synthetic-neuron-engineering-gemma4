@@ -1,0 +1,70 @@
+{
+  "results": {
+    "headline": "held-out within-task AUC 0.633 at layer 23 (last), permutation p 0.3787; gate not passed",
+    "fit": {
+      "rows": 123,
+      "solved": 85,
+      "tasks": {
+        "fastapi_13537": "7 of 8",
+        "fastapi_14463": "7 of 8",
+        "fastapi_15589": "5 of 8",
+        "fastapi_5624": "3 of 7",
+        "fastapi_9425": "5 of 5",
+        "fastapi_9753": "7 of 8",
+        "rich_2725": "7 of 8",
+        "rich_3043": "7 of 7",
+        "rich_3063": "3 of 7",
+        "rich_3067": "11 of 13",
+        "rich_3278": "7 of 8",
+        "rich_3470": "3 of 13",
+        "rich_3480": "6 of 8",
+        "rich_4077": "4 of 8",
+        "rich_4079": "3 of 7"
+      },
+      "layers": [
+        14,
+        23,
+        29,
+        35,
+        41,
+        47,
+        53,
+        59
+      ],
+      "auc": {
+        "L14 last": 0.536,
+        "L14 outmean": 0.566,
+        "L23 last": 0.633,
+        "L23 outmean": 0.627,
+        "L29 last": 0.542,
+        "L29 outmean": 0.59,
+        "L35 last": 0.542,
+        "L35 outmean": 0.578,
+        "L41 last": 0.572,
+        "L41 outmean": 0.602,
+        "L47 last": 0.584,
+        "L47 outmean": 0.59,
+        "L53 last": 0.59,
+        "L53 outmean": 0.572,
+        "L59 last": 0.596,
+        "L59 outmean": 0.614
+      },
+      "best": {
+        "layer": 23,
+        "position": "last",
+        "auc": 0.633
+      },
+      "permutation": {
+        "n": 300,
+        "null_max_auc_median": 0.608,
+        "null_max_auc_95": 0.693,
+        "p": 0.3787
+      },
+      "gate_passed": false
+    },
+    "system_monitor": {
+      "samples": 17
+    }
+  },
+  "wall_seconds": 1011.4576525688171
+}

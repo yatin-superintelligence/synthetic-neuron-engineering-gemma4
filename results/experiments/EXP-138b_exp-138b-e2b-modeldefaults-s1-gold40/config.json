@@ -1,0 +1,9 @@
+{
+ "id": "EXP-138b",
+ "slug": "exp-138b-e2b-modeldefaults-s1-gold40",
+ "category": "diagnosis",
+ "started": "2026-11-11T02:05:28Z",
+ "wall_seconds": 686.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

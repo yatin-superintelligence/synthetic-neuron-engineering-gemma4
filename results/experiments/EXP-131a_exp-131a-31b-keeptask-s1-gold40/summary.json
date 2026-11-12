@@ -1,0 +1,48 @@
+{
+ "tasks": 40,
+ "resolved": 14,
+ "resolved_ids": [
+  "fastapi_15589",
+  "rich_2943",
+  "rich_3006",
+  "rich_3043",
+  "rich_3278",
+  "rich_3454",
+  "rich_3470",
+  "rich_3480",
+  "rich_3518",
+  "rich_3718",
+  "rich_3882",
+  "rich_3894",
+  "rich_3905",
+  "rich_4077"
+ ],
+ "outcomes": {
+  "patch failed tests": 22,
+  "resolved": 14,
+  "error: Sandbox execution error: litellm.Context": 3,
+  "error: Agent exceeded maximum allowed LLM turns": 1
+ },
+ "minutes_mean": 15.66,
+ "tool_calls_mean": 35.6,
+ "llm_calls_mean": 52.5,
+ "tasks_never_applying_an_edit": 7,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 3,
+ "loops": 6,
+ "of_those_resolved_loop": 1,
+ "completion_tokens": 496591,
+ "tokens_in_loop_responses": 24984,
+ "loop_token_share": 0.05,
+ "edits": {
+  "edits": 646,
+  "applied": 87,
+  "failed": 559,
+  "kinds": {
+   "failed (kind not classified)": 559,
+   "applied": 87
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

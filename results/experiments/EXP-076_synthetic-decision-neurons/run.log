@@ -1,0 +1,51 @@
+=== EXP-076 synthetic-decision-neurons started 2026-11-07T23:26:55.715761Z commit=
+[23:26:55] states 1020 reread positives 163 test positives 278 dev 505 test 515
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  95%|#########4| 1846/1951 [00:00<00:00, 18432.99it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 18498.54it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 2.5s; params=2.280B
+[gather] 0/1020
+[gather] 25/1020
+[gather] 50/1020
+[gather] 75/1020
+[gather] 100/1020
+[gather] 125/1020
+[gather] 150/1020
+[gather] 175/1020
+[gather] 200/1020
+[gather] 225/1020
+[gather] 250/1020
+[gather] 275/1020
+[gather] 300/1020
+[gather] 325/1020
+[gather] 350/1020
+[gather] 375/1020
+[gather] 400/1020
+[gather] 425/1020
+[gather] 450/1020
+[gather] 475/1020
+[gather] 500/1020
+[gather] 525/1020
+[gather] 550/1020
+[gather] 575/1020
+[gather] 600/1020
+[gather] 625/1020
+[gather] 650/1020
+[gather] 675/1020
+[gather] 700/1020
+[gather] 725/1020
+[gather] 750/1020
+[gather] 775/1020
+[gather] 800/1020
+[gather] 825/1020
+[gather] 850/1020
+[gather] 875/1020
+[gather] 900/1020
+[gather] 925/1020
+[gather] 950/1020
+[gather] 975/1020
+[gather] 1000/1020
+[23:28:59] reread {'n_pos': 74, 'n_neg': 431, 'sep_fit': {'pos_mean': 0.761, 'pos_min': 0.282, 'neg_median': 0.193, 'neg_p99': 0.7999, 'neg_p999': 0.849, 'neg_max': 0.8652, 'n_pos': 74, 'n_neg': 431}, 'sep_test': {'pos_mean': 0.695, 'pos_min': 0.155, 'neg_median': 0.1859, 'neg_p99': 0.8143, 'neg_p999': 0.8699, 'neg_max': 0.8721, 'n_pos': 89, 'n_neg': 426}, 'control_on_true_positives': 0.4582, 'rms_y': 0.2562115788459778, 'rms_h': 0.6328922510147095, 'base_gap_at_positives': -0.312}
+[23:28:59] test {'n_pos': 140, 'n_neg': 365, 'sep_fit': {'pos_mean': 0.754, 'pos_min': 0.294, 'neg_median': 0.1911, 'neg_p99': 0.6744, 'neg_p999': 0.7378, 'neg_max': 0.7443, 'n_pos': 140, 'n_neg': 365}, 'sep_test': {'pos_mean': 0.639, 'pos_min': 0.216, 'neg_median': 0.2014, 'neg_p99': 0.691, 'neg_p999': 0.7682, 'neg_max': 0.7817, 'n_pos': 138, 'n_neg': 377}, 'control_on_true_positives': 0.4918, 'rms_y': 0.23443200439214706, 'rms_h': 0.6458347141742706, 'base_gap_at_positives': 8.938}
+=== EXP-076 finished status=OK wall=123.8s

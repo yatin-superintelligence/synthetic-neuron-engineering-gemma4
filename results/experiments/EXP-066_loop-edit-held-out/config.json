@@ -1,0 +1,61 @@
+{
+  "id": "EXP-066",
+  "slug": "loop-edit-held-out",
+  "category": "improvement",
+  "motivation": "All evidence so far comes from 3 tasks of the dev split. A held-out test on 14 unseen tasks decides whether the effect is general.",
+  "hypothesis": "The edit removes loops across several unseen tasks, and the control does not. If loops are removed in only 1 or 2 tasks, the effect is task-specific.",
+  "config": {
+    "split": "test",
+    "seeds": [
+      0,
+      1
+    ],
+    "strength": 1.0,
+    "layers": [
+      14,
+      15,
+      19,
+      23
+    ],
+    "primary": "task-level sign-flip",
+    "early_exit": true
+  },
+  "depends_on": [
+    "EXP-059",
+    "EXP-065"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "11ba10345b0bccbc28f4f8bd4ec980e8b2901878",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp066_loop_edit_held_out.py",
+  "started": "2026-11-06T23:58:17.370637Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1768,
+    "cpu_core_w": 22.2,
+    "throttle_reasons": 0,
+    "igpu_w": 0.2,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 0,
+    "battery_pct": 100,
+    "cpu_pct": 4.4,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 54.3,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 28.5,
+    "ram_free_gb": 19.69,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.17,
+    "t": 1794009508.4894626
+  },
+  "finished": "2026-11-07T09:06:34.731815Z",
+  "wall_seconds": 32897.3,
+  "status": "OK"
+}

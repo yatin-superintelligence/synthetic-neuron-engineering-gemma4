@@ -1,0 +1,40 @@
+{
+  "id": "EXP-100",
+  "slug": "fix-neuron-map",
+  "category": "localization",
+  "motivation": "Map which of E2B's MLP neurons are more active when it writes a correct fix than a wrong one, and edit the model through them.",
+  "hypothesis": "Amplifying the neurons most tied to correct fixes (or damping those tied to wrong ones) raises correct bench answers by at least half against the unedited model, beyond random neurons scaled the same way.",
+  "config": {
+    "cap_per_layer": 128,
+    "edits": [
+      "fix_top64_b15",
+      "fix_top64_b25",
+      "fix_top256_b15",
+      "fix_top256_b25",
+      "wrong_top256_b05",
+      "rnd256_b25",
+      "rnd256_b05"
+    ]
+  },
+  "depends_on": [
+    "EXP-092"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp100_fix_neuron_map.py",
+  "started": "2026-11-09T08:57:53.351476Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794214673.3584054
+  },
+  "finished": "2026-11-09T09:16:24.522562Z",
+  "wall_seconds": 1111.2,
+  "status": "OK"
+}

@@ -1,0 +1,17 @@
+=== EXP-110b success-distillation-train-test started 2026-11-10T18:47:53.472477Z commit=
+[18:47:53] runs 46 | tasks 14 | used 40 | by model {'?': 9, '31b': 12, 'e4b': 12, '12b': 7}
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 755.52it/s]
+[18:48:38] encoded 36 | render mismatch 1 | over 24576 tokens 3 | median tokens 13174 | median target tokens 5958
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  33%|###3      | 647/1951 [00:00<00:00, 6468.33it/s]
+Loading weights:  66%|######6   | 1294/1951 [00:00<00:00, 5752.52it/s]
+Loading weights:  96%|#########6| 1875/1951 [00:00<00:00, 5709.05it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 5751.89it/s]
+[18:48:40] GPU memory after load 4.56 GB; text attention sdpa
+[18:48:40] LoRA modules 140 trainable parameters 21037056
+[18:48:44] validation loss before training 0.4796 | train 35 val 1 | optimizer steps 9
+[19:33:05] vLLM LoRA check {'base': '(a, b), (a,', 'sft': ' (a, b), (a,'}
+=== EXP-110b finished status=OK wall=2713.5s

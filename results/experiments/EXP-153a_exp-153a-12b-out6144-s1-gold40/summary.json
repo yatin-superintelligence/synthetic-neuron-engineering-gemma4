@@ -1,0 +1,47 @@
+{
+ "tasks": 40,
+ "resolved": 12,
+ "resolved_ids": [
+  "fastapi_15589",
+  "rich_2725",
+  "rich_2943",
+  "rich_3006",
+  "rich_3454",
+  "rich_3470",
+  "rich_3480",
+  "rich_3518",
+  "rich_3718",
+  "rich_3882",
+  "rich_3894",
+  "rich_3905"
+ ],
+ "outcomes": {
+  "patch failed tests": 18,
+  "resolved": 12,
+  "error: Agent exceeded tool call budget (100 cal": 6,
+  "error: Agent exceeded session timeout (60.0 min": 2,
+  "error: Sandbox execution error: litellm.Context": 2
+ },
+ "minutes_mean": 24.99,
+ "tool_calls_mean": 66.0,
+ "llm_calls_mean": 69.5,
+ "tasks_never_applying_an_edit": 3,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 30,
+ "loops": 155,
+ "of_those_resolved_loop": 9,
+ "completion_tokens": 2038248,
+ "tokens_in_loop_responses": 662410,
+ "loop_token_share": 0.325,
+ "edits": {
+  "edits": 297,
+  "applied": 98,
+  "failed": 199,
+  "kinds": {
+   "failed (kind not classified)": 199,
+   "applied": 98
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

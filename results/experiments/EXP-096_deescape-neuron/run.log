@@ -1,0 +1,49 @@
+=== EXP-096 deescape-neuron started 2026-11-08T21:43:31.292016Z commit=
+[21:43:41] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[21:43:46] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+[21:43:50] unedited on fit: states 257, applies 102, correct 28, escape errors 18
+[21:43:50] unedited on dev+test: states 257, applies 84, correct 19, escape errors 25
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 651.69it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  37%|###6      | 715/1951 [00:00<00:00, 7146.70it/s]
+Loading weights:  73%|#######3  | 1430/1951 [00:00<00:00, 2379.96it/s]
+Loading weights:  93%|#########3| 1820/1951 [00:00<00:00, 2108.96it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 2311.32it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 16.2s; params=4.629B
+/content/repo/experiments/scripts/exp096_deescape_neuron.py:107: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  ex.log("escape pairs", len(pairs), "| |e|", round(float(e.norm()), 4))
+[21:44:08] escape pairs 26 | |e| 0.5226
+[deesc] activations 0/160
+=== EXP-096 deescape-neuron started 2026-11-08T21:45:24.897024Z commit=
+[21:45:34] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[21:45:40] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+[21:45:44] unedited on fit: states 257, applies 102, correct 28, escape errors 18
+[21:45:44] unedited on dev+test: states 257, applies 84, correct 19, escape errors 25
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 757.60it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  24%|##4       | 477/1951 [00:00<00:00, 4766.13it/s]
+Loading weights:  49%|####8     | 954/1951 [00:00<00:00, 4306.97it/s]
+Loading weights:  71%|#######1  | 1388/1951 [00:00<00:00, 4244.04it/s]
+Loading weights:  94%|#########4| 1840/1951 [00:00<00:00, 4343.83it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 4388.22it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 7.2s; params=4.629B
+/content/repo/experiments/scripts/exp096_deescape_neuron.py:107: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  ex.log("escape pairs", len(pairs), "| |e|", round(float(e.norm()), 4))
+[21:45:52] escape pairs 26 | |e| 0.5226
+[deesc] activations 0/160
+[deesc] activations 40/160
+[deesc] activations 80/160
+[deesc] activations 120/160
+[deesc] layer 28 {'readout_rank_acc': 0.9924, 'readout_check': {'pos_mean': 0.876, 'pos_min': 0.055, 'neg_median': 0.0598, 'neg_p99': 0.6475, 'neg_p999': 0.7311, 'neg_max': 0.7436, 'n_pos': 682, 'n_neg': 960}}
+[deesc] layer 30 {'readout_rank_acc': 0.9735, 'readout_check': {'pos_mean': 0.817, 'pos_min': 0.103, 'neg_median': 0.0909, 'neg_p99': 0.7606, 'neg_p999': 0.9629, 'neg_max': 1.2064, 'n_pos': 682, 'n_neg': 960}}
+[deesc] layer 32 {'readout_rank_acc': 0.9737, 'readout_check': {'pos_mean': 0.819, 'pos_min': 0.054, 'neg_median': 0.0909, 'neg_p99': 0.7612, 'neg_p999': 0.9975, 'neg_max': 1.1978, 'n_pos': 682, 'n_neg': 960}}
+[deesc] layer 34 {'readout_rank_acc': 0.9761, 'readout_check': {'pos_mean': 0.82, 'pos_min': 0.104, 'neg_median': 0.0929, 'neg_p99': 0.7659, 'neg_p999': 0.9667, 'neg_max': 1.0507, 'n_pos': 682, 'n_neg': 960}}
+[deesc] L28 target 6.0: {'tries': [{'c': 6.0, 'shift': 0.234, 'escape_still_top1': 0.94, 'other_top1_changed': 0.005}, {'c': 12.0, 'shift': 0.07, 'escape_still_top1': 0.944, 'other_top1_changed': 0.011}, {'c': 24.0, 'shift': -0.452, 'escape_still_top1': 0.944, 'other_top1_changed': 0.017}, {'c': 48.0, 'shift': -0.903, 'escape_still_top1': 0.953, 'other_top1_changed': 0.02}, {'c': 96.0, 'shift': -1.15, 'escape_still_top1': 0.944, 'other_top1_changed': 0.024}], 'feasible': False, 'shift': 0.234, 'escape_still_top1': 0.94, 'other_top1_changed': 0.005, 'control': {'shift': 0.348, 'escape_still_top1': 0.981, 'other_top1_changed': 0.005}}

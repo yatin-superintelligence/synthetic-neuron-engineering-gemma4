@@ -1,0 +1,9 @@
+{
+ "id": "EXP-036",
+ "slug": "kaggle-official-e2b-5min-budget",
+ "category": "baseline",
+ "started": "2026-11-05T20:52:57Z",
+ "wall_seconds": 1529.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

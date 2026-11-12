@@ -1,0 +1,42 @@
+=== EXP-104 instruction-to-neurons started 2026-11-09T12:24:14.848368Z commit=
+[12:25:14] fit stage exit 1 in 60 s
+=== EXP-104 finished status=FAILED: FileNotFoundError: [Errno 2] No such file or directory: '/content/EXP-104_fit.json' wall=59.7s
+=== EXP-104 instruction-to-neurons started 2026-11-09T12:54:58.259895Z commit=
+[13:10:01] fit stage exit 0 in 904 s; log tail: [12:55:10] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[12:55:15] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 574.23it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  24%|██▍       | 471/1951 [00:00<00:00, 4678.83it/s]
+Loading weights:  48%|████▊     | 939/1951 [00:00<00:00, 4304.47it/s]
+Loading weights:  70%|███████   | 1372/1951 [00:00<00:00, 4155.50it/s]
+Loading weights: 100%|██████████| 1951/1951 [00:00<00:00, 4752.61it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 7.3s; params=4.629B
+[12:58:40] [i2n] state 40
+[13:01:54] [i2n] state 80
+[13:05:09] [i2n] state 120
+[13:08:21] [i2n] state 160
+/content/repo/experiments/scripts/exp104_instruction_to_neurons.py:176: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  W = {L: dict(wp=Ls[L].post_feedforward_layernorm.weight.float().cpu(), s=float(Ls[L].layer_scalar.float()), Wn=float(Ls[L].mlp.down_proj.weight.float().norm()))
+[13:08:37] ins layer 10 {'target_norm_mean': 3.8033, 'fit_r2': 0.504, 'rank_energy_share': 0.8723, 'delta_rel_to_W': 0.3635}
+[13:08:42] ctl layer 10 {'target_norm_mean': 2.3692, 'fit_r2': 0.4251, 'rank_energy_share': 0.9305, 'delta_rel_to_W': 0.35885}
+[13:08:56] ins layer 14 {'target_norm_mean': 2.275, 'fit_r2': 0.6611, 'rank_energy_share': 0.6968, 'delta_rel_to_W': 0.19016}
+[13:09:01] ctl layer 14 {'target_norm_mean': 1.3363, 'fit_r2': 0.44, 'rank_energy_share': 0.8014, 'delta_rel_to_W': 0.15126}
+[13:09:49] ins layer 20 {'target_norm_mean': 3.1413, 'fit_r2': 0.7751, 'rank_energy_share': 0.5801, 'delta_rel_to_W': 0.27697}
+[13:09:59] ctl layer 20 {'target_norm_mean': 1.7292, 'fit_r2': 0.6733, 'rank_energy_share': 0.6841, 'delta_rel_to_W': 0.21124}
+[13:09:59] adapters ['ctl_L10', 'ctl_L14', 'ctl_L20', 'ins_L10', 'ins_L14', 'ins_L14_x2', 'ins_L20']
+
+[13:40:50] lab exit 0 in 1849 s
+[13:40:50] base {'applies': 28, 'correct': 5, 'esc': 8, 'selfcopy': 8}
+[13:40:50] ins_L10 {'applies': 37, 'correct': 4, 'esc': 3, 'selfcopy': 8, 'applies_gain_loss_p': (17, 8, 0.108), 'correct_gain_loss_p': (3, 4, 1.0)}
+[13:40:50] ctl_L10 {'applies': 28, 'correct': 3, 'esc': 8, 'selfcopy': 11, 'applies_gain_loss_p': (11, 11, 1.0), 'correct_gain_loss_p': (3, 5, 0.727)}
+[13:40:50] ins_L14 {'applies': 29, 'correct': 7, 'esc': 8, 'selfcopy': 11, 'applies_gain_loss_p': (10, 9, 1.0), 'correct_gain_loss_p': (4, 2, 0.688)}
+[13:40:50] ins_L14_x2 {'applies': 29, 'correct': 8, 'esc': 6, 'selfcopy': 9, 'applies_gain_loss_p': (13, 12, 1.0), 'correct_gain_loss_p': (6, 3, 0.508)}
+[13:40:50] ctl_L14 {'applies': 30, 'correct': 6, 'esc': 9, 'selfcopy': 12, 'applies_gain_loss_p': (10, 8, 0.815), 'correct_gain_loss_p': (3, 2, 1.0)}
+[13:40:50] ins_L20 {'applies': 30, 'correct': 9, 'esc': 8, 'selfcopy': 10, 'applies_gain_loss_p': (12, 10, 0.832), 'correct_gain_loss_p': (6, 2, 0.289)}
+[13:40:50] ctl_L20 {'applies': 27, 'correct': 5, 'esc': 6, 'selfcopy': 12, 'applies_gain_loss_p': (8, 9, 1.0), 'correct_gain_loss_p': (2, 2, 1.0)}
+[13:40:50] instruction {'applies': 36, 'correct': 7, 'esc': 7, 'selfcopy': 8, 'applies_gain_loss_p': (15, 7, 0.134), 'correct_gain_loss_p': (5, 3, 0.727)}
+=== EXP-104 finished status=OK wall=2752.1s

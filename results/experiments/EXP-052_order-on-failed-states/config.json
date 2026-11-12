@@ -1,0 +1,61 @@
+{
+  "id": "EXP-052",
+  "slug": "order-on-failed-states",
+  "category": "localization",
+  "motivation": "EXP-041 was short of failed states, and the observed 9 of 10 against 91 of 207 may be selection. This decides whether the order neuron (EXP-042) is worth building.",
+  "hypothesis": "Writing old_string first turns failed edits into applied ones more often than the new-first branch. If the gain CI includes zero, H-4's order cause is dropped.",
+  "config": {
+    "split": "dev",
+    "seeds": [
+      0,
+      1
+    ],
+    "max_prompt_tokens": 16000,
+    "kinds": [
+      "mostly_real_altered",
+      "identical",
+      "invented",
+      "lines_real_block_not",
+      "over_escaped"
+    ],
+    "slots": 1,
+    "per_run_task": 4
+  },
+  "depends_on": [
+    "EXP-041"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "6d3e5dd35f6f0e83848aa4efab09300169f290ad",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp052_order_on_failed_states.py",
+  "started": "2026-11-08T15:21:33.906918Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1913,
+    "cpu_core_w": 8.2,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 4,
+    "battery_pct": 100,
+    "cpu_pct": 0,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 92.4,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 13.5,
+    "ram_free_gb": 19.72,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.35,
+    "t": 1794151305.0715823
+  },
+  "finished": "2026-11-08T16:24:54.385348Z",
+  "wall_seconds": 3800.5,
+  "status": "OK"
+}

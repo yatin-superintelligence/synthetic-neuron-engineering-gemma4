@@ -1,0 +1,44 @@
+{
+ "tasks": 58,
+ "resolved": 4,
+ "resolved_ids": [
+  "fastapi_14301",
+  "fastapi_14786",
+  "requests_6644",
+  "rich_4077"
+ ],
+ "outcomes": {
+  "patch failed tests": 44,
+  "no patch": 10,
+  "resolved": 4
+ },
+ "minutes_mean": 4.23,
+ "tool_calls_mean": 9.7,
+ "llm_calls_mean": 13.9,
+ "tasks_never_applying_an_edit": 17,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 19,
+ "loops": 33,
+ "of_those_resolved_loop": 1,
+ "completion_tokens": 575342,
+ "tokens_in_loop_responses": 79306,
+ "loop_token_share": 0.138,
+ "edits": {
+  "edits": 174,
+  "applied": 81,
+  "failed": 93,
+  "kinds": {
+   "applied": 81,
+   "mostly_real_altered": 35,
+   "invented": 25,
+   "multiple": 12,
+   "stale_after_own_edit": 6,
+   "identical": 6,
+   "over_escaped": 5,
+   "lines_real_block_not": 3,
+   "file_missing": 1
+  },
+  "failed_repeating_identical_call": 13,
+  "failed_with_backslash": 31
+ }
+}

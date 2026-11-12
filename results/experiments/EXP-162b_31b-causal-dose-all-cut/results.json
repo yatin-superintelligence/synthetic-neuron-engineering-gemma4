@@ -1,0 +1,76 @@
+{
+  "results": {
+    "headline": "25 pairs on 12 tasks; held out, chosen K=32 x2 raises the preference in 20 of 25 (random 8); dose leads: none",
+    "fit": {
+      "pairs": 25,
+      "tasks": 12,
+      "truncated": 25,
+      "skipped": 13,
+      "preference_mean": -0.4565,
+      "held_out_pairs": 25,
+      "summary": {
+        "chosen_32_x2": {
+          "pairs": 25,
+          "raises": 20,
+          "mean_change": 0.2007,
+          "flips": 4,
+          "base_flips": 3,
+          "mean_damage": 0.0502,
+          "mean_gap": -0.4565
+        },
+        "chosen_32_x4": {
+          "pairs": 25,
+          "raises": 20,
+          "mean_change": 0.2482,
+          "flips": 5,
+          "base_flips": 3,
+          "mean_damage": 0.3383,
+          "mean_gap": -0.4565
+        },
+        "chosen_128_x2": {
+          "pairs": 25,
+          "raises": 20,
+          "mean_change": 0.2599,
+          "flips": 6,
+          "base_flips": 3,
+          "mean_damage": 0.0956,
+          "mean_gap": -0.4565
+        },
+        "chosen_128_x4": {
+          "pairs": 25,
+          "raises": 20,
+          "mean_change": 0.3245,
+          "flips": 7,
+          "base_flips": 3,
+          "mean_damage": 0.7943,
+          "mean_gap": -0.4565
+        },
+        "random_32_x2": {
+          "pairs": 25,
+          "raises": 8,
+          "mean_change": -0.001,
+          "flips": 3,
+          "base_flips": 3,
+          "mean_damage": -0.0025,
+          "mean_gap": -0.4565
+        },
+        "random_128_x4": {
+          "pairs": 25,
+          "raises": 14,
+          "mean_change": 0.0038,
+          "flips": 3,
+          "base_flips": 3,
+          "mean_damage": -0.0022,
+          "mean_gap": -0.4565
+        }
+      },
+      "replication_passed": true,
+      "dose_leads": [],
+      "saved_config": "chosen_128_x4"
+    },
+    "system_monitor": {
+      "samples": 9
+    }
+  },
+  "wall_seconds": 529.9695682525635
+}

@@ -1,0 +1,19 @@
+=== EXP-055 prompt-speed-sweep started 2026-11-06T09:13:59.831733Z commit=8a4cdf9b1d
+[09:14:14] prompt tokens 10093
+[09:15:09] {'ub': 512, 'b': 2048, 'np': 6, 'precision': 'q4_0', 'prompt_tps': 267.5, 'gen_tps': 14.2, 'wall_s': 40.0, 'n_prompt': 10094, 'package_w': 9.5, 'igpu_w': 0, 'freq_mhz': 1695, 'status': 'ok'}
+[09:16:00] {'ub': 1024, 'b': 2048, 'np': 6, 'precision': 'q4_0', 'prompt_tps': 281.2, 'gen_tps': 14.75, 'wall_s': 38.0, 'n_prompt': 10094, 'package_w': 9.1, 'igpu_w': 0, 'freq_mhz': 1699, 'status': 'ok'}
+[09:16:51] {'ub': 2048, 'b': 2048, 'np': 6, 'precision': 'q4_0', 'prompt_tps': 280.7, 'gen_tps': 14.96, 'wall_s': 38.1, 'n_prompt': 10094, 'package_w': 10.6, 'igpu_w': 0, 'freq_mhz': 1601, 'status': 'ok'}
+[09:17:19] {'ub': 4096, 'b': 4096, 'np': 6, 'precision': 'q4_0', 'status': "<HTTPError 500: 'Internal Server Error'>"}
+[09:17:35] {'ub': 8192, 'b': 8192, 'np': 6, 'precision': 'q4_0', 'status': "<HTTPError 500: 'Internal Server Error'>"}
+[09:18:05] {'ub': 512, 'b': 2048, 'np': 1, 'precision': 'q4_0', 'prompt_tps': 651.5, 'gen_tps': 18.97, 'wall_s': 17.2, 'n_prompt': 10094, 'package_w': 11.1, 'igpu_w': 0, 'freq_mhz': 1699, 'status': 'ok'}
+[09:18:37] {'ub': 2048, 'b': 2048, 'np': 1, 'precision': 'q4_0', 'prompt_tps': 660.4, 'gen_tps': 15.57, 'wall_s': 17.3, 'n_prompt': 10094, 'package_w': 6.1, 'igpu_w': 0, 'freq_mhz': 1699, 'status': 'ok'}
+[09:19:36] {'ub': 512, 'b': 2048, 'np': 6, 'precision': 'q4_0', 'prompt_tps': 235.9, 'gen_tps': 14.75, 'wall_s': 44.9, 'n_prompt': 10094, 'package_w': 9.9, 'igpu_w': 0, 'freq_mhz': 1820, 'status': 'ok'}
+[09:21:00] {'ub': 512, 'b': 2048, 'np': 6, 'precision': 'f16', 'prompt_tps': 165.0, 'gen_tps': 10.11, 'wall_s': 64.3, 'n_prompt': 10094, 'package_w': 12.3, 'igpu_w': 0.1, 'freq_mhz': 1913, 'status': 'ok'}
+[09:22:16] {'ub': 1024, 'b': 2048, 'np': 6, 'precision': 'f16', 'prompt_tps': 182.1, 'gen_tps': 10.06, 'wall_s': 58.6, 'n_prompt': 10094, 'package_w': 19.2, 'igpu_w': 0, 'freq_mhz': 1769, 'status': 'ok'}
+[09:23:18] {'ub': 2048, 'b': 2048, 'np': 6, 'precision': 'f16', 'status': "ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"}
+[09:24:11] {'ub': 4096, 'b': 4096, 'np': 6, 'precision': 'f16', 'status': "ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"}
+[09:24:42] {'ub': 8192, 'b': 8192, 'np': 6, 'precision': 'f16', 'status': "ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)"}
+[09:25:23] {'ub': 512, 'b': 2048, 'np': 1, 'precision': 'f16', 'prompt_tps': 524.9, 'gen_tps': 10.62, 'wall_s': 22.2, 'n_prompt': 10094, 'package_w': 7.1, 'igpu_w': 0, 'freq_mhz': 1768, 'status': 'ok'}
+[09:26:01] {'ub': 2048, 'b': 2048, 'np': 1, 'precision': 'f16', 'prompt_tps': 515.8, 'gen_tps': 10.56, 'wall_s': 22.5, 'n_prompt': 10094, 'package_w': 7.3, 'igpu_w': 0, 'freq_mhz': 1764, 'status': 'ok'}
+[09:27:11] {'ub': 512, 'b': 2048, 'np': 6, 'precision': 'f16', 'prompt_tps': 196.7, 'gen_tps': 10.49, 'wall_s': 54.3, 'n_prompt': 10094, 'package_w': 4.5, 'igpu_w': 0, 'freq_mhz': 1876, 'status': 'ok'}
+=== EXP-055 finished status=OK wall=791.6s

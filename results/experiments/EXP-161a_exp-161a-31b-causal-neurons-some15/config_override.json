@@ -1,0 +1,9 @@
+{
+ "sampling": {
+  "seed": 1,
+  "max_output_tokens": 8192
+ },
+ "hard_stop_s": 4200,
+ "adapter": "causal31b",
+ "adapter_local": "artifacts_local/EXP-161/causal"
+}

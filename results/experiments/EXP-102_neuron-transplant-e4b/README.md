@@ -1,0 +1,330 @@
+# EXP-102: neuron-transplant-e4b
+
+- **Status:** OK
+- **Category:** improvement
+- **Started / finished (UTC):** 2026-11-09T11:19:33.799054Z / 2026-11-09T12:06:18.441040Z
+- **Wall time:** 46.7 min
+- **Commit:** `` (dirty=False)
+- **Depends on:** EXP-092, EXP-101
+- **Command:** `experiments/scripts/exp102_neuron_transplant.py`
+
+## Why this experiment
+The author's instruction: transplant neurons from a larger model. Gemma 4 E4B neurons translated into E2B through fitted maps between the two models' internal states, placed in E2B's weakest neurons as an exact LoRA.
+
+## Hypothesis (stated before running)
+Donor neurons chosen for raising the reference fix where E2B is wrong, translated into E2B, raise correct bench answers against the unedited model and against random donor neurons transplanted the same way.
+
+## Configuration
+```json
+{
+  "donor": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "e2b_layers": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32
+  ],
+  "late_layers": [
+    20,
+    24,
+    28,
+    32
+  ],
+  "neurons_per_layer": 128,
+  "states": 160,
+  "prompt_positions": 96,
+  "arms": [
+    "st_a1",
+    "st_a4",
+    "lg_a1",
+    "lg_a4",
+    "st_rnd_a4",
+    "lg_rnd_a4",
+    "abl"
+  ]
+}
+```
+
+## Results
+```json
+{
+  "accuracy": {
+    "e2b": 0.9016,
+    "donor": 0.9237,
+    "e2b_wrong_donor_right": 187,
+    "e2b_right_donor_wrong": 87,
+    "positions": 4533,
+    "same_tokenizer": true
+  },
+  "layers": {
+    "8": {
+      "donor_layer": 10,
+      "P_r2_heldout": 0.6708,
+      "R_r2_heldout": 0.6635,
+      "donor_neurons": 10240,
+      "corr2_median": 0.5568,
+      "corr2_ge_025": 10161,
+      "rms_y_e2b": 0.131,
+      "rms_y_donor": 0.1703,
+      "replaced_e2b_contrib_share": 0.01008,
+      "st_selected": 128,
+      "st_predicted_margin_gain_a1": 0.0,
+      "st_rnd_predicted_margin_gain_a1": 0.0,
+      "st_selected_corr2_median": 0.682,
+      "st_write_norm_ratio_selected": 1.0405
+    },
+    "12": {
+      "donor_layer": 14,
+      "P_r2_heldout": 0.5669,
+      "R_r2_heldout": 0.6171,
+      "donor_neurons": 10240,
+      "corr2_median": 0.4262,
+      "corr2_ge_025": 9915,
+      "rms_y_e2b": 0.0911,
+      "rms_y_donor": 0.1089,
+      "replaced_e2b_contrib_share": 0.00777,
+      "st_selected": 128,
+      "st_predicted_margin_gain_a1": 0.0,
+      "st_rnd_predicted_margin_gain_a1": -0.0,
+      "st_selected_corr2_median": 0.5435,
+      "st_write_norm_ratio_selected": 0.9487
+    },
+    "16": {
+      "donor_layer": 19,
+      "P_r2_heldout": 0.4708,
+      "R_r2_heldout": 0.6693,
+      "donor_neurons": 10240,
+      "corr2_median": 0.3511,
+      "corr2_ge_025": 7974,
+      "rms_y_e2b": 0.091,
+      "rms_y_donor": 0.0704,
+      "replaced_e2b_contrib_share": 0.00442,
+      "st_selected": 128,
+      "st_predicted_margin_gain_a1": 0.0013,
+      "st_rnd_predicted_margin_gain_a1": -0.0,
+      "st_selected_corr2_median": 0.5167,
+      "st_write_norm_ratio_selected": 1.2703
+    },
+    "20": {
+      "donor_layer": 24,
+      "P_r2_heldout": 0.6998,
+      "R_r2_heldout": 0.7601,
+      "donor_neurons": 10240,
+      "corr2_median": 0.6383,
+      "corr2_ge_025": 10238,
+      "rms_y_e2b": 0.1383,
+      "rms_y_donor": 0.1036,
+      "replaced_e2b_contrib_share": 0.00417,
+      "st_selected": 128,
+      "st_predicted_margin_gain_a1": 0.0192,
+      "st_rnd_predicted_margin_gain_a1": 0.0,
+      "st_selected_corr2_median": 0.7239,
+      "st_write_norm_ratio_selected": 0.9959,
+      "lg_selected": 128,
+      "lg_predicted_margin_gain_a1": 0.0107,
+      "lg_rnd_predicted_margin_gain_a1": 0.0001,
+      "lg_selected_corr2_median": 0.7076,
+      "lg_write_norm_ratio_selected": 1.049
+    },
+    "24": {
+      "donor_layer": 29,
+      "P_r2_heldout": 0.7116,
+      "R_r2_heldout": 0.8187,
+      "donor_neurons": 10240,
+      "corr2_median": 0.6394,
+      "corr2_ge_025": 10235,
+      "rms_y_e2b": 0.143,
+      "rms_y_donor": 0.0991,
+      "replaced_e2b_contrib_share": 0.00379,
+      "st_selected": 128,
+      "st_predicted_margin_gain_a1": 0.4613,
+      "st_rnd_predicted_margin_gain_a1": -0.0027,
+      "st_selected_corr2_median": 0.7832,
+      "st_write_norm_ratio_selected": 1.0001,
+      "lg_selected": 128,
+      "lg_predicted_margin_gain_a1": 0.1617,
+      "lg_rnd_predicted_margin_gain_a1": -0.0003,
+      "lg_selected_corr2_median": 0.7608,
+      "lg_write_norm_ratio_selected": 1.0567
+    },
+    "28": {
+      "donor_layer": 34,
+      "P_r2_heldout": 0.735,
+      "R_r2_heldout": 0.8128,
+      "donor_neurons": 10240,
+      "corr2_median": 0.6085,
+      "corr2_ge_025": 10229,
+      "rms_y_e2b": 0.1976,
+      "rms_y_donor": 0.206,
+      "replaced_e2b_contrib_share": 0.00532,
+      "st_selected": 128,
+      "st_predicted_margin_gain_a1": 0.262,
+      "st_rnd_predicted_margin_gain_a1": -0.0012,
+      "st_selected_corr2_median": 0.705,
+      "st_write_norm_ratio_selected": 0.9086,
+      "lg_selected": 128,
+      "lg_predicted_margin_gain_a1": 0.1806,
+      "lg_rnd_predicted_margin_gain_a1": 0.0038,
+      "lg_selected_corr2_median": 0.7245,
+      "lg_write_norm_ratio_selected": 0.9061
+    },
+    "32": {
+      "donor_layer": 39,
+      "P_r2_heldout": 0.7107,
+      "R_r2_heldout": 0.7704,
+      "donor_neurons": 10240,
+      "corr2_median": 0.5741,
+      "corr2_ge_025": 10235,
+      "rms_y_e2b": 0.0681,
+      "rms_y_donor": 0.0675,
+      "replaced_e2b_contrib_share": 0.00657,
+      "st_selected": 128,
+      "st_predicted_margin_gain_a1": 0.3566,
+      "st_rnd_predicted_margin_gain_a1": 0.0077,
+      "st_selected_corr2_median": 0.6502,
+      "st_write_norm_ratio_selected": 0.8884,
+      "lg_selected": 128,
+      "lg_predicted_margin_gain_a1": 0.298,
+      "lg_rnd_predicted_margin_gain_a1": -0.0001,
+      "lg_selected_corr2_median": 0.6639,
+      "lg_write_norm_ratio_selected": 0.8991
+    }
+  },
+  "bench": {
+    "base": {
+      "applies": 32,
+      "correct": 5,
+      "esc": 9,
+      "selfcopy": 10
+    },
+    "st_a1": {
+      "applies": 32,
+      "correct": 9,
+      "esc": 4,
+      "selfcopy": 12,
+      "applies_gain_loss_p": [
+        18,
+        18,
+        1.0
+      ],
+      "correct_gain_loss_p": [
+        8,
+        4,
+        0.388
+      ]
+    },
+    "st_a4": {
+      "applies": 11,
+      "correct": 3,
+      "esc": 0,
+      "selfcopy": 5,
+      "applies_gain_loss_p": [
+        4,
+        25,
+        0.0
+      ],
+      "correct_gain_loss_p": [
+        1,
+        3,
+        0.625
+      ]
+    },
+    "lg_a1": {
+      "applies": 37,
+      "correct": 5,
+      "esc": 3,
+      "selfcopy": 6,
+      "applies_gain_loss_p": [
+        19,
+        14,
+        0.487
+      ],
+      "correct_gain_loss_p": [
+        5,
+        5,
+        1.0
+      ]
+    },
+    "lg_a4": {
+      "applies": 8,
+      "correct": 0,
+      "esc": 4,
+      "selfcopy": 5,
+      "applies_gain_loss_p": [
+        3,
+        27,
+        0.0
+      ],
+      "correct_gain_loss_p": [
+        0,
+        5,
+        0.062
+      ]
+    },
+    "st_rnd_a4": {
+      "applies": 33,
+      "correct": 4,
+      "esc": 7,
+      "selfcopy": 11,
+      "applies_gain_loss_p": [
+        16,
+        15,
+        1.0
+      ],
+      "correct_gain_loss_p": [
+        2,
+        3,
+        1.0
+      ]
+    },
+    "lg_rnd_a4": {
+      "applies": 37,
+      "correct": 6,
+      "esc": 5,
+      "selfcopy": 6,
+      "applies_gain_loss_p": [
+        19,
+        14,
+        0.487
+      ],
+      "correct_gain_loss_p": [
+        5,
+        4,
+        1.0
+      ]
+    },
+    "abl": {
+      "applies": 31,
+      "correct": 5,
+      "esc": 6,
+      "selfcopy": 9,
+      "applies_gain_loss_p": [
+        17,
+        18,
+        1.0
+      ],
+      "correct_gain_loss_p": [
+        3,
+        3,
+        1.0
+      ]
+    }
+  },
+  "best": "st_a1",
+  "headline": "E4B -> E2B transplant, quick bench (96 states): correct base 5, st_a1 9, st_a4 3, lg_a1 5, lg_a4 0, st_rnd_a4 4, lg_rnd_a4 6, abl 5; teacher-forced edit-token accuracy E2B 0.9016, donor 0.9237",
+  "system_monitor": {
+    "samples": 47
+  }
+}
+```
+
+## Files
+- `script_snapshot.py` exact script that produced this folder (+ `uncommitted.diff` if any)
+- `run.log` full console log
+- `config.json` config + environment provenance
+- `results.json` metrics
+- `sysmon.jsonl` RAM/GPU/battery/thermal samples every 60 s
+- other `*.json` raw outputs (generations, per-problem outcomes)

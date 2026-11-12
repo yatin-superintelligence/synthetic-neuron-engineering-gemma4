@@ -1,0 +1,24 @@
+=== EXP-077 agent-transplant-e4b-to-e2b started 2026-11-07T21:59:53.996206Z commit=
+[22:00:01] states: dev 120 test 50 | thought tokens dev 16984 test 7411
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  28%|##7       | 540/1951 [00:00<00:00, 5393.72it/s]
+Loading weights:  55%|#####5    | 1080/1951 [00:00<00:00, 5282.87it/s]
+Loading weights:  82%|########2 | 1609/1951 [00:00<00:00, 4813.07it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 5394.21it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 5.7s; params=2.280B
+
+Loading weights:   0%|          | 0/2076 [00:00<?, ?it/s]
+Loading weights:  34%|###4      | 708/2076 [00:00<00:00, 7072.52it/s]
+Loading weights:  68%|######8   | 1416/2076 [00:00<00:00, 5348.62it/s]
+Loading weights: 100%|##########| 2076/2076 [00:00<00:00, 5946.95it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 6.1s; params=4.644B
+[22:05:38] argmax donor layers (not used) {14: 23, 15: 23, 16: 24, 17: 24, 18: 24, 19: 24}
+[22:05:38] matched donor layers {14: 23, 15: 24, 16: 25, 17: 26, 18: 27, 19: 28}
+[22:06:53] layer 14 {'donor_layer': 23, 'cka': 0.9231, 'r2_x_fit': 0.7522566318511963, 'r2_x_hold': 0.5256, 'r2_r_fit': 0.8363272249698639, 'r2_r_hold': 0.6658, 'donor_d_median': 1.153, 'fid_top_median': 0.8536, 'fid_rand_median': 0.7507, 'fid_shuffled_median': 0.0021, 'n_top_fid_above_min': 64, 'slot_usage_max': 0.01274, 'usage_median': 0.02705}
+[22:07:06] layer 15 {'donor_layer': 24, 'cka': 0.9103, 'r2_x_fit': 0.7707345336675644, 'r2_x_hold': 0.5374, 'r2_r_fit': 0.8651915937662125, 'r2_r_hold': 0.6944, 'donor_d_median': 1.006, 'fid_top_median': 0.8196, 'fid_rand_median': 0.7177, 'fid_shuffled_median': 0.0016, 'n_top_fid_above_min': 64, 'slot_usage_max': 0.01873, 'usage_median': 0.04078}
+[22:07:19] layer 16 {'donor_layer': 25, 'cka': 0.8936, 'r2_x_fit': 0.7683734595775604, 'r2_x_hold': 0.5264, 'r2_r_fit': 0.8471129238605499, 'r2_r_hold': 0.6328, 'donor_d_median': 0.821, 'fid_top_median': 0.7471, 'fid_rand_median': 0.6726, 'fid_shuffled_median': 0.001, 'n_top_fid_above_min': 64, 'slot_usage_max': 0.01194, 'usage_median': 0.0231}
+[22:07:32] layer 17 {'donor_layer': 26, 'cka': 0.8351, 'r2_x_fit': 0.7537667602300644, 'r2_x_hold': 0.5023, 'r2_r_fit': 0.8338718712329865, 'r2_r_hold': 0.6105, 'donor_d_median': 0.842, 'fid_top_median': 0.7513, 'fid_rand_median': 0.619, 'fid_shuffled_median': 0.0014, 'n_top_fid_above_min': 64, 'slot_usage_max': 0.01642, 'usage_median': 0.03033}
+[22:07:45] layer 18 {'donor_layer': 27, 'cka': 0.8119, 'r2_x_fit': 0.7296582162380219, 'r2_x_hold': 0.4791, 'r2_r_fit': 0.8064771741628647, 'r2_r_hold': 0.5758, 'donor_d_median': 0.788, 'fid_top_median': 0.7393, 'fid_rand_median': 0.6124, 'fid_shuffled_median': 0.0035, 'n_top_fid_above_min': 64, 'slot_usage_max': 0.01275, 'usage_median': 0.02417}
+[22:07:57] layer 19 {'donor_layer': 28, 'cka': 0.8339, 'r2_x_fit': 0.7191120982170105, 'r2_x_hold': 0.4865, 'r2_r_fit': 0.7832572758197784, 'r2_r_hold': 0.5789, 'donor_d_median': 0.779, 'fid_top_median': 0.7399, 'fid_rand_median': 0.6384, 'fid_shuffled_median': -0.0015, 'n_top_fid_above_min': 64, 'slot_usage_max': 0.01241, 'usage_median': 0.02607}
+=== EXP-077 finished status=OK wall=484.0s

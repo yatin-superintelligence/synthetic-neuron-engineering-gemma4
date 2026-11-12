@@ -1,0 +1,50 @@
+{
+ "tasks": 40,
+ "resolved": 16,
+ "resolved_ids": [
+  "fastapi_15589",
+  "rich_2725",
+  "rich_2943",
+  "rich_3006",
+  "rich_3043",
+  "rich_3063",
+  "rich_3278",
+  "rich_3454",
+  "rich_3470",
+  "rich_3480",
+  "rich_3518",
+  "rich_3718",
+  "rich_3882",
+  "rich_3894",
+  "rich_3905",
+  "rich_4077"
+ ],
+ "outcomes": {
+  "patch failed tests": 22,
+  "resolved": 16,
+  "error: Agent exceeded tool call budget (100 cal": 1,
+  "error: Agent exceeded session timeout (60.0 min": 1
+ },
+ "minutes_mean": 17.65,
+ "tool_calls_mean": 36.2,
+ "llm_calls_mean": 46.2,
+ "tasks_never_applying_an_edit": 3,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 1,
+ "loops": 18,
+ "of_those_resolved_loop": 1,
+ "completion_tokens": 579949,
+ "tokens_in_loop_responses": 77342,
+ "loop_token_share": 0.133,
+ "edits": {
+  "edits": 364,
+  "applied": 87,
+  "failed": 277,
+  "kinds": {
+   "failed (kind not classified)": 277,
+   "applied": 87
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

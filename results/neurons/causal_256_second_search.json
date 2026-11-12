@@ -1,0 +1,1794 @@
+[
+ {
+  "layer": 54,
+  "neuron": 16223,
+  "action": "double",
+  "attribution": 0.012801,
+  "in_64_set": true
+ },
+ {
+  "layer": 18,
+  "neuron": 12778,
+  "action": "double",
+  "attribution": 0.01254,
+  "in_64_set": true
+ },
+ {
+  "layer": 17,
+  "neuron": 71,
+  "action": "double",
+  "attribution": 0.011658,
+  "in_64_set": true
+ },
+ {
+  "layer": 17,
+  "neuron": 18977,
+  "action": "double",
+  "attribution": 0.011539,
+  "in_64_set": true
+ },
+ {
+  "layer": 17,
+  "neuron": 19214,
+  "action": "double",
+  "attribution": 0.011004,
+  "in_64_set": true
+ },
+ {
+  "layer": 24,
+  "neuron": 12601,
+  "action": "double",
+  "attribution": 0.010866,
+  "in_64_set": true
+ },
+ {
+  "layer": 18,
+  "neuron": 6415,
+  "action": "double",
+  "attribution": 0.010815,
+  "in_64_set": true
+ },
+ {
+  "layer": 22,
+  "neuron": 10620,
+  "action": "double",
+  "attribution": 0.010718,
+  "in_64_set": true
+ },
+ {
+  "layer": 57,
+  "neuron": 20103,
+  "action": "double",
+  "attribution": 0.010452,
+  "in_64_set": true
+ },
+ {
+  "layer": 48,
+  "neuron": 21465,
+  "action": "double",
+  "attribution": 0.009974,
+  "in_64_set": true
+ },
+ {
+  "layer": 24,
+  "neuron": 10934,
+  "action": "double",
+  "attribution": 0.009689,
+  "in_64_set": true
+ },
+ {
+  "layer": 11,
+  "neuron": 8868,
+  "action": "double",
+  "attribution": 0.009381,
+  "in_64_set": true
+ },
+ {
+  "layer": 43,
+  "neuron": 21108,
+  "action": "double",
+  "attribution": 0.009211,
+  "in_64_set": true
+ },
+ {
+  "layer": 49,
+  "neuron": 21056,
+  "action": "double",
+  "attribution": 0.009114,
+  "in_64_set": true
+ },
+ {
+  "layer": 36,
+  "neuron": 1446,
+  "action": "double",
+  "attribution": 0.009066,
+  "in_64_set": true
+ },
+ {
+  "layer": 18,
+  "neuron": 13399,
+  "action": "double",
+  "attribution": 0.009002,
+  "in_64_set": true
+ },
+ {
+  "layer": 46,
+  "neuron": 20589,
+  "action": "double",
+  "attribution": 0.008917,
+  "in_64_set": true
+ },
+ {
+  "layer": 8,
+  "neuron": 9423,
+  "action": "double",
+  "attribution": 0.008643,
+  "in_64_set": true
+ },
+ {
+  "layer": 56,
+  "neuron": 6457,
+  "action": "double",
+  "attribution": 0.008515,
+  "in_64_set": true
+ },
+ {
+  "layer": 44,
+  "neuron": 14802,
+  "action": "double",
+  "attribution": 0.007596,
+  "in_64_set": true
+ },
+ {
+  "layer": 51,
+  "neuron": 17235,
+  "action": "double",
+  "attribution": 0.007396,
+  "in_64_set": true
+ },
+ {
+  "layer": 45,
+  "neuron": 19903,
+  "action": "double",
+  "attribution": 0.007153,
+  "in_64_set": true
+ },
+ {
+  "layer": 13,
+  "neuron": 6322,
+  "action": "double",
+  "attribution": 0.007059,
+  "in_64_set": true
+ },
+ {
+  "layer": 21,
+  "neuron": 13077,
+  "action": "double",
+  "attribution": 0.006692,
+  "in_64_set": true
+ },
+ {
+  "layer": 14,
+  "neuron": 20240,
+  "action": "double",
+  "attribution": 0.006575,
+  "in_64_set": true
+ },
+ {
+  "layer": 36,
+  "neuron": 6809,
+  "action": "double",
+  "attribution": 0.00641,
+  "in_64_set": true
+ },
+ {
+  "layer": 26,
+  "neuron": 20127,
+  "action": "double",
+  "attribution": 0.006331,
+  "in_64_set": true
+ },
+ {
+  "layer": 29,
+  "neuron": 20610,
+  "action": "double",
+  "attribution": 0.006113,
+  "in_64_set": true
+ },
+ {
+  "layer": 22,
+  "neuron": 10255,
+  "action": "double",
+  "attribution": 0.006015,
+  "in_64_set": true
+ },
+ {
+  "layer": 56,
+  "neuron": 3569,
+  "action": "double",
+  "attribution": 0.005968,
+  "in_64_set": true
+ },
+ {
+  "layer": 13,
+  "neuron": 1833,
+  "action": "double",
+  "attribution": 0.005941,
+  "in_64_set": true
+ },
+ {
+  "layer": 25,
+  "neuron": 11730,
+  "action": "double",
+  "attribution": 0.005936,
+  "in_64_set": true
+ },
+ {
+  "layer": 44,
+  "neuron": 10356,
+  "action": "double",
+  "attribution": 0.005935,
+  "in_64_set": false
+ },
+ {
+  "layer": 31,
+  "neuron": 5937,
+  "action": "double",
+  "attribution": 0.005918,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 16577,
+  "action": "double",
+  "attribution": 0.005905,
+  "in_64_set": false
+ },
+ {
+  "layer": 38,
+  "neuron": 10587,
+  "action": "double",
+  "attribution": 0.00562,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 16514,
+  "action": "double",
+  "attribution": 0.005558,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 16354,
+  "action": "double",
+  "attribution": 0.005555,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 16260,
+  "action": "double",
+  "attribution": 0.005425,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 2353,
+  "action": "double",
+  "attribution": 0.005284,
+  "in_64_set": false
+ },
+ {
+  "layer": 32,
+  "neuron": 13374,
+  "action": "double",
+  "attribution": 0.005261,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 19264,
+  "action": "double",
+  "attribution": 0.005149,
+  "in_64_set": false
+ },
+ {
+  "layer": 15,
+  "neuron": 7900,
+  "action": "double",
+  "attribution": 0.005144,
+  "in_64_set": false
+ },
+ {
+  "layer": 21,
+  "neuron": 8871,
+  "action": "double",
+  "attribution": 0.00513,
+  "in_64_set": false
+ },
+ {
+  "layer": 50,
+  "neuron": 17171,
+  "action": "double",
+  "attribution": 0.005104,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 15731,
+  "action": "double",
+  "attribution": 0.004988,
+  "in_64_set": false
+ },
+ {
+  "layer": 34,
+  "neuron": 209,
+  "action": "double",
+  "attribution": 0.004896,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 9529,
+  "action": "double",
+  "attribution": 0.004882,
+  "in_64_set": false
+ },
+ {
+  "layer": 57,
+  "neuron": 12907,
+  "action": "double",
+  "attribution": 0.004839,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 8171,
+  "action": "double",
+  "attribution": 0.00482,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 9619,
+  "action": "double",
+  "attribution": 0.004779,
+  "in_64_set": false
+ },
+ {
+  "layer": 25,
+  "neuron": 17321,
+  "action": "double",
+  "attribution": 0.004715,
+  "in_64_set": false
+ },
+ {
+  "layer": 55,
+  "neuron": 20726,
+  "action": "double",
+  "attribution": 0.00471,
+  "in_64_set": false
+ },
+ {
+  "layer": 55,
+  "neuron": 15369,
+  "action": "double",
+  "attribution": 0.004705,
+  "in_64_set": false
+ },
+ {
+  "layer": 33,
+  "neuron": 6467,
+  "action": "double",
+  "attribution": 0.004684,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 14740,
+  "action": "double",
+  "attribution": 0.004643,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 16655,
+  "action": "double",
+  "attribution": 0.004629,
+  "in_64_set": false
+ },
+ {
+  "layer": 31,
+  "neuron": 18883,
+  "action": "double",
+  "attribution": 0.004577,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 18320,
+  "action": "double",
+  "attribution": 0.004469,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 5460,
+  "action": "double",
+  "attribution": 0.004307,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 15471,
+  "action": "double",
+  "attribution": 0.0043,
+  "in_64_set": false
+ },
+ {
+  "layer": 38,
+  "neuron": 7474,
+  "action": "double",
+  "attribution": 0.004288,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 12892,
+  "action": "double",
+  "attribution": 0.004194,
+  "in_64_set": false
+ },
+ {
+  "layer": 17,
+  "neuron": 14661,
+  "action": "double",
+  "attribution": 0.004189,
+  "in_64_set": false
+ },
+ {
+  "layer": 54,
+  "neuron": 18647,
+  "action": "double",
+  "attribution": 0.004187,
+  "in_64_set": false
+ },
+ {
+  "layer": 4,
+  "neuron": 17653,
+  "action": "double",
+  "attribution": 0.004176,
+  "in_64_set": false
+ },
+ {
+  "layer": 37,
+  "neuron": 12451,
+  "action": "double",
+  "attribution": 0.00414,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 11659,
+  "action": "double",
+  "attribution": 0.004033,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 8520,
+  "action": "double",
+  "attribution": 0.003994,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 21046,
+  "action": "double",
+  "attribution": 0.003943,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 1121,
+  "action": "double",
+  "attribution": 0.003938,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 15640,
+  "action": "double",
+  "attribution": 0.003935,
+  "in_64_set": false
+ },
+ {
+  "layer": 13,
+  "neuron": 11269,
+  "action": "double",
+  "attribution": 0.003928,
+  "in_64_set": false
+ },
+ {
+  "layer": 39,
+  "neuron": 4505,
+  "action": "double",
+  "attribution": 0.003887,
+  "in_64_set": false
+ },
+ {
+  "layer": 39,
+  "neuron": 3893,
+  "action": "double",
+  "attribution": 0.003876,
+  "in_64_set": false
+ },
+ {
+  "layer": 53,
+  "neuron": 15345,
+  "action": "double",
+  "attribution": 0.003871,
+  "in_64_set": false
+ },
+ {
+  "layer": 15,
+  "neuron": 20480,
+  "action": "double",
+  "attribution": 0.00381,
+  "in_64_set": false
+ },
+ {
+  "layer": 15,
+  "neuron": 11691,
+  "action": "double",
+  "attribution": 0.003807,
+  "in_64_set": false
+ },
+ {
+  "layer": 40,
+  "neuron": 14206,
+  "action": "double",
+  "attribution": 0.00379,
+  "in_64_set": false
+ },
+ {
+  "layer": 11,
+  "neuron": 12176,
+  "action": "double",
+  "attribution": 0.003739,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 9302,
+  "action": "double",
+  "attribution": 0.003722,
+  "in_64_set": false
+ },
+ {
+  "layer": 22,
+  "neuron": 13822,
+  "action": "double",
+  "attribution": 0.003684,
+  "in_64_set": false
+ },
+ {
+  "layer": 22,
+  "neuron": 3334,
+  "action": "double",
+  "attribution": 0.003577,
+  "in_64_set": false
+ },
+ {
+  "layer": 57,
+  "neuron": 4373,
+  "action": "double",
+  "attribution": 0.003569,
+  "in_64_set": false
+ },
+ {
+  "layer": 21,
+  "neuron": 9292,
+  "action": "double",
+  "attribution": 0.003568,
+  "in_64_set": false
+ },
+ {
+  "layer": 41,
+  "neuron": 20150,
+  "action": "double",
+  "attribution": 0.003544,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 19211,
+  "action": "double",
+  "attribution": 0.003511,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 10414,
+  "action": "double",
+  "attribution": 0.003508,
+  "in_64_set": false
+ },
+ {
+  "layer": 17,
+  "neuron": 8905,
+  "action": "double",
+  "attribution": 0.003472,
+  "in_64_set": false
+ },
+ {
+  "layer": 45,
+  "neuron": 18209,
+  "action": "double",
+  "attribution": 0.003466,
+  "in_64_set": false
+ },
+ {
+  "layer": 58,
+  "neuron": 19437,
+  "action": "double",
+  "attribution": 0.003455,
+  "in_64_set": false
+ },
+ {
+  "layer": 15,
+  "neuron": 18147,
+  "action": "double",
+  "attribution": 0.003422,
+  "in_64_set": false
+ },
+ {
+  "layer": 41,
+  "neuron": 13330,
+  "action": "double",
+  "attribution": 0.003421,
+  "in_64_set": false
+ },
+ {
+  "layer": 54,
+  "neuron": 12730,
+  "action": "double",
+  "attribution": 0.003421,
+  "in_64_set": false
+ },
+ {
+  "layer": 58,
+  "neuron": 15182,
+  "action": "double",
+  "attribution": 0.003412,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 21250,
+  "action": "double",
+  "attribution": 0.003381,
+  "in_64_set": false
+ },
+ {
+  "layer": 40,
+  "neuron": 17242,
+  "action": "double",
+  "attribution": 0.003371,
+  "in_64_set": false
+ },
+ {
+  "layer": 57,
+  "neuron": 16104,
+  "action": "double",
+  "attribution": 0.003335,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 15938,
+  "action": "double",
+  "attribution": 0.003288,
+  "in_64_set": false
+ },
+ {
+  "layer": 38,
+  "neuron": 21419,
+  "action": "double",
+  "attribution": 0.003278,
+  "in_64_set": false
+ },
+ {
+  "layer": 41,
+  "neuron": 4216,
+  "action": "double",
+  "attribution": 0.00327,
+  "in_64_set": false
+ },
+ {
+  "layer": 58,
+  "neuron": 11252,
+  "action": "double",
+  "attribution": 0.003258,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 10375,
+  "action": "double",
+  "attribution": 0.003257,
+  "in_64_set": false
+ },
+ {
+  "layer": 31,
+  "neuron": 6851,
+  "action": "double",
+  "attribution": 0.003254,
+  "in_64_set": false
+ },
+ {
+  "layer": 57,
+  "neuron": 7718,
+  "action": "double",
+  "attribution": 0.003177,
+  "in_64_set": false
+ },
+ {
+  "layer": 39,
+  "neuron": 1713,
+  "action": "double",
+  "attribution": 0.003146,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 14691,
+  "action": "double",
+  "attribution": 0.003102,
+  "in_64_set": false
+ },
+ {
+  "layer": 15,
+  "neuron": 1671,
+  "action": "double",
+  "attribution": 0.003099,
+  "in_64_set": false
+ },
+ {
+  "layer": 35,
+  "neuron": 18498,
+  "action": "double",
+  "attribution": 0.003076,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 21357,
+  "action": "double",
+  "attribution": 0.003072,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 2455,
+  "action": "double",
+  "attribution": 0.003068,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 8928,
+  "action": "double",
+  "attribution": 0.003059,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 6722,
+  "action": "double",
+  "attribution": 0.003053,
+  "in_64_set": false
+ },
+ {
+  "layer": 30,
+  "neuron": 17734,
+  "action": "double",
+  "attribution": 0.003042,
+  "in_64_set": false
+ },
+ {
+  "layer": 9,
+  "neuron": 1005,
+  "action": "double",
+  "attribution": 0.003025,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 1334,
+  "action": "double",
+  "attribution": 0.003019,
+  "in_64_set": false
+ },
+ {
+  "layer": 21,
+  "neuron": 3328,
+  "action": "double",
+  "attribution": 0.002993,
+  "in_64_set": false
+ },
+ {
+  "layer": 35,
+  "neuron": 7727,
+  "action": "double",
+  "attribution": 0.002909,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 8589,
+  "action": "double",
+  "attribution": 0.002891,
+  "in_64_set": false
+ },
+ {
+  "layer": 18,
+  "neuron": 15014,
+  "action": "double",
+  "attribution": 0.002888,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 16437,
+  "action": "double",
+  "attribution": 0.002873,
+  "in_64_set": false
+ },
+ {
+  "layer": 15,
+  "neuron": 12362,
+  "action": "double",
+  "attribution": 0.002859,
+  "in_64_set": false
+ },
+ {
+  "layer": 22,
+  "neuron": 15154,
+  "action": "double",
+  "attribution": 0.002857,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 4292,
+  "action": "double",
+  "attribution": 0.002841,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 2016,
+  "action": "double",
+  "attribution": 0.002837,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 881,
+  "action": "double",
+  "attribution": 0.00283,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 9048,
+  "action": "double",
+  "attribution": 0.002813,
+  "in_64_set": false
+ },
+ {
+  "layer": 21,
+  "neuron": 14020,
+  "action": "double",
+  "attribution": 0.002808,
+  "in_64_set": false
+ },
+ {
+  "layer": 17,
+  "neuron": 1999,
+  "action": "silence",
+  "attribution": -0.026407,
+  "in_64_set": true
+ },
+ {
+  "layer": 22,
+  "neuron": 17551,
+  "action": "silence",
+  "attribution": -0.016846,
+  "in_64_set": true
+ },
+ {
+  "layer": 22,
+  "neuron": 11063,
+  "action": "silence",
+  "attribution": -0.013648,
+  "in_64_set": true
+ },
+ {
+  "layer": 17,
+  "neuron": 912,
+  "action": "silence",
+  "attribution": -0.013631,
+  "in_64_set": true
+ },
+ {
+  "layer": 11,
+  "neuron": 10957,
+  "action": "silence",
+  "attribution": -0.010311,
+  "in_64_set": true
+ },
+ {
+  "layer": 22,
+  "neuron": 6187,
+  "action": "silence",
+  "attribution": -0.010088,
+  "in_64_set": true
+ },
+ {
+  "layer": 21,
+  "neuron": 1765,
+  "action": "silence",
+  "attribution": -0.009814,
+  "in_64_set": true
+ },
+ {
+  "layer": 56,
+  "neuron": 5072,
+  "action": "silence",
+  "attribution": -0.008661,
+  "in_64_set": true
+ },
+ {
+  "layer": 20,
+  "neuron": 9934,
+  "action": "silence",
+  "attribution": -0.008439,
+  "in_64_set": true
+ },
+ {
+  "layer": 18,
+  "neuron": 19032,
+  "action": "silence",
+  "attribution": -0.008275,
+  "in_64_set": true
+ },
+ {
+  "layer": 59,
+  "neuron": 371,
+  "action": "silence",
+  "attribution": -0.007267,
+  "in_64_set": true
+ },
+ {
+  "layer": 59,
+  "neuron": 281,
+  "action": "silence",
+  "attribution": -0.007043,
+  "in_64_set": true
+ },
+ {
+  "layer": 25,
+  "neuron": 3556,
+  "action": "silence",
+  "attribution": -0.006933,
+  "in_64_set": true
+ },
+ {
+  "layer": 23,
+  "neuron": 12440,
+  "action": "silence",
+  "attribution": -0.006913,
+  "in_64_set": true
+ },
+ {
+  "layer": 33,
+  "neuron": 15727,
+  "action": "silence",
+  "attribution": -0.006861,
+  "in_64_set": true
+ },
+ {
+  "layer": 41,
+  "neuron": 19879,
+  "action": "silence",
+  "attribution": -0.006856,
+  "in_64_set": true
+ },
+ {
+  "layer": 21,
+  "neuron": 12582,
+  "action": "silence",
+  "attribution": -0.006704,
+  "in_64_set": true
+ },
+ {
+  "layer": 16,
+  "neuron": 20735,
+  "action": "silence",
+  "attribution": -0.006399,
+  "in_64_set": true
+ },
+ {
+  "layer": 45,
+  "neuron": 14642,
+  "action": "silence",
+  "attribution": -0.006336,
+  "in_64_set": true
+ },
+ {
+  "layer": 56,
+  "neuron": 13657,
+  "action": "silence",
+  "attribution": -0.005865,
+  "in_64_set": true
+ },
+ {
+  "layer": 20,
+  "neuron": 13220,
+  "action": "silence",
+  "attribution": -0.005787,
+  "in_64_set": true
+ },
+ {
+  "layer": 19,
+  "neuron": 18990,
+  "action": "silence",
+  "attribution": -0.005695,
+  "in_64_set": true
+ },
+ {
+  "layer": 21,
+  "neuron": 5655,
+  "action": "silence",
+  "attribution": -0.005664,
+  "in_64_set": true
+ },
+ {
+  "layer": 21,
+  "neuron": 14272,
+  "action": "silence",
+  "attribution": -0.005597,
+  "in_64_set": true
+ },
+ {
+  "layer": 20,
+  "neuron": 12045,
+  "action": "silence",
+  "attribution": -0.005424,
+  "in_64_set": true
+ },
+ {
+  "layer": 19,
+  "neuron": 16939,
+  "action": "silence",
+  "attribution": -0.005211,
+  "in_64_set": true
+ },
+ {
+  "layer": 59,
+  "neuron": 6337,
+  "action": "silence",
+  "attribution": -0.005116,
+  "in_64_set": true
+ },
+ {
+  "layer": 16,
+  "neuron": 17222,
+  "action": "silence",
+  "attribution": -0.004949,
+  "in_64_set": true
+ },
+ {
+  "layer": 46,
+  "neuron": 3698,
+  "action": "silence",
+  "attribution": -0.004948,
+  "in_64_set": true
+ },
+ {
+  "layer": 35,
+  "neuron": 6709,
+  "action": "silence",
+  "attribution": -0.004928,
+  "in_64_set": true
+ },
+ {
+  "layer": 31,
+  "neuron": 18945,
+  "action": "silence",
+  "attribution": -0.004874,
+  "in_64_set": true
+ },
+ {
+  "layer": 29,
+  "neuron": 10117,
+  "action": "silence",
+  "attribution": -0.004797,
+  "in_64_set": true
+ },
+ {
+  "layer": 58,
+  "neuron": 12087,
+  "action": "silence",
+  "attribution": -0.004782,
+  "in_64_set": false
+ },
+ {
+  "layer": 25,
+  "neuron": 2352,
+  "action": "silence",
+  "attribution": -0.004741,
+  "in_64_set": false
+ },
+ {
+  "layer": 46,
+  "neuron": 3513,
+  "action": "silence",
+  "attribution": -0.004697,
+  "in_64_set": false
+ },
+ {
+  "layer": 18,
+  "neuron": 9343,
+  "action": "silence",
+  "attribution": -0.004582,
+  "in_64_set": false
+ },
+ {
+  "layer": 26,
+  "neuron": 20489,
+  "action": "silence",
+  "attribution": -0.004565,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 14180,
+  "action": "silence",
+  "attribution": -0.004565,
+  "in_64_set": false
+ },
+ {
+  "layer": 52,
+  "neuron": 4217,
+  "action": "silence",
+  "attribution": -0.004494,
+  "in_64_set": false
+ },
+ {
+  "layer": 51,
+  "neuron": 148,
+  "action": "silence",
+  "attribution": -0.004438,
+  "in_64_set": false
+ },
+ {
+  "layer": 17,
+  "neuron": 8633,
+  "action": "silence",
+  "attribution": -0.004434,
+  "in_64_set": false
+ },
+ {
+  "layer": 34,
+  "neuron": 16453,
+  "action": "silence",
+  "attribution": -0.004389,
+  "in_64_set": false
+ },
+ {
+  "layer": 58,
+  "neuron": 13320,
+  "action": "silence",
+  "attribution": -0.004387,
+  "in_64_set": false
+ },
+ {
+  "layer": 13,
+  "neuron": 924,
+  "action": "silence",
+  "attribution": -0.004386,
+  "in_64_set": false
+ },
+ {
+  "layer": 57,
+  "neuron": 16180,
+  "action": "silence",
+  "attribution": -0.00438,
+  "in_64_set": false
+ },
+ {
+  "layer": 58,
+  "neuron": 11977,
+  "action": "silence",
+  "attribution": -0.004236,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 5143,
+  "action": "silence",
+  "attribution": -0.004226,
+  "in_64_set": false
+ },
+ {
+  "layer": 43,
+  "neuron": 19727,
+  "action": "silence",
+  "attribution": -0.004191,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 11693,
+  "action": "silence",
+  "attribution": -0.004176,
+  "in_64_set": false
+ },
+ {
+  "layer": 27,
+  "neuron": 3509,
+  "action": "silence",
+  "attribution": -0.004161,
+  "in_64_set": false
+ },
+ {
+  "layer": 58,
+  "neuron": 3414,
+  "action": "silence",
+  "attribution": -0.004072,
+  "in_64_set": false
+ },
+ {
+  "layer": 57,
+  "neuron": 9197,
+  "action": "silence",
+  "attribution": -0.004062,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 10718,
+  "action": "silence",
+  "attribution": -0.004034,
+  "in_64_set": false
+ },
+ {
+  "layer": 52,
+  "neuron": 15436,
+  "action": "silence",
+  "attribution": -0.004,
+  "in_64_set": false
+ },
+ {
+  "layer": 38,
+  "neuron": 18842,
+  "action": "silence",
+  "attribution": -0.003984,
+  "in_64_set": false
+ },
+ {
+  "layer": 35,
+  "neuron": 976,
+  "action": "silence",
+  "attribution": -0.003969,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 19446,
+  "action": "silence",
+  "attribution": -0.003964,
+  "in_64_set": false
+ },
+ {
+  "layer": 12,
+  "neuron": 4933,
+  "action": "silence",
+  "attribution": -0.003962,
+  "in_64_set": false
+ },
+ {
+  "layer": 34,
+  "neuron": 18896,
+  "action": "silence",
+  "attribution": -0.003945,
+  "in_64_set": false
+ },
+ {
+  "layer": 34,
+  "neuron": 13701,
+  "action": "silence",
+  "attribution": -0.003933,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 3604,
+  "action": "silence",
+  "attribution": -0.003906,
+  "in_64_set": false
+ },
+ {
+  "layer": 25,
+  "neuron": 19563,
+  "action": "silence",
+  "attribution": -0.003902,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 5865,
+  "action": "silence",
+  "attribution": -0.003855,
+  "in_64_set": false
+ },
+ {
+  "layer": 38,
+  "neuron": 20215,
+  "action": "silence",
+  "attribution": -0.003845,
+  "in_64_set": false
+ },
+ {
+  "layer": 55,
+  "neuron": 7279,
+  "action": "silence",
+  "attribution": -0.00382,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 13798,
+  "action": "silence",
+  "attribution": -0.003781,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 3934,
+  "action": "silence",
+  "attribution": -0.003768,
+  "in_64_set": false
+ },
+ {
+  "layer": 35,
+  "neuron": 199,
+  "action": "silence",
+  "attribution": -0.003726,
+  "in_64_set": false
+ },
+ {
+  "layer": 43,
+  "neuron": 13110,
+  "action": "silence",
+  "attribution": -0.00372,
+  "in_64_set": false
+ },
+ {
+  "layer": 22,
+  "neuron": 15087,
+  "action": "silence",
+  "attribution": -0.003685,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 16921,
+  "action": "silence",
+  "attribution": -0.003662,
+  "in_64_set": false
+ },
+ {
+  "layer": 18,
+  "neuron": 12537,
+  "action": "silence",
+  "attribution": -0.003648,
+  "in_64_set": false
+ },
+ {
+  "layer": 34,
+  "neuron": 20099,
+  "action": "silence",
+  "attribution": -0.003642,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 1801,
+  "action": "silence",
+  "attribution": -0.003638,
+  "in_64_set": false
+ },
+ {
+  "layer": 27,
+  "neuron": 13103,
+  "action": "silence",
+  "attribution": -0.003627,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 15050,
+  "action": "silence",
+  "attribution": -0.003603,
+  "in_64_set": false
+ },
+ {
+  "layer": 21,
+  "neuron": 10445,
+  "action": "silence",
+  "attribution": -0.003566,
+  "in_64_set": false
+ },
+ {
+  "layer": 51,
+  "neuron": 2077,
+  "action": "silence",
+  "attribution": -0.003563,
+  "in_64_set": false
+ },
+ {
+  "layer": 37,
+  "neuron": 7581,
+  "action": "silence",
+  "attribution": -0.003547,
+  "in_64_set": false
+ },
+ {
+  "layer": 42,
+  "neuron": 12514,
+  "action": "silence",
+  "attribution": -0.003541,
+  "in_64_set": false
+ },
+ {
+  "layer": 21,
+  "neuron": 18192,
+  "action": "silence",
+  "attribution": -0.003506,
+  "in_64_set": false
+ },
+ {
+  "layer": 27,
+  "neuron": 903,
+  "action": "silence",
+  "attribution": -0.00348,
+  "in_64_set": false
+ },
+ {
+  "layer": 48,
+  "neuron": 10003,
+  "action": "silence",
+  "attribution": -0.003462,
+  "in_64_set": false
+ },
+ {
+  "layer": 12,
+  "neuron": 1922,
+  "action": "silence",
+  "attribution": -0.003426,
+  "in_64_set": false
+ },
+ {
+  "layer": 38,
+  "neuron": 2,
+  "action": "silence",
+  "attribution": -0.003405,
+  "in_64_set": false
+ },
+ {
+  "layer": 49,
+  "neuron": 11339,
+  "action": "silence",
+  "attribution": -0.003369,
+  "in_64_set": false
+ },
+ {
+  "layer": 22,
+  "neuron": 16032,
+  "action": "silence",
+  "attribution": -0.003343,
+  "in_64_set": false
+ },
+ {
+  "layer": 18,
+  "neuron": 10351,
+  "action": "silence",
+  "attribution": -0.003312,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 10342,
+  "action": "silence",
+  "attribution": -0.003308,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 21478,
+  "action": "silence",
+  "attribution": -0.003307,
+  "in_64_set": false
+ },
+ {
+  "layer": 14,
+  "neuron": 11206,
+  "action": "silence",
+  "attribution": -0.003246,
+  "in_64_set": false
+ },
+ {
+  "layer": 9,
+  "neuron": 9919,
+  "action": "silence",
+  "attribution": -0.003225,
+  "in_64_set": false
+ },
+ {
+  "layer": 40,
+  "neuron": 13061,
+  "action": "silence",
+  "attribution": -0.003211,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 7758,
+  "action": "silence",
+  "attribution": -0.003149,
+  "in_64_set": false
+ },
+ {
+  "layer": 26,
+  "neuron": 9509,
+  "action": "silence",
+  "attribution": -0.003147,
+  "in_64_set": false
+ },
+ {
+  "layer": 15,
+  "neuron": 5976,
+  "action": "silence",
+  "attribution": -0.003145,
+  "in_64_set": false
+ },
+ {
+  "layer": 49,
+  "neuron": 15304,
+  "action": "silence",
+  "attribution": -0.003106,
+  "in_64_set": false
+ },
+ {
+  "layer": 42,
+  "neuron": 19971,
+  "action": "silence",
+  "attribution": -0.003101,
+  "in_64_set": false
+ },
+ {
+  "layer": 22,
+  "neuron": 13840,
+  "action": "silence",
+  "attribution": -0.003066,
+  "in_64_set": false
+ },
+ {
+  "layer": 17,
+  "neuron": 12598,
+  "action": "silence",
+  "attribution": -0.003036,
+  "in_64_set": false
+ },
+ {
+  "layer": 25,
+  "neuron": 9886,
+  "action": "silence",
+  "attribution": -0.003032,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 12903,
+  "action": "silence",
+  "attribution": -0.003015,
+  "in_64_set": false
+ },
+ {
+  "layer": 11,
+  "neuron": 21150,
+  "action": "silence",
+  "attribution": -0.003005,
+  "in_64_set": false
+ },
+ {
+  "layer": 33,
+  "neuron": 13121,
+  "action": "silence",
+  "attribution": -0.003004,
+  "in_64_set": false
+ },
+ {
+  "layer": 48,
+  "neuron": 14062,
+  "action": "silence",
+  "attribution": -0.003003,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 17879,
+  "action": "silence",
+  "attribution": -0.002986,
+  "in_64_set": false
+ },
+ {
+  "layer": 57,
+  "neuron": 5935,
+  "action": "silence",
+  "attribution": -0.002979,
+  "in_64_set": false
+ },
+ {
+  "layer": 17,
+  "neuron": 2053,
+  "action": "silence",
+  "attribution": -0.002972,
+  "in_64_set": false
+ },
+ {
+  "layer": 57,
+  "neuron": 8986,
+  "action": "silence",
+  "attribution": -0.002959,
+  "in_64_set": false
+ },
+ {
+  "layer": 18,
+  "neuron": 3286,
+  "action": "silence",
+  "attribution": -0.002956,
+  "in_64_set": false
+ },
+ {
+  "layer": 20,
+  "neuron": 10977,
+  "action": "silence",
+  "attribution": -0.002949,
+  "in_64_set": false
+ },
+ {
+  "layer": 40,
+  "neuron": 8283,
+  "action": "silence",
+  "attribution": -0.002949,
+  "in_64_set": false
+ },
+ {
+  "layer": 56,
+  "neuron": 16120,
+  "action": "silence",
+  "attribution": -0.002948,
+  "in_64_set": false
+ },
+ {
+  "layer": 30,
+  "neuron": 13174,
+  "action": "silence",
+  "attribution": -0.002945,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 7024,
+  "action": "silence",
+  "attribution": -0.002937,
+  "in_64_set": false
+ },
+ {
+  "layer": 32,
+  "neuron": 18086,
+  "action": "silence",
+  "attribution": -0.00292,
+  "in_64_set": false
+ },
+ {
+  "layer": 37,
+  "neuron": 14215,
+  "action": "silence",
+  "attribution": -0.002916,
+  "in_64_set": false
+ },
+ {
+  "layer": 28,
+  "neuron": 20996,
+  "action": "silence",
+  "attribution": -0.002916,
+  "in_64_set": false
+ },
+ {
+  "layer": 23,
+  "neuron": 19833,
+  "action": "silence",
+  "attribution": -0.002906,
+  "in_64_set": false
+ },
+ {
+  "layer": 55,
+  "neuron": 15046,
+  "action": "silence",
+  "attribution": -0.002897,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 16448,
+  "action": "silence",
+  "attribution": -0.002883,
+  "in_64_set": false
+ },
+ {
+  "layer": 17,
+  "neuron": 6813,
+  "action": "silence",
+  "attribution": -0.002878,
+  "in_64_set": false
+ },
+ {
+  "layer": 59,
+  "neuron": 8494,
+  "action": "silence",
+  "attribution": -0.002873,
+  "in_64_set": false
+ },
+ {
+  "layer": 42,
+  "neuron": 19537,
+  "action": "silence",
+  "attribution": -0.002864,
+  "in_64_set": false
+ },
+ {
+  "layer": 13,
+  "neuron": 6122,
+  "action": "silence",
+  "attribution": -0.002846,
+  "in_64_set": false
+ },
+ {
+  "layer": 24,
+  "neuron": 11736,
+  "action": "silence",
+  "attribution": -0.002837,
+  "in_64_set": false
+ },
+ {
+  "layer": 19,
+  "neuron": 628,
+  "action": "silence",
+  "attribution": -0.002815,
+  "in_64_set": false
+ },
+ {
+  "layer": 16,
+  "neuron": 14920,
+  "action": "silence",
+  "attribution": -0.002812,
+  "in_64_set": false
+ }
+]

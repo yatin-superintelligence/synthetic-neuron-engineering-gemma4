@@ -1,0 +1,9 @@
+{
+ "id": "EXP-044g",
+ "slug": "exp-044g-base-seed1-l4",
+ "category": "baseline",
+ "started": "2026-11-08T21:38:50Z",
+ "wall_seconds": 1660.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "EXP-095",
+  "slug": "copy-head-gain",
+  "category": "improvement",
+  "motivation": "The largest group of E2B's failed edits writes old_string lines that are not in the file it read (174 of 364 in five unedited official runs). A gain on the heads that copy old_string from the context targets that step without training.",
+  "hypothesis": "Copy-head gain raises the share of applying bench answers on held-out states against the unedited model (exact McNemar p < 0.05) and against a control gain on low-scoring heads, with no fewer correct answers and no significant MBPP+ loss.",
+  "config": {
+    "rank_per_head": 64,
+    "arms": [
+      [
+        4,
+        2.0
+      ],
+      [
+        4,
+        3.0
+      ],
+      [
+        8,
+        2.0
+      ],
+      [
+        8,
+        3.0
+      ]
+    ],
+    "selection": "fit split, most applying",
+    "test": "dev + test splits (257)",
+    "retention": "MBPP+ 378, cap 8,192",
+    "control": "same count of random heads below the median copy score, seed 95"
+  },
+  "depends_on": [
+    "EXP-092"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp095_copy_heads.py",
+  "started": "2026-11-08T22:04:09.821959Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794175449.8276582
+  }
+}

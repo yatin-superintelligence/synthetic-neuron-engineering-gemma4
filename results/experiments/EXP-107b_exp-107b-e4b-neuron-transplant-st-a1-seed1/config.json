@@ -1,0 +1,9 @@
+{
+ "id": "EXP-107b",
+ "slug": "exp-107b-e4b-neuron-transplant-st-a1-seed1",
+ "category": "improvement",
+ "started": "2026-11-09T18:09:33Z",
+ "wall_seconds": 3031.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

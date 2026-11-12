@@ -1,0 +1,52 @@
+{
+  "id": "EXP-116",
+  "slug": "quote-scratchpad",
+  "category": "diagnosis",
+  "motivation": "E2B's thought quotes the code before 77% of first edits that apply and 44% of those that fail; whether quoting causes the edit to apply decides which neuron (or setting) to build next.",
+  "hypothesis": "Forcing the thought to open with a quote of the lines to change raises first edits that apply on real states above a neutral prefix of similar length and above the recorded state.",
+  "config": {
+    "arms": [
+      "base",
+      "quote",
+      "neutral",
+      "fence",
+      "closed"
+    ],
+    "caps": [
+      2048,
+      512
+    ],
+    "sampling": {
+      "temperature": 0.2,
+      "top_p": 0.95
+    },
+    "prefixes": {
+      "base": "",
+      "quote": "Before editing, I will copy the exact lines I am going to change from the file content above, character for character:\n```python\n",
+      "neutral": "Before editing, I will restate in my own words what the issue asks for and which behaviour of the code is wrong.\n",
+      "fence": "```python\n",
+      "closed": null
+    }
+  },
+  "depends_on": [
+    "EXP-112"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA A100-SXM4-40GB"
+  },
+  "command": "experiments/scripts/exp116_quote_scratchpad.py",
+  "started": "2026-11-10T01:46:16.281945Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794275176.288776
+  },
+  "finished": "2026-11-10T02:15:35.012766Z",
+  "wall_seconds": 1758.7,
+  "status": "OK"
+}

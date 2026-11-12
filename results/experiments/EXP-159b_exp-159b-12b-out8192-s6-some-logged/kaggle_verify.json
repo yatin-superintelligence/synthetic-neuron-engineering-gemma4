@@ -1,0 +1,18 @@
+{
+ "resolved": 9,
+ "items": 15,
+ "colab_resolved": 3,
+ "resolved_ids": [
+  "fastapi_15589",
+  "fastapi_14794",
+  "fastapi_14463",
+  "fastapi_9753",
+  "fastapi_5077",
+  "fastapi_14301",
+  "fastapi_11194",
+  "rich_3480",
+  "rich_2943"
+ ],
+ "verified_on": "Kaggle CPU notebook, official image, swegemma verify_task",
+ "notebook": "sne-verify-b11121110"
+}

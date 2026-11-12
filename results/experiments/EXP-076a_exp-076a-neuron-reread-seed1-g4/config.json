@@ -1,0 +1,9 @@
+{
+ "id": "EXP-076a",
+ "slug": "exp-076a-neuron-reread-seed1-g4",
+ "category": "synthetic-neuron",
+ "started": "2026-11-07T23:53:37Z",
+ "wall_seconds": 735.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

@@ -1,0 +1,67 @@
+{
+  "results": {
+    "neurons": {
+      "reread": {
+        "n_pos": 74,
+        "n_neg": 431,
+        "sep_fit": {
+          "pos_mean": 0.761,
+          "pos_min": 0.282,
+          "neg_median": 0.193,
+          "neg_p99": 0.7999,
+          "neg_p999": 0.849,
+          "neg_max": 0.8652,
+          "n_pos": 74,
+          "n_neg": 431
+        },
+        "sep_test": {
+          "pos_mean": 0.695,
+          "pos_min": 0.155,
+          "neg_median": 0.1859,
+          "neg_p99": 0.8143,
+          "neg_p999": 0.8699,
+          "neg_max": 0.8721,
+          "n_pos": 89,
+          "n_neg": 426
+        },
+        "control_on_true_positives": 0.4582,
+        "rms_y": 0.2562115788459778,
+        "rms_h": 0.6328922510147095,
+        "base_gap_at_positives": -0.312
+      },
+      "test": {
+        "n_pos": 140,
+        "n_neg": 365,
+        "sep_fit": {
+          "pos_mean": 0.754,
+          "pos_min": 0.294,
+          "neg_median": 0.1911,
+          "neg_p99": 0.6744,
+          "neg_p999": 0.7378,
+          "neg_max": 0.7443,
+          "n_pos": 140,
+          "n_neg": 365
+        },
+        "sep_test": {
+          "pos_mean": 0.639,
+          "pos_min": 0.216,
+          "neg_median": 0.2014,
+          "neg_p99": 0.691,
+          "neg_p999": 0.7682,
+          "neg_max": 0.7817,
+          "n_pos": 138,
+          "n_neg": 377
+        },
+        "control_on_true_positives": 0.4918,
+        "rms_y": 0.23443200439214706,
+        "rms_h": 0.6458347141742706,
+        "base_gap_at_positives": 8.938
+      }
+    },
+    "headline": "reread: held-out read-out on positives 0.695, negatives p99 0.8143, control on positives 0.4582; test: held-out read-out on positives 0.639, negatives p99 0.691, control on positives 0.4918",
+    "system_monitor": {
+      "samples": 3
+    }
+  },
+  "wall_seconds": 123.80613136291504
+}

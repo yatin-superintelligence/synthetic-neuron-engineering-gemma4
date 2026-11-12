@@ -1,0 +1,9 @@
+{
+ "id": "EXP-141d",
+ "slug": "exp-141d-12b-out8192-calls200-s1-gold40",
+ "category": "diagnosis",
+ "started": "2026-11-11T08:43:34Z",
+ "wall_seconds": 6875.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

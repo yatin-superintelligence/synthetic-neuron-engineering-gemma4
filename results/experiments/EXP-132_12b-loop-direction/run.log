@@ -1,0 +1,36 @@
+=== EXP-132 12b-loop-direction started 2026-11-10T22:19:50.779206Z commit=
+[22:19:51] dev cases 49 | loop 22 | tasks 24 | fit tasks 12
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:01<00:00,  7.09it/s]
+Fetching 9 files:  89%|########8 | 8/9 [00:20<00:02,  2.50s/it]
+Fetching 9 files: 100%|##########| 9/9 [01:04<00:00,  7.13s/it]
+Fetching 9 files: 100%|##########| 9/9 [01:04<00:00,  7.13s/it]
+
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/677 [00:00<01:38,  6.88it/s]
+Loading weights:   7%|7         | 48/677 [00:00<00:02, 227.28it/s]
+Loading weights:  13%|#3        | 89/677 [00:00<00:01, 300.68it/s]
+Loading weights:  19%|#9        | 131/677 [00:00<00:01, 334.82it/s]
+Loading weights:  26%|##5       | 173/677 [00:00<00:01, 358.87it/s]
+Loading weights:  32%|###1      | 216/677 [00:00<00:01, 373.87it/s]
+Loading weights:  38%|###8      | 260/677 [00:00<00:01, 394.33it/s]
+Loading weights:  45%|####4     | 303/677 [00:00<00:00, 405.24it/s]
+Loading weights:  51%|#####1    | 348/677 [00:00<00:00, 416.43it/s]
+Loading weights:  58%|#####8    | 394/677 [00:01<00:00, 424.64it/s]
+Loading weights:  65%|######4   | 437/677 [00:01<00:00, 410.81it/s]
+Loading weights:  71%|#######1  | 483/677 [00:01<00:00, 421.35it/s]
+Loading weights:  78%|#######7  | 528/677 [00:01<00:00, 428.30it/s]
+Loading weights:  85%|########4 | 574/677 [00:01<00:00, 429.24it/s]
+Loading weights:  91%|#########1| 618/677 [00:01<00:00, 411.51it/s]
+Loading weights:  97%|#########7| 660/677 [00:01<00:00, 413.53it/s]
+Loading weights: 100%|##########| 677/677 [00:01<00:00, 390.30it/s]
+[22:21:00] model google/gemma-4-12B-it-qat-q4_0-unquantized | layers 48 | hidden size 3840 | MLP width 15360
+[22:21:02] case 0 2 s
+[22:21:09] case 10 9 s
+[22:21:16] case 20 17 s
+[22:21:20] case 30 20 s
+[22:21:24] case 40 25 s
+[22:21:28] cases used 47
+[22:21:33] layers chosen (highest held-out d') [(40, 1.097, 0.872, 0.982), (33, 1.093, 0.808, 0.982), (38, 1.084, 0.743, 0.984), (39, 1.076, 0.955, 0.98)]
+=== EXP-132 finished status=OK wall=103.5s

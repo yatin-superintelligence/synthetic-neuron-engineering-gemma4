@@ -1,0 +1,32 @@
+{
+ "note": "counts, each with its denominator; official solved counts are in kaggle_verify.json",
+ "outcomes_colab": {
+  "tasks": null,
+  "outcomes": null,
+  "llm_calls_mean": null
+ },
+ "tool_calls": 565,
+ "tool_shares": {
+  "read_file": 0.3434,
+  "search_similar_code": 0.2248,
+  "edit_file": 0.2071,
+  "run_command": 0.0991,
+  "submit_patch": 0.0814,
+  "write_file": 0.0248,
+  "code_analyzer_agent": 0.0195
+ },
+ "edits": 117,
+ "failed_edits": 61,
+ "read_before_edit": 59,
+ "failed_edits_with_next_call": 53,
+ "next_call_read_after_failed_edit": 10,
+ "blind_retries_same_old_string": 13,
+ "tasks_with_applied_edit": 43,
+ "tasks_testing_after_last_edit": 32,
+ "tasks_running_pytest_after_last_edit": 29,
+ "model_calls": 687,
+ "tasks": 57,
+ "tasks_with_a_loop": 22,
+ "loops": 43,
+ "completion_tokens_per_task_median": 6215
+}

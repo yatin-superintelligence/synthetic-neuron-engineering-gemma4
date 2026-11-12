@@ -1,0 +1,37 @@
+=== EXP-120 compiled-self-instruction started 2026-11-10T04:43:17.181309Z commit=
+[04:51:19] continuations {'q': 160, 'n': 160} | quote continuations whose thought quotes code: 159
+[05:11:01] fit stage exit 0 in 1182 s; log tail: 
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 9 files:  89%|████████▉ | 8/9 [00:02<00:00,  3.78it/s]
+Fetching 9 files:  89%|████████▉ | 8/9 [00:19<00:02,  2.50s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:29<00:00,  3.25s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:29<00:00,  3.25s/it]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  33%|███▎      | 649/1951 [00:00<00:00, 6487.25it/s]
+Loading weights:  67%|██████▋   | 1298/1951 [00:00<00:00, 5754.52it/s]
+Loading weights: 100%|██████████| 1951/1951 [00:00<00:00, 6144.97it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 6.7s; params=4.629B
+[04:54:08] [inject] states used {'q': 20, 'n': 20}
+[04:56:08] [inject] states used {'q': 40, 'n': 40}
+[04:58:52] [inject] states used {'q': 60, 'n': 60}
+[05:01:17] [inject] states used {'q': 80, 'n': 80}
+[05:03:34] [inject] states used {'q': 100, 'n': 100}
+[05:06:28] [inject] states used {'q': 120, 'n': 120}
+[05:08:33] [inject] states used {'q': 140, 'n': 140}
+/content/repo/experiments/scripts/exp120_compiled_self_instruction.py:144: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  W = {L: dict(wp=Ls[L].post_feedforward_layernorm.weight.float().cpu(), s=float(Ls[L].layer_scalar.float()), Wn=float(Ls[L].mlp.down_proj.weight.float().norm()))
+[05:10:23] inj_q_L10 {'rows': 60601, 'target_norm_mean': 12.3541, 'fit_r2': 0.3486, 'rank_energy_share': 0.6536, 'delta_rel_to_W': 0.53415}
+[05:10:42] inj_q_L14 {'rows': 60601, 'target_norm_mean': 7.6634, 'fit_r2': 0.7075, 'rank_energy_share': 0.5336, 'delta_rel_to_W': 0.45551}
+[05:11:00] inj_n_L10 {'rows': 57366, 'target_norm_mean': 7.7434, 'fit_r2': 0.2975, 'rank_energy_share': 0.7992, 'delta_rel_to_W': 0.40628}
+
+[05:13:11] vLLM ready with ['inj_n_L10', 'inj_q_L10', 'inj_q_L14']
+[06:50:39] answers 2945 in 5848 s
+[06:50:39] base {'feb_counts': {'applies': 141, 'no_call': 96, 'other_tool': 126, 'noop': 17, 'empty': 19, 'not_found': 49, 'other_file': 9, 'multiple': 4}, 'applies': 141, 'holds_reference': 19, 'reference_states': 281, 'quoted': 258, 'premature_edits': 17, 'premature_states': 128, 'median_thought_chars': 2199, 'applies_vs_inj_n_L10': (41, 63, 0.039), 'holds_reference_vs_inj_n_L10': (8, 7, 1.0), 'premature_edit_vs_inj_n_L10': (4, 7, 0.5488)}
+[06:50:39] forced_quote {'feb_counts': {'applies': 220, 'no_call': 36, 'not_found': 64, 'other_tool': 58, 'noop': 30, 'multiple': 21, 'other_file': 17, 'empty': 15}, 'applies': 220, 'holds_reference': 23, 'reference_states': 281, 'quoted': 461, 'premature_edits': 38, 'premature_states': 128, 'median_thought_chars': 2050, 'applies_vs_base': (105, 26, 0.0), 'holds_reference_vs_base': (10, 6, 0.4545), 'premature_edit_vs_base': (27, 6, 0.0003), 'applies_vs_inj_n_L10': (93, 36, 0.0), 'holds_reference_vs_inj_n_L10': (9, 4, 0.2668), 'premature_edit_vs_inj_n_L10': (25, 7, 0.0021)}
+[06:50:39] inj_q_L10 {'feb_counts': {'other_tool': 112, 'applies': 147, 'noop': 24, 'no_call': 95, 'not_found': 49, 'empty': 21, 'multiple': 7, 'other_file': 6}, 'applies': 147, 'holds_reference': 21, 'reference_states': 281, 'quoted': 252, 'premature_edits': 17, 'premature_states': 128, 'median_thought_chars': 1846, 'applies_vs_base': (53, 47, 0.6173), 'holds_reference_vs_base': (8, 6, 0.7905), 'premature_edit_vs_base': (9, 9, 1.0), 'applies_vs_inj_n_L10': (39, 55, 0.1214), 'holds_reference_vs_inj_n_L10': (7, 4, 0.5488), 'premature_edit_vs_inj_n_L10': (9, 12, 0.6636)}
+[06:50:39] inj_q_L14 {'feb_counts': {'other_tool': 94, 'applies': 135, 'noop': 22, 'no_call': 138, 'not_found': 47, 'empty': 20, 'multiple': 3, 'other_file': 2}, 'applies': 135, 'holds_reference': 22, 'reference_states': 281, 'quoted': 197, 'premature_edits': 20, 'premature_states': 128, 'median_thought_chars': 3531, 'applies_vs_base': (50, 56, 0.6274), 'holds_reference_vs_base': (9, 6, 0.6072), 'premature_edit_vs_base': (9, 6, 0.6072), 'applies_vs_inj_n_L10': (44, 72, 0.0118), 'holds_reference_vs_inj_n_L10': (10, 6, 0.4545), 'premature_edit_vs_inj_n_L10': (9, 9, 1.0)}
+[06:50:39] inj_n_L10 {'feb_counts': {'applies': 163, 'not_found': 57, 'noop': 18, 'other_tool': 118, 'no_call': 74, 'empty': 16, 'multiple': 9, 'other_file': 6}, 'applies': 163, 'holds_reference': 18, 'reference_states': 281, 'quoted': 239, 'premature_edits': 20, 'premature_states': 128, 'median_thought_chars': 1769, 'applies_vs_base': (63, 41, 0.039), 'holds_reference_vs_base': (7, 8, 1.0), 'premature_edit_vs_base': (7, 4, 0.5488)}
+=== EXP-120 finished status=OK wall=7642.6s

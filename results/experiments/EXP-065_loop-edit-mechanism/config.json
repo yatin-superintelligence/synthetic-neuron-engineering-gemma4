@@ -1,0 +1,123 @@
+{
+  "id": "EXP-065",
+  "slug": "loop-edit-mechanism",
+  "category": "improvement",
+  "motivation": "A reviewer will ask why this dose and these layers, whether the effect reverses, and how it compares with the only published Gemma loop edit. None of these had an answer.",
+  "hypothesis": "Loop rate falls with dose; adding the direction raises loops, including on controls; one or two layers carry most of the effect; the prior-art edit, built on list prompts, does less on agent states.",
+  "config": {
+    "arms": {
+      "lam_m0.5": [
+        [
+          14,
+          15,
+          19,
+          23
+        ],
+        -0.5
+      ],
+      "lam_m1.5": [
+        [
+          14,
+          15,
+          19,
+          23
+        ],
+        -1.5
+      ],
+      "lam_m2": [
+        [
+          14,
+          15,
+          19,
+          23
+        ],
+        -2.0
+      ],
+      "lam_p0.5": [
+        [
+          14,
+          15,
+          19,
+          23
+        ],
+        0.5
+      ],
+      "lam_p1": [
+        [
+          14,
+          15,
+          19,
+          23
+        ],
+        1.0
+      ],
+      "only_14": [
+        [
+          14
+        ],
+        -1.0
+      ],
+      "only_15": [
+        [
+          15
+        ],
+        -1.0
+      ],
+      "only_19": [
+        [
+          19
+        ],
+        -1.0
+      ],
+      "only_23": [
+        [
+          23
+        ],
+        -1.0
+      ]
+    },
+    "prior_art": "L10:3513 x -0.8, L12:3838 x 3.0",
+    "seeds": [
+      0
+    ],
+    "early_exit": true,
+    "split": "dev"
+  },
+  "depends_on": [
+    "EXP-059"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "ce50644addecd1740af6ea2c7f00972b4f912dd3",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp065_loop_edit_mechanism.py",
+  "started": "2026-11-06T18:14:12.501707Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1880,
+    "cpu_core_w": 1.6,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 3,
+    "battery_pct": 100,
+    "cpu_pct": 0.1,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 137.6,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 7,
+    "ram_free_gb": 20.99,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.26,
+    "t": 1793988863.6309586
+  },
+  "finished": "2026-11-06T23:44:47.202819Z",
+  "wall_seconds": 19834.7,
+  "status": "OK"
+}

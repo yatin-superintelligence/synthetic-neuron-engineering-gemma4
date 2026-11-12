@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 2
+ },
+ "hard_stop_s": 1800,
+ "adapter": "e4btx",
+ "adapter_local": "artifacts_local/EXP-102/st_a1"
+}

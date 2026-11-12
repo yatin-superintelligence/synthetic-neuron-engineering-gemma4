@@ -1,0 +1,41 @@
+{
+  "results": {
+    "last3000": {
+      "separation": {
+        "pos_mean": 0.724,
+        "pos_min": 0.158,
+        "neg_median": 0.1833,
+        "neg_p99": 0.8263,
+        "neg_p999": 0.8663,
+        "neg_max": 0.867,
+        "n_pos": 163,
+        "n_neg": 300
+      },
+      "tokens_median": 3001,
+      "gap_read_minus_edit_median": -1.375,
+      "flip_share_if_shift_is_3_times_readout": 0.503,
+      "read_preferred_already": 0.436
+    },
+    "full": {
+      "separation": {
+        "pos_mean": 0.605,
+        "pos_min": -0.153,
+        "neg_median": 0.2492,
+        "neg_p99": 0.7895,
+        "neg_p999": 0.8349,
+        "neg_max": 0.8457,
+        "n_pos": 163,
+        "n_neg": 300
+      },
+      "tokens_median": 14301,
+      "gap_read_minus_edit_median": 1.312,
+      "flip_share_if_shift_is_3_times_readout": 0.675,
+      "read_preferred_already": 0.607
+    },
+    "headline": "N_reread positives: read-out 0.724 at 3,000 tokens, 0.605 at full context; predicted flip share 0.503 vs 0.675",
+    "system_monitor": {
+      "samples": 14
+    }
+  },
+  "wall_seconds": 788.6079115867615
+}

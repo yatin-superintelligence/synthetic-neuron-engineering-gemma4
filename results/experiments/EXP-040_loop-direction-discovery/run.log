@@ -1,0 +1,61 @@
+=== EXP-040 loop-direction-discovery started 2026-11-06T08:38:10.476226Z commit=89e98fedcb
+[08:38:23] cases 31 loop 15 tasks 19
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:   9%|9         | 182/1951 [00:00<00:00, 1780.18it/s]
+Loading weights:  19%|#8        | 361/1951 [00:00<00:01, 1228.04it/s]
+Loading weights:  26%|##6       | 509/1951 [00:00<00:01, 1298.10it/s]
+Loading weights:  33%|###3      | 646/1951 [00:08<00:26, 48.38it/s]  
+Loading weights:  37%|###7      | 730/1951 [00:08<00:20, 59.18it/s]
+Loading weights:  41%|####      | 792/1951 [00:08<00:16, 71.34it/s]
+Loading weights:  43%|####3     | 847/1951 [00:09<00:14, 74.34it/s]
+Loading weights:  45%|####5     | 887/1951 [00:09<00:12, 86.21it/s]
+Loading weights:  47%|####7     | 926/1951 [00:10<00:12, 84.12it/s]
+Loading weights:  52%|#####2    | 1015/1951 [00:10<00:07, 122.51it/s]
+Loading weights:  54%|#####3    | 1049/1951 [00:11<00:09, 93.19it/s] 
+Loading weights:  55%|#####5    | 1074/1951 [00:11<00:08, 98.62it/s]
+Loading weights:  78%|#######8  | 1522/1951 [00:11<00:00, 446.10it/s]
+Loading weights:  88%|########7 | 1708/1951 [00:11<00:00, 587.74it/s]
+Loading weights:  97%|#########6| 1891/1951 [00:11<00:00, 736.41it/s]
+Loading weights: 100%|##########| 1951/1951 [00:11<00:00, 168.32it/s]
+[load] Gemma4ForConditionalGeneration on xpu in 16.7s; params=2.280B
+[08:39:21] 0 41s
+[08:45:26] 10 407s
+[08:48:46] 20 607s
+[08:50:10] 30 690s
+[08:50:10] {'layer': 0, 'd_prime_heldout': 0.254, 'd_prime_fit_gap': 6.6017, 'random_abs_d_max': 0.299, 'random_abs_d_mean': 0.076, 'cosine_between_halves': 0.809, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:10] {'layer': 1, 'd_prime_heldout': 1.233, 'd_prime_fit_gap': 6.862, 'random_abs_d_max': 0.404, 'random_abs_d_mean': 0.124, 'cosine_between_halves': 0.897, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:10] {'layer': 2, 'd_prime_heldout': 0.945, 'd_prime_fit_gap': 6.2268, 'random_abs_d_max': 0.619, 'random_abs_d_mean': 0.222, 'cosine_between_halves': 0.926, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:10] {'layer': 3, 'd_prime_heldout': 1.692, 'd_prime_fit_gap': 5.4659, 'random_abs_d_max': 1.447, 'random_abs_d_mean': 0.471, 'cosine_between_halves': 0.967, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:10] {'layer': 4, 'd_prime_heldout': 0.715, 'd_prime_fit_gap': 12.4969, 'random_abs_d_max': 0.587, 'random_abs_d_mean': 0.23, 'cosine_between_halves': 0.94, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:10] {'layer': 5, 'd_prime_heldout': 0.702, 'd_prime_fit_gap': 5.433, 'random_abs_d_max': 0.782, 'random_abs_d_mean': 0.317, 'cosine_between_halves': 0.951, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 6, 'd_prime_heldout': 0.88, 'd_prime_fit_gap': 4.7012, 'random_abs_d_max': 1.153, 'random_abs_d_mean': 0.317, 'cosine_between_halves': 0.979, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 7, 'd_prime_heldout': 1.466, 'd_prime_fit_gap': 2.7124, 'random_abs_d_max': 0.821, 'random_abs_d_mean': 0.362, 'cosine_between_halves': 0.971, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 8, 'd_prime_heldout': 2.55, 'd_prime_fit_gap': 1.8724, 'random_abs_d_max': 1.538, 'random_abs_d_mean': 0.567, 'cosine_between_halves': 0.972, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 9, 'd_prime_heldout': 2.203, 'd_prime_fit_gap': 1.1622, 'random_abs_d_max': 1.039, 'random_abs_d_mean': 0.336, 'cosine_between_halves': 0.952, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 10, 'd_prime_heldout': 1.882, 'd_prime_fit_gap': 1.6846, 'random_abs_d_max': 1.31, 'random_abs_d_mean': 0.516, 'cosine_between_halves': 0.974, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 11, 'd_prime_heldout': 1.962, 'd_prime_fit_gap': 1.5624, 'random_abs_d_max': 1.349, 'random_abs_d_mean': 0.427, 'cosine_between_halves': 0.974, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 12, 'd_prime_heldout': 2.081, 'd_prime_fit_gap': 1.4529, 'random_abs_d_max': 1.038, 'random_abs_d_mean': 0.408, 'cosine_between_halves': 0.978, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 13, 'd_prime_heldout': 3.18, 'd_prime_fit_gap': 1.1346, 'random_abs_d_max': 1.443, 'random_abs_d_mean': 0.478, 'cosine_between_halves': 0.98, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 14, 'd_prime_heldout': 5.319, 'd_prime_fit_gap': 1.8586, 'random_abs_d_max': 1.662, 'random_abs_d_mean': 0.798, 'cosine_between_halves': 0.958, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 15, 'd_prime_heldout': 4.051, 'd_prime_fit_gap': 3.7285, 'random_abs_d_max': 2.786, 'random_abs_d_mean': 0.765, 'cosine_between_halves': 0.957, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 16, 'd_prime_heldout': 3.21, 'd_prime_fit_gap': 1.6845, 'random_abs_d_max': 2.221, 'random_abs_d_mean': 1.07, 'cosine_between_halves': 0.968, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 17, 'd_prime_heldout': 2.916, 'd_prime_fit_gap': 2.3326, 'random_abs_d_max': 2.038, 'random_abs_d_mean': 0.913, 'cosine_between_halves': 0.972, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 18, 'd_prime_heldout': 3.281, 'd_prime_fit_gap': 2.2367, 'random_abs_d_max': 2.653, 'random_abs_d_mean': 1.017, 'cosine_between_halves': 0.973, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 19, 'd_prime_heldout': 3.775, 'd_prime_fit_gap': 1.6513, 'random_abs_d_max': 2.076, 'random_abs_d_mean': 0.78, 'cosine_between_halves': 0.953, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 20, 'd_prime_heldout': 3.384, 'd_prime_fit_gap': 2.6375, 'random_abs_d_max': 2.728, 'random_abs_d_mean': 0.844, 'cosine_between_halves': 0.979, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 21, 'd_prime_heldout': 2.997, 'd_prime_fit_gap': 1.9217, 'random_abs_d_max': 1.835, 'random_abs_d_mean': 0.546, 'cosine_between_halves': 0.977, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 22, 'd_prime_heldout': 3.309, 'd_prime_fit_gap': 1.5894, 'random_abs_d_max': 1.916, 'random_abs_d_mean': 0.769, 'cosine_between_halves': 0.973, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 23, 'd_prime_heldout': 3.653, 'd_prime_fit_gap': 3.5575, 'random_abs_d_max': 2.043, 'random_abs_d_mean': 0.869, 'cosine_between_halves': 0.98, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 24, 'd_prime_heldout': 3.138, 'd_prime_fit_gap': 2.1765, 'random_abs_d_max': 1.825, 'random_abs_d_mean': 0.551, 'cosine_between_halves': 0.969, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 25, 'd_prime_heldout': 2.811, 'd_prime_fit_gap': 2.6833, 'random_abs_d_max': 1.779, 'random_abs_d_mean': 0.794, 'cosine_between_halves': 0.978, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 26, 'd_prime_heldout': 2.595, 'd_prime_fit_gap': 3.5309, 'random_abs_d_max': 1.874, 'random_abs_d_mean': 0.883, 'cosine_between_halves': 0.99, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 27, 'd_prime_heldout': 2.513, 'd_prime_fit_gap': 3.1642, 'random_abs_d_max': 1.809, 'random_abs_d_mean': 0.743, 'cosine_between_halves': 0.987, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 28, 'd_prime_heldout': 2.896, 'd_prime_fit_gap': 2.9119, 'random_abs_d_max': 1.926, 'random_abs_d_mean': 0.906, 'cosine_between_halves': 0.991, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 29, 'd_prime_heldout': 1.982, 'd_prime_fit_gap': 1.6688, 'random_abs_d_max': 1.299, 'random_abs_d_mean': 0.555, 'cosine_between_halves': 0.978, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 30, 'd_prime_heldout': 1.904, 'd_prime_fit_gap': 1.0037, 'random_abs_d_max': 1.401, 'random_abs_d_mean': 0.499, 'cosine_between_halves': 0.982, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 31, 'd_prime_heldout': 1.566, 'd_prime_fit_gap': 0.6657, 'random_abs_d_max': 1.385, 'random_abs_d_mean': 0.521, 'cosine_between_halves': 0.985, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 32, 'd_prime_heldout': 1.882, 'd_prime_fit_gap': 0.5485, 'random_abs_d_max': 1.362, 'random_abs_d_mean': 0.564, 'cosine_between_halves': 0.982, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 33, 'd_prime_heldout': 2.254, 'd_prime_fit_gap': 1.015, 'random_abs_d_max': 1.439, 'random_abs_d_mean': 0.654, 'cosine_between_halves': 0.982, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+[08:50:11] {'layer': 34, 'd_prime_heldout': 2.313, 'd_prime_fit_gap': 3.1216, 'random_abs_d_max': 2.187, 'random_abs_d_mean': 0.714, 'cosine_between_halves': 0.991, 'n_loop_tokens': 3000, 'n_other_tokens': 5246}
+=== EXP-040 finished status=OK wall=721.4s

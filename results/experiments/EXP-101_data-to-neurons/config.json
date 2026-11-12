@@ -1,0 +1,41 @@
+{
+  "id": "EXP-101",
+  "slug": "data-to-neurons",
+  "category": "improvement",
+  "motivation": "The author's data-to-neuron idea: the fit tasks' correct fixes stored in one MLP layer by a closed-form least-squares memory.",
+  "hypothesis": "A closed-form memory of the fit tasks' correct edits raises correct answers on held-out bench states against the unedited model and against the same memory built from shuffled values.",
+  "config": {
+    "layers": [
+      12,
+      15
+    ],
+    "c": [
+      2.0,
+      4.0
+    ],
+    "rank": 64,
+    "control": "values shuffled across positions"
+  },
+  "depends_on": [
+    "EXP-092",
+    "EXP-100"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp101_data_to_neurons.py",
+  "started": "2026-11-09T09:29:42.192810Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794216582.1985188
+  },
+  "finished": "2026-11-09T09:37:53.796613Z",
+  "wall_seconds": 491.6,
+  "status": "OK"
+}

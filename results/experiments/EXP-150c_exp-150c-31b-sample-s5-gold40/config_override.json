@@ -1,0 +1,6 @@
+{
+ "sampling": {
+  "seed": 5
+ },
+ "hard_stop_s": 9000
+}

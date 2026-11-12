@@ -1,0 +1,51 @@
+{
+  "id": "EXP-001",
+  "slug": "inference-engine-benchmark",
+  "category": "infrastructure",
+  "motivation": "Hundreds of generation-based evaluations are planned; throughput on the Arc iGPU decides how many experiments and seeds are affordable. The engine must also support per-request LoRA adapters so edits can be evaluated without reloading the base model.",
+  "hypothesis": "llama.cpp (Vulkan or SYCL) is several times faster than PyTorch XPU eager generation; q4_0 decodes faster than F16 because decode is memory-bandwidth bound.",
+  "config": {
+    "models": {
+      "q4_0": "<repo>\\models\\gguf\\gemma-4-E2B_q4_0-it.gguf",
+      "f16": "<repo>\\models\\gguf\\e2b-qat-f16.gguf"
+    },
+    "llama_cpp": "b12129",
+    "ngl": 99,
+    "pp": 256,
+    "tg": 256,
+    "npl": [
+      1,
+      4,
+      8,
+      16,
+      32
+    ],
+    "flash_attn": "on"
+  },
+  "depends_on": [],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "98aa1c0f2d00d4631ec15ef9fb74d49722f9c74f",
+    "git_dirty": false,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp001_engine_benchmark.py",
+  "started": "2026-11-05T19:23:09.087504Z",
+  "sys_at_start": {
+    "battery_pct": 32,
+    "thermal_c": 27.9,
+    "cpu_pct": 6.3,
+    "ram_total_gb": 31.43,
+    "ram_free_gb": 18.51,
+    "gpu_util_pct": 3.4,
+    "gpu_shared_gb": 1.05,
+    "on_ac": true,
+    "t": 1793906596.8128994
+  },
+  "finished": "2026-11-05T19:47:12.353180Z",
+  "wall_seconds": 1443.0,
+  "status": "OK"
+}

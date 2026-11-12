@@ -1,0 +1,66 @@
+{
+  "id": "EXP-144",
+  "slug": "31b-gated-stringend-neuron",
+  "category": "improvement",
+  "motivation": "EXP-140c repaired one fused string ending at the token level but failed in the agent: the model moved to another fused ending, and a linear write acts wherever its read-out is not zero. A gated unit that reads 'the string's content is complete' and holds down every fused ending addresses both.",
+  "hypothesis": "Held out by task, the closing token becomes the most probable at 70% or more of fault states of all three kinds with at most 1 in 1,000 other states changed, and regenerated whole calls are well formed more often than unedited, with no well-formed call lost.",
+  "config": {
+    "model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "bench": "artifacts_local/EXP-144/delim_bench_v2.jsonl.gz",
+    "positives": [
+      "ERR",
+      "OKC"
+    ],
+    "negatives": [
+      "CONT",
+      "CONT_H",
+      "CONT_BT",
+      "TXT_BT",
+      "TXT_BTC",
+      "OTHER",
+      "SEP",
+      "OPEN"
+    ],
+    "lambdas": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "gate": {
+      "k": 10.0,
+      "tau": 0.5
+    },
+    "fused": [
+      8347,
+      827,
+      236764,
+      236929
+    ],
+    "layer": "last"
+  },
+  "depends_on": [
+    "EXP-140c",
+    "EXP-140a",
+    "EXP-140d"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp144_31b_gated_stringend_neuron.py",
+  "started": "2026-11-11T14:14:51.236715Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794406491.2419782
+  },
+  "finished": "2026-11-11T15:56:05.031165Z",
+  "wall_seconds": 6073.8,
+  "status": "OK"
+}

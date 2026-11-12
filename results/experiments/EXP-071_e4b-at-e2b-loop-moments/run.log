@@ -1,0 +1,8 @@
+=== EXP-071 e4b-at-e2b-loop-moments started 2026-11-07T09:21:36.678399Z commit=3551cdbd33
+[09:21:52] loop moments 39 tasks 24 controls 12
+[10:57:06] q4_0 {'n': 90, 'skipped_too_long': [], 'loop_rate_on_loop_contexts': (0.0, 78), 'loop_rate_on_controls': (0.0, 12), 'tool_call_rate_on_loop_contexts': (1.0, 78), 'tool_call_rate_on_controls': (1.0, 12), 'forced_close_on_loop_contexts': (0.0, 78), 'forced_close_on_controls': (0.0, 12), 'mean_tokens': 454.3}
+[10:57:06] q4_0 {'e2b_loops': [15, 48], 'tasks': 14, 'tasks_changed': 8, 'net_loops_fewer_on_e4b': 15, 'sign_flip_p': 0.008, 'by_task': {'fastapi_11194': 2, 'fastapi_14360': 1, 'rich_3278': 1, 'rich_3905': 2, 'rich_4079': 2, 'fastapi_12942': 2, 'rich_2725': 1, 'rich_3296': 4}}
+[13:57:07] f16 {'n': 90, 'skipped_too_long': [], 'loop_rate_on_loop_contexts': (0.0, 78), 'loop_rate_on_controls': (0.0, 12), 'tool_call_rate_on_loop_contexts': (1.0, 78), 'tool_call_rate_on_controls': (1.0, 12), 'forced_close_on_loop_contexts': (0.0, 78), 'forced_close_on_controls': (0.0, 12), 'mean_tokens': 483.3}
+[13:57:07] f16 {'e2b_loops': [14, 48], 'tasks': 14, 'tasks_changed': 7, 'net_loops_fewer_on_e4b': 14, 'sign_flip_p': 0.0162, 'by_task': {'fastapi_11194': 2, 'rich_3278': 2, 'rich_3905': 2, 'rich_4079': 2, 'fastapi_12942': 2, 'rich_2725': 1, 'rich_3296': 3}}
+[13:57:07] removed <repo>\models\gguf\e4b-qat-f16.gguf
+=== EXP-071 finished status=OK wall=16531.2s

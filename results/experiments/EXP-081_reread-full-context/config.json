@@ -1,0 +1,35 @@
+{
+  "id": "EXP-081",
+  "slug": "reread-full-context",
+  "category": "diagnostic",
+  "motivation": "EXP-076a showed no change in the re-read decision on real tasks; the read-out was fitted on 3,000-token contexts.",
+  "hypothesis": "At full context the N_reread read-out on its positives is far lower than at 3,000 tokens (below 0.35).",
+  "config": {
+    "layer": 34,
+    "ctx_exp076": 3000,
+    "max_prompt": 22000,
+    "negatives": 300,
+    "seed": 81
+  },
+  "depends_on": [
+    "EXP-076"
+  ],
+  "env": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.14.1+cu130",
+    "transformers": "5.13.1",
+    "device": "NVIDIA A100-SXM4-40GB"
+  },
+  "command": "experiments/scripts/exp081_reread_full_context.py",
+  "started": "2026-11-08T00:16:54.943861Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794097014.9795759
+  },
+  "finished": "2026-11-08T00:30:03.551648Z",
+  "wall_seconds": 788.6,
+  "status": "OK"
+}

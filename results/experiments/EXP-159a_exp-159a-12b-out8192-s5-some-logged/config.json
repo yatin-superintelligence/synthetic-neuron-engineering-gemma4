@@ -1,0 +1,9 @@
+{
+ "id": "EXP-159a",
+ "slug": "exp-159a-12b-out8192-s5-some-logged",
+ "category": "diagnosis",
+ "started": "2026-11-12T09:29:32Z",
+ "wall_seconds": 3742.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

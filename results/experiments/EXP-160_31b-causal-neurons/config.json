@@ -1,0 +1,37 @@
+{
+  "id": "EXP-160",
+  "slug": "31b-causal-neurons",
+  "category": "improvement",
+  "motivation": "Neurons chosen by correlation with success mark it but are not levers; the author asked for the neurons responsible for better performance, which needs an interventional search.",
+  "hypothesis": "Neurons chosen on half the tasks by their attributed effect on 31B's preference for a passing run's edit over its own failing edit, when actually scaled, raise that preference in at least 65% of held-out pairs and more than random neurons do.",
+  "config": {
+    "model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "bench": "artifacts_local/EXP-147/success_bench.jsonl.gz",
+    "k": 32,
+    "alpha": 1.0,
+    "max_call_tokens": 64,
+    "pairs_per_fail": 1
+  },
+  "depends_on": [
+    "EXP-147",
+    "EXP-154"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp160_31b_causal_neurons.py",
+  "started": "2026-11-12T12:14:14.182245Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794485654.1863096
+  },
+  "finished": "2026-11-12T12:23:53.504914Z",
+  "wall_seconds": 579.3,
+  "status": "OK"
+}

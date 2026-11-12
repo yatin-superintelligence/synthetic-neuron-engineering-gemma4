@@ -1,0 +1,88 @@
+=== EXP-140 31b-string-delimiter-neuron started 2026-11-11T03:48:20.424825Z commit=
+[03:48:20] bench rows 282 | faulty 72 | tokens 3057400
+
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files:  73%|#######2  | 8/11 [00:00<00:00, 61.05it/s]
+Fetching 11 files:  82%|########1 | 9/11 [00:20<00:04,  2.22s/it]
+Fetching 11 files:  91%|######### | 10/11 [01:19<00:07,  7.97s/it]
+Fetching 11 files: 100%|##########| 11/11 [02:56<00:00, 16.06s/it]
+Fetching 11 files: 100%|##########| 11/11 [02:56<00:00, 16.06s/it]
+[03:51:17] model downloaded in 177 s
+
+Loading weights:   0%|          | 0/1188 [00:00<?, ?it/s]
+Loading weights:   0%|          | 2/1188 [00:00<01:33, 12.66it/s]
+Loading weights:   2%|1         | 20/1188 [00:00<00:13, 84.73it/s]
+Loading weights:   4%|3         | 47/1188 [00:00<00:07, 151.91it/s]
+Loading weights:   5%|5         | 64/1188 [00:00<00:07, 151.17it/s]
+Loading weights:   7%|7         | 88/1188 [00:00<00:06, 173.50it/s]
+Loading weights:   9%|9         | 107/1188 [00:00<00:06, 176.80it/s]
+Loading weights:  11%|#         | 130/1188 [00:00<00:05, 188.83it/s]
+Loading weights:  13%|#2        | 150/1188 [00:00<00:05, 190.13it/s]
+Loading weights:  14%|#4        | 171/1188 [00:01<00:05, 187.68it/s]
+Loading weights:  16%|#5        | 190/1188 [00:01<00:05, 186.09it/s]
+Loading weights:  18%|#7        | 213/1188 [00:01<00:05, 185.79it/s]
+Loading weights:  20%|#9        | 237/1188 [00:01<00:04, 198.71it/s]
+Loading weights:  22%|##1       | 258/1188 [00:01<00:05, 184.31it/s]
+Loading weights:  24%|##3       | 282/1188 [00:01<00:04, 196.74it/s]
+Loading weights:  25%|##5       | 302/1188 [00:01<00:04, 195.99it/s]
+Loading weights:  27%|##7       | 324/1188 [00:01<00:04, 198.28it/s]
+Loading weights:  29%|##8       | 344/1188 [00:01<00:04, 187.00it/s]
+Loading weights:  31%|###       | 365/1188 [00:02<00:04, 193.27it/s]
+Loading weights:  32%|###2      | 385/1188 [00:02<00:04, 192.37it/s]
+Loading weights:  34%|###4      | 407/1188 [00:02<00:03, 195.30it/s]
+Loading weights:  36%|###5      | 427/1188 [00:02<00:04, 182.77it/s]
+Loading weights:  38%|###7      | 448/1188 [00:02<00:03, 189.90it/s]
+Loading weights:  39%|###9      | 468/1188 [00:02<00:03, 188.63it/s]
+Loading weights:  41%|####1     | 490/1188 [00:02<00:03, 195.57it/s]
+Loading weights:  43%|####2     | 510/1188 [00:02<00:03, 186.79it/s]
+Loading weights:  45%|####4     | 531/1188 [00:02<00:03, 190.78it/s]
+Loading weights:  46%|####6     | 551/1188 [00:03<00:03, 187.72it/s]
+Loading weights:  48%|####8     | 573/1188 [00:03<00:03, 185.10it/s]
+Loading weights:  50%|#####     | 594/1188 [00:03<00:03, 189.16it/s]
+Loading weights:  52%|#####1    | 615/1188 [00:03<00:03, 179.36it/s]
+Loading weights:  54%|#####4    | 642/1188 [00:03<00:02, 199.99it/s]
+Loading weights:  56%|#####5    | 663/1188 [00:03<00:02, 193.35it/s]
+Loading weights:  57%|#####7    | 683/1188 [00:03<00:02, 185.91it/s]
+Loading weights:  60%|#####9    | 707/1188 [00:03<00:02, 197.76it/s]
+Loading weights:  61%|######1   | 727/1188 [00:03<00:02, 186.27it/s]
+Loading weights:  63%|######3   | 752/1188 [00:04<00:02, 196.34it/s]
+Loading weights:  65%|######4   | 772/1188 [00:04<00:02, 194.50it/s]
+Loading weights:  67%|######6   | 794/1188 [00:04<00:01, 197.67it/s]
+Loading weights:  69%|######8   | 814/1188 [00:04<00:01, 194.53it/s]
+Loading weights:  70%|#######   | 836/1188 [00:04<00:01, 201.26it/s]
+Loading weights: 100%|##########| 1188/1188 [00:04<00:00, 259.30it/s]
+[03:51:25] model google/gemma-4-31B-it-qat-q4_0-unquantized loaded in 6 s | layers 60 | neurons entering the last down_proj 21504 | device cuda
+[03:51:37] pass 1 row 1 of 282, 15110 tokens, 12 s so far
+[03:54:03] pass 1 row 26 of 282, 12148 tokens, 158 s so far
+[03:56:38] pass 1 row 51 of 282, 10309 tokens, 313 s so far
+[03:59:21] pass 1 row 76 of 282, 8901 tokens, 477 s so far
+[04:01:55] pass 1 row 101 of 282, 15102 tokens, 630 s so far
+[04:04:36] pass 1 row 126 of 282, 13751 tokens, 791 s so far
+[04:07:16] pass 1 row 151 of 282, 13130 tokens, 951 s so far
+[04:09:44] pass 1 row 176 of 282, 7770 tokens, 1100 s so far
+[04:12:12] pass 1 row 201 of 282, 11724 tokens, 1247 s so far
+[04:14:29] pass 1 row 226 of 282, 11368 tokens, 1384 s so far
+[04:16:54] pass 1 row 251 of 282, 14021 tokens, 1529 s so far
+[04:18:36] pass 1 row 276 of 282, 14694 tokens, 1631 s so far
+[04:19:04] unedited model at ERR states: {'n': 62, 'top_is_backtick_comma': 56, 'top_is_close': 3, 'gap_backtick_comma_minus_close': {'median': 6.06, 'p10': 2.05, 'p90': 16.91}, 'close_behind_top': {'median': 6.19, 'p90': 16.91}} | at correct closes: {'n': 492, 'top_is_close': 479}
+[04:19:08] held-out {'n_pos': 62, 'pos_mean': 0.738, 'pos_min': -0.0524, 'pos_frac_ge_half': 0.887, 'n_hard': 10877, 'hard_p99': 0.0938, 'hard_p999': 0.2812, 'hard_max': 0.8203, 'n_neg': 15628, 'neg_p99': 0.0917, 'neg_max': 0.8203, 'variant': 'A', 'lam': 0.001, 'by_fold': {0: 0.779, 1: 0.709}, 'at_correct_closes': 0.352, 'at_ERR2': 0.158}
+[04:19:08] held-out {'n_pos': 62, 'pos_mean': 0.768, 'pos_min': 0.0526, 'pos_frac_ge_half': 0.887, 'n_hard': 10877, 'hard_p99': 0.0983, 'hard_p999': 0.3106, 'hard_max': 0.8343, 'n_neg': 15628, 'neg_p99': 0.0895, 'neg_max': 0.8343, 'variant': 'A', 'lam': 0.01, 'by_fold': {0: 0.783, 1: 0.756}, 'at_correct_closes': 0.382, 'at_ERR2': 0.169}
+[04:19:08] held-out {'n_pos': 62, 'pos_mean': 0.806, 'pos_min': 0.1974, 'pos_frac_ge_half': 0.903, 'n_hard': 10877, 'hard_p99': 0.1226, 'hard_p999': 0.4009, 'hard_max': 0.8633, 'n_neg': 15628, 'neg_p99': 0.1132, 'neg_max': 0.8633, 'variant': 'A', 'lam': 0.1, 'by_fold': {0: 0.796, 1: 0.814}, 'at_correct_closes': 0.462, 'at_ERR2': 0.198}
+[04:19:08] held-out {'n_pos': 62, 'pos_mean': 0.848, 'pos_min': 0.3771, 'pos_frac_ge_half': 0.935, 'n_hard': 10877, 'hard_p99': 0.1937, 'hard_p999': 0.514, 'hard_max': 0.8968, 'n_neg': 15628, 'neg_p99': 0.1851, 'neg_max': 0.8968, 'variant': 'A', 'lam': 1.0, 'by_fold': {0: 0.812, 1: 0.874}, 'at_correct_closes': 0.577, 'at_ERR2': 0.301}
+[04:19:08] held-out {'n_pos': 62, 'pos_mean': 0.873, 'pos_min': 0.5369, 'pos_frac_ge_half': 1.0, 'n_hard': 10877, 'hard_p99': 0.3103, 'hard_p999': 0.5728, 'hard_max': 0.8838, 'n_neg': 15628, 'neg_p99': 0.2941, 'neg_max': 0.8838, 'variant': 'A', 'lam': 10.0, 'by_fold': {0: 0.825, 1: 0.907}, 'at_correct_closes': 0.644, 'at_ERR2': 0.41}
+[04:19:12] held-out {'n_pos': 62, 'pos_mean': 0.831, 'pos_min': 0.1896, 'pos_frac_ge_half': 0.984, 'n_hard': 10877, 'hard_p99': 0.1426, 'hard_p999': 0.4832, 'hard_max': 0.8973, 'n_neg': 15628, 'neg_p99': 0.1448, 'neg_max': 0.8973, 'variant': 'B', 'lam': 0.001, 'by_fold': {0: 0.906, 1: 0.777}, 'at_correct_closes': 0.964, 'at_ERR2': 0.223}
+[04:19:12] held-out {'n_pos': 62, 'pos_mean': 0.86, 'pos_min': 0.2373, 'pos_frac_ge_half': 0.984, 'n_hard': 10877, 'hard_p99': 0.1321, 'hard_p999': 0.5071, 'hard_max': 0.894, 'n_neg': 15628, 'neg_p99': 0.1272, 'neg_max': 0.894, 'variant': 'B', 'lam': 0.01, 'by_fold': {0: 0.894, 1: 0.835}, 'at_correct_closes': 0.971, 'at_ERR2': 0.243}
+[04:19:12] held-out {'n_pos': 62, 'pos_mean': 0.891, 'pos_min': 0.3572, 'pos_frac_ge_half': 0.984, 'n_hard': 10877, 'hard_p99': 0.1584, 'hard_p999': 0.5414, 'hard_max': 0.9235, 'n_neg': 15628, 'neg_p99': 0.1484, 'neg_max': 0.9235, 'variant': 'B', 'lam': 0.1, 'by_fold': {0: 0.885, 1: 0.896}, 'at_correct_closes': 0.978, 'at_ERR2': 0.276}
+[04:19:12] held-out {'n_pos': 62, 'pos_mean': 0.904, 'pos_min': 0.5011, 'pos_frac_ge_half': 1.0, 'n_hard': 10877, 'hard_p99': 0.2198, 'hard_p999': 0.6083, 'hard_max': 0.9346, 'n_neg': 15628, 'neg_p99': 0.211, 'neg_max': 0.9346, 'variant': 'B', 'lam': 1.0, 'by_fold': {0: 0.871, 1: 0.927}, 'at_correct_closes': 0.982, 'at_ERR2': 0.35}
+[04:19:12] held-out {'n_pos': 62, 'pos_mean': 0.898, 'pos_min': 0.5712, 'pos_frac_ge_half': 1.0, 'n_hard': 10877, 'hard_p99': 0.3278, 'hard_p999': 0.6522, 'hard_max': 0.9312, 'n_neg': 15628, 'neg_p99': 0.3202, 'neg_max': 0.9312, 'variant': 'B', 'lam': 10.0, 'by_fold': {0: 0.857, 1: 0.928}, 'at_correct_closes': 0.964, 'at_ERR2': 0.487}
+[04:19:27] pass 2 (calibration 1, c 9.00) row 1 of 72, 15110 tokens, 10 s so far
+[04:21:53] pass 2 (calibration 1, c 9.00) row 26 of 72, 12148 tokens, 156 s so far
+[04:24:28] pass 2 (calibration 1, c 9.00) row 51 of 72, 10309 tokens, 311 s so far
+[04:26:45] calibration {'c': 9.0, 'shift_median': 3.56, 'margin_median': -3.0, 'margin_p10': -11.88, 'close_is_top': 8, 'n': 62}
+[04:26:55] pass 2 (calibration 2, c 12.00) row 1 of 72, 15110 tokens, 10 s so far
+[04:29:21] pass 2 (calibration 2, c 12.00) row 26 of 72, 12148 tokens, 156 s so far
+[04:31:56] pass 2 (calibration 2, c 12.00) row 51 of 72, 10309 tokens, 311 s so far
+[04:34:13] calibration {'c': 12.0, 'shift_median': 4.0, 'margin_median': -2.56, 'margin_p10': -10.57, 'close_is_top': 10, 'n': 62}
+[04:34:13] write: {'rms_y': 0.6036, 'rms_h': 0.1154, 'bf16_repeats_the_fault': 0.903, 'target_margin_p10': 2.0, 'calibration': [{'c': 9.0, 'shift_median': 3.56, 'margin_median': -3.0, 'margin_p10': -11.88, 'close_is_top': 8, 'n': 62}, {'c': 12.0, 'shift_median': 4.0, 'margin_median': -2.56, 'margin_p10': -10.57, 'close_is_top': 10, 'n': 62}], 'c': 12.0, 'v_norm': 0.1748, 'u_norm': 66.21}
+[04:34:19] pass 3 (held-out fold 0) row 1 of 93, 11159 tokens, 6 s so far
+[04:36:42] pass 3 (held-out fold 0) row 26 of 93, 14493 tokens, 148 s so far

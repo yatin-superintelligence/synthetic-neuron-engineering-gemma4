@@ -1,0 +1,63 @@
+{
+  "id": "EXP-089",
+  "slug": "correctness-neuron",
+  "category": "improvement",
+  "motivation": "E2B's agent failures are mostly wrong patches; a training-free neuron that moves its code towards its own correct solutions targets that bottleneck directly (idea I3; activation-steering results of 2026).",
+  "hypothesis": "A correctness neuron at a selected layer and strength raises MBPP+ test passes against the unedited model (exact McNemar p < 0.05) and against a control neuron of matched strength at Q4_0, and does not lower them at F16.",
+  "config": {
+    "layers": [
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27
+    ],
+    "alphas": [
+      1,
+      3,
+      9
+    ],
+    "max_answer_tokens": 512,
+    "readout": "ridge 1 on answer tokens, 0 on prompt tokens",
+    "scan": "MBPP+ dev 189, Q4_0, cap 4,096",
+    "confirm": "MBPP+ test 189, Q4_0 and F16, cap 8,192",
+    "control": "same read-out, write along a random direction orthogonal to d_L, same calibrated shift"
+  },
+  "depends_on": [
+    "EXP-030"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "3950055b421c83f2efb30b700cc3cd2aa1ab37e1",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp089_correctness_neuron.py",
+  "started": "2026-11-08T17:23:06.957558Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1862,
+    "cpu_core_w": 3.9,
+    "throttle_reasons": 0,
+    "igpu_w": 0.1,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 0,
+    "battery_pct": 100,
+    "cpu_pct": 0.2,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 80,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 9.7,
+    "ram_free_gb": 19.55,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.18,
+    "t": 1794158598.1917174
+  }
+}

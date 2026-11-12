@@ -1,0 +1,54 @@
+{
+  "id": "EXP-112",
+  "slug": "first-edit-bench",
+  "category": "improvement",
+  "motivation": "The first edit applying decides success on solvable tasks (72% against 14%); the synthetic bench did not predict the agent, so candidate edits are screened on the agent's own first-edit states.",
+  "hypothesis": "An edit raises the share of first edits that apply on held-out real states above the unedited model and above its matched control.",
+  "config": {
+    "arms": [
+      "combo",
+      "combo_ctl",
+      "ctl_L10",
+      "ctrl014_a2",
+      "e4b_tx",
+      "esc014_a2",
+      "ins_L10",
+      "teacher",
+      "zero",
+      "instruction_text"
+    ],
+    "caps": [
+      2048,
+      512
+    ],
+    "sampling": {
+      "temperature": 0.2,
+      "top_p": 0.95
+    }
+  },
+  "depends_on": [
+    "EXP-104",
+    "EXP-099",
+    "EXP-080",
+    "EXP-102",
+    "EXP-111"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp112_first_edit_bench.py",
+  "started": "2026-11-09T20:22:34.617573Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794255754.624605
+  },
+  "finished": "2026-11-09T23:35:06.947904Z",
+  "wall_seconds": 11552.3,
+  "status": "OK"
+}

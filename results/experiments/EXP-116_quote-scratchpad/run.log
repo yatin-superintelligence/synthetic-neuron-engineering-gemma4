@@ -1,0 +1,12 @@
+=== EXP-116 quote-scratchpad started 2026-11-10T01:46:16.281945Z commit=
+[01:46:16] states 461 | with a reference change in their file 281
+[01:48:26] vLLM ready in 130 s
+[02:15:34] answers 2305 in 1628 s
+[02:15:35] base {'counts': {'empty': 24, 'applies': 153, 'other_tool': 122, 'no_call': 78, 'not_found': 45, 'other_file': 8, 'multiple': 4, 'noop': 16, 'escape': 11}, 'applies': 153, 'holds_reference': 25, 'reference_states': 281, 'quoted': 270, 'applies_solvable_tasks': 27, 'holds_reference_solvable': 12, 'solvable_states': 56}
+[02:15:35] quote {'counts': {'applies': 221, 'no_call': 46, 'not_found': 51, 'other_tool': 62, 'noop': 30, 'multiple': 9, 'empty': 9, 'other_file': 18, 'escape': 15}, 'applies': 221, 'holds_reference': 26, 'reference_states': 281, 'quoted': 461, 'applies_solvable_tasks': 32, 'holds_reference_solvable': 10, 'solvable_states': 56, 'applies_vs_base': (100, 32, 0.0), 'holds_reference_vs_base': (6, 5, 1.0)}
+[02:15:35] neutral {'counts': {'other_tool': 106, 'applies': 159, 'noop': 25, 'not_found': 47, 'other_file': 8, 'no_call': 73, 'empty': 25, 'multiple': 4, 'escape': 14}, 'applies': 159, 'holds_reference': 21, 'reference_states': 281, 'quoted': 259, 'applies_solvable_tasks': 29, 'holds_reference_solvable': 8, 'solvable_states': 56, 'applies_vs_base': (53, 47, 0.6173), 'holds_reference_vs_base': (5, 9, 0.424)}
+[02:15:35] fence {'counts': {'other_tool': 110, 'no_call': 110, 'empty': 12, 'applies': 145, 'noop': 26, 'not_found': 43, 'multiple': 7, 'escape': 5, 'other_file': 3}, 'applies': 145, 'holds_reference': 23, 'reference_states': 281, 'quoted': 461, 'applies_solvable_tasks': 27, 'holds_reference_solvable': 9, 'solvable_states': 56, 'applies_vs_base': (52, 60, 0.5085), 'holds_reference_vs_base': (5, 7, 0.7744)}
+[02:15:35] closed {'counts': {'applies': 115, 'no_call': 183, 'noop': 12, 'other_tool': 107, 'empty': 9, 'not_found': 19, 'escape': 8, 'multiple': 4, 'other_file': 4}, 'applies': 115, 'holds_reference': 21, 'reference_states': 281, 'quoted': 0, 'applies_solvable_tasks': 20, 'holds_reference_solvable': 9, 'solvable_states': 56, 'applies_vs_base': (41, 79, 0.0007), 'holds_reference_vs_base': (4, 8, 0.3877)}
+[02:15:35] quote vs neutral, applies (96, 34, 0.0)
+[02:15:35] quote vs neutral, holds_reference (8, 3, 0.2266)
+=== EXP-116 finished status=OK wall=1758.7s

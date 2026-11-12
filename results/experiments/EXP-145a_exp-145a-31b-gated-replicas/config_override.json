@@ -1,0 +1,15 @@
+{
+ "sampling": {
+  "seed": null,
+  "max_output_tokens": 8192
+ },
+ "replicate": {
+  "fastapi_9753": 6,
+  "rich_3470": 5,
+  "rich_3067": 5
+ },
+ "hard_stop_s": 5400,
+ "log_requests": true,
+ "adapter": "gated31b",
+ "adapter_local": "artifacts_local/EXP-144/neuron"
+}

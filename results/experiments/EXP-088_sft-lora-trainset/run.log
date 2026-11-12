@@ -1,0 +1,33 @@
+=== EXP-088 sft-lora-trainset started 2026-11-08T16:39:44.988411Z commit=
+[16:39:45] training tasks 563 distinct of 992 from ['/content/repo/artifacts_local/trainset/full1a/trainset/tasks.jsonl', '/content/repo/artifacts_local/trainset/full1b/trainset/tasks.jsonl'] | per repo {'Textualize/rich': 482, 'fastapi/fastapi': 81}
+[16:39:50] system prompt /content/kaggle_input/competitions/gemma-4-developer-agent/sample_submission/prompts/system.md 3882 chars
+[16:39:54] fastapi/fastapi trajectories so far 71 skipped {'no single-line edit': 10}
+[16:39:59] Textualize/rich trajectories so far 514 skipped {'no single-line edit': 49}
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 589.75it/s]
+[16:41:17] encoded 488 | render mismatch 0 | over 12288 tokens 26 | median tokens 6715 | median target tokens 393
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  28%|##8       | 549/1951 [00:00<00:00, 5463.74it/s]
+Loading weights:  56%|#####6    | 1096/1951 [00:00<00:00, 4497.93it/s]
+Loading weights:  85%|########4 | 1653/1951 [00:00<00:00, 4931.94it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 4983.37it/s]
+[16:41:24] LoRA modules 140 trainable parameters 21037056
+[16:42:19] validation loss before training 1.1735 | train 464 val 24 | optimizer steps 116
+[16:55:24] [sft] step 10/116 train loss 1.0962 | 13.1 min
+[17:10:14] [sft] step 20/116 train loss 0.5012 | 27.9 min
+[17:24:36] [sft] step 30/116 train loss 0.1929 | 42.3 min
+[17:38:12] [sft] step 40/116 train loss 0.1127 | 55.9 min
+[17:51:48] [sft] step 50/116 train loss 0.0954 | 69.5 min
+[17:52:45] [sft] step 50 validation loss 0.0878
+[18:06:21] [sft] step 60/116 train loss 0.0903 | 84.0 min
+[18:20:24] [sft] step 70/116 train loss 0.0749 | 98.1 min
+[18:34:49] [sft] step 80/116 train loss 0.0765 | 112.5 min
+[18:49:08] [sft] step 90/116 train loss 0.072 | 126.8 min
+[19:02:50] [sft] step 100/116 train loss 0.0686 | 140.5 min
+[19:03:47] [sft] step 100 validation loss 0.0683
+[19:17:37] [sft] step 110/116 train loss 0.0622 | 155.3 min
+[19:26:20] [sft] step 116 validation loss 0.0682
+[19:28:22] vLLM LoRA check {'base': '(a, b), (a,', 'sft': '(a, b), (a,'}
+=== EXP-088 finished status=OK wall=10118.5s

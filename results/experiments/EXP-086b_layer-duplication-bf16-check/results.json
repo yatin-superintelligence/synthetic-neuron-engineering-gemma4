@@ -1,0 +1,19 @@
+{
+  "results": {
+    "selected": "dup_s31_k2",
+    "test_bf16": {
+      "official": 113,
+      "dup_s31_k2": 103
+    },
+    "stats": {
+      "best_only": 13,
+      "official_only": 23,
+      "p": 0.1325
+    },
+    "headline": "bf16 MBPP+ test: dup_s31_k2 103 vs unedited 113 of 189 (McNemar p = 0.1325)",
+    "system_monitor": {
+      "samples": 23
+    }
+  },
+  "wall_seconds": 1341.5506701469421
+}

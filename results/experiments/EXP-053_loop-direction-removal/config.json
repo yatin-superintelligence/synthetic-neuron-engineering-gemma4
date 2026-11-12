@@ -1,0 +1,59 @@
+{
+  "id": "EXP-053",
+  "slug": "loop-direction-removal",
+  "category": "improvement",
+  "motivation": "EXP-040 is descriptive. Only an intervention can show that the direction carries looping, as Takehi et al. showed for Qwen. Loops took 31% of tokens in EXP-037 and preceded 10 of 15 context errors.",
+  "hypothesis": "Removing the direction lowers the loop rate on loop contexts more than removing random directions, without lowering tool-call rate on controls.",
+  "config": {
+    "layers": [
+      14,
+      15,
+      19,
+      23
+    ],
+    "lam": -1.0,
+    "seeds": [
+      0
+    ],
+    "early_exit": true,
+    "split": "dev",
+    "control": "random unit directions in the same layers, seed 53"
+  },
+  "depends_on": [
+    "EXP-040"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "388d025b46066e142fced3fba774c0b0f5d13022",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp053_loop_direction_removal.py",
+  "started": "2026-11-06T11:45:08.369224Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1834,
+    "cpu_core_w": 3.7,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 4,
+    "battery_pct": 100,
+    "cpu_pct": 5.8,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 78.2,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 10,
+    "ram_free_gb": 20.89,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.23,
+    "t": 1793965519.8924813
+  },
+  "finished": "2026-11-06T13:59:04.022673Z",
+  "wall_seconds": 8035.7,
+  "status": "OK"
+}

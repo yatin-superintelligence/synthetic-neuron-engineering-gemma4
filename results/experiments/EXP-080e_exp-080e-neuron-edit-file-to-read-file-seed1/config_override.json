@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 1
+ },
+ "hard_stop_s": 3900,
+ "adapter": "neuron_edit_file_to_read_file",
+ "adapter_local": "artifacts_local/EXP-080/neuron_edit_file_to_read_file"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "EXP-063",
+  "slug": "atlas-causal-ablation",
+  "category": "localization",
+  "motivation": "The atlas shows which neurons respond to which activity. Only intervention shows which are responsible for it.",
+  "hypothesis": "Each group's ablation damages its own function more than matched random neurons do.",
+  "config": {
+    "arms": {
+      "old_string_on": [
+        13,
+        9
+      ],
+      "old_string_off": [
+        5,
+        6
+      ],
+      "syntax_on": [
+        3,
+        12,
+        1,
+        4
+      ],
+      "syntax_off": [
+        0,
+        14,
+        7
+      ],
+      "whitespace_on": [
+        11
+      ],
+      "system_on": [
+        2
+      ]
+    },
+    "states": 32,
+    "max_prompt": 12000,
+    "split": "dev",
+    "seed": 0
+  },
+  "depends_on": [
+    "EXP-062"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "c238d7a710f149472dfa38eeedb2bf85410e0128",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp063_atlas_causal_ablation.py",
+  "started": "2026-11-07T19:52:19.479846Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1475,
+    "cpu_core_w": 2.5,
+    "throttle_reasons": 0,
+    "igpu_w": 0.1,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 6,
+    "battery_pct": 83,
+    "cpu_pct": 13.3,
+    "passive_limit_pct": 100,
+    "on_ac": false,
+    "cpu_perf_pct": 81.8,
+    "battery_discharge_mw": 12757,
+    "cpu_package_w": 6.7,
+    "ram_free_gb": 19.07,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.13,
+    "t": 1794081157.5431736
+  },
+  "finished": "2026-11-08T01:26:51.090298Z",
+  "wall_seconds": 20071.6,
+  "status": "OK"
+}

@@ -1,0 +1,306 @@
+{
+  "results": {
+    "arms": {
+      "q4_0": {
+        "base": {
+          "retry": {
+            "n": 24,
+            "same_text": 11,
+            "applied": 0,
+            "other_tool": 10,
+            "no_tool": 1,
+            "loops": 1,
+            "mean_tokens": 556.7
+          },
+          "edit_states": {
+            "skipped_too_long": [],
+            "after_failed_edit_state": {
+              "n": 4,
+              "edit_calls": 4,
+              "applied": 0,
+              "apply_rate": 0.0,
+              "not_found": 3,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 2,
+              "other_tool": 0,
+              "no_tool": 0,
+              "loops": 0
+            },
+            "after_applied_edit_state": {
+              "n": 12,
+              "edit_calls": 11,
+              "applied": 9,
+              "apply_rate": 0.8182,
+              "not_found": 1,
+              "identical": 1,
+              "multiple": 0,
+              "backslash_edits": 0,
+              "other_tool": 1,
+              "no_tool": 0,
+              "loops": 1
+            },
+            "all": {
+              "n": 16,
+              "edit_calls": 15,
+              "applied": 9,
+              "apply_rate": 0.6,
+              "not_found": 4,
+              "identical": 1,
+              "multiple": 0,
+              "backslash_edits": 2,
+              "other_tool": 1,
+              "no_tool": 0,
+              "loops": 1
+            },
+            "mean_tokens": 1150.6
+          }
+        },
+        "edit": {
+          "retry": {
+            "n": 24,
+            "same_text": 5,
+            "applied": 1,
+            "other_tool": 13,
+            "no_tool": 0,
+            "loops": 0,
+            "mean_tokens": 568.8
+          },
+          "edit_states": {
+            "skipped_too_long": [],
+            "after_failed_edit_state": {
+              "n": 4,
+              "edit_calls": 4,
+              "applied": 1,
+              "apply_rate": 0.25,
+              "not_found": 2,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 2,
+              "other_tool": 0,
+              "no_tool": 0,
+              "loops": 0
+            },
+            "after_applied_edit_state": {
+              "n": 12,
+              "edit_calls": 9,
+              "applied": 6,
+              "apply_rate": 0.6667,
+              "not_found": 2,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 2,
+              "other_tool": 2,
+              "no_tool": 1,
+              "loops": 1
+            },
+            "all": {
+              "n": 16,
+              "edit_calls": 13,
+              "applied": 7,
+              "apply_rate": 0.5385,
+              "not_found": 4,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 4,
+              "other_tool": 2,
+              "no_tool": 1,
+              "loops": 1
+            },
+            "mean_tokens": 2021.2
+          }
+        }
+      },
+      "f16": {
+        "base": {
+          "retry": {
+            "n": 24,
+            "same_text": 5,
+            "applied": 1,
+            "other_tool": 17,
+            "no_tool": 0,
+            "loops": 0,
+            "mean_tokens": 338.5
+          },
+          "edit_states": {
+            "skipped_too_long": [],
+            "after_failed_edit_state": {
+              "n": 4,
+              "edit_calls": 4,
+              "applied": 1,
+              "apply_rate": 0.25,
+              "not_found": 3,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 2,
+              "other_tool": 0,
+              "no_tool": 0,
+              "loops": 0
+            },
+            "after_applied_edit_state": {
+              "n": 12,
+              "edit_calls": 11,
+              "applied": 11,
+              "apply_rate": 1.0,
+              "not_found": 0,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 0,
+              "other_tool": 1,
+              "no_tool": 0,
+              "loops": 0
+            },
+            "all": {
+              "n": 16,
+              "edit_calls": 15,
+              "applied": 12,
+              "apply_rate": 0.8,
+              "not_found": 3,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 2,
+              "other_tool": 1,
+              "no_tool": 0,
+              "loops": 0
+            },
+            "mean_tokens": 1127.3
+          }
+        },
+        "edit": {
+          "retry": {
+            "n": 24,
+            "same_text": 5,
+            "applied": 1,
+            "other_tool": 17,
+            "no_tool": 0,
+            "loops": 0,
+            "mean_tokens": 711.4
+          },
+          "edit_states": {
+            "skipped_too_long": [],
+            "after_failed_edit_state": {
+              "n": 4,
+              "edit_calls": 4,
+              "applied": 0,
+              "apply_rate": 0.0,
+              "not_found": 3,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 2,
+              "other_tool": 0,
+              "no_tool": 0,
+              "loops": 0
+            },
+            "after_applied_edit_state": {
+              "n": 12,
+              "edit_calls": 10,
+              "applied": 7,
+              "apply_rate": 0.7,
+              "not_found": 2,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 0,
+              "other_tool": 2,
+              "no_tool": 0,
+              "loops": 0
+            },
+            "all": {
+              "n": 16,
+              "edit_calls": 14,
+              "applied": 7,
+              "apply_rate": 0.5,
+              "not_found": 5,
+              "identical": 0,
+              "multiple": 0,
+              "backslash_edits": 2,
+              "other_tool": 2,
+              "no_tool": 0,
+              "loops": 0
+            },
+            "mean_tokens": 967.9
+          }
+        }
+      }
+    },
+    "headline": "F16 same-text retries 5 to 5 of 24; apply on edit states 0.80 to 0.50",
+    "system_monitor": {
+      "samples": 187,
+      "ram_free_gb": {
+        "min": 9.08,
+        "max": 19.35,
+        "mean": 12.13
+      },
+      "gpu_shared_gb": {
+        "min": 1.11,
+        "max": 6.74,
+        "mean": 5.03
+      },
+      "gpu_util_pct": {
+        "min": 0,
+        "max": 100,
+        "mean": 90.45
+      },
+      "cpu_package_w": {
+        "min": 15.3,
+        "max": 40,
+        "mean": 23.27
+      },
+      "cpu_core_w": {
+        "min": 1,
+        "max": 18.4,
+        "mean": 3.48
+      },
+      "igpu_w": {
+        "min": 0,
+        "max": 25.3,
+        "mean": 12.84
+      },
+      "battery_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "cpu_pct": {
+        "min": 0,
+        "max": 97,
+        "mean": 12.55
+      },
+      "cpu_perf_pct": {
+        "min": 29.6,
+        "max": 159.6,
+        "mean": 68.33
+      },
+      "cpu_perf_limit_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "passive_limit_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "throttle_reasons": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      },
+      "cpu_freq_mhz": {
+        "min": 1633,
+        "max": 1918,
+        "mean": 1816.42
+      },
+      "battery_discharge_mw": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      },
+      "battery_charge_mw": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      }
+    }
+  },
+  "wall_seconds": 13389.402442932129
+}

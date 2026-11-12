@@ -1,0 +1,9 @@
+{
+ "id": "EXP-139c",
+ "slug": "exp-139c-31b-out8192-s2-gold40",
+ "category": "diagnosis",
+ "started": "2026-11-11T06:42:35Z",
+ "wall_seconds": 2986.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

@@ -1,0 +1,9 @@
+{
+ "id": "EXP-149d",
+ "slug": "exp-149d-e2b-out8192-s1-gold40",
+ "category": "diagnosis",
+ "started": "2026-11-11T22:31:42Z",
+ "wall_seconds": 4694.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

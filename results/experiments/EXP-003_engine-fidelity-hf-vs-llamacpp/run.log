@@ -1,0 +1,18 @@
+=== EXP-003 engine-fidelity-hf-vs-llamacpp started 2026-11-05T22:04:24.388879Z commit=2f759a2958
+[22:06:11] f16 {'wall_s': 82.82, 'gen_tokens': 5086, 'tok_per_s': 61.4}
+[22:07:12] q4_0 {'wall_s': 57.39, 'gen_tokens': 5041, 'tok_per_s': 87.8}
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  11%|#         | 213/1951 [00:00<00:00, 1908.68it/s]
+Loading weights:  21%|##        | 404/1951 [00:00<00:01, 929.00it/s] 
+Loading weights:  35%|###4      | 678/1951 [00:00<00:00, 1318.95it/s]
+Loading weights:  43%|####2     | 837/1951 [00:01<00:02, 448.78it/s] 
+Loading weights:  48%|####8     | 941/1951 [00:01<00:02, 418.72it/s]
+Loading weights:  54%|#####4    | 1062/1951 [00:01<00:01, 507.12it/s]
+Loading weights:  59%|#####9    | 1154/1951 [00:01<00:01, 522.10it/s]
+Loading weights:  63%|######3   | 1235/1951 [00:02<00:01, 560.41it/s]
+Loading weights: 100%|##########| 1951/1951 [00:02<00:00, 927.78it/s]
+[load] Gemma4ForConditionalGeneration on xpu in 17.1s; params=2.280B
+[22:08:44] f16 {'tokens': 5083, 'argmax_agreement': 0.99548, 'mean_prob_of_token': 0.9216, 'sequences_fully_agreeing': 22, 'control_shuffled_agreement': 0.02538, 'seconds': 75.0}
+[22:09:12] q4_0 {'tokens': 5038, 'argmax_agreement': 0.97737, 'mean_prob_of_token': 0.9167, 'sequences_fully_agreeing': 1, 'control_shuffled_agreement': 0.0268, 'seconds': 27.6}
+=== EXP-003 finished status=OK wall=287.9s

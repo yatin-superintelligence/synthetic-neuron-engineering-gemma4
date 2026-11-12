@@ -1,0 +1,9 @@
+{
+ "id": "EXP-123a",
+ "slug": "exp-123-e4btx-s2-solvable12",
+ "category": "improvement",
+ "started": "2026-11-10T13:07:35Z",
+ "wall_seconds": 962.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

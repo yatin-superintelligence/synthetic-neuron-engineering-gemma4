@@ -1,0 +1,41 @@
+{
+  "id": "EXP-096",
+  "slug": "deescape-neuron",
+  "category": "improvement",
+  "motivation": "E2B copies the JSON escape of the harness's file view into its edits: 78 of 364 failed edits in five unedited official runs carry backslash-quote in old_string and 26 of 220 applied edits write one into the code. A neuron that fires inside tool-call strings and favours each unescaped token over its escaped twin targets that step without training.",
+  "hypothesis": "The de-escaping neuron raises the share of applying bench answers on held-out states against the unedited model (exact McNemar p < 0.05) and against a control neuron, with no fewer correct answers and no significant MBPP+ loss.",
+  "config": {
+    "candidate_layers": [
+      28,
+      30,
+      32,
+      34
+    ],
+    "targets": [
+      6.0,
+      12.0
+    ],
+    "selection": "fit split, most applying",
+    "test": "dev + test splits (257)",
+    "retention": "MBPP+ 378, cap 8,192",
+    "control": "random write orthogonal to u, same norm, same read-out"
+  },
+  "depends_on": [
+    "EXP-092"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp096_deescape_neuron.py",
+  "started": "2026-11-08T21:45:24.897024Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794174324.9027238
+  }
+}

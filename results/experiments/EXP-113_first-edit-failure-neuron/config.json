@@ -1,0 +1,39 @@
+{
+  "id": "EXP-113",
+  "slug": "first-edit-failure-neuron",
+  "category": "improvement",
+  "motivation": "First edits that fail mostly come from editing unread code; a neuron that detects a failing first edit at the tool-name token and writes read_file over edit_file would turn those into reads.",
+  "hypothesis": "On held-out tasks' first-edit states the neuron lowers failing first edits against unedited and its shuffled-label control without lowering applying edits.",
+  "config": {
+    "layer": 34,
+    "ridge": 1.0,
+    "arms": [
+      "neuron",
+      "neuron_half",
+      "control",
+      "zero"
+    ]
+  },
+  "depends_on": [
+    "EXP-112",
+    "EXP-080"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp113_first_edit_neuron.py",
+  "started": "2026-11-09T21:53:31.660097Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794261211.6669507
+  },
+  "finished": "2026-11-09T23:08:48.318840Z",
+  "wall_seconds": 4516.7,
+  "status": "OK"
+}

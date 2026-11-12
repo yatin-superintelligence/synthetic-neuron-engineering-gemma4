@@ -1,0 +1,35 @@
+{
+  "results": {
+    "arms": {
+      "nothink_q4_0": {
+        "lcb": {
+          "bench": "lcb",
+          "n": 175,
+          "passed": 62,
+          "pass_rate": 0.3543,
+          "by_difficulty": {
+            "easy": {
+              "n": 43,
+              "rate": 0.8372
+            },
+            "medium": {
+              "n": 52,
+              "rate": 0.3269
+            },
+            "hard": {
+              "n": 80,
+              "rate": 0.1125
+            }
+          },
+          "truncated": 13,
+          "gen": {
+            "wall_s": 8549.54,
+            "gen_tokens": 493066,
+            "tok_per_s": 57.7
+          }
+        }
+      }
+    }
+  },
+  "wall_seconds": 8756.05297446251
+}

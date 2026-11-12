@@ -1,0 +1,38 @@
+{
+ "tasks": 15,
+ "resolved": 6,
+ "resolved_ids": [
+  "fastapi_15589",
+  "rich_2725",
+  "rich_3043",
+  "rich_3063",
+  "rich_3067",
+  "rich_3480"
+ ],
+ "outcomes": {
+  "patch failed tests": 9,
+  "resolved": 6
+ },
+ "minutes_mean": 12.36,
+ "tool_calls_mean": 40.8,
+ "llm_calls_mean": 46.4,
+ "tasks_never_applying_an_edit": 1,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 3,
+ "loops": 11,
+ "of_those_resolved_loop": 1,
+ "completion_tokens": 246379,
+ "tokens_in_loop_responses": 46178,
+ "loop_token_share": 0.187,
+ "edits": {
+  "edits": 83,
+  "applied": 38,
+  "failed": 45,
+  "kinds": {
+   "failed (kind not classified)": 45,
+   "applied": 38
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

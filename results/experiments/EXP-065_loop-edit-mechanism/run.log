@@ -1,0 +1,17 @@
+=== EXP-065 loop-edit-mechanism started 2026-11-06T18:14:12.501707Z commit=ce50644add
+[18:38:28] q4_0 base {'loop_rate_on_loop_contexts': (0.3333, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.875, 8), 'mean_tokens': 495.1}
+[18:58:23] q4_0 lam_m0.5 {'loop_rate_on_loop_contexts': (0.2667, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.75, 8), 'mean_tokens': 443.0}
+[19:22:41] q4_0 lam_m1.5 {'loop_rate_on_loop_contexts': (0.0667, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.75, 8), 'mean_tokens': 608.3}
+[19:53:46] q4_0 lam_m2 {'loop_rate_on_loop_contexts': (0.0667, 15), 'loop_rate_on_controls': (0.125, 8), 'tool_call_rate_on_controls': (0.625, 8), 'mean_tokens': 859.7}
+[20:13:32] q4_0 lam_p0.5 {'loop_rate_on_loop_contexts': (0.2, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.75, 8), 'mean_tokens': 429.2}
+[20:33:40] q4_0 lam_p1 {'loop_rate_on_loop_contexts': (0.2, 15), 'loop_rate_on_controls': (0.125, 8), 'tool_call_rate_on_controls': (0.625, 8), 'mean_tokens': 447.5}
+[20:52:47] q4_0 only_14 {'loop_rate_on_loop_contexts': (0.2, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.625, 8), 'mean_tokens': 379.3}
+[21:15:06] q4_0 only_15 {'loop_rate_on_loop_contexts': (0.3333, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.875, 8), 'mean_tokens': 534.3}
+[21:35:33] q4_0 only_19 {'loop_rate_on_loop_contexts': (0.2, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.875, 8), 'mean_tokens': 447.8}
+[21:54:38] q4_0 only_23 {'loop_rate_on_loop_contexts': (0.2, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.75, 8), 'mean_tokens': 390.3}
+[22:14:14] q4_0 prior_art_2neuron {'loop_rate_on_loop_contexts': (0.2667, 15), 'loop_rate_on_controls': (0.0, 8), 'tool_call_rate_on_controls': (0.625, 8), 'mean_tokens': 416.4}
+[22:42:42] f16 base {'loop_rate_on_loop_contexts': (0.3333, 15), 'loop_rate_on_controls': (0.0, 0), 'tool_call_rate_on_controls': (0.0, 0), 'mean_tokens': 840.1}
+[23:01:34] f16 lam_m1.5 {'loop_rate_on_loop_contexts': (0.0, 15), 'loop_rate_on_controls': (0.0, 0), 'tool_call_rate_on_controls': (0.0, 0), 'mean_tokens': 444.2}
+[23:21:20] f16 lam_p1 {'loop_rate_on_loop_contexts': (0.2, 15), 'loop_rate_on_controls': (0.0, 0), 'tool_call_rate_on_controls': (0.0, 0), 'mean_tokens': 465.9}
+[23:44:46] f16 prior_art_2neuron {'loop_rate_on_loop_contexts': (0.3333, 15), 'loop_rate_on_controls': (0.0, 0), 'tool_call_rate_on_controls': (0.0, 0), 'mean_tokens': 636.2}
+=== EXP-065 finished status=OK wall=19834.7s

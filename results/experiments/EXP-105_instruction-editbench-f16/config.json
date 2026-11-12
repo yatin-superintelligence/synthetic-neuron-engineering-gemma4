@@ -1,0 +1,55 @@
+{
+  "id": "EXP-105",
+  "slug": "instruction-editbench-f16",
+  "category": "improvement",
+  "motivation": "The one bench result outside the noise floor is an instruction (D-102); does it raise applied edits on real official-run states?",
+  "hypothesis": "On F16 EditBench the instruction raises applied edit calls and lowers backslash-carrying ones against the unedited model and against a neutral instruction of the same length (exact McNemar by state).",
+  "config": {
+    "max_prompt": 12000,
+    "per_run_task": 1,
+    "seed": 0,
+    "precision": "f16",
+    "texts": {
+      "instruction": "The bug is one small mistake on one line. Once you have read the code that contains it, fix it right away with edit_file. Copy old_string character for character from the file content you read, without adding escape characters, and in new_string change only the wrong token or operator. Do not rewrite or restructure code.",
+      "neutral": "The repository is a Python project. Its files use four spaces for indentation and its tests are written with pytest. The tools listed above are the only ones available in this session, and every tool call returns its result as JSON. Paths are given relative to the repository root, which is also the working directory of every command you run."
+    }
+  },
+  "depends_on": [
+    "EXP-097b",
+    "EXP-099b"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "f28ddf20b3f2fb58759c77fd180b37676706c1b4",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp105_instruction_editbench.py",
+  "started": "2026-11-09T12:29:23.217409Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1843,
+    "cpu_core_w": 3,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 4,
+    "battery_pct": 100,
+    "cpu_pct": 12,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 88.2,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 8.8,
+    "ram_free_gb": 18.85,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.16,
+    "t": 1794227374.6561353
+  },
+  "finished": "2026-11-09T16:12:31.953903Z",
+  "wall_seconds": 13388.7,
+  "status": "OK"
+}

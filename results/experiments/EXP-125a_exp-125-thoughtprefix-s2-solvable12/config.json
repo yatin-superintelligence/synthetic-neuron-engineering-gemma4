@@ -1,0 +1,9 @@
+{
+ "id": "EXP-125a",
+ "slug": "exp-125-thoughtprefix-s2-solvable12",
+ "category": "diagnosis",
+ "started": "2026-11-10T14:09:26Z",
+ "wall_seconds": 641.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

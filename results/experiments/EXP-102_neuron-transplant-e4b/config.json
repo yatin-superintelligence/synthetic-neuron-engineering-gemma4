@@ -1,0 +1,59 @@
+{
+  "id": "EXP-102",
+  "slug": "neuron-transplant-e4b",
+  "category": "improvement",
+  "motivation": "The author's instruction: transplant neurons from a larger model. Gemma 4 E4B neurons translated into E2B through fitted maps between the two models' internal states, placed in E2B's weakest neurons as an exact LoRA.",
+  "hypothesis": "Donor neurons chosen for raising the reference fix where E2B is wrong, translated into E2B, raise correct bench answers against the unedited model and against random donor neurons transplanted the same way.",
+  "config": {
+    "donor": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "e2b_layers": [
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32
+    ],
+    "late_layers": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "neurons_per_layer": 128,
+    "states": 160,
+    "prompt_positions": 96,
+    "arms": [
+      "st_a1",
+      "st_a4",
+      "lg_a1",
+      "lg_a4",
+      "st_rnd_a4",
+      "lg_rnd_a4",
+      "abl"
+    ]
+  },
+  "depends_on": [
+    "EXP-092",
+    "EXP-101"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp102_neuron_transplant.py",
+  "started": "2026-11-09T11:19:33.799054Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794223173.805893
+  },
+  "finished": "2026-11-09T12:06:18.441040Z",
+  "wall_seconds": 2804.6,
+  "status": "OK"
+}

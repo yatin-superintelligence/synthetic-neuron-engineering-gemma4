@@ -1,0 +1,49 @@
+{
+  "id": "EXP-104",
+  "slug": "instruction-to-neurons",
+  "category": "improvement",
+  "motivation": "The one lab result outside the noise floor is an instruction (D-098, D-099); its effect on E2B's internal states, written into one MLP layer in closed form, would carry the behaviour in the weights.",
+  "hypothesis": "A down_proj edit fitted to reproduce the instruction's state change raises applying edits on unseen bench states above the unedited arm's noise range, approaching the instruction itself, and beyond the same edit fitted to a neutral instruction.",
+  "config": {
+    "layers": [
+      10,
+      14,
+      20
+    ],
+    "rank": 128,
+    "states": 160,
+    "instruction": "The bug is one small mistake on one line. Once you have read the code that contains it, fix it right away with edit_file. Copy old_string character for character from the file content you read, without adding escape characters, and in new_string change only the wrong token or operator. Do not rewrite or restructure code.",
+    "control_instruction": "The repository is a Python project. Its files use four spaces for indentation and its tests are written with pytest. The tools listed above are the only ones available in this session, and every tool call returns its result as JSON. Paths are given relative to the repository root, which is also the working directory of every command you run.",
+    "arms": [
+      "ins_L10",
+      "ins_L14",
+      "ins_L20",
+      "ins_L14_x2",
+      "ctl_L10",
+      "ctl_L14",
+      "ctl_L20"
+    ]
+  },
+  "depends_on": [
+    "EXP-092",
+    "EXP-102"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp104_instruction_to_neurons.py",
+  "started": "2026-11-09T12:54:58.259895Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794228898.2732017
+  },
+  "finished": "2026-11-09T13:40:50.367096Z",
+  "wall_seconds": 2752.1,
+  "status": "OK"
+}

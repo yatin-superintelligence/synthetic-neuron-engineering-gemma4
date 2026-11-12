@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 3
+ },
+ "hard_stop_s": 1800,
+ "adapter": "combo",
+ "adapter_local": "artifacts_local/EXP-111/combo_all"
+}

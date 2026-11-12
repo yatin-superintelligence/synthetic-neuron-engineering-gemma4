@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 2
+ },
+ "hard_stop_s": 1800,
+ "adapter": "injql10",
+ "adapter_local": "artifacts_local/EXP-120/inj_q_L10"
+}

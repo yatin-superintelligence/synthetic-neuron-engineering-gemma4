@@ -1,0 +1,9 @@
+{
+ "id": "EXP-129a",
+ "slug": "exp-129a-31b-base-s2-gold40-logged",
+ "category": "diagnosis",
+ "started": "2026-11-10T20:05:20Z",
+ "wall_seconds": 2869.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

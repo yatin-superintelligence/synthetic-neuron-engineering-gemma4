@@ -1,0 +1,24 @@
+{
+  "results": {
+    "half": "test",
+    "tasks": 14,
+    "trajectories": 40,
+    "train": 35,
+    "val": 1,
+    "history": {
+      "val_before": 0.4796,
+      "train": [],
+      "val": []
+    },
+    "vllm_check": {
+      "base": "(a, b), (a,",
+      "sft": " (a, b), (a,"
+    },
+    "adapter": "/content/repo/artifacts_local/EXP-110b/sft_lora",
+    "headline": "SFT on 35 resolved runs of the test half: validation loss 0.4796 -> None",
+    "system_monitor": {
+      "samples": 46
+    }
+  },
+  "wall_seconds": 2713.480766057968
+}

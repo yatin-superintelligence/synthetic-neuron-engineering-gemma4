@@ -1,0 +1,24 @@
+=== EXP-095 copy-head-gain started 2026-11-08T22:04:09.821959Z commit=
+[22:04:19] fastapi/fastapi states so far 71 skipped {'no single-line fix': 10}
+[22:04:24] Textualize/rich states so far 514 skipped {'no single-line fix': 49}
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 748.43it/s]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  31%|###       | 601/1951 [00:00<00:00, 5973.80it/s]
+Loading weights:  61%|######1   | 1199/1951 [00:00<00:00, 5526.61it/s]
+Loading weights:  90%|########9 | 1754/1951 [00:00<00:00, 5472.97it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 5552.81it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 7.0s; params=4.629B
+[copy] sample 0/140 rows so far 11
+[copy] sample 20/140 rows so far 273
+[copy] sample 40/140 rows so far 667
+[copy] sample 80/140 rows so far 1461
+[copy] sample 100/140 rows so far 1784
+[copy] sample 120/140 rows so far 2165
+[22:09:34] copy heads, top 16: [{"layer": 24, "head": 1, "score": 0.1653, "argmax_hit": 0.3946}, {"layer": 29, "head": 4, "score": 0.1452, "argmax_hit": 0.5104}, {"layer": 29, "head": 5, "score": 0.121, "argmax_hit": 0.2471}, {"layer": 4, "head": 0, "score": 0.1034, "argmax_hit": 0.1506}, {"layer": 29, "head": 1, "score": 0.0893, "argmax_hit": 0.2958}, {"layer": 29, "head": 0, "score": 0.0739, "argmax_hit": 0.412}, {"layer": 24, "head": 3, "score": 0.0667, "argmax_hit": 0.2151}, {"layer": 14, "head": 3, "score": 0.055, "argmax_hit": 0.1344}, {"layer": 34, "head": 0, "score": 0.049, "argmax_hit": 0.3181}, {"layer": 24, "head": 0, "score": 0.0405, "argmax_hit": 0.0799}, {"layer": 29, "head": 3, "score": 0.039, "argmax_hit": 0.1764}, {"layer": 34, "head": 5, "score": 0.0334, "argmax_hit": 0.1645}, {"layer": 34, "head": 7, "score": 0.0328, "argmax_hit": 0.1834}, {"layer": 29, "head": 7, "score": 0.0285, "argmax_hit": 0.1467}, {"layer": 19, "head": 0, "score": 0.0227, "argmax_hit": 0.0355}, {"layer": 34, "head": 6, "score": 0.0219, "argmax_hit": 0.0672}]
+/content/repo/experiments/scripts/exp095_copy_heads.py:179: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  share[f"L{L}h{h}"] = round(float((Ch @ Ur).pow(2).sum() / Ch.pow(2).sum().clamp_min(1e-12)), 4) if len(Ch) else None
+[23:09:01] fit-split scan (of 257 ): {'h4_b2': {'applies': 89, 'correct': 18}, 'h4_b3': {'applies': 74, 'correct': 15}, 'h8_b2': {'applies': 87, 'correct': 22}, 'h8_b3': {'applies': 63, 'correct': 19}, 'base': {'applies': 96, 'correct': 31}, 'base_stored': {'applies': 102, 'correct': 28}}

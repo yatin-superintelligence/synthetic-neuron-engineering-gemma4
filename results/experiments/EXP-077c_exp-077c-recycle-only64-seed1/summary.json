@@ -1,0 +1,42 @@
+{
+ "tasks": 58,
+ "resolved": 2,
+ "resolved_ids": [
+  "rich_2943",
+  "rich_4077"
+ ],
+ "outcomes": {
+  "patch failed tests": 37,
+  "error: Sandbox execution error: litellm.Context": 15,
+  "no patch": 3,
+  "resolved": 2,
+  "error: Agent completed execution without callin": 1
+ },
+ "minutes_mean": 2.44,
+ "tool_calls_mean": 8.7,
+ "llm_calls_mean": 11.4,
+ "tasks_never_applying_an_edit": 20,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 21,
+ "loops": 36,
+ "of_those_resolved_loop": 0,
+ "completion_tokens": 490814,
+ "tokens_in_loop_responses": 206549,
+ "loop_token_share": 0.421,
+ "edits": {
+  "edits": 117,
+  "applied": 51,
+  "failed": 66,
+  "kinds": {
+   "applied": 51,
+   "mostly_real_altered": 19,
+   "invented": 17,
+   "identical": 10,
+   "lines_real_block_not": 8,
+   "stale_after_own_edit": 7,
+   "file_missing": 5
+  },
+  "failed_repeating_identical_call": 26,
+  "failed_with_backslash": 23
+ }
+}

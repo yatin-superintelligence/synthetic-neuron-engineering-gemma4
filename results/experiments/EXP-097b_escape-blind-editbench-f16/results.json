@@ -1,0 +1,93 @@
+{
+  "results": {
+    "arms": {
+      "base": {
+        "skipped_too_long": [],
+        "after_failed_edit_state": {
+          "n": 14,
+          "edit_calls": 4,
+          "applied": 2,
+          "apply_rate": 0.5,
+          "not_found": 2,
+          "identical": 0,
+          "multiple": 0,
+          "backslash_edits": 2,
+          "other_tool": 10,
+          "no_tool": 0,
+          "loops": 0
+        },
+        "after_applied_edit_state": {
+          "n": 48,
+          "edit_calls": 32,
+          "applied": 31,
+          "apply_rate": 0.9688,
+          "not_found": 0,
+          "identical": 0,
+          "multiple": 0,
+          "backslash_edits": 6,
+          "other_tool": 16,
+          "no_tool": 0,
+          "loops": 0
+        },
+        "all": {
+          "n": 62,
+          "edit_calls": 36,
+          "applied": 33,
+          "apply_rate": 0.9167,
+          "not_found": 2,
+          "identical": 0,
+          "multiple": 0,
+          "backslash_edits": 8,
+          "other_tool": 26,
+          "no_tool": 0,
+          "loops": 0
+        },
+        "mean_tokens": 891.7
+      },
+      "edit": {
+        "skipped_too_long": [],
+        "after_failed_edit_state": {
+          "n": 14,
+          "edit_calls": 8,
+          "applied": 2,
+          "apply_rate": 0.25,
+          "not_found": 5,
+          "identical": 0,
+          "multiple": 0,
+          "backslash_edits": 3,
+          "other_tool": 6,
+          "no_tool": 0,
+          "loops": 0
+        },
+        "after_applied_edit_state": {
+          "n": 48,
+          "edit_calls": 32,
+          "applied": 24,
+          "apply_rate": 0.75,
+          "not_found": 4,
+          "identical": 1,
+          "multiple": 0,
+          "backslash_edits": 8,
+          "other_tool": 16,
+          "no_tool": 0,
+          "loops": 2
+        },
+        "all": {
+          "n": 62,
+          "edit_calls": 40,
+          "applied": 26,
+          "apply_rate": 0.65,
+          "not_found": 9,
+          "identical": 1,
+          "multiple": 0,
+          "backslash_edits": 11,
+          "other_tool": 22,
+          "no_tool": 0,
+          "loops": 2
+        },
+        "mean_tokens": 1060.0
+      }
+    }
+  },
+  "wall_seconds": 12032.381551504135
+}

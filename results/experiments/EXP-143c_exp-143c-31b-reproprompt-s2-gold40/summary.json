@@ -1,0 +1,48 @@
+{
+ "tasks": 40,
+ "resolved": 15,
+ "resolved_ids": [
+  "rich_2725",
+  "rich_2943",
+  "rich_3006",
+  "rich_3043",
+  "rich_3063",
+  "rich_3067",
+  "rich_3278",
+  "rich_3454",
+  "rich_3480",
+  "rich_3518",
+  "rich_3718",
+  "rich_3882",
+  "rich_3894",
+  "rich_3905",
+  "rich_4077"
+ ],
+ "outcomes": {
+  "patch failed tests": 24,
+  "resolved": 15,
+  "no patch": 1
+ },
+ "minutes_mean": 14.21,
+ "tool_calls_mean": 39.5,
+ "llm_calls_mean": 43.7,
+ "tasks_never_applying_an_edit": 4,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 1,
+ "loops": 3,
+ "of_those_resolved_loop": 0,
+ "completion_tokens": 435837,
+ "tokens_in_loop_responses": 12372,
+ "loop_token_share": 0.028,
+ "edits": {
+  "edits": 140,
+  "applied": 97,
+  "failed": 43,
+  "kinds": {
+   "applied": 97,
+   "failed (kind not classified)": 43
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

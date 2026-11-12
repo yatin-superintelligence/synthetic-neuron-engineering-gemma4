@@ -1,0 +1,43 @@
+=== EXP-082 decision-timing started 2026-11-08T01:54:39.532390Z commit=
+[01:54:39] states 1542 [('read_file', 564), ('edit_file', 328), ('search_similar_code', 288), ('run_command', 173), ('submit_patch', 128), ('write_file', 61)]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  26%|##6       | 510/1951 [00:00<00:00, 5098.92it/s]
+Loading weights:  52%|#####2    | 1020/1951 [00:00<00:00, 4550.17it/s]
+Loading weights:  79%|#######9  | 1544/1951 [00:00<00:00, 4844.78it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 5059.57it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 5.7s; params=2.280B
+[gather] 0/1542
+[gather] 50/1542
+[gather] 100/1542
+[gather] 150/1542
+[gather] 200/1542
+[gather] 250/1542
+[gather] 300/1542
+[gather] 350/1542
+[gather] 400/1542
+[gather] 450/1542
+[gather] 500/1542
+[gather] 550/1542
+[gather] 600/1542
+[gather] 650/1542
+[gather] 700/1542
+[gather] 750/1542
+[gather] 800/1542
+[gather] 850/1542
+[gather] 900/1542
+[gather] 950/1542
+[gather] 1000/1542
+[gather] 1050/1542
+[gather] 1100/1542
+[gather] 1150/1542
+[gather] 1200/1542
+[gather] 1250/1542
+[gather] 1300/1542
+[gather] 1350/1542
+[gather] 1400/1542
+[gather] 1450/1542
+[gather] 1500/1542
+[02:28:54] e2b {'majority_class_rate': 0.36, 'n_test': 791, 'mlp': {'start': 0.55, 'q25': 0.422, 'q50': 0.42, 'q75': 0.503, 'call': 0.973}, 'res': {'start': 0.595, 'q25': 0.571, 'q50': 0.552, 'q75': 0.613, 'call': 0.953}, 'logit_lens_top_tool_matches': {'start': 0.234, 'q25': 0.259, 'q50': 0.286, 'q75': 0.315, 'call': 0.984}}
+[02:28:58] t_major {'majority_class_rate': 0.442, 'n_test': 771, 'mlp': {'start': 0.427, 'q25': 0.385, 'q50': 0.374, 'q75': 0.357, 'call': 0.388}, 'res': {'start': 0.409, 'q25': 0.418, 'q50': 0.397, 'q75': 0.405, 'call': 0.388}}
+=== EXP-082 finished status=OK wall=2058.6s

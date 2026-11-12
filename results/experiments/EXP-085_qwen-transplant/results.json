@@ -1,0 +1,183 @@
+{
+  "results": {
+    "layers": {
+      "25": {
+        "donor_layer": 30,
+        "cka": 0.741,
+        "read_map_ridge": 1.0,
+        "read_map_r2_fit": 0.486,
+        "read_map_r2_cv_requests": 0.196,
+        "read_map_r2_heldout": 0.219,
+        "transplant": {
+          "read_fidelity_median": 0.448,
+          "read_fidelity_p25": 0.32,
+          "write_fit_r2": 0.0173,
+          "write_ridge": 0.1,
+          "write_r2_cv": -0.0004,
+          "neurons": [
+            2720,
+            623,
+            2381,
+            281,
+            1886,
+            444,
+            3645,
+            4602,
+            575,
+            3910,
+            815,
+            3566,
+            156,
+            1356,
+            2560,
+            2638
+          ]
+        },
+        "control_random": {
+          "read_fidelity_median": 0.387,
+          "read_fidelity_p25": 0.315,
+          "write_fit_r2": 0.0228,
+          "write_ridge": 0.01,
+          "write_r2_cv": -0.0003,
+          "neurons": [
+            7654,
+            8168,
+            3485,
+            7299,
+            3731,
+            8022,
+            7206,
+            3753,
+            2234,
+            1308,
+            2977,
+            2278,
+            4660,
+            5810,
+            1630,
+            424
+          ]
+        }
+      },
+      "28": {
+        "donor_layer": 31,
+        "cka": 0.738,
+        "read_map_ridge": 1.0,
+        "read_map_r2_fit": 0.503,
+        "read_map_r2_cv_requests": 0.205,
+        "read_map_r2_heldout": 0.22,
+        "transplant": {
+          "read_fidelity_median": 0.492,
+          "read_fidelity_p25": 0.375,
+          "write_fit_r2": 0.0022,
+          "write_ridge": 10.0,
+          "write_r2_cv": -0.0009,
+          "neurons": [
+            564,
+            273,
+            1852,
+            2527,
+            6912,
+            109,
+            4553,
+            2051,
+            143,
+            7097,
+            485,
+            192,
+            540,
+            2532,
+            105,
+            674
+          ]
+        },
+        "control_random": {
+          "read_fidelity_median": 0.404,
+          "read_fidelity_p25": 0.346,
+          "write_fit_r2": 0.0205,
+          "write_ridge": 0.01,
+          "write_r2_cv": 0.0026,
+          "neurons": [
+            4961,
+            245,
+            4048,
+            6627,
+            1588,
+            5059,
+            7961,
+            77,
+            7092,
+            7207,
+            6521,
+            8012,
+            8460,
+            675,
+            3617,
+            3680
+          ]
+        }
+      }
+    },
+    "nll": {
+      "unedited": {
+        "fit": 1.07494,
+        "test": 1.38426
+      },
+      "transplant": {
+        "scale": 1.0,
+        "fit_by_scale": {
+          "0.25": 1.07513,
+          "0.5": 1.07533,
+          "1.0": 1.07496,
+          "2.0": 1.07515
+        },
+        "test": 1.38456,
+        "test_minus_unedited": 0.0003,
+        "ci95": [
+          1e-05,
+          0.0006
+        ]
+      },
+      "control_random": {
+        "scale": 0.5,
+        "fit_by_scale": {
+          "0.25": 1.07523,
+          "0.5": 1.07474,
+          "1.0": 1.07506,
+          "2.0": 1.07518
+        },
+        "test": 1.38429,
+        "test_minus_unedited": 3e-05,
+        "ci95": [
+          -0.00028,
+          0.00035
+        ]
+      },
+      "control_clear": {
+        "scale": 1.0,
+        "fit_by_scale": {
+          "1.0": 1.07517
+        },
+        "test": 1.38447,
+        "test_minus_unedited": 0.00021,
+        "ci95": [
+          -0.00014,
+          0.00054
+        ]
+      },
+      "transplant_minus_control_random": {
+        "mean": 0.00027,
+        "ci95": [
+          -3e-05,
+          0.00058
+        ]
+      }
+    },
+    "gate_passed": false,
+    "headline": "held-out code NLL: unedited 1.38426, transplant 1.38456 (diff 0.0003 [1e-05, 0.0006]), random-Qwen control 1.38429, cleared slots 1.38447; gate not passed",
+    "system_monitor": {
+      "samples": 8
+    }
+  },
+  "wall_seconds": 427.0942528247833
+}

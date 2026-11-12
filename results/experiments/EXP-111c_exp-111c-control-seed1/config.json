@@ -1,0 +1,9 @@
+{
+ "id": "EXP-111c",
+ "slug": "exp-111c-control-seed1",
+ "category": "improvement",
+ "started": "2026-11-09T20:43:45Z",
+ "wall_seconds": 2462.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

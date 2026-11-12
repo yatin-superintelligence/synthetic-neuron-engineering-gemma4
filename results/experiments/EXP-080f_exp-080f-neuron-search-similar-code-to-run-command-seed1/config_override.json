@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 1
+ },
+ "hard_stop_s": 3900,
+ "adapter": "neuron_search_similar_code_to_run_command",
+ "adapter_local": "artifacts_local/EXP-080/neuron_search_similar_code_to_run_command"
+}

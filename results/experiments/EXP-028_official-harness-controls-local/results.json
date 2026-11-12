@@ -1,0 +1,96 @@
+{
+  "results": {
+    "n": 58,
+    "sound": 45,
+    "dropped": [
+      "requests_6589",
+      "requests_6592",
+      "requests_6629",
+      "requests_6644",
+      "requests_7205",
+      "requests_7315",
+      "requests_7328",
+      "requests_7427",
+      "requests_7433",
+      "requests_7502",
+      "rich_3296",
+      "rich_3469",
+      "rich_4079"
+    ],
+    "by_repo": {
+      "requests": [
+        0,
+        10
+      ],
+      "fastapi": [
+        24,
+        24
+      ],
+      "rich": [
+        21,
+        24
+      ]
+    },
+    "agrees_with_public_audit": 49,
+    "headline": "45/58 sound {'requests': [0, 10], 'fastapi': [24, 24], 'rich': [21, 24]}; agrees with public audit on 49/58",
+    "system_monitor": {
+      "samples": 7,
+      "ram_free_gb": {
+        "min": 4.39,
+        "max": 16.71,
+        "mean": 9.71
+      },
+      "gpu_shared_gb": {
+        "min": 1.16,
+        "max": 1.29,
+        "mean": 1.23
+      },
+      "gpu_util_pct": {
+        "min": 0,
+        "max": 6.7,
+        "mean": 1.44
+      },
+      "thermal_c": {
+        "min": 27.9,
+        "max": 27.9,
+        "mean": 27.9
+      },
+      "battery_pct": {
+        "min": 69,
+        "max": 76,
+        "mean": 72.14
+      },
+      "cpu_pct": {
+        "min": 9.6,
+        "max": 22.3,
+        "mean": 14.46
+      },
+      "cpu_perf_pct": {
+        "min": 132.9,
+        "max": 176.5,
+        "mean": 155.41
+      },
+      "cpu_perf_limit_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "cpu_freq_mhz": {
+        "min": 1797,
+        "max": 1876,
+        "mean": 1837.14
+      },
+      "battery_discharge_mw": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      },
+      "battery_charge_mw": {
+        "min": 27195,
+        "max": 55146,
+        "mean": 48317.29
+      }
+    }
+  },
+  "wall_seconds": 467.17114877700806
+}

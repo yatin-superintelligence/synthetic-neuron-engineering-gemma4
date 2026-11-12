@@ -1,0 +1,9 @@
+{
+ "id": "EXP-076b",
+ "slug": "exp-076b-control-reread-seed1-g4",
+ "category": "synthetic-neuron",
+ "started": "2026-11-08T00:07:34Z",
+ "wall_seconds": 541.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

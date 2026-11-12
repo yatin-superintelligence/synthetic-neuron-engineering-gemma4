@@ -1,0 +1,264 @@
+{
+  "results": {
+    "arms": {
+      "q4_0": {
+        "base": {
+          "n": 23,
+          "skipped_too_long": [],
+          "loop_rate_on_loop_contexts": [
+            0.3333,
+            15
+          ],
+          "loop_rate_on_controls": [
+            0.0,
+            8
+          ],
+          "tool_call_rate_on_loop_contexts": [
+            0.6667,
+            15
+          ],
+          "tool_call_rate_on_controls": [
+            0.875,
+            8
+          ],
+          "forced_close_on_loop_contexts": [
+            0.0,
+            15
+          ],
+          "forced_close_on_controls": [
+            0.0,
+            8
+          ],
+          "mean_tokens": 495.1
+        },
+        "remove_loop_dirs": {
+          "n": 23,
+          "skipped_too_long": [],
+          "loop_rate_on_loop_contexts": [
+            0.1333,
+            15
+          ],
+          "loop_rate_on_controls": [
+            0.0,
+            8
+          ],
+          "tool_call_rate_on_loop_contexts": [
+            0.8667,
+            15
+          ],
+          "tool_call_rate_on_controls": [
+            0.75,
+            8
+          ],
+          "forced_close_on_loop_contexts": [
+            0.0,
+            15
+          ],
+          "forced_close_on_controls": [
+            0.0,
+            8
+          ],
+          "mean_tokens": 412.5
+        },
+        "remove_random_dirs": {
+          "n": 23,
+          "skipped_too_long": [],
+          "loop_rate_on_loop_contexts": [
+            0.3333,
+            15
+          ],
+          "loop_rate_on_controls": [
+            0.0,
+            8
+          ],
+          "tool_call_rate_on_loop_contexts": [
+            0.6667,
+            15
+          ],
+          "tool_call_rate_on_controls": [
+            0.875,
+            8
+          ],
+          "forced_close_on_loop_contexts": [
+            0.0,
+            15
+          ],
+          "forced_close_on_controls": [
+            0.0,
+            8
+          ],
+          "mean_tokens": 476.5
+        }
+      },
+      "f16": {
+        "base": {
+          "n": 15,
+          "skipped_too_long": [],
+          "loop_rate_on_loop_contexts": [
+            0.3333,
+            15
+          ],
+          "loop_rate_on_controls": [
+            0.0,
+            0
+          ],
+          "tool_call_rate_on_loop_contexts": [
+            0.6667,
+            15
+          ],
+          "tool_call_rate_on_controls": [
+            0.0,
+            0
+          ],
+          "forced_close_on_loop_contexts": [
+            0.0,
+            15
+          ],
+          "forced_close_on_controls": [
+            0.0,
+            0
+          ],
+          "mean_tokens": 840.1
+        },
+        "remove_loop_dirs": {
+          "n": 15,
+          "skipped_too_long": [],
+          "loop_rate_on_loop_contexts": [
+            0.0,
+            15
+          ],
+          "loop_rate_on_controls": [
+            0.0,
+            0
+          ],
+          "tool_call_rate_on_loop_contexts": [
+            1.0,
+            15
+          ],
+          "tool_call_rate_on_controls": [
+            0.0,
+            0
+          ],
+          "forced_close_on_loop_contexts": [
+            0.0,
+            15
+          ],
+          "forced_close_on_controls": [
+            0.0,
+            0
+          ],
+          "mean_tokens": 350.4
+        },
+        "remove_random_dirs": {
+          "n": 15,
+          "skipped_too_long": [],
+          "loop_rate_on_loop_contexts": [
+            0.2667,
+            15
+          ],
+          "loop_rate_on_controls": [
+            0.0,
+            0
+          ],
+          "tool_call_rate_on_loop_contexts": [
+            0.7333,
+            15
+          ],
+          "tool_call_rate_on_controls": [
+            0.0,
+            0
+          ],
+          "forced_close_on_loop_contexts": [
+            0.0,
+            15
+          ],
+          "forced_close_on_controls": [
+            0.0,
+            0
+          ],
+          "mean_tokens": 591.3
+        }
+      }
+    },
+    "headline": "Q4_0 loop rate base 0.33, remove_loop_dirs 0.13, remove_random_dirs 0.33; control tool calls base 0.88, remove_loop_dirs 0.75, remove_random_dirs 0.88",
+    "system_monitor": {
+      "samples": 113,
+      "ram_free_gb": {
+        "min": 9.99,
+        "max": 20.79,
+        "mean": 13.18
+      },
+      "gpu_shared_gb": {
+        "min": 1.22,
+        "max": 6.78,
+        "mean": 5.03
+      },
+      "gpu_util_pct": {
+        "min": 0,
+        "max": 100,
+        "mean": 92.75
+      },
+      "cpu_package_w": {
+        "min": 15.7,
+        "max": 33.1,
+        "mean": 21.73
+      },
+      "cpu_core_w": {
+        "min": 0.7,
+        "max": 12.7,
+        "mean": 1.84
+      },
+      "igpu_w": {
+        "min": 0,
+        "max": 23.6,
+        "mean": 13.38
+      },
+      "battery_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "cpu_pct": {
+        "min": 0,
+        "max": 99,
+        "mean": 9.99
+      },
+      "cpu_perf_pct": {
+        "min": 26,
+        "max": 146.2,
+        "mean": 49.15
+      },
+      "cpu_perf_limit_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "passive_limit_pct": {
+        "min": 100,
+        "max": 100,
+        "mean": 100.0
+      },
+      "throttle_reasons": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      },
+      "cpu_freq_mhz": {
+        "min": 1704,
+        "max": 1918,
+        "mean": 1840.44
+      },
+      "battery_discharge_mw": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      },
+      "battery_charge_mw": {
+        "min": 0,
+        "max": 0,
+        "mean": 0.0
+      }
+    }
+  },
+  "wall_seconds": 8035.654657363892
+}

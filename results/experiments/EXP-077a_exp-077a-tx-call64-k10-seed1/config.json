@@ -1,0 +1,9 @@
+{
+ "id": "EXP-077a",
+ "slug": "exp-077a-tx-call64-k10-seed1",
+ "category": "transplant",
+ "started": "2026-11-07T23:12:02Z",
+ "wall_seconds": 5205.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

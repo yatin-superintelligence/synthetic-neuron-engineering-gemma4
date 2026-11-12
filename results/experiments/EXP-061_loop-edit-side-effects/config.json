@@ -1,0 +1,52 @@
+{
+  "id": "EXP-061",
+  "slug": "loop-edit-side-effects",
+  "category": "improvement",
+  "motivation": "An edit that removes loops may also damage ordinary repetition, lists, code or recall.",
+  "hypothesis": "Scores stay within the noise floor of EXP-004 and the probes read normally.",
+  "config": {
+    "suites": [
+      "behavior",
+      "mbpp_dev",
+      "mmlu500"
+    ],
+    "adapter": "EXP-059 remove_loop_dirs"
+  },
+  "depends_on": [
+    "EXP-059"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "340b867164e535511e9414b1c3f3690b079cc2b9",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp061_loop_edit_side_effects.py",
+  "started": "2026-11-08T04:46:42.670038Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1880,
+    "cpu_core_w": 1.3,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 30352,
+    "gpu_util_pct": 4,
+    "battery_pct": 84,
+    "cpu_pct": 12.1,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 64.5,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 6.1,
+    "ram_free_gb": 19,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.21,
+    "t": 1794113213.75408
+  },
+  "finished": "2026-11-08T05:44:52.374872Z",
+  "wall_seconds": 3489.7,
+  "status": "OK"
+}

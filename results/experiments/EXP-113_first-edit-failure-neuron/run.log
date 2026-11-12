@@ -1,0 +1,33 @@
+=== EXP-113 first-edit-failure-neuron started 2026-11-09T21:53:31.660097Z commit=
+[22:19:34] fit stage exit 0 in 1563 s; log tail: 
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 9 files:  89%|████████▉ | 8/9 [00:02<00:00,  3.85it/s]
+Fetching 9 files:  89%|████████▉ | 8/9 [00:19<00:02,  2.50s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:29<00:00,  3.23s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:29<00:00,  3.23s/it]
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  27%|██▋       | 520/1951 [00:00<00:00, 5197.46it/s]
+Loading weights:  55%|█████▌    | 1075/1951 [00:00<00:00, 5403.69it/s]
+Loading weights:  84%|████████▍ | 1643/1951 [00:00<00:00, 5528.77it/s]
+Loading weights: 100%|██████████| 1951/1951 [00:00<00:00, 5534.79it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 7.5s; params=4.629B
+[gather] dev 0/230
+[gather] dev 50/230
+[gather] dev 100/230
+[gather] dev 150/230
+[gather] dev 200/230
+[gather] test 0/231
+[gather] test 50/231
+[gather] test 100/231
+[gather] test 150/231
+[gather] test 200/231
+[fit] {"dev": 230, "test": 231, "dev_failed": 109, "test_failed": 106, "neuron_auc_test": 0.6795, "neuron_auc_dev": 0.7776, "neuron_test_mean_failed": 0.531, "neuron_test_mean_applied": 0.432, "control_auc_test": 0.5741, "control_auc_dev": 0.6478, "control_test_mean_failed": 0.498, "control_test_mean_applied": 0.492, "c": 7.0, "median_edit_over_read_margin_failed": 6.0}
+
+[23:08:48] base {'counts': {'read_file': 38, 'other_tool': 24, 'applies': 76, 'no_call': 50, 'edit_failed': 41, 'edit_other_file': 2}}
+[23:08:48] neuron {'counts': {'read_file': 38, 'edit_failed': 50, 'no_call': 49, 'applies': 68, 'other_tool': 25, 'edit_other_file': 1}, 'applies_vs_base': (16, 24, 0.2682), 'edit_failed_vs_base': (26, 17, 0.2221)}
+[23:08:48] neuron_half {'counts': {'applies': 81, 'edit_failed': 37, 'read_file': 41, 'no_call': 49, 'other_tool': 21, 'edit_other_file': 2}, 'applies_vs_base': (24, 19, 0.5424), 'edit_failed_vs_base': (18, 22, 0.6358)}
+[23:08:48] control {'counts': {'read_file': 44, 'edit_failed': 46, 'applies': 72, 'no_call': 43, 'other_tool': 21, 'edit_other_file': 5}, 'applies_vs_base': (17, 21, 0.6271), 'edit_failed_vs_base': (25, 20, 0.5515)}
+[23:08:48] zero {'counts': {'read_file': 36, 'edit_failed': 46, 'applies': 80, 'no_call': 45, 'other_tool': 21, 'edit_other_file': 3}, 'applies_vs_base': (20, 16, 0.6177), 'edit_failed_vs_base': (21, 16, 0.5114)}
+=== EXP-113 finished status=OK wall=4516.7s

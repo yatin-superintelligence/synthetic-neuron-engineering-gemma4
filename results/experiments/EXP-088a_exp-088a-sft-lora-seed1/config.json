@@ -1,0 +1,9 @@
+{
+ "id": "EXP-088a",
+ "slug": "exp-088a-sft-lora-seed1",
+ "category": "training",
+ "started": "2026-11-08T20:27:49Z",
+ "wall_seconds": 4167.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

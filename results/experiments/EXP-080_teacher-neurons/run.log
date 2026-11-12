@@ -1,0 +1,77 @@
+=== EXP-080 teacher-neurons started 2026-11-08T01:28:49.737406Z commit=
+[01:28:49] states with a tool call 1597 | confident tool-to-other disagreements 761 | pairs [(('read_file', 'run_command'), 194), (('search_similar_code', 'run_command'), 123), (('edit_file', 'read_file'), 83), (('edit_file', 'run_command'), 67), (('search_similar_code', 'read_file'), 44), (('submit_patch', 'run_command'), 27), (('read_file', 'edit_file'), 25), (('code_analyzer_agent', 'run_command'), 23), (('run_command', 'read_file'), 19), (('run_command', 'edit_file'), 18), (('run_command', 'write_file'), 14), (('write_file', 'edit_file'), 13)]
+[01:28:49] 31B would stop or not decide instead (not built): [(('submit_patch', 'STOP'), 2), (('edit_file', 'UNDECIDED'), 1), (('run_command', 'UNDECIDED'), 1), (('write_file', 'STOP'), 1), (('search_similar_code', 'STOP'), 1)]
+[01:28:51] first tokens {'run_command': 4503, 'submit_patch': 15037, 'get_status': 828, 'read_file': 1399, 'edit_file': 8982, 'write_file': 5986, 'get_code_neighbors': 828, 'search_similar_code': 2305, 'get_code_subgraph': 828, 'code_analyzer_agent': 3970}
+
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]
+Loading weights:  99%|#########9| 1937/1951 [00:00<00:00, 19364.76it/s]
+Loading weights: 100%|##########| 1951/1951 [00:00<00:00, 19404.35it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 2.4s; params=2.280B
+[gather] 0/1597
+[gather] 50/1597
+[gather] 100/1597
+[gather] 150/1597
+[gather] 200/1597
+[gather] 250/1597
+[gather] 300/1597
+[gather] 350/1597
+[gather] 400/1597
+[gather] 450/1597
+[gather] 500/1597
+[gather] 550/1597
+[gather] 600/1597
+[gather] 650/1597
+[gather] 700/1597
+[gather] 750/1597
+[gather] 800/1597
+[gather] 850/1597
+[gather] 900/1597
+[gather] 950/1597
+[gather] 1000/1597
+[gather] 1050/1597
+[gather] 1100/1597
+[gather] 1150/1597
+[gather] 1200/1597
+[gather] 1250/1597
+[gather] 1300/1597
+[gather] 1350/1597
+[gather] 1400/1597
+[gather] 1450/1597
+[gather] 1500/1597
+[gather] 1550/1597
+[01:50:03] read_file_to_run_command {'x': 'read_file', 'y': 'run_command', 'c': 10, 'n_pos': 87, 'n_neg': 689, 'sep_fit': {'pos_mean': 0.762, 'pos_min': 0.377, 'neg_median': 0.0855, 'neg_p99': 0.8586, 'neg_p999': 0.8879, 'neg_max': 0.8935, 'n_pos': 87, 'n_neg': 689}, 'sep_test': {'pos_mean': 0.757, 'pos_min': 0.526, 'neg_median': 0.0806, 'neg_p99': 0.8644, 'neg_p999': 0.8972, 'neg_max': 0.8989, 'n_pos': 107, 'n_neg': 714}, 'control_on_test_positives': 0.5021, 'dev_gap_median': -9.25, 'predicted': {'test_positives': {'n': 107, 'y_beats_x_before': 0.0, 'after': 0.271}, 'test_agreeing_x_states': {'n': 110, 'y_beats_x_before': 0.009, 'after': 0.164}}}
+[01:50:03] search_similar_code_to_run_command {'x': 'search_similar_code', 'y': 'run_command', 'c': 10, 'n_pos': 58, 'n_neg': 718, 'sep_fit': {'pos_mean': 0.877, 'pos_min': 0.35, 'neg_median': 0.0134, 'neg_p99': 0.951, 'neg_p999': 1.0002, 'neg_max': 1.0276, 'n_pos': 58, 'n_neg': 718}, 'sep_test': {'pos_mean': 0.886, 'pos_min': 0.389, 'neg_median': 0.0175, 'neg_p99': 1.0109, 'neg_p999': 1.0458, 'neg_max': 1.0645, 'n_pos': 65, 'n_neg': 756}, 'control_on_test_positives': 0.4388, 'dev_gap_median': -7.062, 'predicted': {'test_positives': {'n': 65, 'y_beats_x_before': 0.015, 'after': 0.815}, 'test_agreeing_x_states': {'n': 28, 'y_beats_x_before': 0.0, 'after': 0.393}}}
+[01:50:04] edit_file_to_read_file {'x': 'edit_file', 'y': 'read_file', 'c': 10, 'n_pos': 45, 'n_neg': 731, 'sep_fit': {'pos_mean': 0.853, 'pos_min': 0.634, 'neg_median': 0.0251, 'neg_p99': 0.8935, 'neg_p999': 0.9178, 'neg_max': 0.9294, 'n_pos': 45, 'n_neg': 731}, 'sep_test': {'pos_mean': 0.821, 'pos_min': 0.419, 'neg_median': 0.0212, 'neg_p99': 0.8914, 'neg_p999': 0.9354, 'neg_max': 0.9414, 'n_pos': 38, 'n_neg': 783}, 'control_on_test_positives': 0.506, 'dev_gap_median': -7.875, 'predicted': {'test_positives': {'n': 38, 'y_beats_x_before': 0.0, 'after': 0.658}, 'test_agreeing_x_states': {'n': 35, 'y_beats_x_before': 0.0, 'after': 0.314}}}
+[01:50:04] edit_file_to_run_command {'x': 'edit_file', 'y': 'run_command', 'c': 10, 'n_pos': 30, 'n_neg': 746, 'sep_fit': {'pos_mean': 0.845, 'pos_min': 0.657, 'neg_median': 0.0177, 'neg_p99': 0.9045, 'neg_p999': 0.9444, 'neg_max': 0.9483, 'n_pos': 30, 'n_neg': 746}, 'sep_test': {'pos_mean': 0.781, 'pos_min': 0.231, 'neg_median': 0.0097, 'neg_p99': 0.875, 'neg_p999': 0.9185, 'neg_max': 0.9324, 'n_pos': 37, 'n_neg': 784}, 'control_on_test_positives': 0.4578, 'dev_gap_median': -12.406, 'predicted': {'test_positives': {'n': 37, 'y_beats_x_before': 0.0, 'after': 0.054}, 'test_agreeing_x_states': {'n': 35, 'y_beats_x_before': 0.0, 'after': 0.029}}}
+[01:50:04] search_similar_code_to_read_file skipped: 22 dev positives
+[01:50:04] submit_patch_to_run_command skipped: 15 dev positives
+[01:50:04] read_file_to_edit_file skipped: 13 dev positives
+[01:50:04] code_analyzer_agent_to_run_command skipped: 9 dev positives
+[01:50:04] run_command_to_read_file skipped: 15 dev positives
+[01:50:04] run_command_to_edit_file skipped: 11 dev positives
+[01:50:04] run_command_to_write_file skipped: 6 dev positives
+[01:50:04] write_file_to_edit_file skipped: 9 dev positives
+[01:50:04] submit_patch_to_write_file skipped: 6 dev positives
+[01:50:04] write_file_to_read_file skipped: 2 dev positives
+[01:50:04] code_analyzer_agent_to_read_file skipped: 4 dev positives
+[01:50:04] read_file_to_search_similar_code skipped: 5 dev positives
+[01:50:04] search_similar_code_to_edit_file skipped: 2 dev positives
+[01:50:04] write_file_to_run_command skipped: 3 dev positives
+[01:50:04] search_similar_code_to_write_file skipped: 3 dev positives
+[01:50:04] edit_file_to_write_file skipped: 4 dev positives
+[01:50:04] submit_patch_to_read_file skipped: 3 dev positives
+[01:50:04] submit_patch_to_edit_file skipped: 1 dev positives
+[01:50:04] get_code_neighbors_to_run_command skipped: 2 dev positives
+[01:50:04] search_similar_code_to_submit_patch skipped: 0 dev positives
+[01:50:04] read_file_to_write_file skipped: 2 dev positives
+[01:50:04] run_command_to_submit_patch skipped: 2 dev positives
+[01:50:04] get_code_neighbors_to_read_file skipped: 2 dev positives
+[01:50:04] edit_file_to_search_similar_code skipped: 0 dev positives
+[01:50:04] write_file_to_submit_patch skipped: 1 dev positives
+[01:50:04] read_file_to_submit_patch skipped: 2 dev positives
+[01:50:04] read_file_to_get_code_neighbors skipped: 1 dev positives
+[01:50:04] edit_file_to_submit_patch skipped: 1 dev positives
+[01:50:04] code_analyzer_agent_to_search_similar_code skipped: 0 dev positives
+[01:50:05] reread_full {'x': 'edit_file', 'y': 'read_file', 'c': 10, 'n_pos': 74, 'n_neg': 702, 'sep_fit': {'pos_mean': 0.695, 'pos_min': 0.272, 'neg_median': 0.2847, 'neg_p99': 0.7166, 'neg_p999': 0.8224, 'neg_max': 0.8397, 'n_pos': 74, 'n_neg': 702}, 'sep_test': {'pos_mean': 0.663, 'pos_min': 0.041, 'neg_median': 0.2655, 'neg_p99': 0.7798, 'neg_p999': 0.8428, 'neg_max': 0.8626, 'n_pos': 89, 'n_neg': 732}, 'control_on_test_positives': 0.4454, 'dev_gap_median': 1.906, 'predicted': {'test_positives': {'n': 89, 'y_beats_x_before': 0.562, 'after': 0.775}, 'test_agreeing_x_states': {'n': 22, 'y_beats_x_before': 0.0, 'after': 0.182}}}
+[01:50:05] EXP-076 N_reread read-out (fitted at 3,000 tokens) at full context: {'dev': {'pos_mean': 0.609, 'pos_min': -0.079, 'neg_median': 0.2995, 'neg_p99': 0.8302, 'neg_p999': 0.8567, 'neg_max': 0.8654, 'n_pos': 74, 'n_neg': 702}, 'test': {'pos_mean': 0.601, 'pos_min': -0.164, 'neg_median': 0.2619, 'neg_p99': 0.8478, 'neg_p999': 0.9358, 'neg_max': 0.9521, 'n_pos': 89, 'n_neg': 732}}
+=== EXP-080 finished status=OK wall=1275.4s

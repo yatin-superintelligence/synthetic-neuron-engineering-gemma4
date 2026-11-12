@@ -1,0 +1,35 @@
+{
+ "tasks": 40,
+ "resolved": 1,
+ "resolved_ids": [
+  "rich_2943"
+ ],
+ "outcomes": {
+  "patch failed tests": 32,
+  "no patch": 5,
+  "error: Agent exceeded session timeout (60.0 min": 2,
+  "resolved": 1
+ },
+ "minutes_mean": 6.59,
+ "tool_calls_mean": 12.3,
+ "llm_calls_mean": 15.6,
+ "tasks_never_applying_an_edit": 12,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 14,
+ "loops": 132,
+ "of_those_resolved_loop": 0,
+ "completion_tokens": 789706,
+ "tokens_in_loop_responses": 558727,
+ "loop_token_share": 0.708,
+ "edits": {
+  "edits": 155,
+  "applied": 42,
+  "failed": 113,
+  "kinds": {
+   "failed (kind not classified)": 113,
+   "applied": 42
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

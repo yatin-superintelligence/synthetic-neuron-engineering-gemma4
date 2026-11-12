@@ -1,0 +1,122 @@
+{
+  "id": "EXP-086",
+  "slug": "layer-duplication",
+  "category": "improvement",
+  "motivation": "The brief asks for more layers as well as more neurons. Re-running a block of E2B's own layers is the training-free way to add depth; it has not been tested here (idea I6).",
+  "hypothesis": "Some block, run twice, raises E2B's MBPP+ pass count on the held-out test half against the unedited model (exact McNemar p < 0.05) and against a control block of the same size; most blocks lower it.",
+  "config": {
+    "blocks": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        15,
+        2
+      ],
+      [
+        17,
+        2
+      ],
+      [
+        19,
+        2
+      ],
+      [
+        21,
+        2
+      ],
+      [
+        23,
+        2
+      ],
+      [
+        25,
+        2
+      ],
+      [
+        27,
+        2
+      ],
+      [
+        29,
+        2
+      ],
+      [
+        31,
+        2
+      ],
+      [
+        33,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        17,
+        4
+      ],
+      [
+        23,
+        4
+      ],
+      [
+        29,
+        4
+      ]
+    ],
+    "scan": "MBPP+ dev 189, answers capped at 4,096 new tokens (D-057)",
+    "confirm": "MBPP+ test 189, W4A16 and bf16",
+    "max_tokens": 8192,
+    "thinking": false,
+    "engine": "vLLM 0.19.1 (official stack), enforce_eager, greedy",
+    "gate": "McNemar p < 0.05 on test at W4A16, not lower at bf16"
+  },
+  "depends_on": [
+    "EXP-044a"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp086_layer_duplication.py",
+  "started": "2026-11-08T13:39:05.417108Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794145145.4224927
+  },
+  "finished": "2026-11-08T16:34:47.855866Z",
+  "wall_seconds": 10542.4,
+  "status": "OK"
+}

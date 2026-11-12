@@ -1,0 +1,43 @@
+{
+ "tasks": 40,
+ "resolved": 8,
+ "resolved_ids": [
+  "rich_2725",
+  "rich_2943",
+  "rich_3006",
+  "rich_3454",
+  "rich_3480",
+  "rich_3518",
+  "rich_3718",
+  "rich_3882"
+ ],
+ "outcomes": {
+  "patch failed tests": 14,
+  "resolved": 8,
+  "error: Sandbox execution error: litellm.Context": 7,
+  "error: Agent exceeded tool call budget (100 cal": 6,
+  "error: Agent exceeded session timeout (60.0 min": 5
+ },
+ "minutes_mean": 24.26,
+ "tool_calls_mean": 60.8,
+ "llm_calls_mean": 63.2,
+ "tasks_never_applying_an_edit": 10,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 26,
+ "loops": 263,
+ "of_those_resolved_loop": 4,
+ "completion_tokens": 1989481,
+ "tokens_in_loop_responses": 1129668,
+ "loop_token_share": 0.568,
+ "edits": {
+  "edits": 216,
+  "applied": 94,
+  "failed": 122,
+  "kinds": {
+   "failed (kind not classified)": 122,
+   "applied": 94
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

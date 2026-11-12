@@ -1,0 +1,37 @@
+{
+  "id": "EXP-106",
+  "slug": "transplant-token-transfer",
+  "category": "localization",
+  "motivation": "Whether the transplanted neurons move what they were chosen to move, the reference-fix tokens, on held-out states.",
+  "hypothesis": "The 31B and E4B transplants raise E2B's rank-1 accuracy on reference-edit tokens of held-out states above the unedited model and above their random controls.",
+  "config": {
+    "arms": [
+      "31b_abl",
+      "31b_lg_a1",
+      "31b_lg_rnd_a4",
+      "e4b_abl",
+      "e4b_st_a1",
+      "e4b_st_rnd_a1"
+    ],
+    "split": "dev+test (257) and 80 fit states"
+  },
+  "depends_on": [
+    "EXP-102",
+    "EXP-102b"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp106_transplant_token_transfer.py",
+  "started": "2026-11-09T14:01:56.405032Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794232916.4120038
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "EXP-097",
+  "slug": "escape-blind-values",
+  "category": "improvement",
+  "motivation": "E2B copies the JSON escape of the harness's file view into its edits; output-side writes are capped by Gemma 4's norms (EXP-096), so this edit removes the escape feature from what the attention heads read, as an exact rank-1 v_proj LoRA.",
+  "hypothesis": "Escape-blind values raise the share of applying bench answers on held-out states against the unedited model in the same server (exact McNemar p < 0.05) and against a random-direction control, with no fewer correct answers and no significant MBPP+ loss.",
+  "config": {
+    "layer_sets": {
+      "L13-14": [
+        13,
+        14
+      ],
+      "L0-14": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "alphas": [
+      0.5,
+      1.0
+    ],
+    "selection": "fit split, most applying",
+    "test": "dev + test splits (257)",
+    "retention": "MBPP+ 378, cap 8,192",
+    "control": "random unit direction per layer, seed 97, same layers and alpha"
+  },
+  "depends_on": [
+    "EXP-092",
+    "EXP-096",
+    "EXP-094b"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp097_escape_blind_values.py",
+  "started": "2026-11-08T23:11:08.473172Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794179468.478744
+  },
+  "finished": "2026-11-09T01:38:02.890158Z",
+  "wall_seconds": 8814.4,
+  "status": "OK"
+}

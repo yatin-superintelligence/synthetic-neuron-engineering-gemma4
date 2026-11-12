@@ -1,0 +1,44 @@
+{
+  "id": "EXP-004",
+  "slug": "determinism-and-batching",
+  "category": "infrastructure",
+  "motivation": "Quantifies the evaluation noise floor that every edit comparison must exceed.",
+  "hypothesis": "Run-to-run outputs at fixed parallelism are mostly identical; changing parallelism alters a few percent of generations but pass-rate changes stay within +-1-2 points.",
+  "config": {
+    "suite": "mbpp_dev",
+    "subset_parallel1": 60
+  },
+  "depends_on": [
+    "EXP-001"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "b609a4ba99131cd9302c2ef4ed2ce1d1c2f46eed",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp004_determinism.py",
+  "started": "2026-11-06T00:36:44.950905Z",
+  "sys_at_start": {
+    "cpu_perf_limit_pct": 100,
+    "thermal_c": 27.9,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 4.5,
+    "cpu_pct": 16.9,
+    "on_ac": true,
+    "cpu_freq_mhz": 1797,
+    "battery_discharge_mw": 0,
+    "battery_pct": 100,
+    "ram_free_gb": 20.09,
+    "cpu_perf_pct": 128.6,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.37,
+    "t": 1793925413.1332598
+  },
+  "finished": "2026-11-06T03:08:48.655034Z",
+  "wall_seconds": 9123.7,
+  "status": "OK"
+}

@@ -1,0 +1,9 @@
+{
+ "id": "EXP-145a",
+ "slug": "exp-145a-31b-gated-replicas",
+ "category": "improvement",
+ "started": "2026-11-11T17:32:14Z",
+ "wall_seconds": 3761.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

@@ -1,0 +1,105 @@
+=== EXP-162 31b-causal-dose started 2026-11-12T15:03:13.301491Z commit=
+[15:03:13] pairs 38 | tasks 13
+
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files:  36%|###6      | 4/11 [00:00<00:00, 39.23it/s]
+Fetching 11 files:  82%|########1 | 9/11 [00:00<00:00, 13.29it/s]
+Fetching 11 files:  82%|########1 | 9/11 [00:20<00:00, 13.29it/s]
+Fetching 11 files:  91%|######### | 10/11 [01:19<00:12, 12.21s/it]
+Fetching 11 files: 100%|##########| 11/11 [02:57<00:00, 27.76s/it]
+Fetching 11 files: 100%|##########| 11/11 [02:57<00:00, 16.10s/it]
+[15:06:11] downloaded in 177 s
+
+Loading weights:   0%|          | 0/1188 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1188 [00:00<02:53,  6.84it/s]
+Loading weights:   2%|1         | 20/1188 [00:00<00:13, 89.13it/s]
+Loading weights:   4%|3         | 47/1188 [00:00<00:07, 156.37it/s]
+Loading weights:   5%|5         | 64/1188 [00:00<00:07, 159.08it/s]
+Loading weights:   7%|7         | 88/1188 [00:00<00:06, 179.20it/s]
+Loading weights:   9%|9         | 107/1188 [00:00<00:05, 180.43it/s]
+Loading weights:  11%|#         | 130/1188 [00:00<00:05, 191.83it/s]
+Loading weights:  13%|#2        | 150/1188 [00:00<00:05, 193.54it/s]
+Loading weights:  14%|#4        | 171/1188 [00:01<00:05, 192.15it/s]
+Loading weights:  16%|#6        | 191/1188 [00:01<00:05, 193.63it/s]
+Loading weights:  18%|#7        | 213/1188 [00:01<00:04, 199.04it/s]
+Loading weights:  20%|#9        | 233/1188 [00:01<00:04, 198.54it/s]
+Loading weights:  21%|##1       | 253/1188 [00:01<00:04, 192.94it/s]
+Loading weights:  23%|##2       | 273/1188 [00:01<00:04, 193.85it/s]
+Loading weights:  25%|##4       | 296/1188 [00:01<00:04, 201.73it/s]
+Loading weights:  27%|##6       | 317/1188 [00:01<00:04, 201.70it/s]
+Loading weights:  28%|##8       | 338/1188 [00:01<00:04, 189.71it/s]
+Loading weights:  30%|###       | 361/1188 [00:01<00:04, 199.57it/s]
+Loading weights:  32%|###2      | 382/1188 [00:02<00:04, 190.50it/s]
+Loading weights:  34%|###4      | 407/1188 [00:02<00:03, 205.68it/s]
+Loading weights:  36%|###6      | 428/1188 [00:02<00:03, 195.85it/s]
+Loading weights:  38%|###7      | 449/1188 [00:02<00:03, 193.84it/s]
+Loading weights:  40%|###9      | 472/1188 [00:02<00:03, 202.93it/s]
+Loading weights:  41%|####1     | 493/1188 [00:02<00:03, 193.28it/s]
+Loading weights:  44%|####3     | 517/1188 [00:02<00:03, 199.46it/s]
+Loading weights:  45%|####5     | 538/1188 [00:02<00:03, 199.75it/s]
+Loading weights:  47%|####7     | 560/1188 [00:02<00:03, 197.23it/s]
+Loading weights:  49%|####9     | 583/1188 [00:03<00:03, 199.90it/s]
+Loading weights:  51%|#####     | 604/1188 [00:03<00:03, 193.54it/s]
+Loading weights:  53%|#####2    | 628/1188 [00:03<00:02, 203.07it/s]
+Loading weights:  55%|#####4    | 649/1188 [00:03<00:02, 201.25it/s]
+Loading weights:  56%|#####6    | 670/1188 [00:03<00:02, 182.15it/s]
+Loading weights:  59%|#####8    | 697/1188 [00:03<00:02, 203.06it/s]
+Loading weights:  60%|######    | 718/1188 [00:03<00:02, 202.08it/s]
+Loading weights:  62%|######2   | 739/1188 [00:03<00:02, 202.46it/s]
+Loading weights:  64%|######3   | 760/1188 [00:03<00:02, 193.32it/s]
+Loading weights:  66%|######5   | 781/1188 [00:04<00:02, 192.10it/s]
+Loading weights:  68%|######7   | 804/1188 [00:04<00:01, 202.18it/s]
+Loading weights:  69%|######9   | 825/1188 [00:04<00:01, 191.11it/s]
+Loading weights:  95%|#########5| 1134/1188 [00:04<00:00, 985.48it/s]
+Loading weights: 100%|##########| 1188/1188 [00:04<00:00, 267.35it/s]
+[15:06:17] model loaded in 6 s | layers 60 | neurons 1290240 | GPU memory 61.4 GB
+[15:06:23] pair 1 of 38: 5267 tokens, preference -0.694, peak 85.2 GB, 6 s so far
+[15:06:26] pair 2 of 38: 6896 tokens, preference -0.567, peak 92.6 GB, 9 s so far
+[15:06:29] pair 3 of 38: 6995 tokens, preference -0.830, peak 93.7 GB, 12 s so far
+[15:06:38] pair 4 of 38: 11881 tokens (cut), preference -0.222, peak 100.0 GB, 21 s so far
+[15:06:45] pair 5 of 38: 9569 tokens (cut), preference -0.874, peak 100.0 GB, 28 s so far
+[15:06:52] pair 6 of 38: 8448 tokens (cut), preference -0.502, peak 100.7 GB, 35 s so far
+[15:06:55] pair 31 (8090 tokens) skipped: out of memory
+[15:07:02] pair 34 (9763 tokens) skipped: out of memory
+[15:07:09] pair 29 (8344 tokens) skipped: out of memory
+[15:07:15] pair 20 (8677 tokens) skipped: out of memory
+[15:07:24] pair 28 (12831 tokens) skipped: out of memory
+[15:07:31] pair 8 (9965 tokens) skipped: out of memory
+[15:07:40] pair 1 (13174 tokens) skipped: out of memory
+[15:07:47] pair 0 (9734 tokens) skipped: out of memory
+[15:07:54] pair 19 (10209 tokens) skipped: out of memory
+[15:08:01] pair 9 (9344 tokens) skipped: out of memory
+[15:08:08] pair 21 (9819 tokens) skipped: out of memory
+[15:08:15] pair 15 (9752 tokens) skipped: out of memory
+[15:08:23] pair 2 (10279 tokens) skipped: out of memory
+[15:08:30] pair 16 (10523 tokens) skipped: out of memory
+[15:08:39] pair 11 (13114 tokens) skipped: out of memory
+[15:08:46] pair 4 (10536 tokens) skipped: out of memory
+[15:08:54] pair 18 (10719 tokens) skipped: out of memory
+[15:09:02] pair 27 (11289 tokens) skipped: out of memory
+[15:09:09] pair 37 (10965 tokens) skipped: out of memory
+[15:09:19] pair 6 (14451 tokens) skipped: out of memory
+[15:09:27] pair 5 (11734 tokens) skipped: out of memory
+[15:09:36] pair 33 (12679 tokens) skipped: out of memory
+[15:09:45] pair 10 (12569 tokens) skipped: out of memory
+[15:09:54] pair 7 (14235 tokens) skipped: out of memory
+[15:10:04] pair 25 (14576 tokens) skipped: out of memory
+[15:10:13] pair 30 (13638 tokens) skipped: out of memory
+[15:10:26] pair 13 (17914 tokens) skipped: out of memory
+[15:10:36] pair 22 (14888 tokens) skipped: out of memory
+[15:10:46] pair 36 (14564 tokens) skipped: out of memory
+[15:10:56] pair 35 (15576 tokens) skipped: out of memory
+[15:11:07] pair 24 (15326 tokens) skipped: out of memory
+[15:11:23] pair 14 (22825 tokens) skipped: out of memory
+[15:11:23] stage 1 done: 6 pairs on 5 tasks (3 cut, 32 skipped); mean preference -0.615
+[15:11:35] held-out pair 1: base -0.694 | chosen_32_x2: -0.497/-0.066 chosen_32_x4: -0.345/0.297 chosen_128_x2: -0.340/-0.019 chosen_128_x4: -0.253/1.572 random_32_x2: -0.685/0.028 random_128_x4: -0.695/0.022 | 12 s
+[15:11:50] held-out pair 2: base -0.567 | chosen_32_x2: -0.398/0.031 chosen_32_x4: -0.309/0.161 chosen_128_x2: -0.277/0.097 chosen_128_x4: -0.311/0.791 random_32_x2: -0.565/0.002 random_128_x4: -0.572/0.010 | 27 s
+[15:12:06] held-out pair 3: base -0.830 | chosen_32_x2: -0.393/0.025 chosen_32_x4: -0.268/0.118 chosen_128_x2: -0.198/0.064 chosen_128_x4: -0.141/0.579 random_32_x2: -0.833/-0.000 random_128_x4: -0.824/-0.001 | 43 s
+[15:12:25] held-out pair 4: base -0.222 | chosen_32_x2: -0.174/0.020 chosen_32_x4: -0.172/0.169 chosen_128_x2: -0.123/0.097 chosen_128_x4: -0.190/1.279 random_32_x2: -0.223/0.003 random_128_x4: -0.223/-0.004 | 62 s
+[15:12:44] held-out pair 5: base -0.874 | chosen_32_x2: -0.577/0.028 chosen_32_x4: -0.543/0.120 chosen_128_x2: -0.452/0.054 chosen_128_x4: -0.525/0.635 random_32_x2: -0.876/0.002 random_128_x4: -0.866/0.004 | 81 s
+[15:13:03] held-out pair 6: base -0.502 | chosen_32_x2: -0.228/0.029 chosen_32_x4: -0.106/0.199 chosen_128_x2: -0.138/0.115 chosen_128_x4: 0.115/0.825 random_32_x2: -0.503/-0.001 random_128_x4: -0.507/-0.002 | 100 s
+/content/repo/experiments/scripts/exp162_31b_causal_dose.py:289: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  top.append(dict(layer=l, neuron=i, sign=sgn, attribution=round(float(mean[j]), 6)))
+[15:13:03] result {'pairs': 6, 'tasks': 5, 'truncated': 3, 'skipped': 32, 'preference_mean': -0.6149, 'held_out_pairs': 6, 'summary': {'chosen_32_x2': {'pairs': 6, 'raises': 6, 'mean_change': 0.2371, 'flips': 0, 'base_flips': 0, 'mean_damage': 0.0112, 'mean_gap': -0.6149}, 'chosen_32_x4': {'pairs': 6, 'raises': 6, 'mean_change': 0.3244, 'flips': 0, 'base_flips': 0, 'mean_damage': 0.1771, 'mean_gap': -0.6149}, 'chosen_128_x2': {'pairs': 6, 'raises': 6, 'mean_change': 0.3603, 'flips': 0, 'base_flips': 0, 'mean_damage': 0.0678, 'mean_gap': -0.6149}, 'chosen_128_x4': {'pairs': 6, 'raises': 6, 'mean_change': 0.3974, 'flips': 1, 'base_flips': 0, 'mean_damage': 0.947, 'mean_gap': -0.6149}, 'random_32_x2': {'pairs': 6, 'raises': 2, 'mean_change': 0.0007, 'flips': 0, 'base_flips': 0, 'mean_damage': 0.0056, 'mean_gap': -0.6149}, 'random_128_x4': {'pairs': 6, 'raises': 2, 'mean_change': 0.0005, 'flips': 0, 'base_flips': 0, 'mean_damage': 0.0049, 'mean_gap': -0.6149}}, 'replication_passed': True, 'dose_leads': [], 'saved_config': 'chosen_128_x4'}
+=== EXP-162 finished status=OK wall=590.5s

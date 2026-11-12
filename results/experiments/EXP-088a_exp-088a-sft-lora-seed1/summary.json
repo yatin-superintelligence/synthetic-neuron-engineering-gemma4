@@ -1,0 +1,44 @@
+{
+ "tasks": 56,
+ "resolved": 1,
+ "resolved_ids": [
+  "requests_7427"
+ ],
+ "outcomes": {
+  "no patch": 17,
+  "error: Sandbox execution error: litellm.Context": 17,
+  "patch failed tests": 14,
+  "error: Agent exceeded tool call budget (100 cal": 5,
+  "resolved": 1,
+  "error: Agent completed execution without callin": 1,
+  "error: Agent exceeded maximum allowed LLM turns": 1
+ },
+ "minutes_mean": 3.96,
+ "tool_calls_mean": 36.5,
+ "llm_calls_mean": 49.3,
+ "tasks_never_applying_an_edit": 34,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 20,
+ "loops": 53,
+ "of_those_resolved_loop": 0,
+ "completion_tokens": 519694,
+ "tokens_in_loop_responses": 255948,
+ "loop_token_share": 0.492,
+ "edits": {
+  "edits": 211,
+  "applied": 34,
+  "failed": 177,
+  "kinds": {
+   "invented": 88,
+   "identical": 38,
+   "applied": 34,
+   "stale_after_own_edit": 25,
+   "mostly_real_altered": 14,
+   "multiple": 8,
+   "lines_real_block_not": 2,
+   "file_missing": 2
+  },
+  "failed_repeating_identical_call": 113,
+  "failed_with_backslash": 11
+ }
+}

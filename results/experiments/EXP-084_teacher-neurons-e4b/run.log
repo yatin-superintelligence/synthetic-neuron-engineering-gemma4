@@ -1,0 +1,73 @@
+=== EXP-084 teacher-neurons-e4b started 2026-11-08T05:52:33.172612Z commit=
+[05:52:33] states with a tool call 1639 | confident tool-to-other disagreements 658 | pairs [(('read_file', 'run_command'), 210), (('search_similar_code', 'run_command'), 96), (('edit_file', 'read_file'), 64), (('edit_file', 'run_command'), 40), (('search_similar_code', 'read_file'), 34), (('run_command', 'write_file'), 32), (('run_command', 'read_file'), 31), (('code_analyzer_agent', 'run_command'), 19), (('submit_patch', 'write_file'), 18), (('submit_patch', 'run_command'), 16), (('read_file', 'edit_file'), 13), (('get_code_neighbors', 'run_command'), 12)]
+[05:52:33] 31B would stop or not decide instead (not built): [(('read_file', 'UNDECIDED'), 2), (('run_command', 'UNDECIDED'), 2), (('run_command', 'STOP'), 2), (('submit_patch', 'UNDECIDED'), 1), (('edit_file', 'UNDECIDED'), 1), (('edit_file', 'STOP'), 1)]
+[05:52:34] first tokens {'run_command': 4503, 'submit_patch': 15037, 'get_status': 828, 'read_file': 1399, 'edit_file': 8982, 'write_file': 5986, 'get_code_neighbors': 828, 'search_similar_code': 2305, 'get_code_subgraph': 828, 'code_analyzer_agent': 3970}
+
+Loading weights:   0%|          | 0/2076 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 2076/2076 [00:00<00:00, 21254.14it/s]
+[load] Gemma4ForConditionalGeneration on cuda in 2.8s; params=4.644B
+[gather] 0/1639
+[gather] 50/1639
+[gather] 100/1639
+[gather] 150/1639
+[gather] 200/1639
+[gather] 250/1639
+[gather] 300/1639
+[gather] 350/1639
+[gather] 400/1639
+[gather] 450/1639
+[gather] 500/1639
+[gather] 550/1639
+[gather] 600/1639
+[gather] 650/1639
+[gather] 700/1639
+[gather] 750/1639
+[gather] 800/1639
+[gather] 850/1639
+[gather] 900/1639
+[gather] 950/1639
+[gather] 1000/1639
+[gather] 1050/1639
+[gather] 1100/1639
+[gather] 1150/1639
+[gather] 1200/1639
+[gather] 1250/1639
+[gather] 1300/1639
+[gather] 1350/1639
+[gather] 1400/1639
+[gather] 1450/1639
+[gather] 1500/1639
+[gather] 1550/1639
+[gather] 1600/1639
+[06:35:07] read_file_to_run_command {'x': 'read_file', 'y': 'run_command', 'c': 10, 'n_pos': 106, 'n_neg': 701, 'sep_fit': {'pos_mean': 0.758, 'pos_min': 0.356, 'neg_median': 0.0671, 'neg_p99': 0.8618, 'neg_p999': 0.9144, 'neg_max': 0.955, 'n_pos': 106, 'n_neg': 701}, 'sep_test': {'pos_mean': 0.755, 'pos_min': 0.268, 'neg_median': 0.0637, 'neg_p99': 0.8764, 'neg_p999': 0.9449, 'neg_max': 0.9531, 'n_pos': 104, 'n_neg': 728}, 'control_on_test_positives': 0.4926, 'dev_gap_median': -8.469, 'predicted': {'test_positives': {'n': 104, 'y_beats_x_before': 0.01, 'after': 0.519}, 'test_agreeing_x_states': {'n': 150, 'y_beats_x_before': 0.0, 'after': 0.227}}}
+[06:35:08] search_similar_code_to_run_command {'x': 'search_similar_code', 'y': 'run_command', 'c': 10, 'n_pos': 43, 'n_neg': 764, 'sep_fit': {'pos_mean': 0.887, 'pos_min': 0.456, 'neg_median': 0.0229, 'neg_p99': 0.94, 'neg_p999': 1.0318, 'neg_max': 1.0791, 'n_pos': 43, 'n_neg': 764}, 'sep_test': {'pos_mean': 0.908, 'pos_min': 0.439, 'neg_median': 0.0271, 'neg_p99': 1.0061, 'neg_p999': 1.0613, 'neg_max': 1.0676, 'n_pos': 53, 'n_neg': 779}, 'control_on_test_positives': 0.5067, 'dev_gap_median': -4.75, 'predicted': {'test_positives': {'n': 53, 'y_beats_x_before': 0.208, 'after': 0.943}, 'test_agreeing_x_states': {'n': 18, 'y_beats_x_before': 0.056, 'after': 0.833}}}
+[06:35:09] edit_file_to_read_file {'x': 'edit_file', 'y': 'read_file', 'c': 10, 'n_pos': 32, 'n_neg': 775, 'sep_fit': {'pos_mean': 0.905, 'pos_min': 0.842, 'neg_median': 0.0084, 'neg_p99': 0.9207, 'neg_p999': 0.9467, 'neg_max': 0.9494, 'n_pos': 32, 'n_neg': 775}, 'sep_test': {'pos_mean': 0.885, 'pos_min': 0.783, 'neg_median': 0.0093, 'neg_p99': 0.921, 'neg_p999': 0.959, 'neg_max': 0.9666, 'n_pos': 32, 'n_neg': 800}, 'control_on_test_positives': 0.5035, 'dev_gap_median': -6.25, 'predicted': {'test_positives': {'n': 32, 'y_beats_x_before': 0.0, 'after': 0.875}, 'test_agreeing_x_states': {'n': 32, 'y_beats_x_before': 0.0, 'after': 0.656}}}
+[06:35:09] edit_file_to_run_command skipped: 16 dev positives
+[06:35:09] search_similar_code_to_read_file skipped: 12 dev positives
+[06:35:09] run_command_to_write_file skipped: 16 dev positives
+[06:35:09] run_command_to_read_file skipped: 17 dev positives
+[06:35:09] code_analyzer_agent_to_run_command skipped: 13 dev positives
+[06:35:09] submit_patch_to_write_file skipped: 13 dev positives
+[06:35:09] submit_patch_to_run_command skipped: 6 dev positives
+[06:35:09] read_file_to_edit_file skipped: 5 dev positives
+[06:35:09] get_code_neighbors_to_run_command skipped: 6 dev positives
+[06:35:09] code_analyzer_agent_to_read_file skipped: 7 dev positives
+[06:35:09] get_code_neighbors_to_read_file skipped: 4 dev positives
+[06:35:09] run_command_to_edit_file skipped: 4 dev positives
+[06:35:09] read_file_to_search_similar_code skipped: 5 dev positives
+[06:35:09] submit_patch_to_read_file skipped: 4 dev positives
+[06:35:09] run_command_to_submit_patch skipped: 3 dev positives
+[06:35:09] write_file_to_edit_file skipped: 1 dev positives
+[06:35:09] edit_file_to_write_file skipped: 2 dev positives
+[06:35:09] get_code_subgraph_to_run_command skipped: 2 dev positives
+[06:35:09] search_similar_code_to_get_code_neighbors skipped: 0 dev positives
+[06:35:09] code_analyzer_agent_to_search_similar_code skipped: 1 dev positives
+[06:35:09] write_file_to_run_command skipped: 1 dev positives
+[06:35:09] read_file_to_get_code_neighbors skipped: 1 dev positives
+[06:35:09] write_file_to_read_file skipped: 1 dev positives
+[06:35:09] search_similar_code_to_submit_patch skipped: 1 dev positives
+[06:35:09] search_similar_code_to_code_analyzer_agent skipped: 1 dev positives
+[06:35:09] submit_patch_to_edit_file skipped: 0 dev positives
+[06:35:09] edit_file_to_search_similar_code skipped: 0 dev positives
+[06:35:10] reread_full {'x': 'edit_file', 'y': 'read_file', 'c': 10, 'n_pos': 38, 'n_neg': 769, 'sep_fit': {'pos_mean': 0.722, 'pos_min': 0.484, 'neg_median': 0.28, 'neg_p99': 0.7337, 'neg_p999': 0.8317, 'neg_max': 0.8824, 'n_pos': 38, 'n_neg': 769}, 'sep_test': {'pos_mean': 0.665, 'pos_min': 0.006, 'neg_median': 0.259, 'neg_p99': 0.7566, 'neg_p999': 0.8379, 'neg_max': 0.8476, 'n_pos': 39, 'n_neg': 793}, 'control_on_test_positives': 0.4472, 'dev_gap_median': 4.469, 'predicted': {'test_positives': {'n': 39, 'y_beats_x_before': 0.744, 'after': 0.846}, 'test_agreeing_x_states': {'n': 29, 'y_beats_x_before': 0.0, 'after': 0.207}}}
+=== EXP-084 finished status=OK wall=2556.9s

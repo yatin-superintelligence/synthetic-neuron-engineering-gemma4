@@ -1,0 +1,46 @@
+{
+  "id": "EXP-147",
+  "slug": "31b-success-readout",
+  "category": "diagnosis",
+  "motivation": "31B's remaining failures on solvable tasks are wrong fixes on tasks it solves only sometimes; an edit can add solves there only if the model's state at the fix already separates fixes that will pass from fixes that will not.",
+  "hypothesis": "Held out by task, a task-centred mean-difference read-out at some depth ranks a run that will pass above one that will not (same task) with pooled AUC 0.70 or more, permutation p < 0.05 after selection over depths and positions.",
+  "config": {
+    "model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "bench": "artifacts_local/EXP-147/success_bench.jsonl.gz",
+    "fractions": [
+      0.25,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "samples_per_row": 8,
+    "permutations": 300
+  },
+  "depends_on": [
+    "EXP-139B",
+    "EXP-144a",
+    "EXP-145a"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp147_31b_success_readout.py",
+  "started": "2026-11-11T20:42:22.092960Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794429742.0971634
+  },
+  "finished": "2026-11-11T20:59:13.550568Z",
+  "wall_seconds": 1011.5,
+  "status": "OK"
+}

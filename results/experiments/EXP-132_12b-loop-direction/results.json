@@ -1,0 +1,70 @@
+{
+  "results": {
+    "layers": [
+      33,
+      38,
+      39,
+      40
+    ],
+    "top": [
+      {
+        "layer": 40,
+        "d_prime_heldout": 1.097,
+        "random_abs_d_max": 0.872,
+        "random_abs_d_mean": 0.428,
+        "cosine_between_halves": 0.982,
+        "n_loop_tokens": 4400,
+        "n_other_tokens": 6812
+      },
+      {
+        "layer": 33,
+        "d_prime_heldout": 1.093,
+        "random_abs_d_max": 0.808,
+        "random_abs_d_mean": 0.425,
+        "cosine_between_halves": 0.982,
+        "n_loop_tokens": 4400,
+        "n_other_tokens": 6812
+      },
+      {
+        "layer": 38,
+        "d_prime_heldout": 1.084,
+        "random_abs_d_max": 0.743,
+        "random_abs_d_mean": 0.365,
+        "cosine_between_halves": 0.984,
+        "n_loop_tokens": 4400,
+        "n_other_tokens": 6812
+      },
+      {
+        "layer": 39,
+        "d_prime_heldout": 1.076,
+        "random_abs_d_max": 0.955,
+        "random_abs_d_mean": 0.425,
+        "cosine_between_halves": 0.98,
+        "n_loop_tokens": 4400,
+        "n_other_tokens": 6812
+      }
+    ],
+    "random_overlap_with_loop_direction": {
+      "33": -0.0202,
+      "38": -0.0008,
+      "39": 0.0152,
+      "40": 0.0074
+    },
+    "residual_write_along_direction_after_edit": {
+      "33": 4e-06,
+      "38": 4e-06,
+      "39": 4e-06,
+      "40": 2e-06
+    },
+    "cases_used": 47,
+    "adapters": [
+      "loop_edit",
+      "loop_control"
+    ],
+    "headline": "12B loop direction: layers [33, 38, 39, 40], held-out d' L40 1.097 (random max 0.872), L33 1.093 (random max 0.808), L38 1.084 (random max 0.743), L39 1.076 (random max 0.955)",
+    "system_monitor": {
+      "samples": 2
+    }
+  },
+  "wall_seconds": 103.53038787841797
+}

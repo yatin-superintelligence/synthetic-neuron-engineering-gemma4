@@ -1,0 +1,130 @@
+run,folder,model,tasks,solved_official,solved_task_ids
+EXP-014D,EXP-014D_exp-014d-12b-base-seed1-g4,gemma-4-12b-it-qat-w4a16-ct,58,16,fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_5624 fastapi_9425 rich_2943 rich_3454 rich_3518 rich_3882 rich_3894 rich_3905
+EXP-044B,EXP-044b_exp044b-e2b-baseline-seed2,gemma-4-e2b-it-qat-w4a16-ct,58,5,fastapi_14786 requests_6644 rich_2943 rich_3006 rich_3454
+EXP-044C,EXP-044c_exp044c-e2b-baseline-seed3-g4,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14301 fastapi_14786 fastapi_9753 rich_2943
+EXP-044D,EXP-044d_exp-044d-base-seed1-g4,gemma-4-e2b-it-qat-w4a16-ct,58,6,fastapi_14301 fastapi_14463 fastapi_14786 fastapi_9425 requests_6644 rich_2943
+EXP-044E,EXP-044e_exp-044e-base-seed4-g4,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14301 fastapi_14786 requests_6644 rich_2943
+EXP-044F,EXP-044f_exp-044f-base-seed2-g4,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14786 rich_2943 rich_3006 rich_3454
+EXP-044G,EXP-044g_exp-044g-base-seed1-l4,gemma-4-e2b-it-qat-w4a16-ct,58,3,fastapi_14786 rich_2943 rich_4077
+EXP-058B,EXP-058b_exp058b-e2b-loop-edit-seed2,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14301 fastapi_14786 fastapi_9425 requests_6644
+EXP-058C,EXP-058c_exp058c-e2b-loop-edit-seed3,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14301 fastapi_14786 requests_6644 rich_3006
+EXP-073A,EXP-073a_exp073a-e4b-baseline-seed2,gemma-4-e4b-it-qat-w4a16-ct,58,11,fastapi_14301 fastapi_14463 fastapi_14492 fastapi_14786 requests_6644 rich_2943 rich_3006 rich_3454 rich_3470 rich_3905 rich_4077
+EXP-073B,EXP-073b_exp073b-e4b-baseline-seed3,gemma-4-e4b-it-qat-w4a16-ct,58,9,fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14786 requests_6644 rich_3006 rich_3454 rich_3905 rich_4077
+EXP-073C,EXP-073c_exp-073c-e4b-base-seed4,gemma-4-e4b-it-qat-w4a16-ct,58,12,fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14786 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3454 rich_3470 rich_3905 rich_4077
+EXP-073D,EXP-073d_exp-073d-e4b-base-seed5,gemma-4-e4b-it-qat-w4a16-ct,58,11,fastapi_14301 fastapi_14463 fastapi_14786 fastapi_5624 fastapi_9425 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3454 rich_3905
+EXP-073E,EXP-073e_exp-073e-e4b-base-seed1-g4,gemma-4-e4b-it-qat-w4a16-ct,58,10,fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14786 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3905 rich_4077
+EXP-073F,EXP-073f_exp-073f-e4b-base-seed2-g4,gemma-4-e4b-it-qat-w4a16-ct,58,16,fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3067 rich_3454 rich_3518 rich_3905 rich_4077
+EXP-073H,EXP-073h_exp-073h-e4b-base-seed1-l4,gemma-4-e4b-it-qat-w4a16-ct,58,7,fastapi_14301 fastapi_14786 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3454
+EXP-074-partial,EXP-074-partial_31b-baseline-a100-stopped,,16,5,fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 rich_4077
+EXP-074C,EXP-074c_exp-074c-31b-base-seed1-g4,gemma-4-31b-it-qat-w4a16-ct,58,25,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_5624 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3278 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-075A,EXP-075a_exp-075a-amp-syntax-a150-seed1,gemma-4-e2b-it-qat-w4a16-ct,57,5,fastapi_14786 requests_6644 rich_2943 rich_3454 rich_3894
+EXP-075B,EXP-075b_exp-075b-amp-rand-a150-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,6,fastapi_14301 fastapi_14786 requests_6644 rich_2943 rich_3006 rich_3454
+EXP-076A,EXP-076a_exp-076a-neuron-reread-seed1-g4,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14301 fastapi_14786 requests_6644 rich_2943
+EXP-076B,EXP-076b_exp-076b-control-reread-seed1-g4,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14786 requests_6644 rich_2943 rich_3454
+EXP-077A,EXP-077a_exp-077a-tx-call64-k10-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,2,fastapi_14786 rich_3454
+EXP-077B,EXP-077b_exp-077b-tx-rand64-k10-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,5,fastapi_14301 fastapi_14786 requests_6644 rich_2943 rich_3006
+EXP-077C,EXP-077c_exp-077c-recycle-only64-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,5,fastapi_14301 fastapi_14786 requests_6644 rich_2943 rich_4077
+EXP-077J,EXP-077j_exp-077j-tx-call64-k05-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,2,fastapi_14786 rich_2943
+EXP-080A,EXP-080a_exp-080a-teacher-all-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14786 requests_6644 rich_2943 rich_3454
+EXP-080B,EXP-080b_exp-080b-control-all-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,1,fastapi_14786
+EXP-080C,EXP-080c_exp-080c-neuron-reread-full-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14786 fastapi_9425 rich_2943 rich_3006
+EXP-080D,EXP-080d_exp-080d-control-reread-full-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14786 fastapi_9425 requests_6644 rich_2943
+EXP-080E,EXP-080e_exp-080e-neuron-edit-file-to-read-file-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14786 fastapi_9425 requests_6644 rich_2943
+EXP-080F,EXP-080f_exp-080f-neuron-search-similar-code-to-run-command-seed1,gemma-4-e2b-it-qat-w4a16-ct,57,5,fastapi_14301 fastapi_14786 requests_6644 rich_2943 rich_3006
+EXP-080G,EXP-080g_exp-080g-teacher-all-seed2,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14786 requests_6644 rich_2943 rich_3006
+EXP-080H,EXP-080h_exp-080h-control-all-seed2,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14458 fastapi_14786 requests_6644 rich_2943
+EXP-080I,EXP-080i_exp-080i-teacher-all-seed3,gemma-4-e2b-it-qat-w4a16-ct,58,5,fastapi_14301 fastapi_14786 requests_6644 rich_2943 rich_3006
+EXP-080J,EXP-080j_exp-080j-control-all-seed3,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14301 fastapi_14786 requests_6644 rich_2943
+EXP-084A,EXP-084a_exp-084a-teacher-all-seed1,gemma-4-e4b-it-qat-w4a16-ct,58,11,fastapi_14301 fastapi_14492 fastapi_14786 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3454 rich_3518 rich_3905 rich_4077
+EXP-084B,EXP-084b_exp-084b-control-all-seed1,gemma-4-e4b-it-qat-w4a16-ct,58,10,fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14786 fastapi_14794 requests_6644 rich_2943 rich_3006 rich_3454 rich_3944
+EXP-084C,EXP-084c_exp-084c-teacher-all-seed2,gemma-4-e4b-it-qat-w4a16-ct,58,13,fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14786 fastapi_9425 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3454 rich_3470 rich_4077
+EXP-084D,EXP-084d_exp-084d-control-all-seed2,gemma-4-e4b-it-qat-w4a16-ct,58,9,fastapi_11194 fastapi_14301 fastapi_14463 fastapi_14786 fastapi_9425 requests_6644 rich_3006 rich_3454 rich_3518
+EXP-084E,EXP-084e_exp-084e-teacher-all-seed3,gemma-4-e4b-it-qat-w4a16-ct,58,8,fastapi_11194 fastapi_14301 fastapi_14463 fastapi_14786 requests_6644 rich_3006 rich_3454 rich_3905
+EXP-084F,EXP-084f_exp-084f-control-all-seed3,gemma-4-e4b-it-qat-w4a16-ct,58,10,fastapi_14301 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_9425 fastapi_9753 requests_6644 rich_3006 rich_3905 rich_4077
+EXP-084G,EXP-084g_exp-084g-teacher-all-seed4,gemma-4-e4b-it-qat-w4a16-ct,58,8,fastapi_14301 fastapi_14463 fastapi_14786 requests_6644 rich_2943 rich_3006 rich_3454 rich_3905
+EXP-084H,EXP-084h_exp-084h-control-all-seed4,gemma-4-e4b-it-qat-w4a16-ct,58,9,fastapi_14301 fastapi_14463 fastapi_14786 fastapi_9425 requests_6644 rich_2943 rich_3006 rich_3894 rich_4077
+EXP-084I,EXP-084i_exp-084i-teacher-all-seed5,gemma-4-e4b-it-qat-w4a16-ct,58,8,fastapi_14301 fastapi_14786 fastapi_9753 requests_6644 rich_3006 rich_3063 rich_3454 rich_3905
+EXP-084J,EXP-084j_exp-084j-control-all-seed5,gemma-4-e4b-it-qat-w4a16-ct,58,10,fastapi_14301 fastapi_14463 fastapi_14786 fastapi_14794 fastapi_9425 requests_6644 rich_2943 rich_3006 rich_3454 rich_3905
+EXP-088A,EXP-088a_exp-088a-sft-lora-seed1,gemma-4-e2b-it-qat-w4a16-ct,56,0,
+EXP-088C,EXP-088c_exp-088c-sft-edit-only-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,1,requests_6644
+EXP-099A,EXP-099a_exp-099a-escape-blind-l0-14-a2-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,3,fastapi_9425 requests_6644 rich_2943
+EXP-099C,EXP-099c_exp-099c-random-value-projection-s972-a2-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,2,fastapi_14786 fastapi_9425
+EXP-103,EXP-103_exp-103-instruction-all3-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,3,fastapi_14786 requests_6644 rich_2943
+EXP-107B,EXP-107b_exp-107b-e4b-neuron-transplant-st-a1-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,4,fastapi_14301 fastapi_14786 requests_6644 rich_3006
+EXP-111A,EXP-111a_exp-111a-combo-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,5,fastapi_14301 fastapi_14786 fastapi_9425 requests_6644 rich_3006
+EXP-111C,EXP-111c_exp-111c-control-seed1,gemma-4-e2b-it-qat-w4a16-ct,58,5,fastapi_14301 fastapi_14786 requests_6644 rich_2943 rich_3454
+EXP-114A,EXP-114a_exp-114-base-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,5,fastapi_14786 fastapi_9425 requests_6644 rich_2943 rich_3006
+EXP-114B,EXP-114b_exp-114-combo-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,2,fastapi_14786 requests_6644
+EXP-114C,EXP-114c_exp-114-ctl-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,4,fastapi_14301 fastapi_14786 requests_6644 rich_2943
+EXP-114D,EXP-114d_exp-114-base-s3-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,4,fastapi_14301 fastapi_14786 rich_2943 rich_4077
+EXP-114E,EXP-114e_exp-114-combo-s3-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,2,fastapi_14786 rich_2943
+EXP-114F,EXP-114f_exp-114-ctl-s3-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,5,fastapi_14301 fastapi_14786 requests_6644 rich_2943 rich_3454
+EXP-114G,EXP-114g_exp-114-base-s4-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,3,fastapi_14786 requests_6644 rich_2943
+EXP-114H,EXP-114h_exp-114-combo-s4-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,2,fastapi_14301 fastapi_14786
+EXP-114I,EXP-114i_exp-114-ctl-s4-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,4,fastapi_14301 fastapi_14786 requests_6644 rich_2943
+EXP-114J,EXP-114j_exp-114-base-s5-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,4,fastapi_14786 requests_6644 rich_2943 rich_3006
+EXP-114K,EXP-114k_exp-114-combo-s5-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,2,fastapi_14786 rich_3006
+EXP-114L,EXP-114l_exp-114-ctl-s5-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,5,fastapi_14301 fastapi_14463 fastapi_14786 requests_6644 rich_2943
+EXP-115A,EXP-115a_exp-115-thinkoff-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,11,2,fastapi_14301 fastapi_14786
+EXP-115B,EXP-115b_exp-115-thinkoff-s3-solvable12,gemma-4-e2b-it-qat-w4a16-ct,11,3,fastapi_14301 fastapi_14786 requests_6644
+EXP-119P,EXP-119p_exp-119-selfinstruct-prompt-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,1,rich_4077
+EXP-119Q,EXP-119q_exp-119-selfinstruct-prompt-s3-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,1,fastapi_9425
+EXP-121A,EXP-121a_exp-121-injql14-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,4,fastapi_14301 fastapi_14786 requests_6644 rich_2943
+EXP-121B,EXP-121b_exp-121-injql10-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,4,fastapi_14786 requests_6644 rich_2943 rich_3006
+EXP-122A,EXP-122a_exp-122-temp0-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,3,fastapi_14301 fastapi_14786 rich_2943
+EXP-122B,EXP-122b_exp-122-maxout8192-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,4,fastapi_14301 fastapi_14786 requests_6644 rich_2943
+EXP-123A,EXP-123a_exp-123-e4btx-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,5,fastapi_14301 fastapi_14463 fastapi_14786 requests_6644 rich_3006
+EXP-125A,EXP-125a_exp-125-thoughtprefix-s2-solvable12,gemma-4-e2b-it-qat-w4a16-ct,12,5,fastapi_14301 fastapi_14786 fastapi_9425 rich_2943 rich_3454
+EXP-126A,EXP-126a_exp-126-e4b-s2-solvable12,gemma-4-e4b-it-qat-w4a16-ct,12,7,fastapi_14301 fastapi_14458 fastapi_14786 requests_6644 rich_3006 rich_3454 rich_4077
+EXP-129A,EXP-129a_exp-129a-31b-base-s2-gold40-logged,gemma-4-31b-it-qat-w4a16-ct,40,24,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3067 rich_3278 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905
+EXP-129B,EXP-129b_exp-129b-31b-sample-s3-gold40,gemma-4-31b-it-qat-w4a16-ct,40,26,fastapi_11194 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_5624 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3278 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905
+EXP-131A,EXP-131a_exp-131a-31b-keeptask-s1-gold40,gemma-4-31b-it-qat-w4a16-ct,40,25,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_9425 requests_6644 rich_2943 rich_3006 rich_3043 rich_3278 rich_3454 rich_3470 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-133A,EXP-133a_exp-133a-12b-loopedit-s1-gold40,gemma-4-12b-it-qat-w4a16-ct,40,7,fastapi_14301 fastapi_14463 fastapi_14786 fastapi_14794 rich_3454 rich_3718 rich_3905
+EXP-137A,EXP-137a_exp-137a-12b-loopamplify-s1-gold40,gemma-4-12b-it-qat-w4a16-ct,40,1,rich_3905
+EXP-138A,EXP-138a_exp-138a-12b-modeldefaults-s1-gold40,gemma-4-12b-it-qat-w4a16-ct,40,14,fastapi_14301 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3067 rich_3454 rich_3905
+EXP-138B,EXP-138b_exp-138b-e2b-modeldefaults-s1-gold40,gemma-4-e2b-it-qat-w4a16-ct,40,3,fastapi_14786 requests_6644 rich_2943
+EXP-139A,EXP-139a_exp-139a-12b-t1-out8192-s1-gold40,gemma-4-12b-it-qat-w4a16-ct,40,20,fastapi_13537 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_15589 fastapi_5077 fastapi_9425 requests_6644 rich_2725 rich_3006 rich_3063 rich_3067 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-139B,EXP-139b_exp-139b-31b-out8192-s1-gold40,gemma-4-31b-it-qat-w4a16-ct,40,27,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_5624 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3063 rich_3067 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4079
+EXP-139C,EXP-139c_exp-139c-31b-out8192-s2-gold40,gemma-4-31b-it-qat-w4a16-ct,40,27,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_5624 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3043 rich_3063 rich_3067 rich_3278 rich_3454 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077 rich_4079
+EXP-139D,EXP-139d_exp-139d-31b-out8192-s3-gold40,gemma-4-31b-it-qat-w4a16-ct,40,26,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_5624 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3278 rich_3454 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-140A,EXP-140a_exp-140a-31b-delimneuron-s1-gold40,gemma-4-31b-it-qat-w4a16-ct,40,25,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3063 rich_3278 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4079
+EXP-140D,EXP-140d_exp-140d-31b-delimcontrol-s1-gold40,gemma-4-31b-it-qat-w4a16-ct,40,24,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5624 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3278 rich_3454 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905
+EXP-140E,EXP-140e_exp-140e-31b-zerolora-s1-gold40,gemma-4-31b-it-qat-w4a16-ct,40,27,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_5624 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3278 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-141A,EXP-141a_exp-141a-12b-t02-out8192-s1-gold40,gemma-4-12b-it-qat-w4a16-ct,40,20,fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_5624 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3905
+EXP-141B2,EXP-141b2_exp-141b2-12b-t1-out8192-s2-gold40,gemma-4-12b-it-qat-w4a16-ct,40,15,fastapi_11194 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_9753 requests_6644 rich_2725 rich_3006 rich_3454 rich_3518 rich_3718 rich_3905
+EXP-141C,EXP-141c_exp-141c-12b-sample-s2-gold40,gemma-4-12b-it-qat-w4a16-ct,40,15,fastapi_14301 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_5077 fastapi_9753 requests_6644 rich_2725 rich_3006 rich_3454 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905
+EXP-141D,EXP-141d_exp-141d-12b-out8192-calls200-s1-gold40,gemma-4-12b-it-qat-w4a16-ct,40,21,fastapi_11194 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_5077 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3067 rich_3454 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-141E,EXP-141e_exp-141e-12b-t02-out8192-s2-gold40,gemma-4-12b-it-qat-w4a16-ct,40,17,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3471 rich_3518 rich_3882 rich_3894 rich_3905
+EXP-141F,EXP-141f_exp-141f-12b-sample-s3-gold40,gemma-4-12b-it-qat-w4a16-ct,40,14,fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_5077 fastapi_9425 fastapi_9753 requests_6644 rich_2943 rich_3454 rich_3480 rich_3882 rich_3905
+EXP-141G,EXP-141g_exp-141g-12b-out8192-s3-gold40,gemma-4-12b-it-qat-w4a16-ct,40,19,fastapi_13537 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_9425 requests_6644 rich_2943 rich_3006 rich_3067 rich_3454 rich_3470 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905
+EXP-143A,EXP-143a_exp-143a-31b-reproprompt-s1-gold40,gemma-4-31b-it-qat-w4a16-ct,40,27,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3063 rich_3067 rich_3278 rich_3454 rich_3470 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077 rich_4079
+EXP-143B,EXP-143b_exp-143b-12b-reproprompt-s1-gold40,gemma-4-12b-it-qat-w4a16-ct,40,16,fastapi_14301 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_5077 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3067 rich_3454 rich_3480 rich_3518 rich_3718 rich_3894 rich_3905
+EXP-143C,EXP-143c_exp-143c-31b-reproprompt-s2-gold40,gemma-4-31b-it-qat-w4a16-ct,40,28,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_5624 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3063 rich_3067 rich_3278 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-144A,EXP-144a_exp-144a-31b-gatedneuron-s1-gold40,gemma-4-31b-it-qat-w4a16-ct,40,27,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3278 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077 rich_4079
+EXP-144B,EXP-144b_exp-144b-31b-gatedcontrol-s1-gold40,gemma-4-31b-it-qat-w4a16-ct,40,23,fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3063 rich_3067 rich_3278 rich_3454 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-145A,EXP-145a_exp-145a-31b-gated-replicas,gemma-4-31b-it-qat-w4a16-ct,16,11,fastapi_9753 fastapi_9753 fastapi_9753 fastapi_9753 rich_3067 rich_3067 rich_3067 rich_3067 rich_3067 rich_3470 rich_3470
+EXP-146R0,,gemma-4-31b-it-qat-w4a16-ct,16,9,fastapi_9753 fastapi_9753 fastapi_9753 fastapi_9753 rich_3067 rich_3067 rich_3067 rich_3067 rich_3067
+EXP-148A,EXP-148a_exp-148a-12b-sample-s4-gold40,gemma-4-12b-it-qat-w4a16-ct,40,11,fastapi_14301 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 rich_3006 rich_3067 rich_3454 rich_3518 rich_3905
+EXP-148B,EXP-148b_exp-148b-12b-out8192-s4-gold40,gemma-4-12b-it-qat-w4a16-ct,40,15,fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14492 fastapi_14786 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882
+EXP-149A,EXP-149a_exp-149a-e4b-sample-s1-gold40,gemma-4-e4b-it-qat-w4a16-ct,40,7,fastapi_14301 fastapi_14786 requests_6644 rich_2943 rich_3006 rich_3278 rich_3454
+EXP-149B,EXP-149b_exp-149b-e4b-out8192-s1-gold40,gemma-4-e4b-it-qat-w4a16-ct,40,11,fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14786 fastapi_9753 requests_6644 rich_2943 rich_3006 rich_3454 rich_3905 rich_4077
+EXP-149C,EXP-149c_exp-149c-e2b-sample-s1-gold40,gemma-4-e2b-it-qat-w4a16-ct,40,3,fastapi_14301 fastapi_14786 requests_6644
+EXP-149D,EXP-149d_exp-149d-e2b-out8192-s1-gold40,gemma-4-e2b-it-qat-w4a16-ct,40,5,fastapi_14301 fastapi_14786 fastapi_9425 requests_6644 rich_2943
+EXP-150A,EXP-150a_exp-150a-31b-sample-s4-gold40,gemma-4-31b-it-qat-w4a16-ct,40,25,fastapi_11194 fastapi_13537 fastapi_13920 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3278 rich_3454 rich_3518 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-150B,EXP-150b_exp-150b-31b-out8192-s4-gold40,gemma-4-31b-it-qat-w4a16-ct,40,29,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_5624 fastapi_9425 fastapi_9753 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3063 rich_3278 rich_3454 rich_3470 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-150C,EXP-150c_exp-150c-31b-sample-s5-gold40,gemma-4-31b-it-qat-w4a16-ct,40,25,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3278 rich_3454 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-150D,EXP-150d_exp-150d-31b-out8192-s5-gold40,gemma-4-31b-it-qat-w4a16-ct,40,25,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-150E,EXP-150e_exp-150e-31b-sample-s6-gold40,gemma-4-31b-it-qat-w4a16-ct,40,25,fastapi_11194 fastapi_13537 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_5077 fastapi_9425 requests_6644 rich_2725 rich_2943 rich_3006 rich_3043 rich_3067 rich_3278 rich_3454 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905 rich_4077
+EXP-153A,EXP-153a_exp-153a-12b-out6144-s1-gold40,gemma-4-12b-it-qat-w4a16-ct,40,21,fastapi_11194 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_14794 fastapi_15589 fastapi_5077 requests_6644 rich_2725 rich_2943 rich_3006 rich_3454 rich_3470 rich_3480 rich_3518 rich_3718 rich_3882 rich_3894 rich_3905
+EXP-153B,EXP-153b_exp-153b-12b-out6144-s2-gold40,gemma-4-12b-it-qat-w4a16-ct,40,15,fastapi_11194 fastapi_14301 fastapi_14458 fastapi_14463 fastapi_14492 fastapi_14786 fastapi_15589 fastapi_5077 fastapi_9753 requests_6644 rich_3454 rich_3518 rich_3718 rich_3882 rich_3905
+EXP-155A,,gemma-4-31b-it-qat-w4a16-ct,14,9,fastapi_13537 fastapi_5624 rich_3043 rich_3063 rich_3067 rich_3278 rich_3480 rich_4077 rich_4079
+EXP-156R0,,gemma-4-31b-it-qat-w4a16-ct,15,11,fastapi_13537 fastapi_14463 fastapi_15589 fastapi_5624 fastapi_9425 rich_2725 rich_3043 rich_3067 rich_3278 rich_3480 rich_4079
+EXP-156R1,,gemma-4-31b-it-qat-w4a16-ct,14,9,fastapi_13537 fastapi_14463 fastapi_15589 fastapi_9425 rich_2725 rich_3043 rich_3067 rich_4077 rich_4079
+EXP-156R2,,gemma-4-31b-it-qat-w4a16-ct,15,10,fastapi_13537 fastapi_14463 fastapi_15589 fastapi_5624 fastapi_9425 rich_2725 rich_3043 rich_3063 rich_3067 rich_4079
+EXP-157R0,,gemma-4-31b-it-qat-w4a16-ct,15,9,fastapi_13537 fastapi_15589 fastapi_5624 fastapi_9425 rich_2725 rich_3063 rich_3067 rich_3480 rich_4077
+EXP-157R1,,gemma-4-31b-it-qat-w4a16-ct,15,9,fastapi_13537 fastapi_14463 fastapi_5624 fastapi_9753 rich_2725 rich_3043 rich_3067 rich_3278 rich_3480
+EXP-159A,EXP-159a_exp-159a-12b-out8192-s5-some-logged,gemma-4-12b-it-qat-w4a16-ct,15,9,fastapi_14301 fastapi_5077 fastapi_9425 fastapi_9753 rich_2725 rich_2943 rich_3067 rich_3480 rich_3894
+EXP-159B,EXP-159b_exp-159b-12b-out8192-s6-some-logged,gemma-4-12b-it-qat-w4a16-ct,15,9,fastapi_11194 fastapi_14301 fastapi_14463 fastapi_14794 fastapi_15589 fastapi_5077 fastapi_9753 rich_2943 rich_3480
+EXP-161A,EXP-161a_exp-161a-31b-causal-neurons-some15,gemma-4-31b-it-qat-w4a16-ct,15,9,fastapi_13537 fastapi_14463 fastapi_9425 fastapi_9753 rich_2725 rich_3043 rich_3067 rich_3278 rich_4077
+EXP-163A,EXP-163a_exp-163a-31b-causal256-x2-some15,gemma-4-31b-it-qat-w4a16-ct,15,10,fastapi_13537 fastapi_14463 fastapi_15589 fastapi_9425 fastapi_9753 rich_2725 rich_3043 rich_3063 rich_3067 rich_3480
+SMOKE-L4-1,,,2,2,fastapi_14786 requests_6644

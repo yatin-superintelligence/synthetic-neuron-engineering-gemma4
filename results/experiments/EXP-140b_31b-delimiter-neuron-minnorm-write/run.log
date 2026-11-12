@@ -1,0 +1,89 @@
+=== EXP-140b 31b-delimiter-neuron-minnorm-write started 2026-11-11T05:57:25.094690Z commit=
+
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files:  73%|#######2  | 8/11 [00:00<00:00, 11.66it/s]
+Fetching 11 files:  82%|########1 | 9/11 [00:20<00:04,  2.22s/it]
+Fetching 11 files:  91%|######### | 10/11 [01:02<00:06,  6.21s/it]
+Fetching 11 files: 100%|##########| 11/11 [02:56<00:00, 16.02s/it]
+Fetching 11 files: 100%|##########| 11/11 [02:56<00:00, 16.02s/it]
+
+Loading weights:   0%|          | 0/1188 [00:00<?, ?it/s]
+Loading weights:   0%|          | 2/1188 [00:00<01:29, 13.26it/s]
+Loading weights:   2%|1         | 20/1188 [00:00<00:12, 94.27it/s]
+Loading weights:   4%|3         | 42/1188 [00:00<00:07, 145.27it/s]
+Loading weights:   5%|5         | 62/1188 [00:00<00:06, 161.92it/s]
+Loading weights:   7%|6         | 82/1188 [00:00<00:06, 168.48it/s]
+Loading weights:   9%|8         | 103/1188 [00:00<00:06, 170.64it/s]
+Loading weights:  11%|#         | 130/1188 [00:00<00:05, 196.52it/s]
+Loading weights:  13%|#2        | 151/1188 [00:00<00:05, 194.73it/s]
+Loading weights:  14%|#4        | 171/1188 [00:01<00:05, 195.92it/s]
+Loading weights:  16%|#6        | 191/1188 [00:01<00:05, 195.01it/s]
+Loading weights:  18%|#8        | 214/1188 [00:01<00:04, 196.08it/s]
+Loading weights:  20%|#9        | 237/1188 [00:01<00:04, 203.92it/s]
+Loading weights:  22%|##1       | 258/1188 [00:01<00:04, 189.01it/s]
+Loading weights:  24%|##3       | 282/1188 [00:01<00:04, 200.88it/s]
+Loading weights:  26%|##5       | 303/1188 [00:01<00:04, 201.04it/s]
+Loading weights:  27%|##7       | 324/1188 [00:01<00:04, 203.11it/s]
+Loading weights:  29%|##9       | 345/1188 [00:01<00:04, 195.74it/s]
+Loading weights:  31%|###       | 366/1188 [00:01<00:04, 193.40it/s]
+Loading weights:  33%|###2      | 389/1188 [00:02<00:03, 202.76it/s]
+Loading weights:  35%|###4      | 410/1188 [00:02<00:04, 194.43it/s]
+Loading weights:  37%|###6      | 434/1188 [00:02<00:03, 200.80it/s]
+Loading weights:  38%|###8      | 455/1188 [00:02<00:03, 199.60it/s]
+Loading weights:  40%|####      | 477/1188 [00:02<00:03, 195.50it/s]
+Loading weights:  42%|####2     | 500/1188 [00:02<00:03, 198.82it/s]
+Loading weights:  44%|####3     | 520/1188 [00:02<00:03, 189.84it/s]
+Loading weights:  46%|####5     | 545/1188 [00:02<00:03, 203.85it/s]
+Loading weights:  48%|####7     | 566/1188 [00:02<00:03, 199.78it/s]
+Loading weights:  49%|####9     | 587/1188 [00:03<00:03, 184.25it/s]
+Loading weights:  52%|#####1    | 614/1188 [00:03<00:02, 203.71it/s]
+Loading weights:  53%|#####3    | 635/1188 [00:03<00:02, 197.15it/s]
+Loading weights:  55%|#####5    | 657/1188 [00:03<00:02, 189.51it/s]
+Loading weights:  57%|#####7    | 683/1188 [00:03<00:02, 201.24it/s]
+Loading weights:  59%|#####9    | 704/1188 [00:03<00:02, 199.80it/s]
+Loading weights:  61%|######1   | 725/1188 [00:03<00:02, 201.85it/s]
+Loading weights:  63%|######2   | 746/1188 [00:03<00:02, 195.40it/s]
+Loading weights:  65%|######4   | 767/1188 [00:04<00:02, 190.92it/s]
+Loading weights:  66%|######6   | 790/1188 [00:04<00:01, 199.91it/s]
+Loading weights:  68%|######8   | 811/1188 [00:04<00:01, 190.40it/s]
+Loading weights:  72%|#######1  | 850/1188 [00:04<00:01, 244.39it/s]
+Loading weights: 100%|##########| 1188/1188 [00:04<00:00, 267.08it/s]
+[06:00:30] model loaded in 7 s | layers 60 | device cuda
+[06:00:40] capture row 1 of 282, 15110 tokens, 10 s so far
+[06:03:06] capture row 26 of 282, 12148 tokens, 156 s so far
+[06:05:42] capture row 51 of 282, 10309 tokens, 312 s so far
+[06:08:26] capture row 76 of 282, 8901 tokens, 477 s so far
+[06:11:01] capture row 101 of 282, 15102 tokens, 631 s so far
+[06:13:43] capture row 126 of 282, 13751 tokens, 793 s so far
+[06:16:25] capture row 151 of 282, 13130 tokens, 955 s so far
+[06:18:54] capture row 176 of 282, 7770 tokens, 1104 s so far
+[06:21:23] capture row 201 of 282, 11724 tokens, 1253 s so far
+[06:23:41] capture row 226 of 282, 11368 tokens, 1391 s so far
+[06:26:07] capture row 251 of 282, 14021 tokens, 1537 s so far
+[06:27:49] capture row 276 of 282, 14694 tokens, 1640 s so far
+[06:28:22] held-out read-out grid: [{'lam': 0.001, 'pos_mean': 0.738, 'hard_p99': 0.0938}, {'lam': 0.01, 'pos_mean': 0.768, 'hard_p99': 0.0983}, {'lam': 0.1, 'pos_mean': 0.806, 'hard_p99': 0.1226}, {'lam': 1.0, 'pos_mean': 0.848, 'hard_p99': 0.1937}, {'lam': 10.0, 'pos_mean': 0.873, 'hard_p99': 0.3103}]
+[06:28:26] test rows taken from the full pass: 162 rows, 8658 positions
+[06:28:26] recomputed against the model's own logits: largest difference 0.1921 logits
+/content/repo/experiments/scripts/exp140b_31b_delimiter_minnorm.py:373: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  out["direction"] = dict(norm_ratio_old_to_min_for_equal_first_order_effect=round(float((e / (wpf * wfin)).norm() * g.norm() / e.pow(2).sum()), 1))
+[06:28:26] old write, recomputed exactly (EXP-140 measured close_is_top 8 and 10 at c 9 and 12): [{'c': 9.0, 'close_is_top': 8, 'margin_median': -3.02, 'margin_p10': -11.85}, {'c': 12.0, 'close_is_top': 11, 'margin_median': -2.56, 'margin_p10': -10.66}]
+[06:28:27] minimum-norm write: {'curve': [{'alpha': 2.2129, 'close_is_top': 35, 'margin_median': 0.05, 'margin_p10': -1.91}, {'alpha': 4.4257, 'close_is_top': 0, 'margin_median': -1.13, 'margin_p10': -2.2}, {'alpha': 8.8514, 'close_is_top': 0, 'margin_median': -1.39, 'margin_p10': -2.01}, {'alpha': 17.7028, 'close_is_top': 0, 'margin_median': -1.61, 'margin_p10': -1.92}, {'alpha': 35.4056, 'close_is_top': 0, 'margin_median': -1.78, 'margin_p10': -1.97}, {'alpha': 70.8112, 'close_is_top': 0, 'margin_median': -1.86, 'margin_p10': -1.99}, {'alpha': 141.6224, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -1.99}, {'alpha': 283.2448, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -1.99}, {'alpha': 566.4897, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -1.99}, {'alpha': 1132.9794, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -1.99}, {'alpha': 2265.9588, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -1.99}, {'alpha': 4531.9176, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 9063.8352, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 18127.6703, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 36255.3406, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 72510.6813, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 145021.3625, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 290042.725, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 580085.45, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 1160170.9, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 2320341.8, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 4640683.6, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 9281367.2, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 18562734.4, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 37125468.8, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 74250937.6, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 148501875.2, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 297003750.4, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 594007500.8, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 1188015001.6, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 2376030003.2, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 4752060006.4, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 9504120012.8, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 19008240025.6, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 38016480051.2, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 76032960102.4, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 152065920204.8, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 304131840409.6, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 608263680819.2001, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}, {'alpha': 1216527361638.4001, 'close_is_top': 0, 'margin_median': -1.89, 'margin_p10': -2.0}], 'alpha': 2.2129, 'u_norm': 2.2129, 'old_u_norm_at_c12': 66.2056, 'in_sample': {'close_is_top': 35, 'n': 62, 'margin_median': 0.05, 'margin_p10': -1.91}}
+[06:28:27] held-out edit: {'ERR_flipped_to_close': 33, 'ERR_n': 62, 'negatives_changed': 8, 'negatives_n': 8076, 'control_ERR_flipped': 3, 'control_negatives_changed': 18, 'readout_held': {'ERR_mean': 0.768, 'neg_p99': 0.1028}} | gates {'ERR_flipped_at_least_70_percent': False, 'negatives_changed_at_most_1_in_1000': True}
+[06:29:01] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 52, 'new_tokens': 45, 'ended': True, 'well_formed': True}, 'edited': {'first_token': 52, 'new_tokens': 45, 'ended': True, 'well_formed': True}}
+[06:29:27] generation {'iid': 'fastapi_14794', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 51, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 52, 'ended': True, 'well_formed': True}}
+[06:29:57] generation {'iid': 'rich_3067', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 49, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 228276, 'new_tokens': 53, 'ended': True, 'well_formed': False}}
+[06:30:20] generation {'iid': 'rich_3454', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 50, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 228276, 'new_tokens': 54, 'ended': True, 'well_formed': False}}
+[06:30:56] generation {'iid': 'rich_3470', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 90, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 92, 'ended': True, 'well_formed': True}}
+[06:31:05] generation {'iid': 'rich_3472', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}}
+[06:31:12] generation {'iid': 'rich_3472', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 52, 'new_tokens': 11, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 11, 'ended': True, 'well_formed': False}}
+[06:31:35] generation {'iid': 'rich_3944', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 29, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 30, 'ended': True, 'well_formed': True}}
+[06:31:56] generation {'iid': 'rich_3944', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 52, 'new_tokens': 30, 'ended': True, 'well_formed': True}, 'edited': {'first_token': 52, 'new_tokens': 30, 'ended': True, 'well_formed': True}}
+[06:32:13] generation {'iid': 'rich_3944', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 8, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 8347, 'new_tokens': 8, 'ended': True, 'well_formed': False}}
+[06:32:36] generation {'iid': 'rich_3944', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}}
+[06:33:38] generation {'iid': 'fastapi_11194', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 132, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 134, 'ended': True, 'well_formed': True}}
+[06:34:04] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 37, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 39, 'ended': True, 'well_formed': True}}
+[06:34:32] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 37, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 39, 'ended': True, 'well_formed': True}}
+[06:35:04] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 148, 'new_tokens': 56, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 148, 'new_tokens': 58, 'ended': True, 'well_formed': True}}
+[06:35:24] generation {'iid': 'fastapi_14258', 'fault': 'ERR', 'served_token': 8347, 'unedited': {'first_token': 8347, 'new_tokens': 18, 'ended': True, 'well_formed': False}, 'edited': {'first_token': 52, 'new_tokens': 20, 'ended': True, 'well_formed': True}}
+=== EXP-140b finished status=OK wall=2279.8s

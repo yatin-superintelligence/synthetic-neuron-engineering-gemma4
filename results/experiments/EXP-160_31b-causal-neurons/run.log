@@ -1,0 +1,89 @@
+=== EXP-160 31b-causal-neurons started 2026-11-12T12:14:14.182245Z commit=
+[12:14:14] pairs 38 | tasks 13
+
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files:  73%|#######2  | 8/11 [00:00<00:00, 15.38it/s]
+Fetching 11 files:  82%|########1 | 9/11 [00:20<00:04,  2.22s/it]
+Fetching 11 files:  91%|######### | 10/11 [01:28<00:08,  8.86s/it]
+Fetching 11 files: 100%|##########| 11/11 [03:02<00:00, 16.63s/it]
+Fetching 11 files: 100%|##########| 11/11 [03:02<00:00, 16.63s/it]
+
+Loading weights:   0%|          | 0/1188 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1188 [00:00<03:11,  6.21it/s]
+Loading weights:   2%|1         | 21/1188 [00:00<00:12, 90.52it/s]
+Loading weights:   4%|3         | 47/1188 [00:00<00:07, 153.28it/s]
+Loading weights:   5%|5         | 65/1188 [00:00<00:06, 160.93it/s]
+Loading weights:   7%|7         | 88/1188 [00:00<00:06, 177.48it/s]
+Loading weights:   9%|9         | 107/1188 [00:00<00:06, 178.54it/s]
+Loading weights:  11%|#         | 130/1188 [00:00<00:05, 190.52it/s]
+Loading weights:  13%|#2        | 151/1188 [00:00<00:05, 187.89it/s]
+Loading weights:  14%|#4        | 172/1188 [00:01<00:05, 188.34it/s]
+Loading weights:  16%|#6        | 196/1188 [00:01<00:04, 201.25it/s]
+Loading weights:  18%|#8        | 217/1188 [00:01<00:05, 193.79it/s]
+Loading weights:  20%|##        | 241/1188 [00:01<00:04, 205.71it/s]
+Loading weights:  22%|##2       | 262/1188 [00:01<00:04, 196.62it/s]
+Loading weights:  24%|##3       | 283/1188 [00:01<00:04, 185.44it/s]
+Loading weights:  26%|##6       | 310/1188 [00:01<00:04, 205.68it/s]
+Loading weights:  28%|##7       | 331/1188 [00:01<00:04, 204.75it/s]
+Loading weights:  30%|##9       | 352/1188 [00:01<00:04, 191.83it/s]
+Loading weights:  31%|###1      | 374/1188 [00:02<00:04, 198.42it/s]
+Loading weights:  33%|###3      | 395/1188 [00:02<00:04, 189.57it/s]
+Loading weights:  35%|###5      | 420/1188 [00:02<00:04, 191.37it/s]
+Loading weights:  37%|###7      | 442/1188 [00:02<00:03, 197.63it/s]
+Loading weights:  39%|###8      | 463/1188 [00:02<00:03, 198.21it/s]
+Loading weights:  41%|####      | 485/1188 [00:02<00:03, 203.56it/s]
+Loading weights:  43%|####2     | 506/1188 [00:02<00:03, 190.53it/s]
+Loading weights:  45%|####4     | 530/1188 [00:02<00:03, 201.26it/s]
+Loading weights:  46%|####6     | 551/1188 [00:02<00:03, 202.94it/s]
+Loading weights:  48%|####8     | 573/1188 [00:03<00:02, 206.52it/s]
+Loading weights:  50%|#####     | 594/1188 [00:03<00:03, 195.03it/s]
+Loading weights:  52%|#####1    | 614/1188 [00:03<00:03, 189.81it/s]
+Loading weights:  54%|#####3    | 638/1188 [00:03<00:02, 201.83it/s]
+Loading weights:  55%|#####5    | 659/1188 [00:03<00:02, 194.66it/s]
+Loading weights:  57%|#####7    | 683/1188 [00:03<00:02, 199.97it/s]
+Loading weights:  59%|#####9    | 704/1188 [00:03<00:02, 196.37it/s]
+Loading weights:  61%|######1   | 726/1188 [00:03<00:02, 195.40it/s]
+Loading weights:  63%|######3   | 749/1188 [00:03<00:02, 198.34it/s]
+Loading weights:  65%|######4   | 769/1188 [00:04<00:02, 188.98it/s]
+Loading weights:  67%|######6   | 794/1188 [00:04<00:02, 194.25it/s]
+Loading weights:  69%|######8   | 818/1188 [00:04<00:01, 205.31it/s]
+Loading weights:  77%|#######6  | 913/1188 [00:04<00:00, 410.60it/s]
+Loading weights: 100%|##########| 1188/1188 [00:04<00:00, 266.61it/s]
+[12:17:34] pair 1 of 38: preference 0.063, 11 s so far
+[12:17:42] pair 1 skipped: out of memory
+[12:17:48] pair 2 skipped: out of memory
+[12:17:58] pair 4 skipped: out of memory
+[12:18:04] pair 5 skipped: out of memory
+[12:18:14] pair 6 skipped: out of memory
+[12:18:22] pair 7 skipped: out of memory
+[12:18:27] pair 8 skipped: out of memory
+[12:18:45] pair 10 skipped: out of memory
+[12:18:52] pair 11 skipped: out of memory
+[12:18:57] pair 12 skipped: out of memory
+[12:19:10] pair 13 skipped: out of memory
+[12:19:29] pair 14 skipped: out of memory
+[12:19:34] pair 15 skipped: out of memory
+[12:19:40] pair 16 skipped: out of memory
+[12:19:46] pair 17 skipped: out of memory
+[12:19:52] pair 18 skipped: out of memory
+[12:19:57] pair 19 skipped: out of memory
+[12:20:06] pair 21 of 38: preference -0.302, 163 s so far
+[12:20:11] pair 21 skipped: out of memory
+[12:20:21] pair 22 skipped: out of memory
+[12:20:37] pair 24 skipped: out of memory
+[12:20:46] pair 25 skipped: out of memory
+[12:20:59] pair 27 skipped: out of memory
+[12:21:07] pair 28 skipped: out of memory
+[12:21:23] pair 30 skipped: out of memory
+[12:21:27] pair 31 skipped: out of memory
+[12:21:31] pair 32 skipped: out of memory
+[12:21:38] pair 33 skipped: out of memory
+[12:21:43] pair 34 skipped: out of memory
+[12:21:54] pair 35 skipped: out of memory
+[12:22:03] pair 36 skipped: out of memory
+[12:22:09] pair 37 skipped: out of memory
+/content/repo/experiments/scripts/exp160_31b_causal_neurons.py:229: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  chosen.append(dict(layer=l, neuron=i, sign=sgn, attribution=round(float(mean[j]), 6)))
+[12:23:53] result {'pairs': 7, 'tasks': 5, 'preference_mean': -0.4564, 'held_out': {'pairs': 7, 'chosen_raises': 7, 'chosen_mean_change': 0.1233, 'random_raises': 4, 'random_mean_change': 0.0051, 'chosen_minus_random_mean': 0.1183, 'chosen_beats_random': 7}, 'gate_passed': True, 'chosen_layers': [25, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 41, 42, 43, 44, 45, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58, 59], 'top5': [{'layer': 36, 'neuron': 1446, 'sign': 1, 'attribution': 0.021768}, {'layer': 51, 'neuron': 17235, 'sign': 1, 'attribution': 0.019089}, {'layer': 38, 'neuron': 10587, 'sign': 1, 'attribution': 0.018472}, {'layer': 41, 'neuron': 20150, 'sign': 1, 'attribution': 0.016854}, {'layer': 54, 'neuron': 16223, 'sign': 1, 'attribution': 0.016551}]}
+=== EXP-160 finished status=OK wall=579.3s

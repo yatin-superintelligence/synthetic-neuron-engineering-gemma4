@@ -1,0 +1,10 @@
+{
+ "sampling": {
+  "seed": 1,
+  "max_output_tokens": 8192
+ },
+ "hard_stop_s": 9000,
+ "log_requests": true,
+ "adapter": "delimctl31b",
+ "adapter_local": "artifacts_local/EXP-140c/delim_control"
+}

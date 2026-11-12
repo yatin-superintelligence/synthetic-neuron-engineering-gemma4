@@ -1,0 +1,31 @@
+=== EXP-135 12b-loop-breaker-neuron started 2026-11-10T23:22:04.617108Z commit=
+[23:22:05] dev cases 49 | loop 22 | tasks 24 | held-out tasks 8
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|##########| 9/9 [00:00<00:00, 1134.58it/s]
+
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/677 [00:00<01:28,  7.61it/s]
+Loading weights:   7%|7         | 48/677 [00:00<00:02, 238.09it/s]
+Loading weights:  13%|#3        | 90/677 [00:00<00:01, 304.81it/s]
+Loading weights:  20%|#9        | 133/677 [00:00<00:01, 343.97it/s]
+Loading weights:  26%|##5       | 176/677 [00:00<00:01, 372.99it/s]
+Loading weights:  33%|###3      | 224/677 [00:00<00:01, 405.58it/s]
+Loading weights:  40%|###9      | 269/677 [00:00<00:01, 400.33it/s]
+Loading weights:  46%|####6     | 313/677 [00:00<00:00, 408.06it/s]
+Loading weights:  53%|#####3    | 362/677 [00:00<00:00, 428.86it/s]
+Loading weights:  60%|######    | 408/677 [00:01<00:00, 434.96it/s]
+Loading weights:  67%|######6   | 452/677 [00:01<00:00, 420.46it/s]
+Loading weights:  74%|#######3  | 498/677 [00:01<00:00, 423.80it/s]
+Loading weights:  81%|########  | 546/677 [00:01<00:00, 434.03it/s]
+Loading weights:  87%|########7 | 590/677 [00:01<00:00, 414.03it/s]
+Loading weights:  94%|#########4| 638/677 [00:01<00:00, 430.62it/s]
+Loading weights: 100%|##########| 677/677 [00:01<00:00, 398.74it/s]
+[23:22:08] model google/gemma-4-12B-it-qat-q4_0-unquantized | layers 48 | neurons entering down_proj 15360
+[23:22:42] positives (loop sentence ends) 8008 | negatives 8951 | of them normal sentence ends 1856 | gap from the most probable token to end-of-thought at positives: median 17.44 10th to 90th percentile 13.12 to 24.44
+[23:22:48] {'lam': 0.001, 'all_neg': {'pos_mean': 0.91, 'pos_min': -0.609, 'neg_median': 0.0793, 'neg_p99': 0.9531, 'neg_p999': 1.362, 'neg_max': 1.6104, 'n_pos': 1820, 'n_neg': 2745}, 'hard': {'pos_mean': 0.91, 'pos_min': -0.609, 'neg_median': 0.3766, 'neg_p99': 1.137, 'neg_p999': 1.3995, 'neg_max': 1.4318, 'n_pos': 1820, 'n_neg': 654}}
+[23:22:53] {'lam': 0.01, 'all_neg': {'pos_mean': 0.907, 'pos_min': -0.212, 'neg_median': 0.0631, 'neg_p99': 0.8196, 'neg_p999': 1.0467, 'neg_max': 1.169, 'n_pos': 1820, 'n_neg': 2745}, 'hard': {'pos_mean': 0.907, 'pos_min': -0.212, 'neg_median': 0.4091, 'neg_p99': 0.9205, 'neg_p999': 1.0984, 'neg_max': 1.169, 'n_pos': 1820, 'n_neg': 654}}
+[23:22:58] {'lam': 0.1, 'all_neg': {'pos_mean': 0.9, 'pos_min': 0.012, 'neg_median': 0.059, 'neg_p99': 0.7851, 'neg_p999': 0.9015, 'neg_max': 0.9447, 'n_pos': 1820, 'n_neg': 2745}, 'hard': {'pos_mean': 0.9, 'pos_min': 0.012, 'neg_median': 0.4454, 'neg_p99': 0.8792, 'neg_p999': 0.9253, 'neg_max': 0.9447, 'n_pos': 1820, 'n_neg': 654}}
+[23:23:03] {'lam': 1.0, 'all_neg': {'pos_mean': 0.891, 'pos_min': 0.068, 'neg_median': 0.0722, 'neg_p99': 0.8074, 'neg_p999': 0.9108, 'neg_max': 0.9359, 'n_pos': 1820, 'n_neg': 2745}, 'hard': {'pos_mean': 0.891, 'pos_min': 0.068, 'neg_median': 0.5232, 'neg_p99': 0.8876, 'neg_p999': 0.9273, 'neg_max': 0.9359, 'n_pos': 1820, 'n_neg': 654}}
+[23:23:08] {'lam': 10.0, 'all_neg': {'pos_mean': 0.857, 'pos_min': 0.035, 'neg_median': 0.1368, 'neg_p99': 0.8171, 'neg_p999': 0.902, 'neg_max': 0.9882, 'n_pos': 1820, 'n_neg': 2745}, 'hard': {'pos_mean': 0.857, 'pos_min': 0.035, 'neg_median': 0.6109, 'neg_p99': 0.8747, 'neg_p999': 0.9483, 'neg_max': 0.9882, 'n_pos': 1820, 'n_neg': 654}}
+=== EXP-135 finished status=OK wall=63.6s

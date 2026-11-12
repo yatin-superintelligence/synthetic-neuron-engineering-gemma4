@@ -1,0 +1,37 @@
+{
+  "id": "EXP-084",
+  "slug": "teacher-neurons-e4b",
+  "category": "improvement",
+  "motivation": "EXP-080 for E4B: neurons that move E4B towards what Gemma 4 31B does at the same agent state, from EXP-083's labels.",
+  "hypothesis": "Pairs (E2B action X, 31B action Y) with enough confident disagreements give read-outs that separate their states on held-out tasks far above control.",
+  "config": {
+    "layer": 41,
+    "logit_shift": "calibrated, 3 to 10",
+    "ridge": 1.0,
+    "min_dev_positives": 25,
+    "teacher_min_votes": 3,
+    "max_prompt": 22000
+  },
+  "depends_on": [
+    "EXP-083",
+    "EXP-080"
+  ],
+  "env": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.14.1+cu130",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp084_teacher_neurons_e4b.py",
+  "started": "2026-11-08T05:52:33.172612Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794117153.1877844
+  },
+  "finished": "2026-11-08T06:35:10.079926Z",
+  "wall_seconds": 2556.9,
+  "status": "OK"
+}

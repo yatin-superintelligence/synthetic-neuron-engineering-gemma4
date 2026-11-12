@@ -1,0 +1,84 @@
+{
+  "results": {
+    "tasks": 563,
+    "trajectories": 514,
+    "skipped": {
+      "no single-line edit": 49
+    },
+    "train": 464,
+    "val": 24,
+    "history": {
+      "val_before": 1.1735,
+      "train": [
+        [
+          10,
+          1.0962
+        ],
+        [
+          20,
+          0.5012
+        ],
+        [
+          30,
+          0.1929
+        ],
+        [
+          40,
+          0.1127
+        ],
+        [
+          50,
+          0.0954
+        ],
+        [
+          60,
+          0.0903
+        ],
+        [
+          70,
+          0.0749
+        ],
+        [
+          80,
+          0.0765
+        ],
+        [
+          90,
+          0.072
+        ],
+        [
+          100,
+          0.0686
+        ],
+        [
+          110,
+          0.0622
+        ]
+      ],
+      "val": [
+        [
+          50,
+          0.0878
+        ],
+        [
+          100,
+          0.0683
+        ],
+        [
+          116,
+          0.0682
+        ]
+      ]
+    },
+    "vllm_check": {
+      "base": "(a, b), (a,",
+      "sft": "(a, b), (a,"
+    },
+    "adapter": "/content/repo/artifacts_local/EXP-088/sft_lora",
+    "headline": "SFT LoRA r16 on 464 trajectories: validation loss 1.1735 -> 0.0682",
+    "system_monitor": {
+      "samples": 169
+    }
+  },
+  "wall_seconds": 10118.531387090683
+}

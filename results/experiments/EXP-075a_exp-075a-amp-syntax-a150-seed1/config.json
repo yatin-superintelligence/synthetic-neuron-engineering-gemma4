@@ -1,0 +1,9 @@
+{
+ "id": "EXP-075a",
+ "slug": "exp-075a-amp-syntax-a150-seed1",
+ "category": "improvement",
+ "started": "2026-11-07T23:26:44Z",
+ "wall_seconds": 5740.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

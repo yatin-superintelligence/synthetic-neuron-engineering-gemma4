@@ -1,0 +1,9 @@
+{
+ "id": "EXP-163a",
+ "slug": "exp-163a-31b-causal256-x2-some15",
+ "category": "improvement",
+ "started": "2026-11-12T16:41:17Z",
+ "wall_seconds": 2440.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

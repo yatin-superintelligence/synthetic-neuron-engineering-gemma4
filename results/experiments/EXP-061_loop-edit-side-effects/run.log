@@ -1,0 +1,16 @@
+=== EXP-061 loop-edit-side-effects started 2026-11-08T04:46:42.670038Z commit=340b867164
+[04:47:08] server up for e2b-qat-f16.gguf with 1 adapters in 9.6s
+[04:47:08] base_f16 behavior: resumed from saved outputs
+[04:47:08] base_f16 mbpp_dev: resumed from saved outputs
+[04:47:08] base_f16 mmlu500: resumed from saved outputs
+[04:47:08] edit_f16 behavior: resumed from saved outputs
+[04:47:08] edit_f16 mbpp_dev: resumed from saved outputs
+[04:47:08] edit_f16 mmlu500: resumed from saved outputs
+[04:47:13] server up for gemma-4-E2B_q4_0-it.gguf with 1 adapters in 4.6s
+[04:47:13] base_q4_0 behavior: resumed from saved outputs
+[05:10:57] base_q4_0                    mbpp_dev      pass=0.6296 (119/189) cats={'pass': 119, 'wrong_answer': 44, 'wrong_or_missing_entry_point': 6, 'runtime_error': 16, 'syntax_error': 1, 'other_fail': 1, 'timeout': 1, 'loop': 1} sim= tok/s=65.3
+[05:14:28] base_q4_0                    mmlu500       pass=0.5240 (262/500) cats= sim= tok/s=25.7
+[05:17:43] edit_q4_0                    behavior      pass=1.0000 (22/40) cats= sim=0.492 tok/s=71.3
+[05:41:10] edit_q4_0                    mbpp_dev      pass=0.5661 (107/189) cats={'pass': 107, 'wrong_or_missing_entry_point': 19, 'wrong_answer': 46, 'runtime_error': 15, 'loop': 1, 'other_fail': 1} sim= tok/s=75.4
+[05:44:51] edit_q4_0                    mmlu500       pass=0.5200 (260/500) cats= sim= tok/s=28.6
+=== EXP-061 finished status=OK wall=3489.7s

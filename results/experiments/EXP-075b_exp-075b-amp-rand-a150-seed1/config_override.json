@@ -1,0 +1,8 @@
+{
+ "sampling": {
+  "seed": 1
+ },
+ "hard_stop_s": 5400,
+ "adapter": "amp_rand_a150",
+ "adapter_local": "artifacts_local/EXP-075/amp_rand_a150"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "EXP-028",
+  "slug": "official-harness-controls-local",
+  "category": "benchmark",
+  "motivation": "Every local real-task score depends on the official harness behaving here as on Kaggle. Reference fixes must pass and empty patches must fail, per task.",
+  "hypothesis": "Most fastapi and rich small-fix tasks pass both controls. requests tasks cannot pass in this path: its src/ layout is not importable in subprocess mode, so they fail the gold control.",
+  "config": {
+    "harness": "swegemma 0.2.11",
+    "adk": "1.36.1",
+    "workers": 4,
+    "sandbox": "subprocess inside the sne-harness Linux container, as on Kaggle"
+  },
+  "depends_on": [
+    "EXP-002"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "c17af000d8cd21ac7b93e0335fc0f6cd33877b1e",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp028_official_controls.py",
+  "started": "2026-11-06T05:43:24.884567Z",
+  "sys_at_start": {
+    "cpu_perf_limit_pct": 100,
+    "thermal_c": 27.9,
+    "battery_charge_mw": 54945,
+    "gpu_util_pct": 0,
+    "cpu_pct": 0,
+    "on_ac": true,
+    "cpu_freq_mhz": 1806,
+    "battery_discharge_mw": 0,
+    "battery_pct": 69,
+    "ram_free_gb": 16.26,
+    "cpu_perf_pct": 106.5,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.31,
+    "t": 1793943813.039467
+  },
+  "finished": "2026-11-06T05:51:12.055715Z",
+  "wall_seconds": 467.2,
+  "status": "OK"
+}

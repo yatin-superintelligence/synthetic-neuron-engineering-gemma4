@@ -1,0 +1,9 @@
+{
+ "id": "EXP-103",
+ "slug": "exp-103-instruction-all3-seed1",
+ "category": "improvement",
+ "started": "2026-11-09T12:43:48Z",
+ "wall_seconds": 2001.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

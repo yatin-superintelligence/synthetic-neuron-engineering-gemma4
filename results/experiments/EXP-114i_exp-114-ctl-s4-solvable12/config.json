@@ -1,0 +1,9 @@
+{
+ "id": "EXP-114i",
+ "slug": "exp-114-ctl-s4-solvable12",
+ "category": "improvement",
+ "started": "2026-11-10T01:32:29Z",
+ "wall_seconds": 765.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

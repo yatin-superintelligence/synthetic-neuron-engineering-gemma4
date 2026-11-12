@@ -1,0 +1,41 @@
+{
+ "tasks": 40,
+ "resolved": 6,
+ "resolved_ids": [
+  "fastapi_15589",
+  "rich_3454",
+  "rich_3518",
+  "rich_3718",
+  "rich_3882",
+  "rich_3905"
+ ],
+ "outcomes": {
+  "patch failed tests": 20,
+  "error: Sandbox execution error: litellm.Context": 8,
+  "resolved": 6,
+  "error: Agent exceeded tool call budget (100 cal": 4,
+  "no patch": 2
+ },
+ "minutes_mean": 17.36,
+ "tool_calls_mean": 60.5,
+ "llm_calls_mean": 63.7,
+ "tasks_never_applying_an_edit": 7,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 31,
+ "loops": 135,
+ "of_those_resolved_loop": 5,
+ "completion_tokens": 1574998,
+ "tokens_in_loop_responses": 575163,
+ "loop_token_share": 0.365,
+ "edits": {
+  "edits": 245,
+  "applied": 89,
+  "failed": 156,
+  "kinds": {
+   "failed (kind not classified)": 156,
+   "applied": 89
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

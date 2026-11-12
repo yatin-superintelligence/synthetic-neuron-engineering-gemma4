@@ -1,0 +1,155 @@
+{
+  "results": {
+    "headline": "64 neurons chosen on half the tasks: held-out AUC 0.7083 (null median 0.5, p 0.1343); gate not passed",
+    "fit": {
+      "rows": 62,
+      "solved": 44,
+      "tasks_with_both": 11,
+      "features": 1474560,
+      "k": 64,
+      "held_out": {
+        "a_to_b": 0.7,
+        "b_to_a": 0.7143,
+        "pooled": 0.7083,
+        "pairs": 24
+      },
+      "permutation": {
+        "n": 200,
+        "null_median": 0.5,
+        "null_95": 0.75,
+        "p": 0.1343
+      },
+      "gate_passed": false,
+      "top10": [
+        {
+          "feature": 83166,
+          "kind": "last",
+          "layer": 5,
+          "neuron": 6366,
+          "auc": 0.0,
+          "mean_solved": -0.03122,
+          "mean_failed": -0.02425
+        },
+        {
+          "feature": 156886,
+          "kind": "last",
+          "layer": 10,
+          "neuron": 3286,
+          "auc": 0.0,
+          "mean_solved": 0.0241,
+          "mean_failed": 0.05758
+        },
+        {
+          "feature": 273679,
+          "kind": "last",
+          "layer": 17,
+          "neuron": 12559,
+          "auc": 0.0,
+          "mean_solved": 0.12124,
+          "mean_failed": 0.14798
+        },
+        {
+          "feature": 340437,
+          "kind": "last",
+          "layer": 22,
+          "neuron": 2517,
+          "auc": 0.0,
+          "mean_solved": 0.22997,
+          "mean_failed": 0.37598
+        },
+        {
+          "feature": 352421,
+          "kind": "last",
+          "layer": 22,
+          "neuron": 14501,
+          "auc": 0.0,
+          "mean_solved": 0.01029,
+          "mean_failed": 0.02774
+        },
+        {
+          "feature": 379465,
+          "kind": "last",
+          "layer": 24,
+          "neuron": 10825,
+          "auc": 1.0,
+          "mean_solved": -0.04666,
+          "mean_failed": -0.0805
+        },
+        {
+          "feature": 381514,
+          "kind": "last",
+          "layer": 24,
+          "neuron": 12874,
+          "auc": 0.0,
+          "mean_solved": 0.04035,
+          "mean_failed": 0.06676
+        },
+        {
+          "feature": 382043,
+          "kind": "last",
+          "layer": 24,
+          "neuron": 13403,
+          "auc": 1.0,
+          "mean_solved": 0.00613,
+          "mean_failed": -0.00389
+        },
+        {
+          "feature": 430510,
+          "kind": "last",
+          "layer": 28,
+          "neuron": 430,
+          "auc": 0.0,
+          "mean_solved": -0.01189,
+          "mean_failed": 0.00051
+        },
+        {
+          "feature": 443615,
+          "kind": "last",
+          "layer": 28,
+          "neuron": 13535,
+          "auc": 1.0,
+          "mean_solved": -0.01938,
+          "mean_failed": -0.03884
+        }
+      ],
+      "top_layers": {
+        "3": 1,
+        "4": 2,
+        "5": 4,
+        "6": 2,
+        "7": 3,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "12": 1,
+        "15": 1,
+        "16": 2,
+        "17": 2,
+        "21": 2,
+        "22": 2,
+        "24": 3,
+        "27": 2,
+        "28": 3,
+        "31": 1,
+        "33": 2,
+        "34": 2,
+        "35": 3,
+        "36": 4,
+        "37": 4,
+        "38": 2,
+        "39": 2,
+        "40": 2,
+        "41": 1,
+        "42": 1,
+        "43": 3,
+        "44": 1,
+        "45": 2,
+        "46": 1
+      }
+    },
+    "system_monitor": {
+      "samples": 5
+    }
+  },
+  "wall_seconds": 258.5072467327118
+}

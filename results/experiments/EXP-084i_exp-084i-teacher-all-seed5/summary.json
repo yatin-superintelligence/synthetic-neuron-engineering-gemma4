@@ -1,0 +1,45 @@
+{
+ "tasks": 58,
+ "resolved": 6,
+ "resolved_ids": [
+  "requests_7315",
+  "requests_7427",
+  "rich_3006",
+  "rich_3063",
+  "rich_3454",
+  "rich_3905"
+ ],
+ "outcomes": {
+  "patch failed tests": 42,
+  "no patch": 6,
+  "resolved": 6,
+  "error: Sandbox execution error: litellm.Context": 4
+ },
+ "minutes_mean": 4.4,
+ "tool_calls_mean": 12.5,
+ "llm_calls_mean": 15.2,
+ "tasks_never_applying_an_edit": 6,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 2,
+ "loops": 2,
+ "of_those_resolved_loop": 0,
+ "completion_tokens": 373100,
+ "tokens_in_loop_responses": 9171,
+ "loop_token_share": 0.025,
+ "edits": {
+  "edits": 139,
+  "applied": 74,
+  "failed": 65,
+  "kinds": {
+   "applied": 74,
+   "mostly_real_altered": 23,
+   "invented": 14,
+   "multiple": 11,
+   "stale_after_own_edit": 6,
+   "file_missing": 6,
+   "lines_real_block_not": 5
+  },
+  "failed_repeating_identical_call": 17,
+  "failed_with_backslash": 12
+ }
+}

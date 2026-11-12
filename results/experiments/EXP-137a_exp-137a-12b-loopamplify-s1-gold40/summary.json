@@ -1,0 +1,35 @@
+{
+ "tasks": 40,
+ "resolved": 1,
+ "resolved_ids": [
+  "rich_3905"
+ ],
+ "outcomes": {
+  "error: Agent exceeded tool call budget (100 cal": 17,
+  "error: Sandbox execution error: litellm.Context": 14,
+  "error: Agent exceeded session timeout (60.0 min": 7,
+  "error: Agent exceeded maximum allowed LLM turns": 1,
+  "resolved": 1
+ },
+ "minutes_mean": 21.66,
+ "tool_calls_mean": 56.8,
+ "llm_calls_mean": 70.9,
+ "tasks_never_applying_an_edit": 39,
+ "of_those_resolved": 0,
+ "tasks_with_loop": 34,
+ "loops": 313,
+ "of_those_resolved_loop": 1,
+ "completion_tokens": 1700690,
+ "tokens_in_loop_responses": 1426380,
+ "loop_token_share": 0.839,
+ "edits": {
+  "edits": 1,
+  "applied": 1,
+  "failed": 0,
+  "kinds": {
+   "applied": 1
+  },
+  "failed_repeating_identical_call": 0,
+  "failed_with_backslash": 0
+ }
+}

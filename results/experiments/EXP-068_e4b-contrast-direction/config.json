@@ -1,0 +1,64 @@
+{
+  "id": "EXP-068",
+  "slug": "e4b-contrast-direction",
+  "category": "localization",
+  "motivation": "E4B leaves the states that trap E2B. Contrasting E2B's state on its own loop with its state on E4B's continuation of the same prompt isolates looping from lateness and context.",
+  "hypothesis": "v_T agrees with EXP-040's direction (cosine at least 0.9 at the edit layers). If not, it separates held-out loop from teacher tokens better and becomes a new edit.",
+  "config": {
+    "ctx_tokens": 3000,
+    "resp_tokens": 1500,
+    "tokens_per_class": 200,
+    "split": "dev",
+    "fit_half_seed": 40,
+    "classes": [
+      "LOOP",
+      "PRE",
+      "TEACHER"
+    ],
+    "edit_layers": [
+      14,
+      15,
+      19,
+      23
+    ],
+    "cosine_rule": 0.9
+  },
+  "depends_on": [
+    "EXP-040",
+    "EXP-071"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "315e01d918a0a8838df8470d28a16e2fab86f213",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp068_e4b_contrast_direction.py",
+  "started": "2026-11-08T05:53:03.739424Z",
+  "sys_at_start": {
+    "cpu_freq_mhz": 1801,
+    "cpu_core_w": 16.5,
+    "throttle_reasons": 0,
+    "igpu_w": 0,
+    "battery_charge_mw": 0,
+    "gpu_util_pct": 0,
+    "battery_pct": 100,
+    "cpu_pct": 1.5,
+    "passive_limit_pct": 100,
+    "on_ac": true,
+    "cpu_perf_pct": 138.1,
+    "battery_discharge_mw": 0,
+    "cpu_package_w": 22.7,
+    "ram_free_gb": 19.17,
+    "cpu_perf_limit_pct": 100,
+    "ram_total_gb": 31.43,
+    "gpu_shared_gb": 1.2,
+    "t": 1794117194.6392376
+  },
+  "finished": "2026-11-08T06:11:41.996884Z",
+  "wall_seconds": 1118.3,
+  "status": "OK"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "EXP-135",
+  "slug": "12b-loop-breaker-neuron",
+  "category": "improvement",
+  "motivation": "12B's looping thought runs to the thinking cap and the run dies of a context overflow. A neuron that reads 'a sentence was just repeated' and writes the end-of-thought token ends the thought at the loop's start.",
+  "hypothesis": "The read-out separates loop sentence ends from normal sentence ends on held-out tasks (99th percentile at normal sentence ends under 0.1); the agent test measures loops, overflows and tasks solved.",
+  "config": {
+    "model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "ctx_tokens": 3000,
+    "resp_tokens": 3000,
+    "lambdas": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "split": "dev",
+    "held_out_fraction": "1/3 of dev tasks, seed 135",
+    "selection_rule": "max held-out pos_mean with hard-negative p99 < 0.1"
+  },
+  "depends_on": [
+    "EXP-014d",
+    "EXP-051",
+    "EXP-132"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "command": "experiments/scripts/exp135_12b_loop_breaker.py",
+  "started": "2026-11-10T23:22:04.617108Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794352924.6203678
+  },
+  "finished": "2026-11-10T23:23:08.220173Z",
+  "wall_seconds": 63.6,
+  "status": "OK"
+}

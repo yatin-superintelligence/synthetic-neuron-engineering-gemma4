@@ -1,0 +1,51 @@
+{
+  "id": "EXP-020",
+  "slug": "build-repopatch-v1",
+  "category": "benchmark",
+  "motivation": "The competition scores agents on resolving real issues by editing files through tool calls. Function-completion benchmarks miss three skills a small agent needs: locating the faulty code among distractors, reading an issue report, and emitting well-formed edit calls whose old_string matches exactly. RepoPatch measures these, cheaply and executably.",
+  "hypothesis": "Every kept task is valid: the oracle edit resolves it and the unedited repo fails.",
+  "config": {
+    "n_target": 150,
+    "seed": 20261106,
+    "mutation_ops": [
+      "cmp",
+      "const",
+      "arith",
+      "bool",
+      "not"
+    ],
+    "files": [
+      "pkg/core.py",
+      "pkg/utils.py"
+    ],
+    "distractors": 4
+  },
+  "depends_on": [
+    "EXP-002"
+  ],
+  "env": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "git_commit": "7afff233ed9c72868c6863967b48d048597ca94d",
+    "git_dirty": true,
+    "torch": "2.15.0+xpu",
+    "transformers": "5.22.1",
+    "device": "Intel(R) Arc(TM) Graphics"
+  },
+  "command": "experiments/scripts/exp020_build_repopatch.py",
+  "started": "2026-11-05T19:32:27.548006Z",
+  "sys_at_start": {
+    "battery_pct": 39,
+    "thermal_c": 27.9,
+    "cpu_pct": 10.6,
+    "ram_total_gb": 31.43,
+    "ram_free_gb": 14.53,
+    "gpu_util_pct": 93.4,
+    "gpu_shared_gb": 3.57,
+    "on_ac": true,
+    "t": 1793907155.0499623
+  },
+  "finished": "2026-11-05T19:34:00.021109Z",
+  "wall_seconds": 92.5,
+  "status": "OK"
+}

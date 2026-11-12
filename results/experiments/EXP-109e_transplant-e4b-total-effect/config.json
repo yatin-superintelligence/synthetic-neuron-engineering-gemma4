@@ -1,0 +1,48 @@
+{
+  "id": "EXP-109e",
+  "slug": "transplant-e4b-total-effect",
+  "category": "improvement",
+  "motivation": "The 31B knows far more at the fix step than E4B, but its only token-tested transplant used the vocabulary map. The state map worked for E4B, and the direct-logit choice is blind to what mid-layer neurons do downstream.",
+  "hypothesis": "31B neurons through the state map, chosen by total effect, raise held reference-edit token accuracy above the unedited model, above random 31B neurons and above the direct-logit choice.",
+  "config": {
+    "e2b_layers": [
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32
+    ],
+    "arms": [
+      "st_dla",
+      "st_tot",
+      "st_rnd"
+    ],
+    "eval_states": 160,
+    "neurons_per_layer": 128,
+    "donor": "google/gemma-4-E4B-it-qat-q4_0-unquantized"
+  },
+  "depends_on": [
+    "EXP-102b",
+    "EXP-108"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "/content/repo/experiments/scripts/exp109_transplant_total_effect.py",
+  "started": "2026-11-09T18:57:15.491782Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794250635.498455
+  },
+  "finished": "2026-11-09T19:11:44.513035Z",
+  "wall_seconds": 869.0,
+  "status": "FAILED: FileNotFoundError: [Errno 2] No such file or directory: '/content/EXP-109e_fit.json'"
+}

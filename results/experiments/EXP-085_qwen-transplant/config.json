@@ -1,0 +1,51 @@
+{
+  "id": "EXP-085",
+  "slug": "qwen-transplant",
+  "category": "improvement",
+  "motivation": "Add capacity to E2B from another model family (Qwen3.5-4B), fixing the write side that failed for E4B (EXP-077).",
+  "hypothesis": "Transplanted Qwen neurons with writes fitted in E2B's space lower held-out code loss below both the unedited model and random-Qwen-neuron controls.",
+  "config": {
+    "donor": "Qwen/Qwen3.5-4B",
+    "k": 64,
+    "layer_range": [
+      8,
+      28
+    ],
+    "scales": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "chunk": 2400,
+    "positions_per_chunk": 24,
+    "fit_repos": [
+      "fastapi",
+      "requests"
+    ],
+    "test_repo": "rich",
+    "n_fit": 360,
+    "n_test": 120
+  },
+  "depends_on": [
+    "EXP-077"
+  ],
+  "env": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp085_qwen_transplant.py",
+  "started": "2026-11-08T06:52:42.343327Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794120762.3782153
+  },
+  "finished": "2026-11-08T06:59:49.437432Z",
+  "wall_seconds": 427.1,
+  "status": "OK"
+}

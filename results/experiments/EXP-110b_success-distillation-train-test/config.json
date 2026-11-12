@@ -1,0 +1,39 @@
+{
+  "id": "EXP-110b",
+  "slug": "success-distillation-train-test",
+  "category": "training",
+  "motivation": "Fine-tune E2B on real, officially resolved agent runs (its own and larger models') from one half of the 58 tasks; evaluate on the other half only.",
+  "hypothesis": "Trained on the other half's successful runs, E2B solves more tasks of this half than unedited E2B at the same seed.",
+  "config": {
+    "half": "test",
+    "cap_per_task": 8,
+    "tool_chars": 1500,
+    "rank": 16,
+    "alpha": 32,
+    "lr": 0.0001,
+    "epochs": 2,
+    "max_len": 24576
+  },
+  "depends_on": [
+    "EXP-088",
+    "EXP-103"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "/content/repo/experiments/scripts/exp110_success_distillation.py",
+  "started": "2026-11-10T18:47:53.472477Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794336473.4794858
+  },
+  "finished": "2026-11-10T19:33:06.953086Z",
+  "wall_seconds": 2713.5,
+  "status": "OK"
+}

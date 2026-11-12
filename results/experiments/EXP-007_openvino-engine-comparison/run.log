@@ -1,0 +1,15 @@
+=== EXP-007 openvino-engine-comparison started 2026-11-05T21:53:21.153157Z commit=c2355a66ec
+[21:53:30] CMD <repo>\tools\llama\vulkan\llama-batched-bench.exe -m <repo>\models\gguf\gemma-4-E2B_q4_0-it.gguf -ngl 99 -c 9000 -b 2048 -ub 512 -npp 256 -ntg 128 -npl 1,8 -fa on
+[21:53:51] |   256 |    128 |    1 |    384 |    0.454 |   563.41 |    4.894 |    26.15 |    5.349 |    71.80 |
+[21:53:51] |   256 |    128 |    8 |   3072 |    3.326 |   615.68 |    8.501 |   120.45 |   11.828 |   259.73 |
+[21:53:51] CMD <repo>\tools\llama\openvino\llama-batched-bench.exe -m <repo>\models\gguf\gemma-4-E2B_q4_0-it.gguf -ngl 99 -c 9000 -b 2048 -ub 512 -npp 256 -ntg 128 -npl 1,8 -fa on
+[21:55:12] |   256 |    128 |    1 |    384 |    1.125 |   227.56 |   19.341 |     6.62 |   20.466 |    18.76 |
+[21:55:12] |   256 |    128 |    8 |   3072 |   17.174 |   119.25 |   14.037 |    72.95 |   31.211 |    98.43 |
+[21:55:12] CMD <repo>\tools\llama\vulkan\llama-batched-bench.exe -m <repo>\models\gguf\e2b-qat-f16.gguf -ngl 99 -c 9000 -b 2048 -ub 512 -npp 256 -ntg 128 -npl 1,8 -fa on
+[21:55:49] |   256 |    128 |    1 |    384 |    0.859 |   298.19 |    8.965 |    14.28 |    9.824 |    39.09 |
+[21:55:49] |   256 |    128 |    8 |   3072 |    6.138 |   333.68 |   12.766 |    80.21 |   18.903 |   162.51 |
+[21:55:49] CMD <repo>\tools\llama\openvino\llama-batched-bench.exe -m <repo>\models\gguf\e2b-qat-f16.gguf -ngl 99 -c 9000 -b 2048 -ub 512 -npp 256 -ntg 128 -npl 1,8 -fa on
+[21:58:06] |   256 |    128 |    1 |    384 |    4.370 |    58.58 |   48.410 |     2.64 |   52.780 |     7.28 |
+[21:58:06] |   256 |    128 |    8 |   3072 |   14.070 |   145.56 |   37.110 |    27.59 |   51.180 |    60.02 |
+[22:04:13] {'single_tps_wall': 35.43, 'tps_metric': 35.97, 'ttft_ms': 81.9}
+=== EXP-007 finished status=OK wall=652.3s

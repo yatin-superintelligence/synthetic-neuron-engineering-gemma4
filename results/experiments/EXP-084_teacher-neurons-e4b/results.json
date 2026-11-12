@@ -1,0 +1,176 @@
+{
+  "results": {
+    "neurons": {
+      "read_file_to_run_command": {
+        "x": "read_file",
+        "y": "run_command",
+        "c": 10,
+        "n_pos": 106,
+        "n_neg": 701,
+        "sep_fit": {
+          "pos_mean": 0.758,
+          "pos_min": 0.356,
+          "neg_median": 0.0671,
+          "neg_p99": 0.8618,
+          "neg_p999": 0.9144,
+          "neg_max": 0.955,
+          "n_pos": 106,
+          "n_neg": 701
+        },
+        "sep_test": {
+          "pos_mean": 0.755,
+          "pos_min": 0.268,
+          "neg_median": 0.0637,
+          "neg_p99": 0.8764,
+          "neg_p999": 0.9449,
+          "neg_max": 0.9531,
+          "n_pos": 104,
+          "n_neg": 728
+        },
+        "control_on_test_positives": 0.4926,
+        "dev_gap_median": -8.469,
+        "predicted": {
+          "test_positives": {
+            "n": 104,
+            "y_beats_x_before": 0.01,
+            "after": 0.519
+          },
+          "test_agreeing_x_states": {
+            "n": 150,
+            "y_beats_x_before": 0.0,
+            "after": 0.227
+          }
+        }
+      },
+      "search_similar_code_to_run_command": {
+        "x": "search_similar_code",
+        "y": "run_command",
+        "c": 10,
+        "n_pos": 43,
+        "n_neg": 764,
+        "sep_fit": {
+          "pos_mean": 0.887,
+          "pos_min": 0.456,
+          "neg_median": 0.0229,
+          "neg_p99": 0.94,
+          "neg_p999": 1.0318,
+          "neg_max": 1.0791,
+          "n_pos": 43,
+          "n_neg": 764
+        },
+        "sep_test": {
+          "pos_mean": 0.908,
+          "pos_min": 0.439,
+          "neg_median": 0.0271,
+          "neg_p99": 1.0061,
+          "neg_p999": 1.0613,
+          "neg_max": 1.0676,
+          "n_pos": 53,
+          "n_neg": 779
+        },
+        "control_on_test_positives": 0.5067,
+        "dev_gap_median": -4.75,
+        "predicted": {
+          "test_positives": {
+            "n": 53,
+            "y_beats_x_before": 0.208,
+            "after": 0.943
+          },
+          "test_agreeing_x_states": {
+            "n": 18,
+            "y_beats_x_before": 0.056,
+            "after": 0.833
+          }
+        }
+      },
+      "edit_file_to_read_file": {
+        "x": "edit_file",
+        "y": "read_file",
+        "c": 10,
+        "n_pos": 32,
+        "n_neg": 775,
+        "sep_fit": {
+          "pos_mean": 0.905,
+          "pos_min": 0.842,
+          "neg_median": 0.0084,
+          "neg_p99": 0.9207,
+          "neg_p999": 0.9467,
+          "neg_max": 0.9494,
+          "n_pos": 32,
+          "n_neg": 775
+        },
+        "sep_test": {
+          "pos_mean": 0.885,
+          "pos_min": 0.783,
+          "neg_median": 0.0093,
+          "neg_p99": 0.921,
+          "neg_p999": 0.959,
+          "neg_max": 0.9666,
+          "n_pos": 32,
+          "n_neg": 800
+        },
+        "control_on_test_positives": 0.5035,
+        "dev_gap_median": -6.25,
+        "predicted": {
+          "test_positives": {
+            "n": 32,
+            "y_beats_x_before": 0.0,
+            "after": 0.875
+          },
+          "test_agreeing_x_states": {
+            "n": 32,
+            "y_beats_x_before": 0.0,
+            "after": 0.656
+          }
+        }
+      },
+      "reread_full": {
+        "x": "edit_file",
+        "y": "read_file",
+        "c": 10,
+        "n_pos": 38,
+        "n_neg": 769,
+        "sep_fit": {
+          "pos_mean": 0.722,
+          "pos_min": 0.484,
+          "neg_median": 0.28,
+          "neg_p99": 0.7337,
+          "neg_p999": 0.8317,
+          "neg_max": 0.8824,
+          "n_pos": 38,
+          "n_neg": 769
+        },
+        "sep_test": {
+          "pos_mean": 0.665,
+          "pos_min": 0.006,
+          "neg_median": 0.259,
+          "neg_p99": 0.7566,
+          "neg_p999": 0.8379,
+          "neg_max": 0.8476,
+          "n_pos": 39,
+          "n_neg": 793
+        },
+        "control_on_test_positives": 0.4472,
+        "dev_gap_median": 4.469,
+        "predicted": {
+          "test_positives": {
+            "n": 39,
+            "y_beats_x_before": 0.744,
+            "after": 0.846
+          },
+          "test_agreeing_x_states": {
+            "n": 29,
+            "y_beats_x_before": 0.0,
+            "after": 0.207
+          }
+        }
+      }
+    },
+    "reread_at_full_context": null,
+    "headline": "4 teacher neurons built; read_file_to_run_command (c=10): test positives 0.755 vs negatives p99 0.8764, control 0.4926, predicted {'test_positives': {'n': 104, 'y_beats_x_before': 0.01, 'after': 0.519}, 'test_agreeing_x_states': {'n': 150, 'y_beats_x_before': 0.0, 'after': 0.227}}; search_similar_code_to_run_command (c=10): test positives 0.908 vs negatives p99 1.0061, control 0.5067, predicted {'test_positives': {'n': 53, 'y_beats_x_before': 0.208, 'after': 0.943}, 'test_agreeing_x_states': {'n': 18, 'y_beats_x_before': 0.056, 'after': 0.833}}; edit_file_to_read_file (c=10): test positives 0.885 vs negatives p99 0.921, control 0.5035, predicted {'test_positives': {'n': 32, 'y_beats_x_before': 0.0, 'after': 0.875}, 'test_agreeing_x_states': {'n': 32, 'y_beats_x_before': 0.0, 'after': 0.656}}; reread_full (c=10): test positives 0.665 vs negatives p99 0.7566, control 0.4472, predicted {'test_positives': {'n': 39, 'y_beats_x_before': 0.744, 'after': 0.846}, 'test_agreeing_x_states': {'n': 29, 'y_beats_x_before': 0.0, 'after': 0.207}}",
+    "system_monitor": {
+      "samples": 43
+    }
+  },
+  "wall_seconds": 2556.9073498249054
+}

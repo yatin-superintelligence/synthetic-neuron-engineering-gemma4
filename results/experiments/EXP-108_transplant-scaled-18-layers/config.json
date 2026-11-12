@@ -1,0 +1,57 @@
+{
+  "id": "EXP-108",
+  "slug": "transplant-scaled-18-layers",
+  "category": "improvement",
+  "motivation": "EXP-106's 7-layer E4B transplant moved reference-fix tokens of unseen tasks by a point beyond its control; more layers may move them more.",
+  "hypothesis": "An 18-layer transplant raises held reference-edit token accuracy above the 7-layer one (90.09%) and above its random control.",
+  "config": {
+    "e2b_layers": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34
+    ],
+    "arms": [
+      "st18_a1",
+      "st18_a2",
+      "st18_rnd_a1"
+    ],
+    "eval_states": 160,
+    "neurons_per_layer": 128
+  },
+  "depends_on": [
+    "EXP-102",
+    "EXP-106"
+  ],
+  "env": {
+    "python": "3.12.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "git_commit": "",
+    "git_dirty": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "5.13.1",
+    "device": "NVIDIA L4"
+  },
+  "command": "experiments/scripts/exp108_transplant_scaled.py",
+  "started": "2026-11-09T16:16:01.812070Z",
+  "sys_at_start": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "t": 1794240961.8188062
+  },
+  "finished": "2026-11-09T16:59:16.246044Z",
+  "wall_seconds": 2594.4,
+  "status": "OK"
+}

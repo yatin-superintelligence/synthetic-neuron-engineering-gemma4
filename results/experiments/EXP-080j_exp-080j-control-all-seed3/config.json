@@ -1,0 +1,9 @@
+{
+ "id": "EXP-080j",
+ "slug": "exp-080j-control-all-seed3",
+ "category": "synthetic-neuron",
+ "started": "2026-11-08T03:31:21Z",
+ "wall_seconds": 638.0,
+ "status": "OK",
+ "command": "tools/kaggle_kernel.py"
+}

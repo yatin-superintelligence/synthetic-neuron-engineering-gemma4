@@ -1,0 +1,6 @@
+=== EXP-105 instruction-editbench-f16 started 2026-11-09T12:29:23.217409Z commit=f28ddf20b3
+[12:29:41] states 62 tasks 41 originally applied 48
+[12:29:41] base arm reused from <repo>\experiments\EXP-097b_escape-blind-editbench-f16\rows_base.json
+[14:27:53] instruction {'n': 62, 'edit_calls': 41, 'applied': 33, 'apply_rate': 0.8049, 'not_found': 7, 'identical': 1, 'multiple': 0, 'backslash_edits': 12, 'other_tool': 21, 'no_tool': 0, 'loops': 4} 1147.3
+[16:12:29] neutral {'n': 62, 'edit_calls': 39, 'applied': 28, 'apply_rate': 0.7179, 'not_found': 7, 'identical': 0, 'multiple': 1, 'backslash_edits': 9, 'other_tool': 23, 'no_tool': 0, 'loops': 1} 986.4
+=== EXP-105 finished status=OK wall=13388.7s

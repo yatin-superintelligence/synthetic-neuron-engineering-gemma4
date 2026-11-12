@@ -1,0 +1,8 @@
+=== EXP-002 harness-validation started 2026-11-05T19:17:14.844834Z commit=1970dc14b4
+[19:17:48] mbpp_dev {'n': 189, 'canonical_pass': 189, 'failures': []}
+[19:17:53] mbpp_test {'n': 188, 'canonical_pass': 188, 'failures': []}
+[19:18:05] humaneval {'n': 163, 'canonical_pass': 163, 'failures': []}
+[19:18:06] humanevalfix {'n': 164, 'canonical_pass': 164, 'failures': []}
+[19:19:10] buggy hidden unexpectedly pass: [] canonical visible fails: {'fail': []} buggy passing visible examples: 20
+[19:19:10] extraction [True, True, True, True]
+=== EXP-002 finished status=OK wall=116.1s

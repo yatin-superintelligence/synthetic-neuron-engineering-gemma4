@@ -29,7 +29,7 @@ script, its configuration, its results and, for agent runs, its official verific
 | `paper/` | The paper (PDF), with the full reference list and Appendix A. |
 | `code/sne/` | The library (28 modules): engineered neurons and their write vectors (`conditional.py`), loop directions (`loops.py`), the transplant (`transplant.py`), adapters (`lora.py`), read-outs, statistics. |
 | `code/experiments/` | One script per experiment (113 scripts), named `expNNN_...`. |
-| `code/analysis/` | The scripts that compute the paper's numbers and figures (38 scripts). |
+| `code/analysis/` | The scripts that compute the paper's numbers and figures (39 scripts). |
 | `results/experiments/` | The record of 213 experiments, one folder each: `README.md` (aim, hypothesis stated before the run, outcome), `config.json`, `results.json`, and where they exist `kaggle_verify.json` (the official verification), `summary.json`, `metrics.json` and `run.log`. |
 | `results/experiments.csv` | Index of those experiments: id, folder, category, start time, duration, status. |
 | `results/agent_runs.csv` | The 129 agent runs scored with the competition's official verification (5102 task attempts): model, tasks, tasks solved, and which. Runs made in rounds have no folder of their own. |
